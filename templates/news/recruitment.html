@@ -1,0 +1,458 @@
+{% extends 'base.html' %} {% load static %} {% block title %}{{ page_title }} -
+KLM Logistics{% endblock %} {% block content %}
+<!-- Hero Section -->
+<div
+  class="news-hero"
+  style="
+    background: linear-gradient(135deg, #124d92 0%, #0a2d52 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  ">
+  <div
+    style="
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: rgba(226, 3, 24, 0.1);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+  <div
+    style="
+      position: absolute;
+      bottom: -30%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+
+  <div class="grid" style="position: relative; z-index: 1; text-align: center">
+    <h1
+      style="
+        font-size: 3.5rem;
+        color: white;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-family: exo-l;
+      ">
+      Tuyển dụng
+    </h1>
+    <p
+      style="
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+      ">
+      Cơ hội nghề nghiệp tại KLM Logistics - Gia nhập đội ngũ chuyên nghiệp
+    </p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="news-content-wrapper" style="padding: 60px 0">
+  <div class="grid">
+    <div class="flex-container">
+      <!-- Left Menu - 1/4 -->
+      <div class="cell-1-4">
+        <div
+          class="news-menu"
+          style="
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            position: sticky;
+            top: 20px;
+          ">
+          <h3
+            style="
+              color: #0066cc;
+              margin-bottom: 20px;
+              font-size: 1.3rem;
+              font-weight: 600;
+            ">
+            Danh mục tin tức
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'company_news' %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                <i class="fas fa-building" style="margin-right: 8px"></i>
+                Tin công ty
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'industry_news' %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                <i class="fas fa-industry" style="margin-right: 8px"></i>
+                Tin chuyên ngành
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'recruitment' %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid #0066cc;
+                  background: #0066cc;
+                ">
+                <i class="fas fa-user-tie" style="margin-right: 8px"></i>
+                Tuyển dụng
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Content - 3/4 -->
+      <div class="cell-3-4" style="padding-left: 40px">
+        <div
+          class="recruitment-content"
+          style="
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          ">
+          <h2 style="color: #0066cc; margin-bottom: 30px; font-size: 1.8rem">
+            Cơ hội nghề nghiệp tại KLM Logistics
+          </h2>
+
+          <div class="job-listings" style="display: grid; gap: 30px">
+            <!-- Job Position 1 -->
+            <div
+              class="job-card"
+              style="
+                border: 2px solid #f8f9fa;
+                border-radius: 8px;
+                padding: 30px;
+                transition: all 0.3s ease;
+              ">
+              <div
+                class="job-header"
+                style="display: flex; align-items: center; margin-bottom: 20px">
+                <div
+                  class="job-icon"
+                  style="
+                    background: #0066cc;
+                    color: white;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 20px;
+                  ">
+                  <i class="fas fa-user-tie" style="font-size: 1.2rem"></i>
+                </div>
+                <div>
+                  <h3 style="color: #333; margin: 0 0 5px 0; font-size: 1.3rem">
+                    Nhân viên Kinh doanh
+                  </h3>
+                  <span style="color: #0066cc; font-weight: 500"
+                    >Phòng Kinh doanh</span
+                  >
+                </div>
+              </div>
+
+              <div class="job-details" style="margin-bottom: 20px">
+                <p style="color: #666; line-height: 1.6; margin-bottom: 15px">
+                  Chúng tôi đang tìm kiếm nhân viên kinh doanh năng động, có
+                  kinh nghiệm trong lĩnh vực logistics và vận tải quốc tế.
+                </p>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0;
+                    padding-left: 20px;
+                  ">
+                  <li>Tốt nghiệp Đại học chuyên ngành liên quan</li>
+                  <li>Có kinh nghiệm 2+ năm trong lĩnh vực logistics</li>
+                  <li>Giao tiếp tốt tiếng Anh</li>
+                  <li>Kỹ năng đàm phán và chăm sóc khách hàng</li>
+                </ul>
+              </div>
+
+              <div
+                class="job-benefits"
+                style="
+                  background: #f8f9fa;
+                  padding: 20px;
+                  border-radius: 5px;
+                  margin-bottom: 20px;
+                ">
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  Quyền lợi:
+                </h4>
+                <p style="color: #666; margin: 0; line-height: 1.6">
+                  Lương cạnh tranh 15-25 triệu + hoa hồng, bảo hiểm đầy đủ, 13th
+                  month salary, thưởng hiệu suất
+                </p>
+              </div>
+
+              <a
+                href="mailto:hr@klmlogistics.com?subject=Ứng tuyển Nhân viên Kinh doanh"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  padding: 10px 20px;
+                  background: #0066cc;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: background 0.3s ease;
+                ">
+                <i class="fas fa-envelope" style="margin-right: 8px"></i>
+                Ứng tuyển ngay
+              </a>
+            </div>
+
+            <!-- Job Position 2 -->
+            <div
+              class="job-card"
+              style="
+                border: 2px solid #f8f9fa;
+                border-radius: 8px;
+                padding: 30px;
+                transition: all 0.3s ease;
+              ">
+              <div
+                class="job-header"
+                style="display: flex; align-items: center; margin-bottom: 20px">
+                <div
+                  class="job-icon"
+                  style="
+                    background: #28a745;
+                    color: white;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 20px;
+                  ">
+                  <i class="fas fa-shipping-fast" style="font-size: 1.2rem"></i>
+                </div>
+                <div>
+                  <h3 style="color: #333; margin: 0 0 5px 0; font-size: 1.3rem">
+                    Chuyên viên Logistics
+                  </h3>
+                  <span style="color: #0066cc; font-weight: 500"
+                    >Phòng Vận hành</span
+                  >
+                </div>
+              </div>
+
+              <div class="job-details" style="margin-bottom: 20px">
+                <p style="color: #666; line-height: 1.6; margin-bottom: 15px">
+                  Vị trí chuyên viên logistics chịu trách nhiệm điều phối và
+                  quản lý các hoạt động vận chuyển hàng hóa quốc tế.
+                </p>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0;
+                    padding-left: 20px;
+                  ">
+                  <li>
+                    Tốt nghiệp Đại học chuyên ngành Logistics, Ngoại thương
+                  </li>
+                  <li>Có kinh nghiệm 1+ năm trong vận chuyển quốc tế</li>
+                  <li>Thành thạo tin học văn phòng</li>
+                  <li>Kỹ năng giao tiếp và xử lý tình huống tốt</li>
+                </ul>
+              </div>
+
+              <div
+                class="job-benefits"
+                style="
+                  background: #f8f9fa;
+                  padding: 20px;
+                  border-radius: 5px;
+                  margin-bottom: 20px;
+                ">
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  Quyền lợi:
+                </h4>
+                <p style="color: #666; margin: 0; line-height: 1.6">
+                  Lương 12-18 triệu, đào tạo chuyên sâu, cơ hội thăng tiến, môi
+                  trường làm việc năng động
+                </p>
+              </div>
+
+              <a
+                href="mailto:hr@klmlogistics.com?subject=Ứng tuyển Chuyên viên Logistics"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  padding: 10px 20px;
+                  background: #28a745;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: background 0.3s ease;
+                ">
+                <i class="fas fa-envelope" style="margin-right: 8px"></i>
+                Ứng tuyển ngay
+              </a>
+            </div>
+
+            <!-- Contact Section -->
+            <div
+              class="recruitment-contact"
+              style="
+                background: linear-gradient(135deg, #0066cc, #004499);
+                color: white;
+                padding: 30px;
+                border-radius: 8px;
+                text-align: center;
+              ">
+              <h3 style="color: white; margin-bottom: 20px; font-size: 1.4rem">
+                Liên hệ tuyển dụng
+              </h3>
+              <p style="margin-bottom: 20px; line-height: 1.6">
+                Gửi CV và thư xin việc về email hoặc liên hệ trực tiếp với phòng
+                Nhân sự
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  gap: 20px;
+                  flex-wrap: wrap;
+                ">
+                <a
+                  href="mailto:hr@klmlogistics.com"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 12px 20px;
+                    background: rgba(255, 255, 255, 0.2);
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+                  ">
+                  <i class="fas fa-envelope" style="margin-right: 8px"></i>
+                  info@klmlogistics.com
+                </a>
+                <a
+                  href="tel:02433997979"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 12px 20px;
+                    background: rgba(255, 255, 255, 0.2);
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+                  ">
+                  <i class="fas fa-phone" style="margin-right: 8px"></i>
+                  0913 020 430
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Menu hover effects */
+  .news-menu a:not([style*="background: #0066cc"]):hover {
+    background: #0066cc !important;
+    color: white !important;
+    border-left: 3px solid #004499 !important;
+  }
+
+  /* Job card hover effects */
+  .job-card:hover {
+    border-color: #0066cc !important;
+    box-shadow: 0 5px 20px rgba(0, 102, 204, 0.1) !important;
+    transform: translateY(-2px) !important;
+  }
+
+  /* Button hover effects */
+  .job-card a:hover {
+    background: #004499 !important;
+  }
+
+  .job-card a[style*="background: #28a745"]:hover {
+    background: #1e7e34 !important;
+  }
+
+  .recruitment-contact a:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1023px) {
+    .news-content-wrapper .cell-1-4,
+    .news-content-wrapper .cell-3-4 {
+      width: 100% !important;
+    }
+
+    .news-content-wrapper .cell-3-4 {
+      padding-left: 0 !important;
+      margin-top: 30px;
+    }
+
+    .news-menu {
+      position: static !important;
+    }
+
+    .recruitment-contact div {
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+  }
+</style>
+
+{% endblock %}

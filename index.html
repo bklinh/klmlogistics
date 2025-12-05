@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <title>KLM Logistics</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    <meta name="theme-color" content="#0099ff" />
+    <meta http-equiv="Content-Language" content="VN" />
+    <meta name="description" content="KLM Logistics" />
+    <meta name="keywords" content="" />
+    <meta
+      property="og:url"
+      name="og:url"
+      content="https://www.smelogistics.vn/"
+      data-app />
+    <meta property="og:type" name="og:type" content="website" data-app />
+    <meta
+      property="og:description"
+      name="og:description"
+      content="KLM Logistics"
+      data-app />
+    <meta
+      property="og:title"
+      name="og:title"
+      content="KLM Logistics"
+      data-app />
+
+    <meta
+      property="og:image"
+      name="og:image"
+      content="file:///C:/Users/Admin/Desktop/KLM/www.smelogistics.vn/favico.ico"
+      data-app />
+    <meta
+      property="og:image:alt"
+      name="og:image:alt"
+      content="https://www.smelogistics.vn/uploaded/logo/logo-vuong.png"
+      data-app />
+
+    <link href="favicon.ico" rel="shortcut icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/grid.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/fontawesome-pro-5.15.2/css/all.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css" />
+
+    <script src="js/script.js"></script>
+
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "103191104797666");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v14.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+  </head>
+  <body>
+    <img src="lib/imagesercurity.php" style="display: none" />
+    <div id="page">
+      <div class="top-header">
+        <div class="grid">
+          <div class="flex-container align-center">
+            <!--  <div class="cell-1-4">
+                         <a href="#"> Nhập mã số lô hàng để tra cứu <i class="fas fa-chevron-right"></i></a>
+                        </div>-->
+            <div class="cell-1-4">
+              <a href="tel: 02433997979"
+                ><i class="fas fa-phone-alt"></i> Hotline: 02433997979</a
+              >
+            </div>
+            <div class="cell-2-4">
+              <div class="header-left">
+                <a class="langmobile" href="en/index.html">
+                  <img src="images/flag-en.png" /> EN</a
+                >
+                <a class="langmobile" href="cn/index.html">
+                  <img src="images/flag-cn.png" /> CN</a
+                >
+
+                <!-- <a href="/en/" class="en">English</a> -->
+
+                <div class="icon-search">
+                  Tìm kiếm
+                  <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                  <div class="search-pc" style="">
+                    <form
+                      action="https://www.smelogistics.vn/search/"
+                      method="get"
+                      id="searchformtab">
+                      <input
+                        name="qr"
+                        id="qr_search"
+                        class="kw-mobile"
+                        placeholder="Tìm kiếm"
+                        type="text" />
+                      <a href="index.html#" class="submit-search-pc" onClick="">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                      </a>
+
+                      <a
+                        href="index.html#"
+                        class="closeX"
+                        onClick="$('.search-pc').hide(); return false;"
+                        >&#10005;</a
+                      >
+                    </form>
+                  </div>
+
+                  <script type="text/javascript">
+                    $(".submit-search-pc").click(function () {
+                      if ($("#qr_search").val() != "")
+                        $("#searchformtab").submit();
+                      return false;
+                    });
+
+                    $(document).ready(function () {
+                      $(".search-icon").click(function () {
+                        $(".search-pc").stop().slideToggle("fast");
+                        return false;
+                      });
+                    });
+                  </script>
+                </div>
+                <div class="dangky">
+                  <!-- <a href="#">Đăng ký</a>/ <a href="#">Đăng nhập</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="header hide-on-pad hide-on-tab">
+        <div class="grid">
+          <div class="flex-container flex-space-between">
+            <div class="cell-2-12 flex_align">
+              <div class="logo">
+                <a href="index.html"
+                  ><img
+                    src="uploaded/logo/klm.jpg"
+                    alt="LogoSite"
+                    style="max-width: 60%; margin: 0 auto"
+                /></a>
+              </div>
+            </div>
+
+            <div class="cell-10-12 flex_align--end">
+              <div class="menubar">
+                <ul class="nav hide-on-tab hide-on-mobile">
+                  <li class="active" style="">
+                    <a href="index.html" class="">Trang chủ </a>
+                  </li>
+                  <li class=" " style="">
+                    <a href="index.html" class="">Trải nghiệm khách hàng </a>
+                  </li>
+                  <li class=" " style="">
+                    <a href="ve-sme/index.html" class="">Giới thiệu </a>
+
+                    <ul class="">
+                      <li class=""><a href="ve-sme/index.html">Về KLM</a></li>
+                      <!-- <li class=""><a href="thong-diep-tu-chu-tich/index.html" >Thông điệp từ Chủ tịch</a>
+            </li>
+            <li class=""><a href="tai-sao-chọn-chung-toi/index.html" >Tại sao chọn chúng tôi?</a>
+            </li>
+            <li class=""><a href="su-menh/index.html" >Sứ mệnh</a>
+            </li> -->
+                    </ul>
+                  </li>
+
+                  <li class=" " style="">
+                    <a href="dich-vu/index.html" class="">Dịch vụ </a>
+
+                    <ul class="">
+                      <li class="">
+                        <a href="van-chuyen-hang-khong-quoc-te/index.html"
+                          >Vận chuyển hàng không Quốc tế</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="van-chuyen-duong-bien-quoc-te/index.html"
+                          >Vận chuyển Đường biển Quốc tế</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="van-chuyen-duong-bo/index.html"
+                          >Logistics & Các dịch vụ gia tăng</a
+                        >
+                        <!-- </li>
+            <li class=""><a href="van-chuyen-hang-du-an/index.html" >Vận chuyển hàng dự án</a>
+            </li>
+            <li class=""><a href="van-chuyen-xuyen-bien-gioi/index.html" >Vận chuyển Xuyên biên giới</a>
+            </li>
+            <li class=""><a href="nvocc/index.html" >NVOCC</a>
+            </li>
+            <li class=""><a href="ke-khai-hai-quan/index.html" >Kê khai hải quan</a>
+            </li>
+            <li class=""><a href="dai-ly-tau-bien/index.html" >Đại lý tàu biển</a>
+            </li>
+            <li class=""><a href="van-tai-hang-sieu-truong-sieu-trong/index.html" >Vận tải hàng siêu trường, siêu trọng </a>
+            </li>
+            <li class=""><a href="kho-bai/index.html" >Kho bãi</a>
+            </li> -->
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class=" " style="">
+                    <a href="du-an/index.html" class="">Dự Án </a>
+
+                    <ul class="">
+                      <!-- <li class=""><a href="dau-khi/index.html" >Dầu khí</a>
+            </li>
+            <li class=""><a href="tai-tao/index.html" >Tái tạo</a>
+            </li> -->
+                      <li class="">
+                        <a href="nang-luong/index.html"
+                          >Ngành điện & Năng lượng</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="xay-dung-va-ket-cau-thep/index.html"
+                          >Hệ thống công viên giải trí</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="du-an-cong-nghiep/index.html"
+                          >Hệ thống cáp treo</a
+                        >
+                      </li>
+                      <!-- <li class=""><a href="xuyen-bien-gioi/index.html" >Xuyên biên giới</a>
+            </li> -->
+                    </ul>
+                  </li>
+
+                  <li class=" " style="">
+                    <a href="tin-tuc/index.html" class="">Tin tức </a>
+
+                    <ul class="">
+                      <li class="">
+                        <a href="tin-cong-ty/index.html">Tin công ty</a>
+                      </li>
+                      <li class="">
+                        <a href="tuyen-dung/index.html">Tin chuyên ngành</a>
+                      </li>
+                      <li class="">
+                        <a href="tuyen-dung/index.html">Tuyển dụng</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class=" " style="">
+                    <a href="lien-he/index.html" class="">Liên hệ </a>
+
+                    <ul class="">
+                      <li class="">
+                        <a href="mang-luoi-chi-nhanh/index.html"
+                          >Mạng lưới chi nhánh</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <div class="c"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c"></div>
+      </header>
+
+      <div class="content" style="background: #fff">
+        <div>
+          <div id="player-overlay">
+            <video autoplay loop muted>
+              <source src="uploaded/slideshow/banerweb.mp4" />
+            </video>
+            <div class="statistics-overlay">
+              <div class="grid">
+                <div class="statistics-container">
+                  <div class="statistics-header">
+                    <h2 class="statistics-title">KLM LOGISTICS</h2>
+                  </div>
+                  <div class="flex-container flex-centered">
+                    <div class="cell-1-4 mobile-cell-1-2">
+                      <div class="stat-card">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Dịch vụ</div>
+                      </div>
+                    </div>
+                    <div class="cell-1-4 mobile-cell-1-2">
+                      <div class="stat-card">
+                        <div class="stat-number" data-target="910">0</div>
+                        <div class="stat-label">Nhân viên</div>
+                      </div>
+                    </div>
+                    <div class="cell-1-4 mobile-cell-1-2">
+                      <div class="stat-card">
+                        <div class="stat-number" data-target="350">0</div>
+                        <div class="stat-label">ngành nghề</div>
+                      </div>
+                    </div>
+                    <div class="cell-1-4 mobile-cell-1-2">
+                      <div class="stat-card">
+                        <div class="stat-number" data-target="13">0</div>
+                        <div class="stat-label">Chi nhánh</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="statistics-description">
+                    <p class="description-line">
+                      PHỤC VỤ KHÁCH HÀNG VỚI NHỮNG NỖ LỰC TUYỆT VỜI
+                    </p>
+                    <p class="description-line">
+                      Giải pháp kho bãi một cửa, đáp ứng đầy đủ các yêu cầu của
+                      khách hàng
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c10"></div>
+
+        <div class="homeservice-wrapper">
+          <div class="c30"></div>
+          <div class="grid">
+            <div class="flex-container flex-centered">
+              <div class="cell-1-3 tab-cell-1-1">
+                <h2 class="homecat-title--spc">
+                  <a href="index.html#"> Công ty cổ phần KLM Logistics </a>
+                </h2>
+              </div>
+              <div class="cell-2-3 tab-cell-1-1">
+                <div class="homecat-intro">
+                  Một trong những công ty giao nhận vận tải quốc tế hàng đầu tại
+                  Việt Nam. Chúng tôi cung cấp dịch vụ trọn gói dịch vụ giao
+                  nhận vận chuyển từ kho khách hàng tới kho người mua trên toàn
+                  cầu với chất lượng tốt nhất. &nbsp;
+                </div>
+              </div>
+            </div>
+
+            <div class="c30 hide-on-tab"></div>
+            <div class="swiper-container" id="service_1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine">
+                      <img src="uploaded/icon/item1.png" />
+                    </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      GIAO HÀNG ĐÚNG HẠN
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      Chúng tôi có thể cung cấp các dịch vụ vận chuyển tuyệt vời
+                      cho khách hàng và giao hàng đúng thời hạn trên khắp thế
+                      giới.
+                    </div>
+                    <!-- <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a> -->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine">
+                      <img src="uploaded/icon/item4.png" />
+                    </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      PHẠM VI TOÀN CẦU
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      Với mạng lưới hơn 160 đại lý trên toàn thế giới, chúng tôi
+                      có thể cung cấp dịch vụ từ Việt Nam đến thế giới thông qua
+                      đường hàng không, đường biển và vận tải đa phương thức
+                      cũng như từ các nước ở nước ngoài đến các nước khác trên
+                      toàn thế giới.
+                    </div>
+                    <!-- <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a> -->
+                  </div>
+                </div>
+                <!-- <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine"> </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      GIAO HÀNG ĐÚNG HẠN
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      Chúng tôi có thể cung cấp các dịch vụ vận chuyển tuyệt vời
+                      cho khách hàng và giao hàng đúng thời hạn trên khắp thế
+                      giới.
+                    </div>
+                    <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+                <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine">
+                      <img src="uploaded/icon/item2.png" />
+                    </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      GIÁ TRỊ GIA TĂNG TUYỆT VỜI
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      Chúng tôi có thể cung cấp các dịch vụ kho bãi, vận chuyển
+                      và hậu cần cũng như dịch vụ giá trị gia tăng để đáp ứng
+                      nhu cầu cá nhân của khách hàng.
+                    </div>
+                    <!-- <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a> -->
+                  </div>
+                </div>
+                <!-- <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine"> </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      Vận chuyển Xuyên biên giới
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      Vận tải xuy&ecirc;n bi&ecirc;n giới giữa Việt Nam
+                      v&agrave; ba nước l&aacute;ng giềng Campuchia, L&agrave;o,
+                      Trung Quốc đang rất ph&aacute;t triển. Ta c&oacute; thể sử
+                      dụng c&aacute;c giải ph&aacute;p vận chuyển&nbsp;...
+                    </div>
+                    <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine"> </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      NVOCC
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      Ch&uacute;ng t&ocirc;i c&oacute; hợp đồng v&agrave; thỏa
+                      thuận về gi&aacute; cước ưu đ&atilde;i với nhiều
+                      h&atilde;ng t&agrave;u lớn tr&ecirc;n thế giới.
+                    </div>
+                    <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine"> </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      Kê khai hải quan
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      SME Logistics được đ&aacute;nh gi&aacute; l&agrave; một
+                      trong những c&ocirc;ng ty c&oacute; dịch vụ hải quan
+                      h&agrave;ng đầu tại Việt Nam.
+                    </div>
+                    <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine"> </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      Đại lý tàu biển
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      SME Logistics cung cấp dịch vụ đại l&yacute; t&agrave;u
+                      biển tại tất cả c&aacute;c cảng của Việt Nam.
+                    </div>
+                    <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine"> </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      Vận tải hàng siêu trường, siêu trọng
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      Ch&uacute;ng t&ocirc;i tin rằng sự minh bạch trong giao
+                      tiếp với kh&aacute;ch h&agrave;ng l&agrave; ch&igrave;a
+                      kh&oacute;a thiết yếu dẫn tới th&agrave;nh c&ocirc;ng của
+                      c&aacute;c dự &aacute;n m&agrave; SME Logistics đ&atilde;
+                      thực&nbsp;...
+                    </div>
+                    <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeservice-item">
+                    <a href="index.html#" class="img-shine"> </a>
+
+                    <a href="dich-vu/index.html" class="homeservice-item__name">
+                      Kho bãi
+                    </a>
+                    <div class="homeservice-intro text-line-4">
+                      SME Logistics cung cấp dịch vụ kho b&atilde;i sẽ
+                      đ&aacute;p ứng theo nhu cầu của kh&aacute;ch h&agrave;ng.
+                    </div>
+                    <a href="dich-vu/index.html" class="btn-xemthem">
+                      Xem thêm <i class="fas fa-chevron-right"></i>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <!-- <div
+              class="swiper-button-next swiper-button-black hide-on-tab"></div>
+            <div
+              class="swiper-button-prev swiper-button-black hide-on-tab"></div> -->
+            <script>
+              var swiper_service_1 = new Swiper("#service_1", {
+                slidesPerView: 3,
+                autoplay: {
+                  delay: 6000,
+                  disableOnInteraction: false,
+                },
+                centerInsufficientSlides: true,
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                  el: ".swiper-pagination_100",
+                  clickable: true,
+                },
+                speed: 500,
+                spaceBetween: 15,
+                loop: true,
+                breakpoints: {
+                  739: {
+                    slidesPerView: 1,
+                    spaceBetween: 5,
+                  },
+                  1023: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                  },
+                },
+              });
+            </script>
+          </div>
+        </div>
+
+        <script>
+          // Counter animation function
+          function animateCounter(element, target, duration = 2000) {
+            const start = 0;
+            const increment = target / (duration / 16);
+            let current = start;
+
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                current = target;
+                clearInterval(timer);
+              }
+              element.textContent = Math.floor(current).toLocaleString();
+            }, 16);
+          }
+
+          // Intersection Observer for scroll-triggered animation
+          const observerOptions = {
+            threshold: 0.5,
+            rootMargin: "0px 0px -100px 0px",
+          };
+
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (
+                entry.isIntersecting &&
+                !entry.target.classList.contains("animated")
+              ) {
+                entry.target.classList.add("animated");
+                const statNumbers = entry.target.querySelectorAll(
+                  ".stat-number[data-target]"
+                );
+
+                statNumbers.forEach((statNumber, index) => {
+                  const target = parseInt(
+                    statNumber.getAttribute("data-target")
+                  );
+                  setTimeout(() => {
+                    animateCounter(statNumber, target);
+                  }, index * 200); // Stagger animations
+                });
+              }
+            });
+          }, observerOptions);
+
+          // Start observing when DOM is loaded
+          document.addEventListener("DOMContentLoaded", () => {
+            const statisticsOverlay = document.querySelector(
+              ".statistics-overlay"
+            );
+            if (statisticsOverlay) {
+              observer.observe(statisticsOverlay);
+            }
+          });
+        </script>
+
+        <div class="homeduan-wrapper">
+          <div class="c30"></div>
+          <div class="c20 hide-on-mobile"></div>
+          <div class="c30"></div>
+          <div class="c20 hide-on-mobile"></div>
+          <div class="grid">
+            <h2 class="homecat-title--spc">
+              <a href="du-an-moi-nhat/index.html"> DỊCH VỤ </a>
+            </h2>
+            <div class="swiper-container" id="duan_1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a href="du-an/van-chuyen-05-may-bien-ap.html">
+                      <img
+                        src="temp/-uploaded-du-an-nang&#32;luong-Hitachi_maybienap_cr_400x400.png"
+                        width="100%"
+                        alt="TRANSFORMERS - HITACHI ENERGY" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a
+                          href="du-an/van-chuyen-05-may-bien-ap.html"
+                          class="text-line-2">
+                          TRANSFORMERS - HITACHI ENERGY
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a href="du-an/van-chuyen-05-may-bien-ap.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a href="du-an/long-thanh-airport-project.html">
+                      <img
+                        src="temp/-uploaded-du-an-cong&#32;nghiep-Long&#32;Thanh&#32;Airport_SME&#32;Long&#32;Thanh&#32;Project-Final-Cover_cr_400x400.jpg"
+                        width="100%"
+                        alt="Long Thanh Airport Project" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a
+                          href="du-an/long-thanh-airport-project.html"
+                          class="text-line-2">
+                          Long Thanh Airport Project
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a href="du-an/long-thanh-airport-project.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a
+                      href="du-an/sme-discharging-04-stss-crane-phuoc-an-sea-port.html">
+                      <img
+                        src="temp/-uploaded-du-an-contruction&#32;and&#32;steel-04&#32;sts&#32;crane&#32;Phuoc&#32;Long_4&#32;sts&#32;crane&#32;phuoc&#32;long_cr_400x400.png"
+                        width="100%"
+                        alt="SME - DISCHARGING 04 STSs CRANE - Phuoc An Sea Port" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a
+                          href="du-an/sme-discharging-04-stss-crane-phuoc-an-sea-port.html"
+                          class="text-line-2">
+                          SME - DISCHARGING 04 STSs CRANE - Phuoc An Sea Port
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a
+                          href="du-an/sme-discharging-04-stss-crane-phuoc-an-sea-port.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a
+                      href="nang-luong/sitemove-amp-loadout-derrick-structure2.html">
+                      <img
+                        src="temp/-uploaded-du-an-nang&#32;luong-DERRICK_photo-output_0_cr_400x400.jpg"
+                        width="100%"
+                        alt="SITEMOVE &amp; LOADOUT DERRICK STRUCTURE" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a
+                          href="nang-luong/sitemove-amp-loadout-derrick-structure2.html"
+                          class="text-line-2">
+                          SITEMOVE &amp; LOADOUT DERRICK STRUCTURE
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a
+                          href="nang-luong/sitemove-amp-loadout-derrick-structure2.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a href="nang-luong/du-an-nfe.html">
+                      <img
+                        src="temp/-uploaded-du-an-nang&#32;luong-NFE_dji_fly_20221225_101920_102_1671939153749_photo_optimized_cr_400x400.jpg"
+                        width="100%"
+                        alt="Dự án NFE" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a href="nang-luong/du-an-nfe.html" class="text-line-2">
+                          Dự án NFE
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a href="nang-luong/du-an-nfe.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a
+                      href="du-an-cong-nghiep/cau-sts-cang-quoc-te-long-an.html">
+                      <img
+                        src="temp/-uploaded-du-an-cong&#32;nghiep-LONG&#32;AN&#32;INTERNATIONAL&#32;PORT_LONG&#32;AN&#32;INTERNATIONAL&#32;PORT_cr_400x400.jpg"
+                        width="100%"
+                        alt="CẨU STS - CẢNG QUỐC TẾ LONG AN" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a
+                          href="du-an-cong-nghiep/cau-sts-cang-quoc-te-long-an.html"
+                          class="text-line-2">
+                          CẨU STS - CẢNG QUỐC TẾ LONG AN
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a
+                          href="du-an-cong-nghiep/cau-sts-cang-quoc-te-long-an.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a
+                      href="dau-khi/du-an-premex-module-dos-bocas-refinery.html">
+                      <img
+                        src="temp/-uploaded-du-an-dau&#32;khi-Dos&#32;Bocas_DD662FBC-C237-4A0F-A8D3-2F84E521CEFF_1_105_c_cr_400x400.jpeg"
+                        width="100%"
+                        alt="Dự Án Recovery Max Modules for DOS BOCAS REFINERY" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a
+                          href="dau-khi/du-an-premex-module-dos-bocas-refinery.html"
+                          class="text-line-2">
+                          Dự Án Recovery Max Modules for DOS BOCAS REFINERY
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a
+                          href="dau-khi/du-an-premex-module-dos-bocas-refinery.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a href="dau-khi/pedestal-offshore-crane.html">
+                      <img
+                        src="temp/-uploaded-du-an-dau&#32;khi-Pedestal&#32;Crane_02B03CF8-E513-4E50-9FA5-29DDD3AF7D56_1_105_c_cr_400x400.jpeg"
+                        width="100%"
+                        alt="Dự Án PEDESTAL OFFSHORE CRANE PC250" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a
+                          href="dau-khi/pedestal-offshore-crane.html"
+                          class="text-line-2">
+                          Dự Án PEDESTAL OFFSHORE CRANE PC250
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a href="dau-khi/pedestal-offshore-crane.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a
+                      href="xay-dung-va-ket-cau-thep/du-an-ben-cang-than-onahama.html">
+                      <img
+                        src="temp/-uploaded-du-an-contruction&#32;and&#32;steel-ONAHAMA&#32;COAL&#32;TERMINAL_737b8edecef133af6ae0_cr_400x400.jpg"
+                        width="100%"
+                        alt="DỰ ÁN BẾN CẢNG THAN ONAHAMA" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a
+                          href="xay-dung-va-ket-cau-thep/du-an-ben-cang-than-onahama.html"
+                          class="text-line-2">
+                          DỰ ÁN BẾN CẢNG THAN ONAHAMA
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a
+                          href="xay-dung-va-ket-cau-thep/du-an-ben-cang-than-onahama.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a href="du-an-cong-nghiep/du-an-unifsa.html">
+                      <img
+                        src="temp/-uploaded-du-an-cong&#32;nghiep-UNIFSA_IMG_7928_cr_400x400.JPEG"
+                        width="100%"
+                        alt="UNIFSA" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a
+                          href="du-an-cong-nghiep/du-an-unifsa.html"
+                          class="text-line-2">
+                          UNIFSA
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a href="du-an-cong-nghiep/du-an-unifsa.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="homeduan-item">
+                    <a href="dau-khi/du-an-smp-09.html">
+                      <img
+                        src="temp/-uploaded-du-an_DSC-6-1_cr_400x400.jpg"
+                        width="100%"
+                        alt=" SMP 09" />
+                    </a>
+                    <div class="homeduan-mask">
+                      <h3 class="homeduan-item__name">
+                        <a href="dau-khi/du-an-smp-09.html" class="text-line-2">
+                          SMP 09
+                        </a>
+                      </h3>
+                      <div class="homeduan-item__icon">
+                        <a href="dau-khi/du-an-smp-09.html">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-button-next swiper-button-nextda swiper-button-white"></div>
+            <div
+              class="swiper-button-prev swiper-button-prevda swiper-button-white"></div>
+            <script>
+              var swiper_service_1 = new Swiper("#duan_1", {
+                slidesPerView: 3,
+                autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false,
+                },
+                centerInsufficientSlides: true,
+                navigation: {
+                  nextEl: ".swiper-button-nextda",
+                  prevEl: ".swiper-button-prevda",
+                },
+                pagination: {
+                  el: ".swiper-pagination_100",
+                  clickable: true,
+                },
+                speed: 500,
+                spaceBetween: 0,
+                loop: true,
+                breakpoints: {
+                  739: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 5,
+                  },
+                  1023: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                  },
+                },
+              });
+            </script>
+          </div>
+          <div class="c30"></div>
+          <div class="c20 hide-on-mobile"></div>
+          <div class="c30"></div>
+          <div class="c20 hide-on-mobile"></div>
+        </div>
+
+        <div class="c20"></div>
+
+        <!-- tin tức sự kiện -->
+
+        <div class="c20"></div>
+        <div class="c30"></div>
+
+        <div class="doi-tac">
+          <div class="grid">
+            <div class="homepartner-wrapper">
+              <div class="c30"></div>
+              <div class="c20 hide-on-mobile"></div>
+              <div class="grid">
+                <div class="flex-container align-center">
+                  <div class="cell-1-3 tab-cell-1-1">
+                    <h2 class="homecat-title">
+                      <a href="index.html#"> KLM Logistics là đối tác của </a>
+                    </h2>
+                  </div>
+                  <div class="cell-2-3 tab-cell-1-1">
+                    <div class="flex-container flex-centered">
+                      <div class="cell-1-4">
+                        <a href="index.html#" class="hvr-float">
+                          <a href="index.html" target=""
+                            ><img
+                              src="uploaded/doi-tac/CMACGM.jpg"
+                              width="100%"
+                              alt="CMA CGM"
+                          /></a>
+                        </a>
+                      </div>
+                      <div class="cell-1-4">
+                        <a href="index.html#" class="hvr-float">
+                          <a href="index.html" target=""
+                            ><img
+                              src="uploaded/doi-tac/KMTC.jpg"
+                              width="100%"
+                              alt="KMTC"
+                          /></a>
+                        </a>
+                      </div>
+                      <div class="cell-1-4">
+                        <a href="index.html#" class="hvr-float">
+                          <a href="index.html" target=""
+                            ><img
+                              src="uploaded/doi-tac/Maersk-Line.jpg"
+                              width="100%"
+                              alt="Maersk Line"
+                          /></a>
+                        </a>
+                      </div>
+                      <div class="cell-1-4">
+                        <a href="index.html#" class="hvr-float">
+                          <a href="index.html" target=""
+                            ><img
+                              src="uploaded/doi-tac/MSC.png"
+                              width="100%"
+                              alt="MSC"
+                          /></a>
+                        </a>
+                      </div>
+                      <div class="cell-1-4">
+                        <a href="index.html#" class="hvr-float">
+                          <a href="index.html" target=""
+                            ><img
+                              src="uploaded/doi-tac/ONE.png"
+                              width="100%"
+                              alt="ONE Ocean Network Express"
+                          /></a>
+                        </a>
+                      </div>
+                      <div class="cell-1-4">
+                        <a href="index.html#" class="hvr-float">
+                          <a href="index.html" target=""
+                            ><img
+                              src="uploaded/doi-tac/PIL.png"
+                              width="100%"
+                              alt="Pacific International Lines"
+                          /></a>
+                        </a>
+                      </div>
+                      <div class="cell-1-4">
+                        <a href="index.html#" class="hvr-float">
+                          <a href="index.html" target=""
+                            ><img
+                              src="uploaded/doi-tac/RCL.jpg"
+                              width="100%"
+                              alt="Regional Container Lines"
+                          /></a>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c30"></div>
+
+              <div class="c20 hide-on-mobile"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c20"></div>
+        <div class="c10"></div>
+
+        <div class="c"></div>
+
+        <!-- footer -->
+
+        <footer class="footer">
+          <div class="footer-main">
+            <div class="grid">
+              <div class="flex-container align-center">
+                <div class="cell-1-3 tab-cell-1-1 mobile-cell-1-1">
+                  <div class="logo-footer">
+                    <img src="uploaded/logo/logo.png" alt="KLM Logistics" />
+                  </div>
+                </div>
+
+                <div class="cell-1-3 tab-cell-1-1 mobile-cell-1-1">
+                  <div class="footer-info">
+                    <div class="footer-address">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <span>Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội</span>
+                    </div>
+                    <div class="footer-phone">
+                      <i class="fas fa-phone"></i>
+                      <span>+844 3 5190965</span>
+                    </div>
+                    <div class="footer-phone">
+                      <i class="fas fa-fax"></i>
+                      <span>+844 3 5190963</span>
+                    </div>
+                    <!-- <div class="footer-email">
+                      <i class="fas fa-envelope"></i>
+                      <span>support@smelogistics.vn</span>
+                    </div> -->
+                  </div>
+                </div>
+
+                <div class="cell-1-3 tab-cell-1-1 mobile-cell-1-1">
+                  <div class="footer-social-section">
+                    <h4 class="footer-social-title">Kết nối với chúng tôi</h4>
+                    <ul class="footer-social">
+                      <li>
+                        <a
+                          href="https://www.facebook.com/smelogs"
+                          target="_blank"
+                          class="footer-social__item">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://twitter.com/SMELOGISTICSJSC"
+                          target="_blank"
+                          class="footer-social__item">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/company/sme-logistics-jsc"
+                          target="_blank"
+                          class="footer-social__item">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.youtube.com/channel/UCm7Tu-rNx9VA9c9iijSm8ig"
+                          target="_blank"
+                          class="footer-social__item">
+                          <i class="fab fa-youtube"></i>
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="footer-copyright">
+                      <p>© 2025 KLM Logistics., JSC</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <!-- end footer -->
+
+        <div id="popupDangKy" class="modal-box">
+          <a href="index.html#" class="js-modal-close close btn-close"> [×] </a>
+          <div class="modal-body">
+            <div class="dangky">
+              <div
+                style="padding: 20px; border-radius: 10px; min-height: 320px">
+                <form
+                  action="https://www.smelogistics.vn/index4.php?page=contact&amp;lang="
+                  method="post"
+                  id="regform"
+                  data-alert="Bạn cần nhập đủ thông tin vào những trường màu đỏ"
+                  data-captcha="Mã captcha không đúng"
+                  data-success="Thông tin liên hệ đã được gửi thành công !"
+                  data-redirect="/contact-success/">
+                  <input type="hidden" name="code" value="save" />
+
+                  <div class="form-title">Tư vấn</div>
+                  <div class="c10"></div>
+                  <div class="form-label" style="text-align: center">
+                    <i>
+                      Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất
+                    </i>
+                  </div>
+                  <div class="c10"></div>
+                  <div class="c20"></div>
+
+                  <input
+                    name="yourname"
+                    type="text"
+                    class="txt-contact notNull"
+                    placeholder="Họ tên (*)"
+                    id="yourname" />
+                  <div class="c10"></div>
+
+                  <input
+                    name="phone"
+                    type="text"
+                    class="txt-contact notNull"
+                    placeholder="Điện thoại (*)" />
+                  <div class="c10"></div>
+                  <input
+                    name="address"
+                    type="text"
+                    class="txt-contact"
+                    placeholder="Địa chỉ" />
+                  <div class="c10"></div>
+
+                  <select name="other_request" type="text" class="txt-contact">
+                    <option value="">Chọn hình thức tư vấn</option>
+                    <option value="Tư vấn mua hàng">Tư vấn mua hàng</option>
+                    <option value="Tìm đại lý, cửa hàng gần nhất">
+                      Tìm đại lý, cửa hàng gần nhất
+                    </option>
+                  </select>
+                  <div class="c10"></div>
+
+                  <div style="position: relative">
+                    <input
+                      class="newsletter newsletter_b notNull"
+                      placeholder="Enter Captcha"
+                      name="sercurity" />
+                    <img
+                      src="lib/imagesercurity.php%3Frecaptcha=n"
+                      name="imgCaptcha"
+                      align="absmiddle"
+                      class="imgCaptcha newsletter-capt-img"
+                      style="
+                        height: 35px;
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                      " />
+                  </div>
+
+                  <div class="c20"></div>
+                  <input
+                    name="input"
+                    type="button"
+                    onClick="$('#regform').submit()"
+                    class="btn-send"
+                    value="Liên hệ với chúng tôi" />
+                  <div class="c5"></div>
+                  <div
+                    class="msgbox"
+                    style="font-size: 20px; text-align: center"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          $(function () {
+            var appendthis = "<div class='modal-overlay js-modal-close'></div>";
+
+            $("a[data-modal-id]").click(function (e) {
+              e.preventDefault();
+              $("body").append(appendthis);
+              $(".modal-overlay").fadeTo(500, 0.7);
+              var modalBox = $(this).attr("data-modal-id");
+              $("#" + modalBox).fadeIn($(this).data());
+            });
+
+            $(".js-modal-close, .modal-overlay").click(function () {
+              $(".modal-box, .modal-overlay").fadeOut(500, function () {
+                $(".modal-overlay").remove();
+              });
+              return false;
+            });
+          });
+        </script>
+      </div>
+    </div>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/4.7.5/js/jquery.mmenu.min.all.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/4.7.5/css/jquery.mmenu.all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
+
+    <link rel="stylesheet" href="css/hover.css" />
+
+    <div id="button-btt">
+      <a href="index.html#"><i class="fa fa-chevron-up"></i> </a>
+    </div>
+
+    <script>
+      function check_newsletter() {
+        ok = true;
+        $("#newsletterForm .error").removeClass("error");
+        $("#newsletterForm .notNull").each(function () {
+          if ($(this).val() == "") {
+            $(this).addClass("error");
+            ok = false;
+          }
+        });
+        return ok;
+      }
+
+      $(function () {
+        $(".countcart").html("(0)");
+      });
+    </script>
+
+    <nav id="menu">
+      <ul>
+        <li>
+          <form
+            action="https://www.smelogistics.vn/search/"
+            method="get"
+            id="m_searchform">
+            <input name="qr" class="kw-mobile" placeholder="" type="text" />
+            <a
+              href="index.html#"
+              class="fa fa-search submit-search-mobile"
+              onClick="$('#m_searchform').submit();
+                        return false;">
+            </a>
+          </form>
+        </li>
+
+        <li><a class="" href="index.html">Trang chủ</a></li>
+        <li>
+          <a class="" href="https://smelogistics.vn/ve-sme/">Giới thiệu</a>
+
+          <ul>
+            <li><a href="ve-sme/index.html">Về SME</a></li>
+            <li>
+              <a href="thong-diep-tu-chu-tich/index.html"
+                >Thông điệp từ Chủ tịch</a
+              >
+            </li>
+            <li>
+              <a href="tai-sao-chọn-chung-toi/index.html"
+                >Tại sao chọn chúng tôi?</a
+              >
+            </li>
+            <li><a href="su-menh/index.html">Sứ mệnh</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="" href="dich-vu/index.html">Dịch vụ</a>
+
+          <ul>
+            <li>
+              <a href="van-chuyen-hang-khong-quoc-te/index.html"
+                >Vận chuyển hàng không Quốc tế</a
+              >
+            </li>
+            <li>
+              <a href="van-chuyen-duong-bien-quoc-te/index.html"
+                >Vận chuyển Đường biển Quốc tế</a
+              >
+            </li>
+            <li>
+              <a href="van-chuyen-duong-bo/index.html">Vận chuyển đường bộ</a>
+            </li>
+            <li>
+              <a href="van-chuyen-hang-du-an/index.html"
+                >Vận chuyển hàng dự án</a
+              >
+            </li>
+            <li>
+              <a href="van-chuyen-xuyen-bien-gioi/index.html"
+                >Vận chuyển Xuyên biên giới</a
+              >
+            </li>
+            <li><a href="nvocc/index.html">NVOCC</a></li>
+            <li><a href="ke-khai-hai-quan/index.html">Kê khai hải quan</a></li>
+            <li><a href="dai-ly-tau-bien/index.html">Đại lý tàu biển</a></li>
+            <li>
+              <a href="van-tai-hang-sieu-truong-sieu-trong/index.html"
+                >Vận tải hàng siêu trường, siêu trọng
+              </a>
+            </li>
+            <li><a href="kho-bai/index.html">Kho bãi</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="" href="du-an/index.html">Dự Án</a>
+
+          <ul>
+            <li><a href="dau-khi/index.html">Dầu khí</a></li>
+            <li><a href="tai-tao/index.html">Tái tạo</a></li>
+            <li><a href="nang-luong/index.html">Năng lượng</a></li>
+            <li>
+              <a href="xay-dung-va-ket-cau-thep/index.html"
+                >Xây dựng và kết cấu thép</a
+              >
+            </li>
+            <li>
+              <a href="du-an-cong-nghiep/index.html">Dự án công nghiệp</a>
+            </li>
+            <li><a href="xuyen-bien-gioi/index.html">Xuyên biên giới</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="" href="tin-tuc/index.html">Tin tức</a>
+
+          <ul>
+            <li><a href="tin-cong-ty/index.html">Tin công ty</a></li>
+            <li><a href="tuyen-dung/index.html">Tuyển dụng</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="" href="lien-he/index.html">Liên hệ</a>
+
+          <ul>
+            <li>
+              <a href="mang-luoi-chi-nhanh/index.html">Mạng lưới chi nhánh</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      intervalsubiz = setInterval(getAsyncJS, 7000);
+
+      function getAsyncJS() {
+        clearInterval(intervalsubiz);
+        $.getScript("/js/fbchat.js")
+          .done(function (script, textStatus) {
+            console.log(textStatus);
+          })
+          .fail(function (jqxhr, settings, exception) {
+            $("div.log").text("Triggered ajaxError handler.");
+          });
+        /*			
+         $.getScript("//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-581c56eae374d2ae");
+         */
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/widget-call.css" />
+    <div class="widget_wbt_call_now_widget">
+      <div class="float-icon-hotline">
+        <ul>
+          <i class=""></i>
+          <li class="hotline_float_icon hotline-click">
+            <a id="messengerButton" href="index.html#"
+              ><i class="fa fa-hotline animated infinite tada"></i
+              ><span>Hotline: 02433997979</span></a
+            >
+          </li>
+          <li class="hotline_float_icon">
+            <a
+              id="messengerButton"
+              href="https://zalo.me/1747589853499943855"
+              target="_blank"
+              ><i class="fa fa-zalo animated infinite tada"></i
+              ><span>Nhắn tin qua Zalo</span></a
+            >
+          </li>
+          <li class="hotline_float_icon">
+            <a
+              id="messengerButton"
+              href="https://www.facebook.com/smelogs"
+              target="_blank"
+              ><i class="fa fa-messenger animated infinite tada"></i
+              ><span>Nhắn tin qua Facebook</span></a
+            >
+          </li>
+          <li class="hotline_float_icon">
+            <a
+              id="messengerButton"
+              href="https://www.youtube.com/channel/UCm7Tu-rNx9VA9c9iijSm8ig"
+              target="_blank"
+              ><i
+                class="fa fab fa-youtube fa-youtube animated infinite tada"></i
+              ><span>Nhắn tin qua Facebook</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        $(".hotline-click").click(function () {
+          $(".hotline-click span").toggleClass("show");
+        });
+      });
+    </script>
+  </body>
+
+  <!----
+☺☺☺ Design by Minh Nguyen. Email nguyensyminh@gmail.com - Hotline : 0968 67 55 68 ☺☺☺
+---->
+</html>

@@ -1,0 +1,5 @@
+# Ignore large video files
+static/uploaded/slideshow/1116.mp4
+
+# Ignore venv environment
+venv
