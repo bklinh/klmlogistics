@@ -66,6 +66,151 @@ Logistics{% endblock %} {% block content %}
     margin: 0 auto;
     margin-bottom: 100px;
   ">
+  <!-- Project 4: Dự án về Ngành Bia & Nước Giải Khát -->
+   <section id="project-4" style="margin-bottom: 60px">
+    <div style="margin-bottom: 40px">
+      <h2
+        style="
+          color: #0066cc;
+          font-size: 2.3rem;
+          font-weight: 600;
+          border-bottom: 3px solid #0066cc;
+          display: inline-block;
+          padding-bottom: 10px;
+          margin-bottom: 15px;
+        ">
+        Dự án về Ngành bia & nước giải khát
+      </h2>
+    </div>
+
+    <!-- Two Column Layout: Details Left, Swiper Right -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      ">
+      <!-- Left: Project Details -->
+      <div
+        style="
+          background: white;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          height: fit-content;
+        ">
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem">Sản phẩm</strong>
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            Các tank bồn & các thiết bị 
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >Tuyến đường</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            Vận chuyển nội địa & quốc tế
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >Khối lượng</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            Công việc thường xuyên hàng năm vận chuyển
+          </p>
+        </div>
+
+        <div>
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >Phạm vi công việc</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            Vận chuyển & Lắp đặt của các nhà máy bia, nước giải khát trong & và ngoài nước
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Swiper Carousel -->
+      <div
+        class="swiper"
+        id="swiper-project-3"
+        style="
+          width: 100%;
+          height: 400px;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item4_1.jpg' %}"
+              alt="Beverage Industry Project 1"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item4_2.jpg' %}"
+              alt="Beverage Industry Project 2"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item4_3.jpg' %}"
+              alt="Beverage Industry Project 3"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item4_4.jpg' %}"
+              alt="Beverage Industry Project 4"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+        </div>
+        <div class="swiper-pagination" style="bottom: 15px"></div>
+        <div class="swiper-button-prev" style="left: 15px"></div>
+        <div class="swiper-button-next" style="right: 15px"></div>
+      </div>
+    </div>
+  </section>
+  
   <!-- Project 1: Ngành điện và năng lượng -->
   <section id="project-1" style="margin-bottom: 80px">
     <div style="margin-bottom: 40px">
@@ -363,6 +508,12 @@ Logistics{% endblock %} {% block content %}
               alt="Water Park 4"
               style="width: 100%; height: 100%; object-fit: cover" />
           </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item2_5.jpg' %}"
+              alt="Water Park 5"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
         </div>
         <div class="swiper-pagination" style="bottom: 15px"></div>
         <div class="swiper-button-prev" style="left: 15px"></div>
@@ -517,6 +668,8 @@ Logistics{% endblock %} {% block content %}
       </div>
     </div>
   </section>
+
+  
 </div>
 
 <!-- Swiper CSS -->

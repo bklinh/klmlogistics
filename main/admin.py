@@ -27,8 +27,4 @@ class PostAdmin(SummernoteModelAdmin):
     
     class Media:
         js = ('admin/js/vietnamese_slug.js',)
-        css = {
-            'all': (
-                'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css',
-            )
-        }
+        

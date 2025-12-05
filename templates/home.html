@@ -5,12 +5,15 @@ Logistics{% endblock %} {% block content %}
   class="hero-section"
   style="position: relative; width: 100%; overflow: hidden">
   <video
+    id="background-video"
     autoplay
     loop
     muted
     playsinline
     style="width: 100%; height: auto; display: block">
-    <source src="{% static 'uploaded/slideshow/1130.mp4' %}" type="video/mp4" />
+    <source
+      src="{% static 'uploaded/slideshow/1130_h264.mp4' %}"
+      type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
@@ -629,89 +632,102 @@ Logistics{% endblock %} {% block content %}
         "></div>
     </div>
 
-    <div
-      class="news-grid"
-      style="
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-      ">
-      {% if latest_news %} {% for post in latest_news %}
-      <article
-        class="news-card"
-        style="
-          background: white;
-          border-radius: 8px;
-          overflow: hidden;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s ease;
-        ">
-        <div class="img-wrapper" style="height: 200px; overflow: hidden">
-          {% if post.featured_image %}
-          <img
-            src="{{ post.featured_image.url }}"
-            alt="{{ post.title }}"
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              transition: transform 0.3s;
-            " />
-          {% else %}
-          <div
-            style="
-              width: 100%;
-              height: 100%;
-              background: linear-gradient(135deg, #0066cc, #004499);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-            ">
-            <i
-              class="fas fa-newspaper"
-              style="font-size: 3rem; color: white; opacity: 0.7"></i>
+    <div class="news-wrapper" style="position: relative">
+      <div
+        class="swiper-container"
+        id="news-swiper"
+        style="padding-bottom: 50px">
+        <div class="swiper-wrapper">
+          {% if latest_news %} {% for post in latest_news %}
+          <div class="swiper-slide">
+            <article
+              class="news-card"
+              style="
+                background: white;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                height: 100%;
+              ">
+              <div class="img-wrapper" style="height: 200px; overflow: hidden">
+                {% if post.featured_image %}
+                <img
+                  src="{{ post.featured_image.url }}"
+                  alt="{{ post.title }}"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s;
+                  " />
+                {% else %}
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(135deg, #0066cc, #004499);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  ">
+                  <i
+                    class="fas fa-newspaper"
+                    style="font-size: 3rem; color: white; opacity: 0.7"></i>
+                </div>
+                {% endif %}
+              </div>
+              <div class="content" style="padding: 20px">
+                <div
+                  class="date"
+                  style="color: #999; font-size: 0.85rem; margin-bottom: 10px">
+                  <i class="far fa-calendar-alt"></i> {{ post.created_at|date:"d/m/Y" }}
+                </div>
+                <h3
+                  style="
+                    font-size: 1.1rem;
+                    margin-bottom: 10px;
+                    line-height: 1.4;
+                  ">
+                  <a
+                    href="{% url 'post_detail' post.slug %}"
+                    style="
+                      color: #333;
+                      text-decoration: none;
+                      font-weight: 600;
+                      transition: color 0.2s;
+                    "
+                    >{{ post.title }}</a
+                  >
+                </h3>
+                <p
+                  style="
+                    color: #666;
+                    font-size: 0.9rem;
+                    line-height: 1.6;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  ">
+                  {{ post.excerpt|default:post.content|striptags|truncatewords:20 }}
+                </p>
+              </div>
+            </article>
+          </div>
+          {% endfor %} {% else %}
+          <div class="swiper-slide">
+            <p class="text-center" style="color: #666; padding: 40px">
+              Đang cập nhật tin tức...
+            </p>
           </div>
           {% endif %}
         </div>
-        <div class="content" style="padding: 20px">
-          <div
-            class="date"
-            style="color: #999; font-size: 0.85rem; margin-bottom: 10px">
-            <i class="far fa-calendar-alt"></i> {{ post.created_at|date:"d/m/Y" }}
-          </div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 10px; line-height: 1.4">
-            <a
-              href="{% url 'post_detail' post.slug %}"
-              style="
-                color: #333;
-                text-decoration: none;
-                font-weight: 600;
-                transition: color 0.2s;
-              "
-              >{{ post.title }}</a
-            >
-          </h3>
-          <p
-            style="
-              color: #666;
-              font-size: 0.9rem;
-              line-height: 1.6;
-              display: -webkit-box;
-              -webkit-line-clamp: 3;
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-            ">
-            {{ post.excerpt|default:post.content|striptags|truncatewords:20 }}
-          </p>
-        </div>
-      </article>
-      {% endfor %} {% else %}
-      <p
-        class="text-center"
-        style="grid-column: 1/-1; color: #666; padding: 40px">
-        Đang cập nhật tin tức...
-      </p>
-      {% endif %}
+        <div class="swiper-pagination news-pagination" style="bottom: 0"></div>
+      </div>
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-prev news-prev"></div>
+      <div class="swiper-button-next news-next"></div>
     </div>
   </div>
 </div>
@@ -720,62 +736,90 @@ Logistics{% endblock %} {% block content %}
 <div
   class="section-partners"
   style="padding: 60px 0; background: #fff; border-top: 1px solid #eee">
-  <div class="grid" style="position: relative; padding: 0 60px;">
+  <div class="grid" style="position: relative; padding: 0 60px">
     <div class="section-header text-center" style="margin-bottom: 40px">
       <h2
         style="
           color: #124d92;
-          font-size: 2rem;
+          font-size: 2.5rem;
           font-weight: 600;
           font-family: exo-l;
         ">
-        ĐỐI TÁC CỦA CHÚNG TÔI
+        ĐỐI TÁC VÀ KHÁCH HÀNG CỦA CHÚNG TÔI
       </h2>
     </div>
 
-    <div class="swiper-container" id="partners-swiper" style="padding: 10px 0;">
+    <div class="swiper-container" id="partners-swiper" style="padding: 10px 0">
       <div class="swiper-wrapper align-center">
         <div class="swiper-slide partner-slide">
           <img
             src="{% static 'uploaded/doi-tac/logo/dasan.jpg' %}"
-            alt="Partner"
-             />
+            alt="Partner" />
         </div>
         <div class="swiper-slide partner-slide">
           <img
             src="{% static 'uploaded/doi-tac/logo/hisense.png' %}"
-            alt="Partner"
-             />
+            alt="Partner" />
         </div>
         <div class="swiper-slide partner-slide">
           <img
             src="{% static 'uploaded/doi-tac/logo/sungroup_logo.png' %}"
-            alt="Partner"
-             />
+            alt="Partner" />
         </div>
         <div class="swiper-slide partner-slide">
           <img
             src="{% static 'uploaded/doi-tac/logo/toto.png' %}"
-            alt="Partner"
-             />
+            alt="Partner" />
         </div>
         <div class="swiper-slide partner-slide">
           <img
             src="{% static 'uploaded/doi-tac/logo/viettel.png' %}"
-            alt="Partner"
-             />
+            alt="Partner" />
         </div>
         <div class="swiper-slide partner-slide">
           <img
             src="{% static 'uploaded/doi-tac/logo/viglacera.png' %}"
-            alt="Partner"
-             />
+            alt="Partner" />
         </div>
         <div class="swiper-slide partner-slide">
           <img
             src="{% static 'uploaded/doi-tac/logo/ZTE.png' %}"
-            alt="Partner"
-             />
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/cmacgm.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/kmtc.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/maersk-line.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/msc.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/pil.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/one.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/rcl.jpg' %}"
+            alt="Partner" />
         </div>
       </div>
     </div>
@@ -830,7 +874,7 @@ Logistics{% endblock %} {% block content %}
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
     z-index: 200;
     cursor: pointer;
@@ -872,6 +916,84 @@ Logistics{% endblock %} {% block content %}
     }
   }
 
+  /* News Navigation Buttons */
+  .news-prev,
+  .news-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: gray;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .news-prev:hover,
+  .news-next:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+    background-color: #124d92;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  .news-prev {
+    background-image: url("{% static 'images/icon-prev.png' %}");
+    left: -60px;
+  }
+  .news-next {
+    background-image: url("{% static 'images/icon-next.png' %}");
+    right: -60px;
+  }
+
+  @media (max-width: 1200px) {
+    .news-prev {
+      left: 10px;
+    }
+    .news-next {
+      right: 10px;
+    }
+  }
+
+  /* Equal height for service cards */
+  #services-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+  #services-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+  }
+  .service-tile {
+    width: 100%;
+  }
+
+  /* Equal height for news cards */
+  #news-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+  #news-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+  }
+  .news-card {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+  }
+  .news-card .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
   /* Partner Carousel Styles */
   .partner-slide {
     border-right: 1px solid #00aeef;
@@ -891,31 +1013,42 @@ Logistics{% endblock %} {% block content %}
   .partner-slide:hover img {
     opacity: 0.7;
   }
-  
+
   .partner-prev,
   .partner-next {
     width: 40px;
     height: 40px;
     margin-top: -20px;
     color: #00aeef;
+    top: 70%;
   }
-  
+
   .partner-prev {
     left: 10px;
   }
   .partner-next {
     right: 10px;
   }
-  
+
   /* Increase arrow size */
-  .partner-prev:after, .partner-next:after {
-      font-size: 40px;
-      font-weight: bold;
+  .partner-prev:after,
+  .partner-next:after {
+    font-size: 40px;
+    font-weight: bold;
   }
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
+    var video = document.getElementById("background-video");
+    if (video) {
+      // Force mute again to satisfy strict autoplay policies
+      video.muted = true;
+      video.play().catch(function (error) {
+        console.log("Autoplay was prevented:", error);
+      });
+    }
+
     // Services Swiper
     // Swiper v4 uses max-width breakpoints.
     // We set default (desktop) first, then override for smaller screens.
@@ -957,6 +1090,24 @@ Logistics{% endblock %} {% block content %}
         1024: { slidesPerView: 4 },
         768: { slidesPerView: 3 },
         640: { slidesPerView: 2 },
+      },
+    });
+
+    // News Swiper
+    new Swiper("#news-swiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".news-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".news-next",
+        prevEl: ".news-prev",
+      },
+      breakpoints: {
+        1024: { slidesPerView: 2 },
+        640: { slidesPerView: 1 },
       },
     });
   });

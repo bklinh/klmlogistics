@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-emv=8v18s-d_k-qsb&)5d&2ac3v6d%^8s9^us!c*qf8w^+d@#1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*", "007cf91d6629.ngrok-free.app"]
+ALLOWED_HOSTS = ["*", "07f8f6f09dfd.ngrok-free.app "]
 
 
 # Application definition
@@ -130,57 +130,4 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# Summernote configuration
-SUMMERNOTE_CONFIG = {
-    # Using SummernoteWidget - iframe mode, default
-    'iframe': True,
-
-    # You can put custom Summernote settings
-    'summernote': {
-        # As an example, using Summernote Air-mode
-        'airMode': False,
-
-        # Change editor size
-        'width': '100%',
-        'height': '400',
-
-        # Use proper language setting automatically (default)
-        'lang': None,
-
-        # Toolbar customization
-        'toolbar': [
-            ['style', ['style']],
-            ['font', ['bold', 'underline', 'clear']],
-            ['fontname', ['fontname']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['table', ['table']],
-            ['insert', ['link', 'picture', 'video']],
-            ['view', ['fullscreen', 'codeview', 'help']],
-        ],
-    },
-
-    # Need authentication, default
-    'authentication_required': True,
-
-    # Set `upload_to` function for attachments.
-    'attachment_upload_to': 'summernote/',
-
-    # Set custom storage class for attachments.
-    # 'attachment_storage_class': 'my.custom.storage.class.name',
-
-    # You can disable file upload feature.
-    'disable_upload': False,
-
-    # Set model and fields of attachment, default
-    'attachment_model': 'django_summernote.Attachment',
-    'attachment_absolute_uri': False,
-
-    # Set custom queryset for attachments.
-    # 'attachment_queryset': lambda request: Attachment.objects.none(),
-
-    # Set `null`able attachment field, default: True
-    'attachment_require_authentication': True,
-}
 
