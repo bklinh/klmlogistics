@@ -1,6 +1,15 @@
 {% load static %}
+{% load i18n %}
 
 <style>
+  footer {
+    background: #114d93 url("{% static 'uploaded/background/footer-bg.png' %}")
+      no-repeat 50% 50%;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+  }
+
   @media (max-width: 767px) {
     .mobile-cell-1-1 {
       width: 100% !important;
@@ -26,13 +35,7 @@
 </style>
 
 <!-- Footer -->
-<footer
-  style="
-    background: #114d93 url('{% static 'uploaded/background/footer-bg.png' %}') no-repeat 50% 50%;
-    color: white;
-    padding: 40px 0 20px;
-    margin-top: 60px;
-  ">
+<footer>
   <div class="grid">
     <!-- Footer Content -->
     <div class="flex-container" style="margin-bottom: 20px">
@@ -51,8 +54,7 @@
             line-height: 1.6;
             margin: 0;
           ">
-          KLM Logistics cung cấp dịch vụ logistics toàn diện từ vận chuyển, kho
-          bãi đến thông quan hải quan với chất lượng quốc tế.
+          {% trans "KLM Logistics cung cấp dịch vụ logistics toàn diện từ vận chuyển, kho bãi đến thông quan hải quan với chất lượng quốc tế." %}
         </p>
       </div>
 
@@ -70,7 +72,7 @@
             display: inline-block;
             padding-bottom: 8px;
           ">
-          Liên Hệ
+          {% trans "Liên Hệ" %}
         </h4>
         <div style="margin-top: 12px">
           <p
@@ -79,8 +81,8 @@
               font-size: 0.95rem;
               margin: 8px 0;
             ">
-            <strong>Địa chỉ:</strong><br />
-            Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội, Việt Nam
+            <strong>{% trans "Địa chỉ:" %}</strong><br />
+            {% trans "Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội, Việt Nam" %}
           </p>
           <p
             style="
@@ -88,10 +90,8 @@
               font-size: 0.95rem;
               margin: 8px 0;
             ">
-            <strong>Điện thoại / Zalo:</strong><br />
-            <a
-              href="tel:0913020430"
-              style="color: white; text-decoration: none"
+            <strong>{% trans "Điện thoại / Zalo:" %}</strong><br />
+            <a href="tel:0913020430" style="color: white; text-decoration: none"
               >0913020430</a
             >
           </p>
@@ -101,7 +101,7 @@
               font-size: 0.95rem;
               margin: 8px 0;
             ">
-            <strong>Email:</strong><br />
+            <strong>{% trans "Email:" %}</strong><br />
             <a
               href="mailto:info@klmlogistics.com"
               style="color: white; text-decoration: none"
@@ -125,7 +125,7 @@
             display: inline-block;
             padding-bottom: 8px;
           ">
-          Thời Gian Làm Việc
+          {% trans "Thời Gian Làm Việc" %}
         </h4>
         <div style="margin-top: 12px">
           <p
@@ -134,7 +134,7 @@
               font-size: 0.95rem;
               margin: 8px 0;
             ">
-            <strong>Thứ 2 - Thứ 6:</strong><br />
+            <strong>{% trans "Thứ 2 - Thứ 6:" %}</strong><br />
             8:00 - 17:00
           </p>
           <p
@@ -143,7 +143,7 @@
               font-size: 0.95rem;
               margin: 8px 0;
             ">
-            <strong>Thứ 7:</strong><br />
+            <strong>{% trans "Thứ 7:" %}</strong><br />
             8:00 - 12:00
           </p>
           <p
@@ -152,8 +152,8 @@
               font-size: 0.95rem;
               margin: 8px 0;
             ">
-            <strong>Chủ Nhật:</strong><br />
-            Đóng cửa
+            <strong>{% trans "Chủ Nhật:" %}</strong><br />
+            {% trans "Đóng cửa" %}
           </p>
         </div>
       </div>
@@ -170,15 +170,15 @@
     <!-- Copyright -->
     <div style="text-align: center; padding-top: 12px">
       <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin: 0">
-        &copy; {% now "Y" %} KLM Logistics. Bảo lưu mọi quyền. |
+        &copy; {% now "Y" %} KLM Logistics. {% trans "Bảo lưu mọi quyền." %} |
         <a href="{% url 'home' %}" style="color: white; text-decoration: none"
-          >Trang chủ</a
+          >{% trans "Trang chủ" %}</a
         >
         |
         <a
           href="{% url 'contact' %}"
           style="color: white; text-decoration: none"
-          >Liên hệ</a
+          >{% trans "Liên hệ" %}</a
         >
       </p>
     </div>

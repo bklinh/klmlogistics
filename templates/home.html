@@ -1,5 +1,4 @@
-{% extends 'base.html' %} {% load static %} {% block title %}Trang chủ - KLM
-Logistics{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Trang chủ" %} - KLM Logistics{% endblock %} {% block content %}
 <!-- 1. Hero Section with Video -->
 <div
   class="hero-section"
@@ -46,7 +45,7 @@ Logistics{% endblock %} {% block content %}
           margin-bottom: 50px;
           text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         ">
-        Giải pháp Logistics toàn diện & chuyên nghiệp
+        {% trans "Giải pháp Logistics toàn diện & chuyên nghiệp" %}
       </p>
     </div>
   </div>
@@ -63,7 +62,7 @@ Logistics{% endblock %} {% block content %}
           font-weight: 600;
           font-family: exo-l;
         ">
-        DỊCH VỤ CỦA CHÚNG TÔI
+        {% trans "DỊCH VỤ CỦA CHÚNG TÔI" %}
       </h2>
       <div
         style="

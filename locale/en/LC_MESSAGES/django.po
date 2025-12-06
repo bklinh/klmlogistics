@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-06 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Trang chủ"
+msgstr "Home"
+
+msgid "Giải pháp Logistics toàn diện & chuyên nghiệp"
+msgstr "Comprehensive & Professional Logistics Solutions"
+
+msgid "DỊCH VỤ CỦA CHÚNG TÔI"
+msgstr "OUR SERVICES"
+
+msgid "Giới thiệu"
+msgstr "About Us"
+
+msgid "Thông tin chung"
+msgstr "General Information"
+
+msgid "Giá trị cốt lõi"
+msgstr "Core Values"
+
+msgid "Tại sao chọn chúng tôi"
+msgstr "Why Choose Us"
+
+msgid "Tầm nhìn - Sứ mệnh"
+msgstr "Vision - Mission"
+
+msgid "Profile của công ty"
+msgstr "Company Profile"
+
+msgid "Dịch vụ"
+msgstr "Services"
+
+msgid "Vận chuyển Hàng không Quốc tế"
+msgstr "International Air Freight"
+
+msgid "Vận chuyển Hàng không Nhập Quốc tế"
+msgstr "International Air Import"
+
+msgid "Vận chuyển Hàng không Xuất Quốc tế"
+msgstr "International Air Export"
+
+msgid "Vận chuyển Đường biển Quốc tế"
+msgstr "International Sea Freight"
+
+msgid "Vận chuyển Đường biển Nhập Quốc tế"
+msgstr "International Sea Import"
+
+msgid "Vận chuyển Đường biển Xuất Quốc tế"
+msgstr "International Sea Export"
+
+msgid "Logistics & Các dịch vụ gia tăng"
+msgstr "Logistics & Value Added Services"
+
+msgid "Nội địa & Kho bãi"
+msgstr "Domestic & Warehousing"
+
+msgid "Đường sắt & Xuyên biên giới"
+msgstr "Rail & Cross-border"
+
+msgid "Hàng đặc biệt - Hàng dự án"
+msgstr "Special Cargo - Project Cargo"
+
+msgid "Kê khai Hải quan"
+msgstr "Customs Declaration"
+
+msgid "Dự Án"
+msgstr "Projects"
+
+msgid "Ngành bia & nước giải khát"
+msgstr "Beer & Beverage Industry"
+
+msgid "Ngành điện & Năng lượng"
+msgstr "Electricity & Energy Industry"
+
+msgid "Hệ thống công viên giải trí"
+msgstr "Amusement Park Systems"
+
+msgid "Hệ thống cáp treo"
+msgstr "Cable Car Systems"
+
+msgid "Tin tức"
+msgstr "News"
+
+msgid "Tin công ty"
+msgstr "Company News"
+
+msgid "Tin chuyên ngành"
+msgstr "Industry News"
+
+msgid "Tuyển dụng"
+msgstr "Recruitment"
+
+msgid "Trải nghiệm khách hàng"
+msgstr "Customer Experience"
+
+msgid "Liên hệ"
+msgstr "Contact"
+
+msgid "Tìm kiếm..."
+msgstr "Search..."
+
+msgid "Về chúng tôi"
+msgstr "About Us"
+
+msgid "Về KLM"
+msgstr "About KLM"
+
+msgid "Dự án"
+msgstr "Projects"
+
+msgid "KLM Logistics cung cấp dịch vụ logistics toàn diện từ vận chuyển, kho bãi đến thông quan hải quan với chất lượng quốc tế."
+msgstr "KLM Logistics provides comprehensive logistics services from transportation, warehousing to customs clearance with international quality."
+
+msgid "Liên Hệ"
+msgstr "Contact"
+
+msgid "Địa chỉ:"
+msgstr "Address:"
+
+msgid "Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội, Việt Nam"
+msgstr "4th Floor, No. 36 Hoang Cau, Dong Da, Hanoi, Vietnam"
+
+msgid "Điện thoại / Zalo:"
+msgstr "Phone / Zalo:"
+
+msgid "Email:"
+msgstr "Email:"
+
+msgid "Thời Gian Làm Việc"
+msgstr "Working Hours"
+
+msgid "Thứ 2 - Thứ 6:"
+msgstr "Monday - Friday:"
+
+msgid "Thứ 7:"
+msgstr "Saturday:"
+
+msgid "Chủ Nhật:"
+msgstr "Sunday:"
+
+msgid "Đóng cửa"
+msgstr "Closed"
+
+msgid "Bảo lưu mọi quyền."
+msgstr "All rights reserved."
+
