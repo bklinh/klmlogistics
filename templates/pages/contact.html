@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% load static %} {% block title %}Liên hệ - KLM Logistics{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Liên hệ - KLM Logistics" %}{% endblock %} {% block content %}
 
 <!-- Hero Section -->
 <div
@@ -41,7 +41,7 @@
         font-weight: 700;
         font-family: exo-l;
       ">
-      Liên Hệ Với Chúng Tôi
+      {% trans "Liên Hệ Với Chúng Tôi" %}
     </h1>
     <p
       style="
@@ -51,8 +51,7 @@
         max-width: 800px;
         margin: 0 auto;
       ">
-      Hãy liên hệ với chúng tôi để biết thêm thông tin và tư vấn các giải pháp
-      logistics
+      {% trans "Hãy liên hệ với chúng tôi để biết thêm thông tin và tư vấn các giải pháp logistics" %}
     </p>
   </div>
 </div>
@@ -93,7 +92,7 @@
             display: inline-block;
             padding-bottom: 10px;
           ">
-          Dịch vụ vận chuyển chuyên nghiệp
+          {% trans "Dịch vụ vận chuyển chuyên nghiệp" %}
         </h2>
 
         <div style="margin-top: 30px">
@@ -105,10 +104,7 @@
               margin-bottom: 30px;
               text-align: justify;
             ">
-            KLM Logistics cung cấp các giải pháp vận chuyển toàn diện cho các
-            doanh nghiệp với yêu cầu đa dạng. Từ vận chuyển hàng không quốc tế
-            đến logistics nội địa, chúng tôi luôn sẵn sàng hỗ trợ bạn đạt được
-            mục tiêu kinh doanh.
+            {% trans "KLM Logistics cung cấp các giải pháp vận chuyển toàn diện cho các doanh nghiệp với yêu cầu đa dạng. Từ vận chuyển hàng không quốc tế đến logistics nội địa, chúng tôi luôn sẵn sàng hỗ trợ bạn đạt được mục tiêu kinh doanh." %}
           </p>
 
           <div style="margin: 30px 0">
@@ -135,10 +131,10 @@
                     margin: 0 0 5px 0;
                     font-weight: 600;
                   ">
-                  Vận chuyển quốc tế
+                  {% trans "Vận chuyển quốc tế" %}
                 </h4>
                 <p style="color: #666; margin: 0; font-size: 0.95rem">
-                  Liên kết toàn cầu với đối tác tin cậy
+                  {% trans "Liên kết toàn cầu với đối tác tin cậy" %}
                 </p>
               </div>
             </div>
@@ -166,10 +162,10 @@
                     margin: 0 0 5px 0;
                     font-weight: 600;
                   ">
-                  Dịch vụ nhanh chóng
+                  {% trans "Dịch vụ nhanh chóng" %}
                 </h4>
                 <p style="color: #666; margin: 0; font-size: 0.95rem">
-                  Đảm bảo đúng hạn, an toàn tuyệt đối với giá cước hợp lý
+                  {% trans "Đảm bảo đúng hạn, an toàn tuyệt đối với giá cước hợp lý" %}
                 </p>
               </div>
             </div>
@@ -192,10 +188,10 @@
                     margin: 0 0 5px 0;
                     font-weight: 600;
                   ">
-                  Hỗ trợ 24/7
+                  {% trans "Hỗ trợ 24/7" %}
                 </h4>
                 <p style="color: #666; margin: 0; font-size: 0.95rem">
-                  Đội ngũ chuyên gia sẵn sàng phục vụ mọi lúc, mọi nơi
+                  {% trans "Đội ngũ chuyên gia sẵn sàng phục vụ mọi lúc, mọi nơi" %}
                 </p>
               </div>
             </div>
@@ -234,7 +230,7 @@
               display: inline-block;
               padding-bottom: 10px;
             ">
-            Gửi tin nhắn cho chúng tôi
+            {% trans "Gửi tin nhắn cho chúng tôi" %}
           </h2>
 
           <form
@@ -253,7 +249,8 @@
                   font-weight: 600;
                   margin-bottom: 8px;
                 "
-                >Họ tên <span style="color: #e20318">*</span></label
+                >{% trans "Họ tên" %}
+                <span style="color: #e20318">*</span></label
               >
               <input
                 type="text"
@@ -286,7 +283,8 @@
                   font-weight: 600;
                   margin-bottom: 8px;
                 "
-                >Email <span style="color: #e20318">*</span></label
+                >{% trans "Email" %}
+                <span style="color: #e20318">*</span></label
               >
               <input
                 type="email"
@@ -319,7 +317,7 @@
                   font-weight: 600;
                   margin-bottom: 8px;
                 "
-                >Điện thoại</label
+                >{% trans "Điện thoại" %}</label
               >
               <input
                 type="tel"
@@ -351,7 +349,7 @@
                   font-weight: 600;
                   margin-bottom: 8px;
                 "
-                >Chủ đề</label
+                >{% trans "Chủ đề" %}</label
               >
               <input
                 type="text"
@@ -383,7 +381,8 @@
                   font-weight: 600;
                   margin-bottom: 8px;
                 "
-                >Nội dung <span style="color: #e20318">*</span></label
+                >{% trans "Nội dung" %}
+                <span style="color: #e20318">*</span></label
               >
               <textarea
                 id="message"
@@ -426,7 +425,7 @@
               "
               onmouseover="this.style.background='#0056b3'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(0, 102, 204, 0.3)'"
               onmouseout="this.style.background='#0066cc'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
-              Gửi tin nhắn
+              {% trans "Gửi tin nhắn" %}
             </button>
           </form>
         </div>
@@ -472,7 +471,7 @@
               display: inline-block;
               padding-bottom: 10px;
             ">
-            Trụ sở chính
+            {% trans "Trụ sở chính" %}
           </h3>
 
           <div style="margin-top: 25px">
@@ -483,8 +482,8 @@
                 line-height: 1.8;
                 margin: 15px 0;
               ">
-              <strong>Địa chỉ:</strong><br />
-              Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội, Việt Nam
+              <strong>{% trans "Địa chỉ:" %}</strong><br />
+              {% trans "Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội, Việt Nam" %}
             </p>
 
             <p
@@ -494,7 +493,8 @@
                 line-height: 1.8;
                 margin: 15px 0;
               ">
-              <strong style="color: #dc3545">Hotline:</strong><br />
+              <strong style="color: #dc3545">{% trans "Hotline:" %}</strong
+              ><br />
               <a
                 href="tel:+84913020430"
                 style="
@@ -515,7 +515,8 @@
                 line-height: 1.8;
                 margin: 15px 0;
               ">
-              <strong style="color: #dc3545">Điện thoại:</strong><br />
+              <strong style="color: #dc3545">{% trans "Điện thoại:" %}</strong
+              ><br />
               (+84) 24 35190965
             </p>
 
@@ -526,7 +527,7 @@
                 line-height: 1.8;
                 margin: 15px 0;
               ">
-              <strong style="color: #dc3545">Email:</strong><br />
+              <strong style="color: #dc3545">{% trans "Email:" %}</strong><br />
               <a
                 href="mailto:info@klmlogistics.com"
                 style="
@@ -547,7 +548,8 @@
                 line-height: 1.8;
                 margin: 15px 0;
               ">
-              <strong style="color: #dc3545">Website:</strong><br />
+              <strong style="color: #dc3545">{% trans "Website:" %}</strong
+              ><br />
               <a
                 href="https://www.klmlogistics.com"
                 style="

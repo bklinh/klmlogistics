@@ -218,7 +218,9 @@
 
               <ul class="">
                 <li class="">
-                  <a href="{% url 'about' %}#general-info">{% trans "Thông tin chung" %}</a>
+                  <a href="{% url 'about' %}#general-info"
+                    >{% trans "Thông tin chung" %}</a
+                  >
                 </li>
                 <li class="">
                   <a href="{% url 'about' %}#business-sectors"
@@ -335,7 +337,9 @@
                   >
                 </li>
                 <li class="">
-                  <a href="{% url 'projects' %}#project-3">{% trans "Hệ thống cáp treo" %}</a>
+                  <a href="{% url 'projects' %}#project-3"
+                    >{% trans "Hệ thống cáp treo" %}</a
+                  >
                 </li>
               </ul>
             </li>
@@ -343,14 +347,20 @@
             <li
               class="{% if request.resolver_match.url_name in 'company_news,industry_news,recruitment,post_detail' %}active{% endif %}"
               style="">
-              <a href="{% url 'company_news' %}" class="">{% trans "Tin tức" %} </a>
+              <a href="{% url 'company_news' %}" class=""
+                >{% trans "Tin tức" %}
+              </a>
 
               <ul class="">
                 <li class="">
-                  <a href="{% url 'company_news' %}">{% trans "Tin công ty" %}</a>
+                  <a href="{% url 'company_news' %}"
+                    >{% trans "Tin công ty" %}</a
+                  >
                 </li>
                 <li class="">
-                  <a href="{% url 'industry_news' %}">{% trans "Tin chuyên ngành" %}</a>
+                  <a href="{% url 'industry_news' %}"
+                    >{% trans "Tin chuyên ngành" %}</a
+                  >
                 </li>
                 <li class="">
                   <a href="{% url 'recruitment' %}">{% trans "Tuyển dụng" %}</a>
@@ -482,13 +492,19 @@
       <ul>
         <li><a href="{% url 'services' %}">{% trans "Dịch vụ" %}</a></li>
         <li>
-          <a href="{% url 'air_transport' %}">{% trans "Vận chuyển hàng không Quốc tế" %}</a>
+          <a href="{% url 'air_transport' %}"
+            >{% trans "Vận chuyển hàng không Quốc tế" %}</a
+          >
         </li>
         <li>
-          <a href="{% url 'sea_transport' %}">{% trans "Vận chuyển Đường biển Quốc tế" %}</a>
+          <a href="{% url 'sea_transport' %}"
+            >{% trans "Vận chuyển Đường biển Quốc tế" %}</a
+          >
         </li>
         <li>
-          <a href="{% url 'logistics' %}">{% trans "Logistics & Các dịch vụ gia tăng" %}</a>
+          <a href="{% url 'logistics' %}"
+            >{% trans "Logistics & Các dịch vụ gia tăng" %}</a
+          >
         </li>
       </ul>
     </li>
@@ -496,8 +512,12 @@
     <li>
       <span>{% trans "Tin tức" %}</span>
       <ul>
-        <li><a href="{% url 'company_news' %}">{% trans "Tin công ty" %}</a></li>
-        <li><a href="{% url 'industry_news' %}">{% trans "Tin chuyên ngành" %}</a></li>
+        <li>
+          <a href="{% url 'company_news' %}">{% trans "Tin công ty" %}</a>
+        </li>
+        <li>
+          <a href="{% url 'industry_news' %}">{% trans "Tin chuyên ngành" %}</a>
+        </li>
         <li><a href="{% url 'recruitment' %}">{% trans "Tuyển dụng" %}</a></li>
       </ul>
     </li>

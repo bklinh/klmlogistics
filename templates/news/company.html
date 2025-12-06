@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% load static %} {% block title %}{{ page_title }} - KLM Logistics{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{{ page_title }} - KLM Logistics{% endblock %} {% block content %}
 <!-- Hero Section -->
 <div
   class="news-hero"
@@ -40,7 +40,7 @@
         font-weight: 700;
         font-family: exo-l;
       ">
-      {{ page_title }}
+      {% trans "Tin công ty" %}
     </h1>
     <p
       style="
@@ -50,7 +50,7 @@
         max-width: 800px;
         margin: 0 auto;
       ">
-      Cập nhật những tin tức mới nhất từ KLM Logistics
+      {% trans "Cập nhật những tin tức mới nhất từ KLM Logistics" %}
     </p>
   </div>
 </div>
@@ -77,7 +77,7 @@
               font-size: 1.3rem;
               font-weight: 600;
             ">
-            Danh mục tin tức
+            {% trans "Danh mục tin tức" %}
           </h3>
           <ul style="list-style: none; padding: 0; margin: 0">
             <li style="margin-bottom: 15px">
@@ -94,7 +94,7 @@
                   background: #0066cc;
                 ">
                 <i class="fas fa-building" style="margin-right: 8px"></i>
-                Tin công ty
+                {% trans "Tin công ty" %}
               </a>
             </li>
             <li style="margin-bottom: 15px">
@@ -110,7 +110,7 @@
                   border-left: 3px solid transparent;
                 ">
                 <i class="fas fa-industry" style="margin-right: 8px"></i>
-                Tin chuyên ngành
+                {% trans "Tin chuyên ngành" %}
               </a>
             </li>
             <li style="margin-bottom: 15px">
@@ -126,7 +126,7 @@
                   border-left: 3px solid transparent;
                 ">
                 <i class="fas fa-user-tie" style="margin-right: 8px"></i>
-                Tuyển dụng
+                {% trans "Tuyển dụng" %}
               </a>
             </li>
           </ul>
@@ -193,7 +193,7 @@
                     border-radius: 4px;
                     font-size: 0.8rem;
                   ">
-                  Tin công ty
+                  {% trans "Tin công ty" %}
                 </span>
                 <span style="color: #666; font-size: 0.9rem; margin-left: 10px">
                   <i class="fas fa-calendar-alt"></i>
@@ -233,7 +233,7 @@
                   font-size: 0.9rem;
                   transition: color 0.3s ease;
                 ">
-                Đọc tiếp
+                {% trans "Đọc tiếp" %}
                 <i class="fas fa-arrow-right" style="margin-left: 5px"></i>
               </a>
             </div>
@@ -316,10 +316,12 @@
           <i
             class="fas fa-newspaper"
             style="font-size: 4rem; color: #ddd; margin-bottom: 20px"></i>
-          <h3 style="color: #666; margin-bottom: 15px">Chưa có bài viết nào</h3>
+          <h3 style="color: #666; margin-bottom: 15px">
+            {% trans "Chưa có bài viết nào" %}
+          </h3>
           <p style="color: #999; margin: 0; font-size: 0.95rem">
-            Hiện tại chưa có tin tức công ty nào được đăng. <br />
-            Vui lòng quay lại sau để xem thông tin mới nhất.
+            {% trans "Hiện tại chưa có tin tức công ty nào được đăng." %} <br />
+            {% trans "Vui lòng quay lại sau để xem thông tin mới nhất." %}
           </p>
         </div>
         {% endif %}

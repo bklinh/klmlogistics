@@ -1,5 +1,4 @@
-{% extends 'base.html' %} {% load static %} {% block title %}{{ page_title }} -
-KLM Logistics{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{{ page_title }} - KLM Logistics{% endblock %} {% block content %}
 <!-- Hero Section -->
 <div
   class="news-hero"
@@ -41,7 +40,7 @@ KLM Logistics{% endblock %} {% block content %}
         font-weight: 700;
         font-family: exo-l;
       ">
-      Tuyển dụng
+      {% trans "Tuyển dụng" %}
     </h1>
     <p
       style="
@@ -51,7 +50,7 @@ KLM Logistics{% endblock %} {% block content %}
         max-width: 800px;
         margin: 0 auto;
       ">
-      Cơ hội nghề nghiệp tại KLM Logistics - Gia nhập đội ngũ chuyên nghiệp
+      {% trans "Cơ hội nghề nghiệp tại KLM Logistics - Gia nhập đội ngũ chuyên nghiệp" %}
     </p>
   </div>
 </div>
@@ -78,7 +77,7 @@ KLM Logistics{% endblock %} {% block content %}
               font-size: 1.3rem;
               font-weight: 600;
             ">
-            Danh mục tin tức
+            {% trans "Danh mục tin tức" %}
           </h3>
           <ul style="list-style: none; padding: 0; margin: 0">
             <li style="margin-bottom: 15px">
@@ -94,7 +93,7 @@ KLM Logistics{% endblock %} {% block content %}
                   border-left: 3px solid transparent;
                 ">
                 <i class="fas fa-building" style="margin-right: 8px"></i>
-                Tin công ty
+                {% trans "Tin công ty" %}
               </a>
             </li>
             <li style="margin-bottom: 15px">
@@ -110,7 +109,7 @@ KLM Logistics{% endblock %} {% block content %}
                   border-left: 3px solid transparent;
                 ">
                 <i class="fas fa-industry" style="margin-right: 8px"></i>
-                Tin chuyên ngành
+                {% trans "Tin chuyên ngành" %}
               </a>
             </li>
             <li style="margin-bottom: 15px">
@@ -127,7 +126,7 @@ KLM Logistics{% endblock %} {% block content %}
                   background: #0066cc;
                 ">
                 <i class="fas fa-user-tie" style="margin-right: 8px"></i>
-                Tuyển dụng
+                {% trans "Tuyển dụng" %}
               </a>
             </li>
           </ul>
@@ -145,7 +144,7 @@ KLM Logistics{% endblock %} {% block content %}
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
           ">
           <h2 style="color: #0066cc; margin-bottom: 30px; font-size: 1.8rem">
-            Cơ hội nghề nghiệp tại KLM Logistics
+            {% trans "Cơ hội nghề nghiệp tại KLM Logistics" %}
           </h2>
 
           <div class="job-listings" style="display: grid; gap: 30px">
@@ -178,10 +177,10 @@ KLM Logistics{% endblock %} {% block content %}
                 </div>
                 <div>
                   <h3 style="color: #333; margin: 0 0 5px 0; font-size: 1.3rem">
-                    Nhân viên kinh doanh Logistics
+                    {% trans "Nhân viên kinh doanh Logistics" %}
                   </h3>
                   <span style="color: #0066cc; font-weight: 500"
-                    >Phòng Kinh doanh (Số lượng: 10 người)</span
+                    >{% trans "Phòng Kinh doanh (Số lượng: 10 người)" %}</span
                   >
                 </div>
               </div>
@@ -193,11 +192,10 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  BẠN NÊN CÓ KỸ NĂNG
+                  {% trans "BẠN NÊN CÓ KỸ NĂNG" %}
                 </h4>
                 <p style="color: #666; line-height: 1.6; margin-bottom: 15px">
-                  Kinh Doanh - Bán Hàng / Forwarding – Logistics / Xuất Nhập
-                  Khẩu - Khai Báo Hải Quan
+                  {% trans "Kinh Doanh - Bán Hàng / Forwarding – Logistics / Xuất Nhập Khẩu - Khai Báo Hải Quan" %}
                 </p>
 
                 <h4
@@ -206,7 +204,7 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  BẠN SẼ LÀM GÌ (MÔ TẢ CÔNG VIỆC)
+                  {% trans "BẠN SẼ LÀM GÌ (MÔ TẢ CÔNG VIỆC)" %}
                 </h4>
                 <ul
                   style="
@@ -216,26 +214,19 @@ KLM Logistics{% endblock %} {% block content %}
                     padding-left: 20px;
                   ">
                   <li>
-                    Tìm kiếm, liên hệ các công ty có nhu cầu về vận chuyển hàng
-                    hóa nội địa cũng như quốc tế phục vụ xuất nhập khẩu & các
-                    dịch vụ Logistics đi kèm.
+                    {% trans "Tìm kiếm, liên hệ các công ty có nhu cầu về vận chuyển hàng hóa nội địa cũng như quốc tế phục vụ xuất nhập khẩu & các dịch vụ Logistics đi kèm." %}
                   </li>
                   <li>
-                    Duy trì và phát triển mạng lưới khách hàng & đối tác của
-                    công ty.
+                    {% trans "Duy trì và phát triển mạng lưới khách hàng & đối tác của công ty." %}
                   </li>
                   <li>
-                    Lập báo cáo hoạt động kinh doanh, đưa ý tưởng phát triển
-                    kinh doanh đến người phụ trách.
+                    {% trans "Lập báo cáo hoạt động kinh doanh, đưa ý tưởng phát triển kinh doanh đến người phụ trách." %}
                   </li>
                   <li>
-                    Phối hợp cùng các phòng ban nghiệp vụ khác thực hiện các
-                    dịch vụ của công ty cho khách hàng.
+                    {% trans "Phối hợp cùng các phòng ban nghiệp vụ khác thực hiện các dịch vụ của công ty cho khách hàng." %}
                   </li>
                   <li>
-                    Nhân viên mới sẽ được đào tạo đầy đủ về kiến thức chuyên
-                    ngành forwarding, logistics nên không phải lo lắng nếu chưa
-                    có kiến thức đầy đủ
+                    {% trans "Nhân viên mới sẽ được đào tạo đầy đủ về kiến thức chuyên ngành forwarding, logistics nên không phải lo lắng nếu chưa có kiến thức đầy đủ" %}
                   </li>
                 </ul>
 
@@ -245,7 +236,7 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  CHUYÊN MÔN CỦA BẠN (YÊU CẦU CÔNG VIỆC)
+                  {% trans "CHUYÊN MÔN CỦA BẠN (YÊU CẦU CÔNG VIỆC)" %}
                 </h4>
                 <ul
                   style="
@@ -254,11 +245,11 @@ KLM Logistics{% endblock %} {% block content %}
                     margin: 0 0 20px 0;
                     padding-left: 20px;
                   ">
-                  <li>Tiếng anh, vi tính văn phòng khá.</li>
+                  <li>{% trans "Tiếng anh, vi tính văn phòng khá." %}</li>
                   <li>
-                    Am hiểu về lĩnh vực Logistics/xuất nhập khẩu hàng hóa.
+                    {% trans "Am hiểu về lĩnh vực Logistics/xuất nhập khẩu hàng hóa." %}
                   </li>
-                  <li>Nhanh nhẹn, có kỹ năng giao tiếp.</li>
+                  <li>{% trans "Nhanh nhẹn, có kỹ năng giao tiếp." %}</li>
                 </ul>
 
                 <h4
@@ -267,7 +258,7 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  QUYỀN LỢI ĐƯỢC HƯỞNG
+                  {% trans "QUYỀN LỢI ĐƯỢC HƯỞNG" %}
                 </h4>
                 <ul
                   style="
@@ -277,14 +268,11 @@ KLM Logistics{% endblock %} {% block content %}
                     padding-left: 20px;
                   ">
                   <li>
-                    Lương thỏa thuận (với người có kinh nghiệm từ 7 - 10 triệu +
-                    % doanh số + Chính sách thưởng 25% - 40% hấp dẫn theo lũy
-                    tiến của Doanh thu thuần)
+                    {% trans "Lương thỏa thuận (với người có kinh nghiệm từ 7 - 10 triệu +" %} % {% trans "doanh số + Chính sách thưởng" %} 25% - 40% {% trans "hấp dẫn theo lũy tiến của Doanh thu thuần)" %}
                   </li>
-                  <li>Du lịch hàng năm</li>
+                  <li>{% trans "Du lịch hàng năm" %}</li>
                   <li>
-                    Các chế độ BHXH, BHYT, BHTN được thực hiện đầy đủ theo quy
-                    định
+                    {% trans "Các chế độ BHXH, BHYT, BHTN được thực hiện đầy đủ theo quy định" %}
                   </li>
                 </ul>
 
@@ -294,7 +282,7 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  YÊU CẦU VỀ HỒ SƠ
+                  {% trans "YÊU CẦU VỀ HỒ SƠ" %}
                 </h4>
                 <ul
                   style="
@@ -303,8 +291,8 @@ KLM Logistics{% endblock %} {% block content %}
                     margin: 0 0 20px 0;
                     padding-left: 20px;
                   ">
-                  <li>Hồ sơ xin việc</li>
-                  <li>Bằng cấp liên quan (bản photo).</li>
+                  <li>{% trans "Hồ sơ xin việc" %}</li>
+                  <li>{% trans "Bằng cấp liên quan (bản photo)." %}</li>
                 </ul>
               </div>
 
@@ -321,7 +309,7 @@ KLM Logistics{% endblock %} {% block content %}
                   transition: background 0.3s ease;
                 ">
                 <i class="fas fa-envelope" style="margin-right: 8px"></i>
-                Ứng tuyển ngay
+                {% trans "Ứng tuyển ngay" %}
               </a>
             </div>
 
@@ -354,10 +342,10 @@ KLM Logistics{% endblock %} {% block content %}
                 </div>
                 <div>
                   <h3 style="color: #333; margin: 0 0 5px 0; font-size: 1.3rem">
-                    NHÂN VIÊN CHỨNG TỪ XUẤT NHẬP KHẨU (NGÀNH LOGISTICS)
+                    {% trans "NHÂN VIÊN CHỨNG TỪ XUẤT NHẬP KHẨU (NGÀNH LOGISTICS)" %}
                   </h3>
                   <span style="color: #0066cc; font-weight: 500"
-                    >Phòng Chứng từ</span
+                    >{% trans "Phòng Chứng từ" %}</span
                   >
                 </div>
               </div>
@@ -369,11 +357,11 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  MÔ TẢ CÔNG VIỆC
+                  {% trans "MÔ TẢ CÔNG VIỆC" %}
                 </h4>
 
                 <p style="color: #333; font-weight: 600; margin-bottom: 5px">
-                  1. Nhóm công việc nghiệp vụ:
+                  {% trans "1. Nhóm công việc nghiệp vụ:" %}
                 </p>
                 <ul
                   style="
@@ -383,17 +371,15 @@ KLM Logistics{% endblock %} {% block content %}
                     padding-left: 20px;
                   ">
                   <li>
-                    Khai manifest, chuẩn bị bộ lệnh, tổng hợp chứng từ hàng nhập
+                    {% trans "Khai manifest, chuẩn bị bộ lệnh, tổng hợp chứng từ hàng nhập" %}
                   </li>
                   <li>
-                    Làm chứng từ, khai quan xuất, nhập khẩu: Tờ khai Hải Quan,
-                    Hợp đồng, Invoice, Packing List, CO, Hun trùng… và các chứng
-                    từ cần thiết khác.
+                    {% trans "Làm chứng từ, khai quan xuất, nhập khẩu: Tờ khai Hải Quan, Hợp đồng, Invoice, Packing List, CO, Hun trùng… và các chứng từ cần thiết khác." %}
                   </li>
                 </ul>
 
                 <p style="color: #333; font-weight: 600; margin-bottom: 5px">
-                  2. Công việc hỗ trợ:
+                  {% trans "2. Công việc hỗ trợ:" %}
                 </p>
                 <ul
                   style="
@@ -403,24 +389,17 @@ KLM Logistics{% endblock %} {% block content %}
                     padding-left: 20px;
                   ">
                   <li>
-                    Phối hợp với các phòng ban khác trong quá trình cung cấp
-                    dịch vụ, thông báo những quy định mới từ các cơ quan chức
-                    năng hay hãng vận chuyển để hạn chế tối đa rủi ro xảy ra
+                    {% trans "Phối hợp với các phòng ban khác trong quá trình cung cấp dịch vụ, thông báo những quy định mới từ các cơ quan chức năng hay hãng vận chuyển để hạn chế tối đa rủi ro xảy ra" %}
                   </li>
                   <li>
-                    Liên lạc với khách hàng để có thêm thông tin về lô hàng và
-                    hiểu rõ hơn những yêu cầu của khách hàng
+                    {% trans "Liên lạc với khách hàng để có thêm thông tin về lô hàng và hiểu rõ hơn những yêu cầu của khách hàng" %}
                   </li>
                   <li>
-                    Giao dịch với các bên cung cấp (Hun trùng, Bảo hiểm, Hải
-                    quan, PTM, BTM; Đại lý, hãng vận chuyển…) và cập nhật thông
-                    tin liên quan.
+                    {% trans "Giao dịch với các bên cung cấp (Hun trùng, Bảo hiểm, Hải quan, PTM, BTM; Đại lý, hãng vận chuyển…) và cập nhật thông tin liên quan." %}
                   </li>
-                  <li>Hỗ trợ đồng nghiệp khi cần.</li>
+                  <li>{% trans "Hỗ trợ đồng nghiệp khi cần." %}</li>
                   <li>
-                    Nhân viên mới sẽ được đào tạo đầy đủ về kiến thức chuyên
-                    ngành forwarding, logistics nên không phải lo lắng nếu chưa
-                    có kiến thức đầy đủ
+                    {% trans "Nhân viên mới sẽ được đào tạo đầy đủ về kiến thức chuyên ngành forwarding, logistics nên không phải lo lắng nếu chưa có kiến thức đầy đủ" %}
                   </li>
                 </ul>
 
@@ -430,7 +409,7 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  YÊU CẦU CÔNG VIỆC
+                  {% trans "YÊU CẦU CÔNG VIỆC" %}
                 </h4>
                 <ul
                   style="
@@ -439,14 +418,13 @@ KLM Logistics{% endblock %} {% block content %}
                     margin: 0 0 20px 0;
                     padding-left: 20px;
                   ">
-                  <li>Tiếng anh, vi tính văn phòng khá.</li>
+                  <li>{% trans "Tiếng anh, vi tính văn phòng khá." %}</li>
                   <li>
-                    Am hiểu về lĩnh vực Logistics/xuất nhập khẩu hàng hóa.
+                    {% trans "Am hiểu về lĩnh vực Logistics/xuất nhập khẩu hàng hóa." %}
                   </li>
-                  <li>Nhanh nhẹn, có kỹ năng giao tiếp.</li>
+                  <li>{% trans "Nhanh nhẹn, có kỹ năng giao tiếp." %}</li>
                   <li>
-                    Ưu tiên: Tốt nghiệp cao đẳng, đại học chuyên ngành ngoại
-                    thương/ kinh tế & vận tải
+                    {% trans "Ưu tiên: Tốt nghiệp cao đẳng, đại học chuyên ngành ngoại thương/ kinh tế & vận tải" %}
                   </li>
                 </ul>
 
@@ -456,7 +434,7 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  LƯƠNG, PHÚC LỢI
+                  {% trans "LƯƠNG, PHÚC LỢI" %}
                 </h4>
                 <ul
                   style="
@@ -465,13 +443,12 @@ KLM Logistics{% endblock %} {% block content %}
                     margin: 0 0 20px 0;
                     padding-left: 20px;
                   ">
-                  <li>Theo thỏa thuận cạnh tranh.</li>
+                  <li>{% trans "Theo thỏa thuận cạnh tranh." %}</li>
                   <li>
-                    Được tham gia BHXH, BHYT, BHTN, BH tai nạn đầy đủ theo qui
-                    định.
+                    {% trans "Được tham gia BHXH, BHYT, BHTN, BH tai nạn đầy đủ theo qui định." %}
                   </li>
                   <li>
-                    Du lịch, thưởng lễ tết… và nhiều chính sách phúc lợi khác
+                    {% trans "Du lịch, thưởng lễ tết… và nhiều chính sách phúc lợi khác" %}
                   </li>
                 </ul>
 
@@ -481,7 +458,7 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  THÔNG TIN KHÁC
+                  {% trans "THÔNG TIN KHÁC" %}
                 </h4>
                 <ul
                   style="
@@ -491,10 +468,11 @@ KLM Logistics{% endblock %} {% block content %}
                     padding-left: 20px;
                   ">
                   <li>
-                    Thời gian làm việc: 44h/ tuần, từ thứ Hai đến hết sáng Thứ
-                    Bảy
+                    {% trans "Thời gian làm việc: 44h/ tuần, từ thứ Hai đến hết sáng Thứ Bảy" %}
                   </li>
-                  <li>Môi trường làm việc năng động, vui vẻ, thân thiện</li>
+                  <li>
+                    {% trans "Môi trường làm việc năng động, vui vẻ, thân thiện" %}
+                  </li>
                 </ul>
 
                 <h4
@@ -503,7 +481,7 @@ KLM Logistics{% endblock %} {% block content %}
                     margin-bottom: 10px;
                     font-size: 1.1rem;
                   ">
-                  YÊU CẦU VỀ HỒ SƠ
+                  {% trans "YÊU CẦU VỀ HỒ SƠ" %}
                 </h4>
                 <ul
                   style="
@@ -512,8 +490,8 @@ KLM Logistics{% endblock %} {% block content %}
                     margin: 0 0 20px 0;
                     padding-left: 20px;
                   ">
-                  <li>Hồ sơ xin việc</li>
-                  <li>Bằng cấp liên quan (bản photo).</li>
+                  <li>{% trans "Hồ sơ xin việc" %}</li>
+                  <li>{% trans "Bằng cấp liên quan (bản photo)." %}</li>
                 </ul>
               </div>
 
@@ -530,7 +508,7 @@ KLM Logistics{% endblock %} {% block content %}
                   transition: background 0.3s ease;
                 ">
                 <i class="fas fa-envelope" style="margin-right: 8px"></i>
-                Ứng tuyển ngay
+                {% trans "Ứng tuyển ngay" %}
               </a>
             </div>
 
@@ -545,13 +523,12 @@ KLM Logistics{% endblock %} {% block content %}
                 text-align: center;
               ">
               <h3 style="color: white; margin-bottom: 20px; font-size: 1.4rem">
-                Liên hệ tuyển dụng
+                {% trans "Liên hệ tuyển dụng" %}
               </h3>
               <p style="margin-bottom: 20px; line-height: 1.6">
-                Hồ sơ dự tuyển xin gửi về trực tiếp địa chỉ sau: Công ty CP dịch
-                vụ Logistics và thương mại KLM<br />
-                Địa chỉ: tầng 4, tòa nhà Hà Thủy, số 36 Hoàng Cầu, Hà Nội<br />
-                PIC: Ms. Khúc Thu Thủy
+                {% trans "Hồ sơ dự tuyển xin gửi về trực tiếp địa chỉ sau: Công ty CP dịch vụ Logistics và thương mại KLM" %}<br />
+                {% trans "Địa chỉ: tầng 4, tòa nhà Hà Thủy, số 36 Hoàng Cầu, Hà Nội" %}<br />
+                {% trans "PIC: Ms. Khúc Thu Thủy" %}
               </p>
               <div
                 style="

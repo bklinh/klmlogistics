@@ -1,11 +1,10 @@
-{% extends 'base.html' %} {% load static %} {% block title %}Dịch Vụ - KLM
-Logistics{% endblock %} {% block extra_head %}
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Dịch Vụ - KLM Logistics" %}{% endblock %} {% block extra_head %}
 <meta
   name="description"
-  content="Khám phá các dịch vụ logistics toàn diện của KLM Logistics" />
+  content="{% trans 'Khám phá các dịch vụ logistics toàn diện của KLM Logistics' %}" />
 <meta
   name="keywords"
-  content="dịch vụ logistics, vận chuyển, kho bãi, vận chuyển hàng không" />
+  content="{% trans 'dịch vụ logistics, vận chuyển, kho bãi, vận chuyển hàng không' %}" />
 {% endblock %} {% block content %}
 <!-- Hero Section -->
 <div
@@ -48,7 +47,7 @@ Logistics{% endblock %} {% block extra_head %}
         font-weight: 700;
         font-family: exo-l;
       ">
-      Dịch Vụ KLM Logistics
+      {% trans "Dịch Vụ KLM Logistics" %}
     </h1>
     <p
       style="
@@ -58,8 +57,7 @@ Logistics{% endblock %} {% block extra_head %}
         max-width: 800px;
         margin: 0 auto;
       ">
-      Giải pháp logistics toàn diện từ vận chuyển, kho bãi đến thông quan hải
-      quan
+      {% trans "Giải pháp logistics toàn diện từ vận chuyển, kho bãi đến thông quan hải quan" %}
     </p>
   </div>
 </div>
@@ -81,19 +79,20 @@ Logistics{% endblock %} {% block extra_head %}
             src="{% static 'uploaded/icon/item1.png' %}"
             alt="Vận Chuyển Hàng Không" />
         </div>
-        <h3 class="service-tile__title">Vận Chuyển Hàng Không Quốc Tế</h3>
+        <h3 class="service-tile__title">
+          {% trans "Vận Chuyển Hàng Không Quốc Tế" %}
+        </h3>
         <p class="service-tile__description">
-          Dịch vụ vận chuyển hàng không nhanh chóng, an toàn đến hơn 150 quốc
-          gia. Chúng tôi cung cấp giải pháp trọn gói từ pickup đến delivery.
+          {% trans "Dịch vụ vận chuyển hàng không nhanh chóng, an toàn đến hơn 150 quốc gia. Chúng tôi cung cấp giải pháp trọn gói từ pickup đến delivery." %}
         </p>
         <ul class="service-tile__features">
-          <li>Mạng lưới hãng hàng không toàn cầu</li>
-          <li>Xử lý hàng nguy hiểm chuyên nghiệp</li>
-          <li>Door to door delivery</li>
-          <li>Thông quan hải quan</li>
+          <li>{% trans "Mạng lưới hãng hàng không toàn cầu" %}</li>
+          <li>{% trans "Xử lý hàng nguy hiểm chuyên nghiệp" %}</li>
+          <li>{% trans "Door to door delivery" %}</li>
+          <li>{% trans "Thông quan hải quan" %}</li>
         </ul>
         <a href="{% url 'air_transport' %}" class="service-tile__link">
-          Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
+          {% trans "Tìm hiểu thêm" %} <i class="fas fa-arrow-right"></i>
         </a>
       </div>
 
@@ -104,19 +103,20 @@ Logistics{% endblock %} {% block extra_head %}
             src="{% static 'uploaded/icon/item2.png' %}"
             alt="Vận Chuyển Đường Biển" />
         </div>
-        <h3 class="service-tile__title">Vận Chuyển Đường Biển Quốc Tế</h3>
+        <h3 class="service-tile__title">
+          {% trans "Vận Chuyển Đường Biển Quốc Tế" %}
+        </h3>
         <p class="service-tile__description">
-          Giải pháp vận chuyển đường biển hiệu quả với chi phí cạnh tranh. Chúng
-          tôi xử lý container, hàng rời, hàng quá khổ quá tải.
+          {% trans "Giải pháp vận chuyển đường biển hiệu quả với chi phí cạnh tranh. Chúng tôi xử lý container, hàng rời, hàng quá khổ quá tải." %}
         </p>
         <ul class="service-tile__features">
-          <li>FCL & LCL Container</li>
-          <li>Hàng rời & Break Bulk</li>
-          <li>Hàng quá khổ quá tải</li>
-          <li>Project cargo</li>
+          <li>{% trans "FCL & LCL Container" %}</li>
+          <li>{% trans "Hàng rời & Break Bulk" %}</li>
+          <li>{% trans "Hàng quá khổ quá tải" %}</li>
+          <li>{% trans "Project cargo" %}</li>
         </ul>
         <a href="{% url 'sea_transport' %}" class="service-tile__link">
-          Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
+          {% trans "Tìm hiểu thêm" %} <i class="fas fa-arrow-right"></i>
         </a>
       </div>
 
@@ -127,19 +127,22 @@ Logistics{% endblock %} {% block extra_head %}
             src="{% static 'uploaded/icon/item3.png' %}"
             alt="Vận Chuyển Xuyên Biên Giới" />
         </div>
-        <h3 class="service-tile__title">Vận Chuyển Xuyên Biên Giới</h3>
+        <h3 class="service-tile__title">
+          {% trans "Vận Chuyển Xuyên Biên Giới" %}
+        </h3>
         <p class="service-tile__description">
-          Chuyên vận chuyển hàng hóa xuất nhập khẩu giữa Việt Nam, Lào,
-          Campuchia và Thailand với thủ tục nhanh chóng, đơn giản.
+          {% trans "Chuyên vận chuyển hàng hóa xuất nhập khẩu giữa Việt Nam, Lào, Campuchia và Thailand với thủ tục nhanh chóng, đơn giản." %}
         </p>
         <ul class="service-tile__features">
-          <li>Xuất nhập khẩu Lào, Campuchia</li>
-          <li>Vận chuyển sang Thailand</li>
-          <li>Thủ tục hải quan tối ưu</li>
-          <li>Chi phí cạnh tranh</li>
+          <li>{% trans "Xuất nhập khẩu Lào, Campuchia" %}</li>
+          <li>{% trans "Vận chuyển sang Thailand" %}</li>
+          <li>{% trans "Thủ tục hải quan tối ưu" %}</li>
+          <li>{% trans "Chi phí cạnh tranh" %}</li>
         </ul>
-        <a href="{% url 'logistics' %}#logistics_rail" class="service-tile__link">
-          Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
+        <a
+          href="{% url 'logistics' %}#logistics_rail"
+          class="service-tile__link">
+          {% trans "Tìm hiểu thêm" %} <i class="fas fa-arrow-right"></i>
         </a>
       </div>
 
@@ -150,19 +153,22 @@ Logistics{% endblock %} {% block extra_head %}
             src="{% static 'uploaded/icon/item4.png' %}"
             alt="Dịch Vụ Kho Bãi" />
         </div>
-        <h3 class="service-tile__title">Vận Chuyển Nội Địa và Dịch Vụ Kho Bãi</h3>
+        <h3 class="service-tile__title">
+          {% trans "Vận Chuyển Nội Địa và Dịch Vụ Kho Bãi" %}
+        </h3>
         <p class="service-tile__description">
-          Kho bãi tiêu chuẩn cao tại các vị trí chiến lược phục vụ bảo quản hàng
-          hóa giá trị cao với chi phí hợp lý.
+          {% trans "Kho bãi tiêu chuẩn cao tại các vị trí chiến lược phục vụ bảo quản hàng hóa giá trị cao với chi phí hợp lý." %}
         </p>
         <ul class="service-tile__features">
-          <li>Kho chuyên dụng cho hàng điện tử</li>
-          <li>Kho hóa chất & hàng bảo xá</li>
-          <li>Diện tích kho lớn trên toàn quốc</li>
-          <li>Quản lý hàng tồn kho hiệu quả</li>
+          <li>{% trans "Kho chuyên dụng cho hàng điện tử" %}</li>
+          <li>{% trans "Kho hóa chất & hàng bảo xá" %}</li>
+          <li>{% trans "Diện tích kho lớn trên toàn quốc" %}</li>
+          <li>{% trans "Quản lý hàng tồn kho hiệu quả" %}</li>
         </ul>
-        <a href="{% url 'logistics' %}#logistics_warehouse" class="service-tile__link">
-          Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
+        <a
+          href="{% url 'logistics' %}#logistics_warehouse"
+          class="service-tile__link">
+          {% trans "Tìm hiểu thêm" %} <i class="fas fa-arrow-right"></i>
         </a>
       </div>
 
@@ -173,23 +179,22 @@ Logistics{% endblock %} {% block extra_head %}
             src="{% static 'uploaded/icon/item5.png' %}"
             alt="Dịch Vụ Hải Quan" />
         </div>
-        <h3 class="service-tile__title">Dịch Vụ Hải Quan</h3>
+        <h3 class="service-tile__title">{% trans "Dịch Vụ Hải Quan" %}</h3>
         <p class="service-tile__description">
-          Dịch vụ kê khai hải quan chuyên nghiệp từ tư vấn hàng hóa, kiểm tra
-          chứng từ đến hỗ trợ giấy phép xuất nhập khẩu.
+          {% trans "Dịch vụ kê khai hải quan chuyên nghiệp từ tư vấn hàng hóa, kiểm tra chứng từ đến hỗ trợ giấy phép xuất nhập khẩu." %}
         </p>
         <ul class="service-tile__features">
-          <li>Kê khai hải quan chuyên nghiệp</li>
-          <li>Tư vấn phân loại hàng hóa</li>
-          <li>Xin cấp giấy phép xuất nhập khẩu</li>
-          <li>Kiểm tra chứng từ đầy đủ</li>
+          <li>{% trans "Kê khai hải quan chuyên nghiệp" %}</li>
+          <li>{% trans "Tư vấn phân loại hàng hóa" %}</li>
+          <li>{% trans "Xin cấp giấy phép xuất nhập khẩu" %}</li>
+          <li>{% trans "Kiểm tra chứng từ đầy đủ" %}</li>
         </ul>
-        <a href="{% url 'logistics' %}#logistics_customs" class="service-tile__link">
-          Tìm hiểu thêm <i class="fas fa-arrow-right"></i>
+        <a
+          href="{% url 'logistics' %}#logistics_customs"
+          class="service-tile__link">
+          {% trans "Tìm hiểu thêm" %} <i class="fas fa-arrow-right"></i>
         </a>
       </div>
-
-
     </div>
   </div>
 </div>
@@ -209,7 +214,7 @@ Logistics{% endblock %} {% block extra_head %}
         margin-bottom: 50px;
         font-family: exo-l;
       ">
-      Tại Sao Chọn KLM Logistics?
+      {% trans "Tại Sao Chọn KLM Logistics?" %}
     </h2>
 
     <div class="flex-container flex-centered">
@@ -218,8 +223,10 @@ Logistics{% endblock %} {% block extra_head %}
           <div class="why-icon">
             <i class="fas fa-globe"></i>
           </div>
-          <h3>Mạng Lưới Toàn Cầu</h3>
-          <p>Hoạt động tại hơn 150 quốc gia với đối tác đáng tin cậy</p>
+          <h3>{% trans "Mạng Lưới Toàn Cầu" %}</h3>
+          <p>
+            {% trans "Hoạt động tại hơn 150 quốc gia với đối tác đáng tin cậy" %}
+          </p>
         </div>
       </div>
 
@@ -228,8 +235,10 @@ Logistics{% endblock %} {% block extra_head %}
           <div class="why-icon">
             <i class="fas fa-lightbulb"></i>
           </div>
-          <h3>Giải Pháp Tùy Biến</h3>
-          <p>Xây dựng giải pháp logistics phù hợp với từng khách hàng</p>
+          <h3>{% trans "Giải Pháp Tùy Biến" %}</h3>
+          <p>
+            {% trans "Xây dựng giải pháp logistics phù hợp với từng khách hàng" %}
+          </p>
         </div>
       </div>
 
@@ -238,8 +247,8 @@ Logistics{% endblock %} {% block extra_head %}
           <div class="why-icon">
             <i class="fas fa-clock"></i>
           </div>
-          <h3>Vận Chuyển Nhanh</h3>
-          <p>Thời gian vận chuyển tối ưu với giá cả cạnh tranh</p>
+          <h3>{% trans "Vận Chuyển Nhanh" %}</h3>
+          <p>{% trans "Thời gian vận chuyển tối ưu với giá cả cạnh tranh" %}</p>
         </div>
       </div>
 
@@ -248,8 +257,8 @@ Logistics{% endblock %} {% block extra_head %}
           <div class="why-icon">
             <i class="fas fa-headset"></i>
           </div>
-          <h3>Hỗ Trợ 24/7</h3>
-          <p>Đội ngũ chuyên gia sẵn sàng hỗ trợ mọi lúc</p>
+          <h3>{% trans "Hỗ Trợ 24/7" %}</h3>
+          <p>{% trans "Đội ngũ chuyên gia sẵn sàng hỗ trợ mọi lúc" %}</p>
         </div>
       </div>
     </div>
@@ -283,7 +292,7 @@ Logistics{% endblock %} {% block extra_head %}
         margin-bottom: 20px;
         font-family: exo-l;
       ">
-      Cần Giải Pháp Logistics?
+      {% trans "Cần Giải Pháp Logistics?" %}
     </h2>
     <p
       style="
@@ -291,7 +300,7 @@ Logistics{% endblock %} {% block extra_head %}
         color: rgba(255, 255, 255, 0.9);
         margin-bottom: 30px;
       ">
-      Liên hệ với chúng tôi ngay để nhận tư vấn miễn phí
+      {% trans "Liên hệ với chúng tôi ngay để nhận tư vấn miễn phí" %}
     </p>
     <a
       href="{% url 'contact' %}"
@@ -305,7 +314,7 @@ Logistics{% endblock %} {% block extra_head %}
         font-weight: 600;
         transition: all 0.3s ease;
       ">
-      <i class="fas fa-phone"></i> Liên Hệ Ngay
+      <i class="fas fa-phone"></i> {% trans "Liên Hệ Ngay" %}
     </a>
   </div>
 </div>

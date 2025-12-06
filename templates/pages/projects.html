@@ -1,5 +1,5 @@
-{% extends 'base.html' %} {% load static %} {% block title %}Dự án - KLM
-Logistics{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{%
+trans "Dự án - KLM Logistics" %}{% endblock %} {% block content %}
 
 <!-- Hero Section -->
 <div
@@ -42,7 +42,7 @@ Logistics{% endblock %} {% block content %}
         font-weight: 700;
         font-family: exo-l;
       ">
-      Các Dự Án Nổi Bật
+      {% trans "Các Dự Án Nổi Bật" %}
     </h1>
     <p
       style="
@@ -52,7 +52,7 @@ Logistics{% endblock %} {% block content %}
         max-width: 800px;
         margin: 0 auto;
       ">
-      Những dự án vận chuyển & logistics quy mô lớn của KLM
+      {% trans "Những dự án vận chuyển & logistics quy mô lớn của KLM" %}
     </p>
   </div>
 </div>
@@ -67,7 +67,7 @@ Logistics{% endblock %} {% block content %}
     margin-bottom: 100px;
   ">
   <!-- Project 4: Dự án về Ngành Bia & Nước Giải Khát -->
-   <section id="project-4" style="margin-bottom: 60px">
+  <section id="project-4" style="margin-bottom: 60px">
     <div style="margin-bottom: 40px">
       <h2
         style="
@@ -79,7 +79,7 @@ Logistics{% endblock %} {% block content %}
           padding-bottom: 10px;
           margin-bottom: 15px;
         ">
-        Dự án về Ngành bia & nước giải khát
+        {% trans "Dự án về Ngành bia & nước giải khát" %}
       </h2>
     </div>
 
@@ -102,23 +102,8 @@ Logistics{% endblock %} {% block content %}
         ">
         <div style="margin-bottom: 25px">
           <p style="margin: 0 0 10px 0">
-            <strong style="color: #0066cc; font-size: 1.25rem">Sản phẩm</strong>
-          </p>
-          <p
-            style="
-              margin: 0;
-              color: #555;
-              line-height: 1.6;
-              font-size: 1.05rem;
-            ">
-            Các tank bồn & các thiết bị 
-          </p>
-        </div>
-
-        <div style="margin-bottom: 25px">
-          <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Tuyến đường</strong
+              >{% trans "Sản phẩm" %}</strong
             >
           </p>
           <p
@@ -128,14 +113,14 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            Vận chuyển nội địa & quốc tế
+            {% trans "Các tank bồn & các thiết bị" %}
           </p>
         </div>
 
         <div style="margin-bottom: 25px">
           <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Khối lượng</strong
+              >{% trans "Tuyến đường" %}</strong
             >
           </p>
           <p
@@ -145,14 +130,31 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            Công việc thường xuyên hàng năm vận chuyển
+            {% trans "Vận chuyển nội địa & quốc tế" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Khối lượng" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Công việc thường xuyên hàng năm vận chuyển" %}
           </p>
         </div>
 
         <div>
           <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Phạm vi công việc</strong
+              >{% trans "Phạm vi công việc" %}</strong
             >
           </p>
           <p
@@ -162,7 +164,7 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            Vận chuyển & Lắp đặt của các nhà máy bia, nước giải khát trong & và ngoài nước
+            {% trans "Vận chuyển & Lắp đặt của các nhà máy bia, nước giải khát trong & và ngoài nước" %}
           </p>
         </div>
       </div>
@@ -210,7 +212,7 @@ Logistics{% endblock %} {% block content %}
       </div>
     </div>
   </section>
-  
+
   <!-- Project 1: Ngành điện và năng lượng -->
   <section id="project-1" style="margin-bottom: 80px">
     <div style="margin-bottom: 40px">
@@ -224,7 +226,7 @@ Logistics{% endblock %} {% block content %}
           padding-bottom: 10px;
           margin-bottom: 15px;
         ">
-        Ngành điện và năng lượng
+        {% trans "Ngành điện và năng lượng" %}
       </h2>
       <h3
         style="
@@ -234,7 +236,7 @@ Logistics{% endblock %} {% block content %}
           margin-top: 0;
           margin-bottom: 20px;
         ">
-        Dự án Rotor Turbine
+        {% trans "Dự án Rotor Turbine" %}
       </h3>
     </div>
 
@@ -257,23 +259,8 @@ Logistics{% endblock %} {% block content %}
         ">
         <div style="margin-bottom: 25px">
           <p style="margin: 0 0 10px 0">
-            <strong style="color: #0066cc; font-size: 1.25rem">Sản phẩm</strong>
-          </p>
-          <p
-            style="
-              margin: 0;
-              color: #555;
-              line-height: 1.6;
-              font-size: 1.05rem;
-            ">
-            Rotor Turbine 300 MW
-          </p>
-        </div>
-
-        <div style="margin-bottom: 25px">
-          <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Tuyến đường</strong
+              >{% trans "Sản phẩm" %}</strong
             >
           </p>
           <p
@@ -283,14 +270,14 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            Nhà máy Nhiệt điện Uông Bí, Tỉnh Quảng Ninh
+            {% trans "Rotor Turbine 300 MW" %}
           </p>
         </div>
 
         <div style="margin-bottom: 25px">
           <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Khối lượng</strong
+              >{% trans "Tuyến đường" %}</strong
             >
           </p>
           <p
@@ -300,14 +287,31 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            21 tấn
+            {% trans "Nhà máy Nhiệt điện Uông Bí, Tỉnh Quảng Ninh" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Khối lượng" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "21 tấn" %}
           </p>
         </div>
 
         <div>
           <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Phạm vi công việc</strong
+              >{% trans "Phạm vi công việc" %}</strong
             >
           </p>
           <p
@@ -317,8 +321,7 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            Xuất khẩu từ Việt Nam sang Nga sửa chữa; Nhập khẩu từ Nga về Việt
-            Nam khi sửa chữa xong
+            {% trans "Xuất khẩu từ Việt Nam sang Nga sửa chữa; Nhập khẩu từ Nga về Việt Nam khi sửa chữa xong" %}
           </p>
         </div>
       </div>
@@ -380,7 +383,7 @@ Logistics{% endblock %} {% block content %}
           padding-bottom: 10px;
           margin-bottom: 15px;
         ">
-        Hệ thống công viên giải trí nước & trượt
+        {% trans "Hệ thống công viên giải trí nước & trượt" %}
       </h2>
     </div>
 
@@ -403,25 +406,8 @@ Logistics{% endblock %} {% block content %}
         ">
         <div style="margin-bottom: 25px">
           <p style="margin: 0 0 10px 0">
-            <strong style="color: #0066cc; font-size: 1.25rem">Sản phẩm</strong>
-          </p>
-          <p
-            style="
-              margin: 0;
-              color: #555;
-              line-height: 1.6;
-              font-size: 1.05rem;
-            ">
-            Hơn 200 container 40 feet hàng chục container chuyên dụng chứa các
-            bộ phận hàng rời được nhập khẩu cùng 1000 tấn khung dầm thép & các
-            thiết bị đặc biệt siêu trường siêu trọng
-          </p>
-        </div>
-
-        <div style="margin-bottom: 25px">
-          <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Tuyến đường</strong
+              >{% trans "Sản phẩm" %}</strong
             >
           </p>
           <p
@@ -431,14 +417,14 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            Hòn Thơm, đảo Phú Quốc, tỉnh Kiên Giang, Việt Nam
+            {% trans "Hơn 200 container 40 feet hàng chục container chuyên dụng chứa các bộ phận hàng rời được nhập khẩu cùng 1000 tấn khung dầm thép & các thiết bị đặc biệt siêu trường siêu trọng" %}
           </p>
         </div>
 
         <div style="margin-bottom: 25px">
           <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Khối lượng</strong
+              >{% trans "Tuyến đường" %}</strong
             >
           </p>
           <p
@@ -448,14 +434,31 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            1000 tấn hàng & hàng trăm container
+            {% trans "Hòn Thơm, đảo Phú Quốc, tỉnh Kiên Giang, Việt Nam" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Khối lượng" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "1000 tấn hàng & hàng trăm container" %}
           </p>
         </div>
 
         <div>
           <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Phạm vi công việc</strong
+              >{% trans "Phạm vi công việc" %}</strong
             >
           </p>
           <p
@@ -465,9 +468,7 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            Vận chuyển đi đảo Phú Quốc bằng sà lan & dỡ hàng & di chuyển đến khu
-            vực thi công & lắp ráp công trình công viên nước Hòn Thơm, đảo Phú
-            Quốc, tỉnh Kiên Giang, Việt Nam
+            {% trans "Vận chuyển đi đảo Phú Quốc bằng sà lan & dỡ hàng & di chuyển đến khu vực thi công & lắp ráp công trình công viên nước Hòn Thơm, đảo Phú Quốc, tỉnh Kiên Giang, Việt Nam" %}
           </p>
         </div>
       </div>
@@ -535,7 +536,7 @@ Logistics{% endblock %} {% block content %}
           padding-bottom: 10px;
           margin-bottom: 15px;
         ">
-        Hệ thống cáp treo
+        {% trans "Hệ thống cáp treo" %}
       </h2>
     </div>
 
@@ -558,23 +559,8 @@ Logistics{% endblock %} {% block content %}
         ">
         <div style="margin-bottom: 25px">
           <p style="margin: 0 0 10px 0">
-            <strong style="color: #0066cc; font-size: 1.25rem">Sản phẩm</strong>
-          </p>
-          <p
-            style="
-              margin: 0;
-              color: #555;
-              line-height: 1.6;
-              font-size: 1.05rem;
-            ">
-            Các cuộn cáp lớn & các thiết bị
-          </p>
-        </div>
-
-        <div style="margin-bottom: 25px">
-          <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Tuyến đường</strong
+              >{% trans "Sản phẩm" %}</strong
             >
           </p>
           <p
@@ -584,14 +570,14 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            Đảo Cát Bà, tỉnh Hải Phòng, Việt Nam
+            {% trans "Các cuộn cáp lớn & các thiết bị" %}
           </p>
         </div>
 
         <div style="margin-bottom: 25px">
           <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Khối lượng</strong
+              >{% trans "Tuyến đường" %}</strong
             >
           </p>
           <p
@@ -601,14 +587,31 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            800 tấn
+            {% trans "Đảo Cát Bà, tỉnh Hải Phòng, Việt Nam" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Khối lượng" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "800 tấn" %}
           </p>
         </div>
 
         <div>
           <p style="margin: 0 0 10px 0">
             <strong style="color: #0066cc; font-size: 1.25rem"
-              >Phạm vi công việc</strong
+              >{% trans "Phạm vi công việc" %}</strong
             >
           </p>
           <p
@@ -618,9 +621,7 @@ Logistics{% endblock %} {% block content %}
               line-height: 1.6;
               font-size: 1.05rem;
             ">
-            Vận chuyển 800 tấn khung dầm thép và thiết bị cáp nặng/quá khổ từ
-            kho của Sun Group ở đất liền để giao và dỡ đến công trường trụ cáp
-            nằm giữa biển
+            {% trans "Vận chuyển 800 tấn khung dầm thép và thiết bị cáp nặng/quá khổ từ kho của Sun Group ở đất liền để giao và dỡ đến công trường trụ cáp nằm giữa biển" %}
           </p>
         </div>
       </div>
@@ -668,8 +669,6 @@ Logistics{% endblock %} {% block content %}
       </div>
     </div>
   </section>
-
-  
 </div>
 
 <!-- Swiper CSS -->

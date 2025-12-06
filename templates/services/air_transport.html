@@ -1,5 +1,4 @@
-{% extends 'base.html' %} {% load static %} {% block title %}Vận chuyển hàng
-không - KLM Logistics{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Vận chuyển hàng không - KLM Logistics" %}{% endblock %} {% block content %}
 
 <!-- Hero Image Section -->
 <div
@@ -30,11 +29,10 @@ không - KLM Logistics{% endblock %} {% block content %}
     ">
     <div class="hero-content" style="text-align: center; color: white">
       <h1 style="font-size: 2.5rem; font-weight: 600; margin: 0 0 15px 0">
-        Vận chuyển hàng không Quốc tế
+        {% trans "Vận chuyển hàng không Quốc tế" %}
       </h1>
       <p style="font-size: 1.1rem; margin: 0">
-        Dịch vụ vận chuyển hàng không chuyên nghiệp với mạng lưới đối tác quốc
-        tế
+        {% trans "Dịch vụ vận chuyển hàng không chuyên nghiệp với mạng lưới đối tác quốc tế" %}
       </p>
     </div>
   </div>
@@ -63,7 +61,7 @@ không - KLM Logistics{% endblock %} {% block content %}
               font-size: 1.4rem;
               font-weight: 600;
             ">
-            Nội dung
+            {% trans "Nội dung" %}
           </h3>
           <ul style="list-style: none; padding: 0; margin: 0">
             <li style="margin-bottom: 15px">
@@ -79,7 +77,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                   border-left: 3px solid transparent;
                   font-size: 1.05rem;
                 "
-                >Tổng Quan</a
+                >{% trans "Tổng Quan" %}</a
               >
             </li>
             <li style="margin-bottom: 15px">
@@ -95,7 +93,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                   border-left: 3px solid transparent;
                   font-size: 1.05rem;
                 "
-                >Nhập Khẩu</a
+                >{% trans "Nhập Khẩu" %}</a
               >
             </li>
             <li style="margin-bottom: 15px">
@@ -111,7 +109,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                   border-left: 3px solid transparent;
                   font-size: 1.05rem;
                 "
-                >Xuất Khẩu</a
+                >{% trans "Xuất Khẩu" %}</a
               >
             </li>
           </ul>
@@ -135,7 +133,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                 display: inline-block;
                 padding-bottom: 10px;
               ">
-              Tổng Quan
+              {% trans "Tổng Quan" %}
             </h2>
           </div>
           <div class="flex-container align-center">
@@ -158,11 +156,9 @@ không - KLM Logistics{% endblock %} {% block content %}
                   text-align: justify;
                 ">
                 <p style="margin: 0">
-                  Chúng tôi hiểu rằng khi khách hàng chọn dịch vụ hàng không là đồng nghĩa với việc lô hàng có giá trị lớn với khách hàng, cần sắp xếp vận chuyển nhanh chóng, an toàn. Vi thế dịch vụ vận chuyển hàng không của KLM được xây dựng và phát triển dựa trên mạng lưới hợp tác bền chặt với những hãng hàng không mạnh với khả năng cung cấp chỗ, tải lớn, tần suất bay nhiều cùng giá cả cạnh tranh đi hầu hết các thị trường chính trên toàn thế giới.
+                  {% trans "Chúng tôi hiểu rằng khi khách hàng chọn dịch vụ hàng không là đồng nghĩa với việc lô hàng có giá trị lớn với khách hàng, cần sắp xếp vận chuyển nhanh chóng, an toàn. Vi thế dịch vụ vận chuyển hàng không của KLM được xây dựng và phát triển dựa trên mạng lưới hợp tác bền chặt với những hãng hàng không mạnh với khả năng cung cấp chỗ, tải lớn, tần suất bay nhiều cùng giá cả cạnh tranh đi hầu hết các thị trường chính trên toàn thế giới." %}
                 </p>
-                
               </div>
-              
             </div>
           </div>
         </section>
@@ -185,7 +181,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                   text-align: justify;
                 ">
                 <p style="margin: 0; margin-bottom: 35px">
-                  KLM đã và đang dàn xếp vận chuyển hàng không cho rất nhiều loại mặt hàng thông thường như hàng dệt may, hàng thiết bị điện tử & viễn thông... Đặc biệt ngoài ra chúng tôi có kinh nghiệm trong việc vận chuyển các mặt hàng nguy hiểm (hàng chứa pin lithium, chất lỏng, phát từ trường, rada..), hàng động vật sống, hàng hoa quả & rau tươi. Kể cả những lô hàng dự án siêu trọng, siêu trường chúng tôi cũng đã thành công tìm được giải pháp thực hiện bằng vận chuyển hàng không.
+                  {% trans "KLM đã và đang dàn xếp vận chuyển hàng không cho rất nhiều loại mặt hàng thông thường như hàng dệt may, hàng thiết bị điện tử & viễn thông... Đặc biệt ngoài ra chúng tôi có kinh nghiệm trong việc vận chuyển các mặt hàng nguy hiểm (hàng chứa pin lithium, chất lỏng, phát từ trường, rada..), hàng động vật sống, hàng hoa quả & rau tươi. Kể cả những lô hàng dự án siêu trọng, siêu trường chúng tôi cũng đã thành công tìm được giải pháp thực hiện bằng vận chuyển hàng không." %}
                 </p>
               </div>
             </div>
@@ -199,7 +195,6 @@ không - KLM Logistics{% endblock %} {% block content %}
                   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
                 " />
             </div>
-            
           </div>
         </section>
 
@@ -218,7 +213,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                 display: inline-block;
                 padding-bottom: 10px;
               ">
-              Vận chuyển Hàng không Nhập Quốc tế
+              {% trans "Vận chuyển Hàng không Nhập Quốc tế" %}
             </h2>
           </div>
           <div class="flex-container align-center">
@@ -232,10 +227,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                   margin-bottom: 20px;
                 ">
                 <p style="margin: 0">
-                  KLM là đơn vị vận chuyển hàng nhập chuyên nghiệp, uy ín cho
-                  các mặt hàng chính như hàng giá trị cao, hàng nguy hiểm (MSDS,
-                  UN) những mặt hàng đòi hỏi kiến thức và kinh nghiệm thực trong
-                  việc triển khai.
+                  {% trans "KLM là đơn vị vận chuyển hàng nhập chuyên nghiệp, uy tín cho các mặt hàng chính như hàng giá trị cao, hàng nguy hiểm (MSDS, UN) những mặt hàng đòi hỏi kiến thức và kinh nghiệm thực trong việc triển khai." %}
                 </p>
               </div>
               <ul
@@ -262,7 +254,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Hàng thiết bị điện tử & viễn thông
+                  >{% trans "Hàng thiết bị điện tử & viễn thông" %}
                 </li>
                 <li
                   style="
@@ -279,7 +271,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Hàng nguyên liệu cho ngành dệt may, nhựa, thép, cơ khí, vật liệu xây dựng,...
+                  >{% trans "Hàng nguyên liệu cho ngành dệt may, nhựa, thép, cơ khí, vật liệu xây dựng,..." %}
                 </li>
                 <li
                   style="
@@ -296,7 +288,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Hàng chứa hoá chất, Pin lithium
+                  >{% trans "Hàng chứa hoá chất, Pin lithium" %}
                 </li>
                 <li
                   style="
@@ -313,7 +305,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Hàng tiêu dùng và thực phẩm như đồ tã bỉm, văn phòng phẩm, đồ gia dụng, bánh kẹo, nước giải khát,... 
+                  >{% trans "Hàng tiêu dùng và thực phẩm như đồ tã bỉm, văn phòng phẩm, đồ gia dụng, bánh kẹo, nước giải khát,..." %}
                 </li>
                 <li
                   style="
@@ -330,7 +322,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Linh kiện & máy móc, hệ thống dây chuyền nhà máy 
+                  >{% trans "Linh kiện & máy móc, hệ thống dây chuyền nhà máy" %}
                 </li>
                 <li
                   style="
@@ -347,7 +339,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Hàng dự án (dự án điện mặt trời, hệ thống thiết bị cho sân bay,…) 
+                  >{% trans "Hàng dự án (dự án điện mặt trời, hệ thống thiết bị cho sân bay,…)" %}
                 </li>
                 <li
                   style="
@@ -364,7 +356,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Các mặt hàng khác.
+                  >{% trans "Các mặt hàng khác" %}
                 </li>
               </ul>
             </div>
@@ -396,7 +388,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                 display: inline-block;
                 padding-bottom: 10px;
               ">
-              Vận chuyển Hàng không Xuất Quốc tế
+              {% trans "Vận chuyển Hàng không Xuất Quốc tế" %}
             </h2>
           </div>
           <div class="flex-container align-center">
@@ -429,13 +421,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                   margin-bottom: 20px;
                 ">
                 <p style="margin: 0">
-                  KLM Logistics là đại lý hàng hóa của nhiều hãng vận chuyển
-                  hàng không quốc tế nổi tiếng (GSA) với một dịch vụ vận chuyển
-                  hàng không trọn gói, cung cấp lượng tải trọng lớn và mật độ
-                  chuyến bay dày đặc đến hầu hết các quốc gia và vùng lãnh thổ
-                  trên thế giới. Các hãng hàng không đối tác của chúng tôi gồm
-                  có: Vietnam Airlines, Asiana Airlines, China Airlines, Qatar
-                  Airways, Singapore Airlines, Korean Air, Turkish Airline...
+                  {% trans "KLM Logistics là đại lý hàng hóa của nhiều hãng vận chuyển hàng không quốc tế nổi tiếng (GSA) với một dịch vụ vận chuyển hàng không trọn gói, cung cấp lượng tải trọng lớn và mật độ chuyến bay dày đặc đến hầu hết các quốc gia và vùng lãnh thổ trên thế giới. Các hãng hàng không đối tác của chúng tôi gồm có: Vietnam Airlines, Asiana Airlines, China Airlines, Qatar Airways, Singapore Airlines, Korean Air, Turkish Airline..." %}
                 </p>
               </div>
               <div
@@ -447,7 +433,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                   margin-bottom: 20px;
                 ">
                 <p style="margin: 0">
-                  Một số dịch vụ chính của chúng tôi bao gồm:
+                  {% trans "Một số dịch vụ chính của chúng tôi bao gồm:" %}
                 </p>
               </div>
               <ul
@@ -474,7 +460,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất hàng nông sản: cà rốt, chuối, bưởi… 
+                  >{% trans "Xuất hàng nông sản: cà rốt, chuối, bưởi…" %}
                 </li>
                 <li
                   style="
@@ -491,7 +477,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất hàng dệt may, đồ lụa
+                  >{% trans "Xuất hàng dệt may, đồ lụa" %}
                 </li>
                 <li
                   style="
@@ -508,7 +494,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất hàng nguyên liệu bột sắn dây, giấy cuộn đi các cảng ở Trung Quốc
+                  >{% trans "Xuất hàng nguyên liệu bột sắn dây, giấy cuộn đi các cảng ở Trung Quốc" %}
                 </li>
                 <li
                   style="
@@ -525,7 +511,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất khẩu hàng plywood, gỗ, nội thất đi Châu Á, Châu Âu & Mỹ
+                  >{% trans "Xuất khẩu hàng plywood, gỗ, nội thất đi Châu Á, Châu Âu & Mỹ" %}
                 </li>
                 <li
                   style="
@@ -542,7 +528,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất khẩu hàng thép cuộn, thép ống đi Ấn Độ, Hàn, Nhật, Châu Âu
+                  >{% trans "Xuất khẩu hàng thép cuộn, thép ống đi Ấn Độ, Hàn, Nhật, Châu Âu" %}
                 </li>
                 <li
                   style="
@@ -559,7 +545,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất khẩu hàng xơ sợi đi Trung Quốc
+                  >{% trans "Xuất khẩu hàng xơ sợi đi Trung Quốc" %}
                 </li>
                 <li
                   style="
@@ -576,7 +562,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất khẩu hàng dệt may thành phẩm đi Châu Âu & Mỹ
+                  >{% trans "Xuất khẩu hàng dệt may thành phẩm đi Châu Âu & Mỹ" %}
                 </li>
                 <li
                   style="
@@ -593,7 +579,7 @@ không - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Các mặt hàng khác
+                  >{% trans "Các mặt hàng khác" %}
                 </li>
               </ul>
             </div>

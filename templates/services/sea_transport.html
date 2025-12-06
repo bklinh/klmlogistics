@@ -1,5 +1,4 @@
-{% extends 'base.html' %} {% load static %} {% block title %}Vận chuyển đường
-biển - KLM Logistics{% endblock %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Vận chuyển đường biển - KLM Logistics" %}{% endblock %} {% block content %}
 
 <!-- Hero Image Section -->
 <div
@@ -30,11 +29,10 @@ biển - KLM Logistics{% endblock %} {% block content %}
     ">
     <div class="hero-content" style="text-align: center; color: white">
       <h1 style="font-size: 2.5rem; font-weight: 700; margin: 0 0 15px 0">
-        Vận chuyển đường biển quốc tế
+        {% trans "Vận chuyển đường biển quốc tế" %}
       </h1>
       <p style="font-size: 1.1rem; margin: 0">
-        Dịch vụ vận chuyển đường biển toàn cầu với container, hàng rời, hàng quá
-        khổ quá tải
+        {% trans "Dịch vụ vận chuyển đường biển toàn cầu với container, hàng rời, hàng quá khổ quá tải" %}
       </p>
     </div>
   </div>
@@ -63,7 +61,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
               font-size: 1.4rem;
               font-weight: 700;
             ">
-            Nội dung
+            {% trans "Nội dung" %}
           </h3>
           <ul style="list-style: none; padding: 0; margin: 0">
             <li style="margin-bottom: 15px">
@@ -78,8 +76,8 @@ biển - KLM Logistics{% endblock %} {% block content %}
                   transition: all 0.3s ease;
                   border-left: 3px solid transparent;
                   font-size: 1.05rem;
-                "
-                >Tổng Quan</a
+                ">
+                {% trans "Tổng Quan" %}</a
               >
             </li>
             <li style="margin-bottom: 15px">
@@ -94,8 +92,8 @@ biển - KLM Logistics{% endblock %} {% block content %}
                   transition: all 0.3s ease;
                   border-left: 3px solid transparent;
                   font-size: 1.05rem;
-                "
-                >Nhập Khẩu</a
+                ">
+                {% trans "Nhập Khẩu" %}</a
               >
             </li>
             <li style="margin-bottom: 15px">
@@ -110,8 +108,8 @@ biển - KLM Logistics{% endblock %} {% block content %}
                   transition: all 0.3s ease;
                   border-left: 3px solid transparent;
                   font-size: 1.05rem;
-                "
-                >Xuất Khẩu</a
+                ">
+                {% trans "Xuất Khẩu" %}</a
               >
             </li>
           </ul>
@@ -135,7 +133,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                 display: inline-block;
                 padding-bottom: 10px;
               ">
-              Tổng Quan
+              {% trans "Tổng Quan" %}
             </h2>
           </div>
           <div class="flex-container align-center">
@@ -149,13 +147,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                   margin-bottom: 20px;
                 ">
                 <p style="margin: 0">
-                  KLM Logistics cung cấp dịch vụ đường biển bằng container, hàng
-                  rời, hàng quá khổ quá tải đi và đến khắp nơi trên thế giới.
-                  Trong suốt quá trình hình thành và phát triển, chúng tôi đã
-                  tạo ra mối quan hệ đối tác với hầu hết các hãng tàu trên thị
-                  trường như Meark Lines, Sea Land, One, YangMing, Evergreen,
-                  Cosco, Huyndai, OOCL, Hapaglloyd, Wanhai, KMTC, SITC, CMA-CGM,
-                  MSC…
+                  {% trans "KLM Logistics cung cấp dịch vụ đường biển bằng container, hàng rời, hàng quá khổ quá tải đi và đến khắp nơi trên thế giới. Trong suốt quá trình hình thành và phát triển, chúng tôi đã tạo ra mối quan hệ đối tác với hầu hết các hãng tàu trên thị trường như Meark Lines, Sea Land, One, YangMing, Evergreen, Cosco, Huyndai, OOCL, Hapaglloyd, Wanhai, KMTC, SITC, CMA-CGM, MSC…" %}
                 </p>
               </div>
             </div>
@@ -199,11 +191,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                     text-align: justify;
                   ">
                   <p style="margin: 0">
-                    KLM Logistics ký nhiều hợp đồng với các hãng tàu đặc biệt
-                    cho các tuyến dài từ đó có thể cung cấp cho khách hàng dịch
-                    vụ ổn định, chất lượng cao với giá cả cạnh tranh. Thị trường
-                    chính của KLM Logistics lần lượt là Intra Asia, Châu Âu, Bắc
-                    Mỹ, Châu Úc, Châu Phi.
+                    {% trans "KLM Logistics ký nhiều hợp đồng với các hãng tàu đặc biệt cho các tuyến dài từ đó có thể cung cấp cho khách hàng dịch vụ ổn định, chất lượng cao với giá cả cạnh tranh. Thị trường chính của KLM Logistics lần lượt là Intra Asia, Châu Âu, Bắc Mỹ, Châu Úc, Châu Phi." %}
                   </p>
                 </div>
               </div>
@@ -226,7 +214,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                 display: inline-block;
                 padding-bottom: 10px;
               ">
-              Vận chuyển Đường biển Nhập Quốc tế
+              {% trans "Vận chuyển Đường biển Nhập Quốc tế" %}
             </h2>
           </div>
           <div>
@@ -248,23 +236,12 @@ biển - KLM Logistics{% endblock %} {% block content %}
                 margin-bottom: 20px;
               ">
               <p style="margin: 0">
-                Với thị trường đang phát triển nhanh tại Việt Nam thì lượng hàng
-                hoá nhập khẩu ngày càng lớn để đáp ứng các nhu cầu trong sản
-                xuất và tiêu dùng. Với 70% lượng hàng hoá nhập khẩu chính ngạch
-                là qua đường biển, KLM Logistics hiểu rằng chúng tôi phải mang
-                đến cho khách hàng dịch vụ vận chuyển hàng nhập khẩu bằng đường
-                biển tốt nhất với chi phí phải thật cạnh tranh.
+                {% trans "Với thị trường đang phát triển nhanh tại Việt Nam thì lượng hàng hoá nhập khẩu ngày càng lớn để đáp ứng các nhu cầu trong sản xuất và tiêu dùng. Với 70% lượng hàng hoá nhập khẩu chính ngạch là qua đường biển, KLM Logistics hiểu rằng chúng tôi phải mang đến cho khách hàng dịch vụ vận chuyển hàng nhập khẩu bằng đường biển tốt nhất với chi phí phải thật cạnh tranh." %}
               </p>
             </div>
             <div style="margin-bottom: 20px">
-              <p
-                style="
-                  color: #333;
-                  font-size: 1.1rem;
-                  margin: 10px 0;
-                  
-                ">
-                Một số dịch vụ chính của chúng tôi bao gồm:
+              <p style="color: #333; font-size: 1.1rem; margin: 10px 0">
+                {% trans "Một số dịch vụ nổi bật chúng tôi cung cấp:" %}
               </p>
               <ul
                 style="
@@ -290,7 +267,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Nhập nguyên container (CL), nhập hàng lẻ (LCL)
+                  >{% trans "Nhập nguyên container (CL), nhập hàng lẻ (LCL)" %}
                 </li>
                 <li
                   style="
@@ -307,8 +284,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Nhập hàng theo các điều kiện giao hàng Incorterm (Ex-Work,
-                  FOB, CIF,..)
+                  >{% trans "Nhập hàng theo các điều kiện giao hàng Incorterm (Ex-Work, FOB, CIF,..)" %}
                 </li>
                 <li
                   style="
@@ -325,7 +301,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Thông quan hải quan cho hàng nhập khẩu
+                  >{% trans "Thông quan hải quan cho hàng nhập khẩu" %}
                 </li>
                 <li
                   style="
@@ -342,7 +318,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Mua bảo hiểm cho hàng hoá
+                  >{% trans "Mua bảo hiểm cho hàng hoá" %}
                 </li>
                 <li
                   style="
@@ -359,8 +335,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Làm dịch vụ xử lý thông quan hàng xuất & nhập khẩu cho các
-                  đơn vị vận chuyên khác tại cảng biển.
+                  >{% trans "Làm dịch vụ xử lý thông quan hàng xuất & nhập khẩu cho các đơn vị vận chuyên khác tại cảng biển." %}
                 </li>
                 <li
                   style="
@@ -377,11 +352,10 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Vận chuyển xe tải, xe container đi giao và nhận hàng.
+                  >{% trans "Vận chuyển xe tải, xe container đi giao và nhận hàng." %}
                 </li>
               </ul>
             </div>
-            
           </div>
         </section>
 
@@ -400,7 +374,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                 display: inline-block;
                 padding-bottom: 10px;
               ">
-              Vận chuyển Đường biển Xuất Quốc tế
+              {% trans "Vận chuyển Đường biển Xuất Quốc tế" %}
             </h2>
           </div>
           <div>
@@ -422,18 +396,10 @@ biển - KLM Logistics{% endblock %} {% block content %}
                 margin-bottom: 20px;
               ">
               <p style="margin: 0">
-                Ngày nay Việt Nam được biết đến là một trong những nơi có các
-                khu công nhiệp lớn trải dài từ Bắc đến Nam, là nơi đặt nhà máy,
-                trụ sở của nhiều doanh nghiệp FDI lớn, một trong những thị
-                trường xuất khẩu đầy tiềm năng. Đó cũng là tiền đề của việc phát
-                triển mạnh ngành vận chuyển xuất khẩu bằng đường biển. KLM
-                logistics cũng không nằm ngoài xu hướng đó, chúng tôi đã và đang
-                phục vụ một lượng lớn các đơn hàng xuất khẩu bằng đường biển với
-                sự chuyên nghiệp cao, mang đến sự tin tưởng lâu dài cho quý
-                khách hàng.
+                {% trans "Ngày nay Việt Nam được biết đến là một trong những nơi có các khu công nhiệp lớn trải dài từ Bắc đến Nam, là nơi đặt nhà máy, trụ sở của nhiều doanh nghiệp FDI lớn, một trong những thị trường xuất khẩu đầy tiềm năng. Đó cũng là tiền đề của việc phát triển mạnh ngành vận chuyển xuất khẩu bằng đường biển. KLM logistics cũng không nằm ngoài xu hướng đó, chúng tôi đã và đang phục vụ một lượng lớn các đơn hàng xuất khẩu bằng đường biển với sự chuyên nghiệp cao, mang đến sự tin tưởng lâu dài cho quý khách hàng." %}
               </p>
             </div>
-        
+
             <img
               src="{% static 'uploaded/services/item2_4.jpg' %}"
               alt="Vận chuyển hàng biển xuất khẩu 2"
@@ -445,14 +411,8 @@ biển - KLM Logistics{% endblock %} {% block content %}
               " />
 
             <div style="margin-top: 20px">
-              <p
-                style="
-                  color: #333;
-                  font-size: 1.1rem;
-                  margin: 10px 0;
-                  
-                ">
-                KLM là đối tác chuyên nghiệp & uy tín với rất nhiều khách hàng là nhà máy lớn , công ty thương mại thường xuyên xuất khẩu đi các thị trường chính trên thế giới. Ngoài việc cung cấp cho khách hàng giá cước biển tốt chúng tôi có kinh nghiệm trong việc xử lý những đơn hàng lớn đòi hỏi nhân lực, nguồn lực cũng như bề dày kinh nghiệm thực tế. Một số mặt hàng KLM thường xuyên phục vụ cho khách hàng xuất khẩu. 
+              <p style="color: #333; font-size: 1.1rem; margin: 10px 0">
+                {% trans "KLM là đối tác chuyên nghiệp & uy tín với rất nhiều khách hàng là nhà máy lớn , công ty thương mại thường xuyên xuất khẩu đi các thị trường chính trên thế giới. Ngoài việc cung cấp cho khách hàng giá cước biển tốt chúng tôi có kinh nghiệm trong việc xử lý những đơn hàng lớn đòi hỏi nhân lực, nguồn lực cũng như bề dày kinh nghiệm thực tế. Một số mặt hàng KLM thường xuyên phục vụ cho khách hàng xuất khẩu." %}
               </p>
               <ul
                 style="
@@ -478,7 +438,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất hàng mau hỏng: quả cà rốt, chuối, quả bưởi tươi,…
+                  >{% trans "Xuất hàng mau hỏng: quả cà rốt, chuối, quả bưởi tươi,…" %}
                 </li>
                 <li
                   style="
@@ -495,7 +455,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất hàng nguyên liệu bột sắn dây đi các cảng ở Trung Quốc
+                  >{% trans "Xuất hàng nguyên liệu bột sắn dây đi các cảng ở Trung Quốc" %}
                 </li>
                 <li
                   style="
@@ -512,7 +472,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất khẩu hàng hương liệu như quế hồi đi Ấn Độ hay Hàn Quốc
+                  >{% trans "Xuất khẩu hàng hương liệu như quế hồi đi Ấn Độ hay Hàn Quốc" %}
                 </li>
                 <li
                   style="
@@ -529,8 +489,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất khẩu hàng bột đá đi các thị trường Bangladesh, Pakistan
-                  hay Ấn Độ
+                  >{% trans "Xuất khẩu hàng bột đá đi các thị trường Bangladesh, Pakistan hay Ấn Độ" %}
                 </li>
                 <li
                   style="
@@ -547,7 +506,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất khẩu hàng xơ sợi đi Chittagong, Bangladesh
+                  >{% trans "Xuất khẩu hàng xơ sợi đi Chittagong, Bangladesh" %}
                 </li>
                 <li
                   style="
@@ -564,7 +523,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Xuất khẩu hàng dệt may thành phẩm đi Châu Âu & Mỹ
+                  >{% trans "Xuất khẩu hàng dệt may thành phẩm đi Châu Âu & Mỹ" %}
                 </li>
                 <li
                   style="
@@ -581,7 +540,7 @@ biển - KLM Logistics{% endblock %} {% block content %}
                       font-weight: bold;
                     "
                     >•</span
-                  >Các mặt hàng khác.
+                  >{% trans "Các mặt hàng khác" %}
                 </li>
               </ul>
             </div>
