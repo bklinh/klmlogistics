@@ -217,8 +217,8 @@
       {% trans "Tại Sao Chọn KLM Logistics?" %}
     </h2>
 
-    <div class="flex-container flex-centered">
-      <div class="cell-1-4 tab-cell-1-2 mobile-cell-1-1">
+    <div class="flex-container flex-centered why-container">
+      <div class="cell-1-4 tab-cell-1-2 mobile-cell-1-1 why-cell">
         <div class="why-item">
           <div class="why-icon">
             <i class="fas fa-globe"></i>
@@ -230,7 +230,7 @@
         </div>
       </div>
 
-      <div class="cell-1-4 tab-cell-1-2 mobile-cell-1-1">
+      <div class="cell-1-4 tab-cell-1-2 mobile-cell-1-1 why-cell">
         <div class="why-item">
           <div class="why-icon">
             <i class="fas fa-lightbulb"></i>
@@ -242,7 +242,7 @@
         </div>
       </div>
 
-      <div class="cell-1-4 tab-cell-1-2 mobile-cell-1-1">
+      <div class="cell-1-4 tab-cell-1-2 mobile-cell-1-1 why-cell">
         <div class="why-item">
           <div class="why-icon">
             <i class="fas fa-clock"></i>
@@ -252,7 +252,7 @@
         </div>
       </div>
 
-      <div class="cell-1-4 tab-cell-1-2 mobile-cell-1-1">
+      <div class="cell-1-4 tab-cell-1-2 mobile-cell-1-1 why-cell">
         <div class="why-item">
           <div class="why-icon">
             <i class="fas fa-headset"></i>
@@ -413,6 +413,17 @@
     color: #124d92;
   }
 
+  .why-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .why-cell {
+    display: flex;
+    flex-direction: column;
+  }
+
   .why-item {
     text-align: center;
     padding: 30px;
@@ -420,6 +431,9 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: all 0.35s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .why-item:hover {
@@ -444,6 +458,10 @@
     color: #124d92;
     margin: 0 0 10px 0;
     font-size: 1.1rem;
+    min-height: 2.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .why-item p {
@@ -451,6 +469,10 @@
     margin: 0;
     font-size: 0.9rem;
     line-height: 1.6;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (max-width: 767px) {

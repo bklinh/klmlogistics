@@ -1,6 +1,7 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="{% get_current_language as LANGUAGE_CODE %}{{ LANGUAGE_CODE }}"
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,6 +54,9 @@
     <!-- Additional CSS -->
     <link rel="stylesheet" href="{% static 'css/hover.css' %}" />
     <link rel="stylesheet" href="{% static 'css/widget-call.css' %}" />
+    
+    <!-- Chinese Fonts CSS (for Chinese language) -->
+    <link rel="stylesheet" href="{% static 'css/chinese-fonts.css' %}" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
@@ -158,7 +162,7 @@
           <li class="hotline_float_icon hotline-click">
             <a id="hotlineButton" href="tel:0913020430"
               ><i class="fa fa-headphones-alt animated infinite tada" style="font-size: 35px;"></i
-              ><span>Hotline: 0913020430</span></a
+              ></a
             >
           </li>
           <li class="hotline_float_icon">

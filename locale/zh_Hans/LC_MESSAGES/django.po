@@ -15,1253 +15,1253 @@ msgstr ""
 ##### navbar.html
 
 msgid "Giới thiệu"
-msgstr "About Us"
+msgstr "关于我们"
 
 msgid "Thông tin chung"
-msgstr "General Information"
+msgstr "基本信息"
 
 msgid "Giá trị cốt lõi"
-msgstr "Core Values"
+msgstr "核心价值"
 
 msgid "Tại sao chọn chúng tôi"
-msgstr "Why Choose Us"
+msgstr "为什么选择我们"
 
 msgid "Tầm nhìn - Sứ mệnh"
-msgstr "Vision - Mission"
+msgstr "愿景 - 使命"
 
 msgid "Profile của công ty"
-msgstr "Company Profile"
+msgstr "公司简介"
 
 msgid "Dịch vụ"
-msgstr "Services"
+msgstr "服务"
 
 msgid "Vận chuyển Hàng không Quốc tế"
-msgstr "International Air Freight"
+msgstr "国际航空运输"
 
 msgid "Vận chuyển Hàng không Nhập Quốc tế"
-msgstr "International Air Import"
+msgstr "国际航空进口"
 
 msgid "Vận chuyển Hàng không Xuất Quốc tế"
-msgstr "International Air Export"
+msgstr "国际航空出口"
 
 msgid "Vận chuyển Đường biển Quốc tế"
-msgstr "International Sea Freight"
+msgstr "国际海运"
 
 msgid "Vận chuyển Đường biển Nhập Quốc tế"
-msgstr "International Sea Import"
+msgstr "国际海运进口"
 
 msgid "Vận chuyển Đường biển Xuất Quốc tế"
-msgstr "International Sea Export"
+msgstr "国际海运出口"
 
 msgid "Logistics & Các dịch vụ gia tăng"
-msgstr "Logistics & Value Added Services"
+msgstr "物流及增值服务"
 
 msgid "Nội địa & Kho bãi"
-msgstr "Domestic & Warehousing"
+msgstr "国内运输及仓储"
 
 msgid "Đường sắt & Xuyên biên giới"
-msgstr "Rail & Cross-border"
+msgstr "铁路及跨境运输"
 
 msgid "Hàng đặc biệt - Hàng dự án"
-msgstr "Special Cargo - Project Cargo"
+msgstr "特殊货物 - 项目货物"
 
 msgid "Kê khai Hải quan"
-msgstr "Customs Declaration"
+msgstr "报关服务"
 
 msgid "Dự Án"
-msgstr "Projects"
+msgstr "项目案例"
 
 msgid "Ngành bia & nước giải khát"
-msgstr "Beer & Beverage Industry"
+msgstr "啤酒及饮料行业"
 
 msgid "Ngành điện & Năng lượng"
-msgstr "Electricity & Energy Industry"
+msgstr "电力及能源行业"
 
 msgid "Hệ thống công viên giải trí"
-msgstr "Amusement Park Systems"
+msgstr "游乐园系统"
 
 msgid "Hệ thống cáp treo"
-msgstr "Cable Car Systems"
+msgstr "缆车系统"
 
 msgid "Tin tức"
-msgstr "News"
+msgstr "新闻资讯"
 
 msgid "Tin công ty"
-msgstr "Company News"
+msgstr "公司新闻"
 
 msgid "Tin chuyên ngành"
-msgstr "Industry News"
+msgstr "行业新闻"
 
 msgid "Tuyển dụng"
-msgstr "Recruitment"
+msgstr "招聘信息"
 
 msgid "Trải nghiệm khách hàng"
-msgstr "Customer Experience"
+msgstr "客户体验"
 
 msgid "Liên hệ"
-msgstr "Contact"
+msgstr "联系我们"
 
 msgid "Tìm kiếm..."
-msgstr "Search..."
+msgstr "搜索..."
 
 msgid "Về chúng tôi"
-msgstr "About Us"
+msgstr "关于我们"
 
 msgid "Về KLM"
-msgstr "About KLM"
+msgstr "关于KLM"
 
 msgid "Dự án"
-msgstr "Projects"
+msgstr "项目案例"
 
 ##### footer.html
 msgid "KLM Logistics cung cấp dịch vụ logistics toàn diện từ vận chuyển, kho bãi đến thông quan hải quan với chất lượng quốc tế."
-msgstr "KLM Logistics provides comprehensive logistics services from transportation, warehousing to customs clearance with international quality."
+msgstr "KLM物流提供从运输、仓储到报关的全面物流服务，品质达到国际标准。"
 
 msgid "Liên Hệ"
-msgstr "Contact"
+msgstr "联系方式"
 
 msgid "Địa chỉ:"
-msgstr "Address:"
+msgstr "地址："
 
 msgid "Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội, Việt Nam"
-msgstr "4th Floor, No. 36 Hoang Cau, Dong Da, Hanoi, Vietnam"
+msgstr "越南河内市栋多郡黄球路36号4楼"
 
 msgid "Điện thoại / Zalo:"
-msgstr "Phone / Zalo:"
+msgstr "电话 / Zalo："
 
 msgid "Email:"
-msgstr "Email:"
+msgstr "邮箱："
 
 msgid "Thời Gian Làm Việc"
-msgstr "Working Hours"
+msgstr "工作时间"
 
 msgid "Thứ 2 - Thứ 6:"
-msgstr "Monday - Friday:"
+msgstr "周一至周五："
 
 msgid "Thứ 7:"
-msgstr "Saturday:"
+msgstr "周六："
 
 msgid "Chủ Nhật:"
-msgstr "Sunday:"
+msgstr "周日："
 
 msgid "Đóng cửa"
-msgstr "Closed"
+msgstr "休息"
 
 msgid "Bảo lưu mọi quyền."
-msgstr "All rights reserved."
+msgstr "版权所有。"
 
 ##### home.html
 msgid "Trang chủ"
-msgstr "Home"
+msgstr "首页"
 
 msgid "Giải pháp Logistics toàn diện & chuyên nghiệp"
-msgstr "Comprehensive & Professional Logistics Solutions"
+msgstr "全面专业的物流解决方案"
 
 msgid "DỊCH VỤ CỦA CHÚNG TÔI"
-msgstr "OUR SERVICES"
+msgstr "我们的服务"
 
 msgid "Vận Chuyển Hàng Không Quốc Tế"
-msgstr "International Air Transport"
+msgstr "国际航空运输"
 
 msgid "Mạng lưới hãng hàng không toàn cầu"
-msgstr "Global airline network"
+msgstr "全球航空网络"
 
 msgid "Dịch vụ vận chuyển hàng không nhanh chóng, an toàn đến hơn 150 quốc gia. Chúng tôi cung cấp giải pháp trọn gói từ pickup đến delivery."
-msgstr "Fast and safe air transport services to over 150 countries. We provide full-package solutions from pickup to delivery."
+msgstr "快速安全的航空运输服务，覆盖150多个国家。我们提供从取货到送货的全套解决方案。"
 
 msgid "Xử lý hàng nguy hiểm chuyên nghiệp"
-msgstr "Professional dangerous goods handling"
+msgstr "专业危险品处理"
 
 msgid "Door to door delivery"
-msgstr "Door to door delivery"
+msgstr "门到门配送"
 
 msgid "Thông quan hải quan"
-msgstr "Customs clearance"
+msgstr "报关服务"
 
 # --- Service 2: Sea Transport (Vận chuyển đường biển) ---
 msgid "Vận Chuyển Đường Biển Quốc Tế"
-msgstr "International Sea Transport"
+msgstr "国际海运"
 
 msgid "Giải pháp vận chuyển đường biển hiệu quả với chi phí cạnh tranh. Chúng tôi xử lý container, hàng rời, hàng quá khổ quá tải."
-msgstr "Effective sea transport solutions with competitive costs. We handle containers, bulk cargo, and oversized/overweight cargo."
+msgstr "高效的海运解决方案，价格具有竞争力。我们处理集装箱、散货和超大超重货物。"
 
 msgid "FCL & LCL Container"
-msgstr "FCL & LCL Container"
+msgstr "整柜及拼箱"
 
 msgid "Hàng rời & Break Bulk"
-msgstr "Bulk Cargo & Break Bulk"
+msgstr "散货及件杂货"
 
 msgid "Hàng quá khổ quá tải"
-msgstr "Oversized & Overweight Cargo"
+msgstr "超大超重货物"
 
 msgid "Project cargo"
-msgstr "Project cargo"
+msgstr "项目货物"
 
 # --- Service 3: Cross Border (Xuyên biên giới) ---
 msgid "Vận Chuyển Xuyên Biên Giới"
-msgstr "Cross Border Transport"
+msgstr "跨境运输"
 
 msgid "Chuyên vận chuyển hàng hóa xuất nhập khẩu giữa Việt Nam, Lào, Campuchia và Thailand với thủ tục nhanh chóng, đơn giản."
-msgstr "Specializing in import-export transport between Vietnam, Laos, Cambodia, and Thailand with fast and simple procedures."
+msgstr "专业办理越南、老挝、柬埔寨和泰国之间的进出口运输，手续快速简便。"
 
 msgid "Xuất nhập khẩu Lào, Campuchia"
-msgstr "Import-Export Laos, Cambodia"
+msgstr "老挝、柬埔寨进出口"
 
 msgid "Vận chuyển sang Thailand"
-msgstr "Transport to Thailand"
+msgstr "泰国运输"
 
 msgid "Thủ tục hải quan tối ưu"
-msgstr "Optimized customs procedures"
+msgstr "优化报关流程"
 
 msgid "Chi phí cạnh tranh"
-msgstr "Competitive costs"
+msgstr "价格具有竞争力"
 
 # --- Service 4: Warehouse (Kho bãi) ---
 msgid "Vận Chuyển Nội Địa và Dịch Vụ Kho Bãi"
-msgstr "Domestic Transport & Warehousing Services"
+msgstr "国内运输及仓储服务"
 
 msgid "Kho bãi tiêu chuẩn cao tại các vị trí chiến lược phục vụ bảo quản hàng hóa giá trị cao với chi phí hợp lý."
-msgstr "High-standard warehouses at strategic locations serving high-value goods preservation at reasonable costs."
+msgstr "位于战略位置的高标准仓库，以合理的成本保管高价值货物。"
 
 msgid "Kho chuyên dụng cho hàng điện tử"
-msgstr "Specialized warehouse for electronics"
+msgstr "电子产品专用仓库"
 
 msgid "Kho hóa chất & hàng bảo xá"
-msgstr "Chemical & Bonded Warehouse"
+msgstr "化学品及保税仓库"
 
 msgid "Diện tích kho lớn trên toàn quốc"
-msgstr "Large nationwide warehouse area"
+msgstr "全国大型仓储空间"
 
 msgid "Quản lý hàng tồn kho hiệu quả"
-msgstr "Effective inventory management"
+msgstr "高效库存管理"
 
 # --- Service 5: Customs (Hải quan) ---
 msgid "Dịch Vụ Hải Quan"
-msgstr "Customs Services"
+msgstr "报关服务"
 
 msgid "Dịch vụ kê khai hải quan chuyên nghiệp từ tư vấn hàng hóa, kiểm tra chứng từ đến hỗ trợ giấy phép xuất nhập khẩu."
-msgstr "Professional customs declaration services, from cargo consulting and document checking to import-export license support."
+msgstr "专业报关服务，从货物咨询、单证检查到进出口许可证支持。"
 
 msgid "Kê khai hải quan chuyên nghiệp"
-msgstr "Professional customs declaration"
+msgstr "专业报关申报"
 
 msgid "Tư vấn phân loại hàng hóa"
-msgstr "Cargo classification consulting"
+msgstr "货物分类咨询"
 
 msgid "Tìm hiểu thêm"
-msgstr "View more"
+msgstr "了解更多"
 
 msgid "Xin cấp giấy phép xuất nhập khẩu"
-msgstr "Import-export license application"
+msgstr "进出口许可证申请"
 
 msgid "Kiểm tra chứng từ đầy đủ"
-msgstr "Complete document check"
+msgstr "完整单证检查"
 
 # --- News & Partners Section ---
 msgid "TIN TỨC MỚI NHẤT"
-msgstr "LATEST NEWS"
+msgstr "最新资讯"
 
 msgid "Đang cập nhật tin tức..."
-msgstr "Updating news..."
+msgstr "正在更新资讯..."
 
 msgid "ĐỐI TÁC VÀ KHÁCH HÀNG CỦA CHÚNG TÔI"
-msgstr "OUR PARTNERS AND CUSTOMERS"
+msgstr "我们的合作伙伴和客户"
 
 ##### about.html
 msgid "Về KLM Logistics"
-msgstr "About KLM Logistics"
+msgstr "关于KLM物流"
 
 msgid "Nội dung"
-msgstr "Contents"
+msgstr "目录"
 
 msgid "Thông tin chung"
-msgstr "General Information"
+msgstr "基本信息"
 
 msgid "Giá trị cốt lõi"
-msgstr "Core Values"
+msgstr "核心价值"
 
 msgid "Tại sao chọn chúng tôi"
-msgstr "Why choose us"
+msgstr "为什么选择我们"
 
 msgid "Tầm nhìn - Sứ mệnh"
-msgstr "Vision - Mission"
+msgstr "愿景 - 使命"
 
 msgid "Profile của công ty"
-msgstr "Company Profile"
+msgstr "公司简介"
 
 # --- Section 1: General Info ---
 msgid "Tên tiếng Việt:"
-msgstr "Vietnamese Name:"
+msgstr "越南名称："
 
 msgid "Công Ty Cổ Phần Dịch Vụ Logistics và Thương Mại KLM"
-msgstr "KLM Logistics and Trading Services Joint Stock Company"
+msgstr "KLM物流和贸易服务股份公司"
 
 msgid "Tên tiếng Anh:"
-msgstr "English Name:"
+msgstr "英文名称："
 
 msgid "Địa chỉ trụ sở chính:"
-msgstr "Headquarters:"
+msgstr "总部地址："
 
 msgid "Số 36 Hoàng Cầu – Hà Nội – Việt Nam"
-msgstr "No. 36 Hoang Cau – Hanoi – Vietnam"
+msgstr "越南河内市黄球路36号"
 
 msgid "Điện thoại:"
-msgstr "Tel:"
+msgstr "电话："
 
 msgid "Giấy đăng ký kinh doanh số:"
-msgstr "Business Registration No.:"
+msgstr "营业执照号："
 
 msgid "0106161039 tại Sở kế hoạch và đầu tư tp Hà Nội"
-msgstr "0106161039 at Hanoi Department of Planning and Investment"
+msgstr "0106161039 河内市计划投资厅"
 
 # --- Section 2: Core Values ---
 msgid "Cam kết"
-msgstr "Commitment"
+msgstr "承诺"
 
 msgid "KLM cam kết phụng sự cho chất lượng và các giải pháp tối ưu, đó chính là nền tảng của sự thành công."
-msgstr "KLM is committed to serving quality and optimal solutions, which is the foundation of success."
+msgstr "KLM致力于提供优质和最佳解决方案，这是成功的基础。"
 
 msgid "Tận tâm & thân thiện"
-msgstr "Dedicated & Friendly"
+msgstr "尽心尽责 & 友好"
 
 msgid "Nhân sự KLM tận tâm, thân thiện với khách hàng, công việc, đồng nghiệp và với công ty."
-msgstr "KLM personnel are dedicated and friendly to customers, work, colleagues, and the company."
+msgstr "KLM员工对客户、工作、同事和公司尽心尽责且友好。"
 
 msgid "Dịch vụ chuyên nghiệp & uy tín"
-msgstr "Professional & Reputable Service"
+msgstr "专业可靠的服务"
 
 msgid "Luôn là kim chỉ nam trong mọi dịch vụ của KLM Logistics."
-msgstr "Always the guideline in every service of KLM Logistics."
+msgstr "始终是KLM物流所有服务的指导方针。"
 
 msgid "Tinh thần đồng đội"
-msgstr "Team Spirit"
+msgstr "团队精神"
 
 msgid "Tinh thần đoàn kết, làm việc team-work và sẵn sàng hỗ trợ lẫn nhau là cách để mang đến dịch vụ hoàn hảo cho khách hàng."
-msgstr "Solidarity, teamwork, and readiness to support each other are the ways to provide perfect service to customers."
+msgstr "团结、团队合作和相互支持的精神是为客户提供完美服务的方式。"
 
 # --- Section 3: Why Choose Us (Long Text) ---
 msgid "Công ty cổ phần KLM Logistics là một trong những công ty giao nhận vận tải quốc tế hàng đầu tại Việt Nam. Chúng tôi cung cấp dịch vụ trọn gói dịch vụ giao nhận vận chuyển từ kho khách hàng tới kho người mua trên toàn cầu với chất lượng tốt nhất."
-msgstr "KLM Logistics Joint Stock Company is one of the leading international freight forwarding companies in Vietnam. We provide full-package forwarding services from the customer's warehouse to the buyer's warehouse globally with the best quality."
+msgstr "KLM物流股份公司是越南领先的国际货运代理公司之一。我们提供从客户仓库到全球买家仓库的全套货运服务，品质最优。"
 
 msgid "KLM Logistics là sự lựa chọn ưu tiên hàng đầu của nhiều công ty hàng đầu trong nước & các đối tác quốc tế. Kiến thức, kinh nghiệm và sự hiểu biết về văn hóa kinh doanh tại Việt Nam và quốc tế là lợi thế của chúng tôi. Cùng với mạng lưới kết nối toàn cầu làm cho KLM Logistics trở thành nhà cung cấp dịch vụ hàng đầu trong lĩnh vực."
-msgstr "KLM Logistics is the first choice of many leading domestic companies and international partners. Knowledge, experience and understanding of business culture in Vietnam and internationally are our advantages. Together with a global network, KLM Logistics becomes a leading service provider in the field."
+msgstr "KLM物流是众多国内领先公司和国际合作伙伴的首选。对越南和国际商业文化的知识、经验和理解是我们的优势。加上全球网络，使KLM物流成为该领域的领先服务提供商。"
 
 msgid "Bất kể bạn đang muốn xuất nhập khẩu hàng hóa trên toàn cầu hay di chuyển các thiết bị, hàng dự án lớn trong nước. KLM có đủ nhân lực, thiết bị, khả năng chuyên môn và kinh nghiệm để biến điều đó thành hiện thực, với phương châm luôn mang đến một giải pháp vận chuyển/ logistics tối ưu cho từng đơn hàng riêng biệt theo yêu cầu và mong muốn của khách hàng."
-msgstr "Whether you are looking to import and export goods globally or move large equipment and project cargo domestically, KLM has the manpower, equipment, expertise and experience to make it happen, with the motto of always providing an optimal transportation/logistics solution for each individual order according to the customer's requirements and wishes."
+msgstr "无论您是要进行全球货物进出口还是运输大型设备和国内项目货物，KLM都拥有足够的人力、设备、专业能力和经验来实现这一目标，秉承始终根据客户的要求和愿望为每个订单提供最优运输/物流解决方案的宗旨。"
 
 msgid "Với phương châm giao nhận vận chuyển không chỉ là giao nhận hàng hóa thông thường, mà là sự đam mê trong việc tìm ra giải pháp tốt nhất cho khách hàng trong lĩnh vực giao nhận vận tải quốc tế. Chúng tôi sẽ luôn nỗ lực cố gắng để trở thành một trong những công ty giao nhận vận tải & logistics hàng đầu trong khu vực Đông Nam Á."
-msgstr "With the motto of freight forwarding is not only the delivery of normal goods, but also the passion in finding the best solutions for customers in the field of international freight forwarding. We will always strive to become one of the leading freight forwarding & logistics companies in the Southeast Asia region."
+msgstr "秉承货运代理不仅是普通货物的交付，更是热衷于为客户在国际货运代理领域找到最佳解决方案的理念。我们将始终努力成为东南亚地区领先的货运代理和物流公司之一。"
 
 # --- Section 4: Vision & Mission ---
 msgid "Tầm nhìn"
-msgstr "Vision"
+msgstr "愿景"
 
 msgid "Trở thành một trong những công ty giao nhận vận tải & logistics hàng đầu ở Đông Nam Á bằng việc cung cấp dịch vụ ổn định, chất lượng tốt nhất đến khách hàng. Chúng tôi cam kết xây dựng thương hiệu uy tín, đáng tin cậy trong lĩnh vực logistics và góp phần thúc đẩy thương mại quốc tế trong khu vực."
-msgstr "To become one of the leading freight forwarding & logistics companies in Southeast Asia by providing stable, best-quality services to customers. We are committed to building a reputable, reliable brand in the logistics field and contributing to promoting international trade in the region."
+msgstr "通过为客户提供稳定、最优质的服务，成为东南亚领先的货运代理和物流公司之一。我们致力于在物流领域建立信誉良好、值得信赖的品牌，并为促进该地区的国际贸易做出贡献。"
 
 msgid "Sứ mệnh"
-msgstr "Mission"
+msgstr "使命"
 
 msgid "Cung cấp khách hàng dịch vụ tốt nhất với chi phí cạnh tranh và sự tận tụy chăm sóc khách hàng"
-msgstr "Provide customers with the best service at competitive costs and dedicated customer care"
+msgstr "以具有竞争力的价格和专注的客户关怀为客户提供最佳服务"
 
 msgid "Tìm ra giải pháp tối ưu cho từng lô hàng vận chuyển giao nhận với độ chính xác và an toàn cao nhất"
-msgstr "Find optimal solutions for each shipment with the highest accuracy and safety"
+msgstr "以最高的准确性和安全性为每批货物运输找到最佳解决方案"
 
 msgid "Đào tạo và phát triển đội ngũ nhân viên chuyên nghiệp có kinh nghiệm sâu rộng trong nghề giao nhận quốc tế"
-msgstr "Training staff to have experience in international freight forwarding & customer care"
+msgstr "培训和发展在国际货运代理行业拥有丰富经验的专业员工队伍"
 
 msgid "Xây dựng mạng lưới đối tác chiến lược và ứng dụng công nghệ hiện đại để nâng cao chất lượng dịch vụ"
-msgstr "Build a network of strategic partners and apply modern technology to improve service quality"
+msgstr "建立战略合作伙伴网络并应用现代技术以提高服务质量"
 
 
 # --- Section 5: Profile Download ---
 msgid "Tải file PowerPoint (.pptx)"
-msgstr "Download PowerPoint file (.pptx)"
+msgstr "下载PowerPoint文件 (.pptx)"
 
 ##### contact.html
 # --- Page Title & Hero Section ---
 msgid "Liên hệ - KLM Logistics"
-msgstr "Contact - KLM Logistics"
+msgstr "联系我们 - KLM物流"
 
 msgid "Liên Hệ Với Chúng Tôi"
-msgstr "Contact Us"
+msgstr "联系我们"
 
 msgid "Hãy liên hệ với chúng tôi để biết thêm thông tin và tư vấn các giải pháp logistics"
-msgstr "Contact us for more information and logistics solution consulting"
+msgstr "请联系我们以获取更多信息和物流解决方案咨询"
 
 # --- Services Description Section ---
 msgid "Dịch vụ vận chuyển chuyên nghiệp"
-msgstr "Professional Transportation Services"
+msgstr "专业运输服务"
 
 msgid "KLM Logistics cung cấp các giải pháp vận chuyển toàn diện cho các doanh nghiệp với yêu cầu đa dạng. Từ vận chuyển hàng không quốc tế đến logistics nội địa, chúng tôi luôn sẵn sàng hỗ trợ bạn đạt được mục tiêu kinh doanh."
-msgstr "KLM Logistics provides comprehensive transportation solutions for businesses with diverse requirements. From international air transport to domestic logistics, we are always ready to support you in achieving your business goals."
+msgstr "KLM物流为具有多样化需求的企业提供全面的运输解决方案。从国际航空运输到国内物流，我们始终准备支持您实现业务目标。"
 
 msgid "Vận chuyển quốc tế"
-msgstr "International Transport"
+msgstr "国际运输"
 
 msgid "Liên kết toàn cầu với đối tác tin cậy"
-msgstr "Global connection with reliable partners"
+msgstr "与可靠合作伙伴的全球联系"
 
 msgid "Dịch vụ nhanh chóng"
-msgstr "Fast Service"
+msgstr "快速服务"
 
 msgid "Đảm bảo đúng hạn, an toàn tuyệt đối với giá cước hợp lý"
-msgstr "Guaranteed on-time, absolute safety with reasonable rates"
+msgstr "保证准时、绝对安全且价格合理"
 
 msgid "Hỗ trợ 24/7"
-msgstr "24/7 Support"
+msgstr "24/7全天候支持"
 
 msgid "Đội ngũ chuyên gia sẵn sàng phục vụ mọi lúc, mọi nơi"
-msgstr "Expert team ready to serve anytime, anywhere"
+msgstr "专家团队随时随地为您服务"
 
 # --- Contact Form Section ---
 msgid "Gửi tin nhắn cho chúng tôi"
-msgstr "Send us a message"
+msgstr "给我们留言"
 
 msgid "Họ tên"
-msgstr "Full Name"
+msgstr "姓名"
 
 msgid "Email"
-msgstr "Email"
+msgstr "电子邮箱"
 
 msgid "Điện thoại"
-msgstr "Phone"
+msgstr "电话"
 
 msgid "Chủ đề"
-msgstr "Subject"
+msgstr "主题"
 
 msgid "Nội dung"
-msgstr "Message"
+msgstr "内容"
 
 msgid "Gửi tin nhắn"
-msgstr "Send Message"
+msgstr "发送消息"
 
 # --- Company Info Section ---
 msgid "Trụ sở chính"
-msgstr "Headquarters"
+msgstr "总部"
 
 msgid "Địa chỉ:"
-msgstr "Address:"
+msgstr "地址："
 
 msgid "Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội, Việt Nam"
-msgstr "4th Floor, No. 36 Hoang Cau, Dong Da, Hanoi, Vietnam"
+msgstr "越南河内市栋多郡黄球路36号4楼"
 
 msgid "Hotline:"
-msgstr "Hotline:"
+msgstr "热线电话："
 
 msgid "Website:"
-msgstr "Website:"
+msgstr "网站："
 
 ##### feedback.html
 # --- Page Title & Hero Section ---
 msgid "Đối tác & Khách hàng - KLM Logistics"
-msgstr "Partners & Customers - KLM Logistics"
+msgstr "合作伙伴和客户 - KLM物流"
 
 msgid "Đối tác & Khách hàng"
-msgstr "Partners & Customers"
+msgstr "合作伙伴和客户"
 
 msgid "Tin tưởng của các tập đoàn hàng đầu Việt Nam"
-msgstr "Trusted by Vietnam's leading corporations"
+msgstr "受越南领先企业信赖"
 
 # --- Testimonial 1: Polyco ---
 msgid "Với thời gian hợp tác lâu dài với đối tác KLM Logistics, tập đoàn POLYCO luôn tin tưởng & hài lòng với dịch vụ vận chuyển của KLM Logistics đã vận chuyển và lắp đặt các đơn hàng siêu trường siêu trọng của chúng tôi trên khắp lãnh thổ việt nam cũng như đơn hàng quốc tế."
-msgstr "With a long-term cooperation with partner KLM Logistics, POLYCO Group always trusts & is satisfied with KLM Logistics' transport services, having transported and installed our oversized and overweight orders throughout Vietnam as well as international orders."
+msgstr "通过与合作伙伴KLM物流的长期合作，POLYCO集团一直信任并对KLM物流的运输服务感到满意，KLM物流在越南全境以及国际订单中运输和安装了我们的超大超重订单。"
 
 # --- Testimonial 2: Viettel ---
 msgid "Là đơn vị hàng đầu trong ngày viễn thông Việt Nam đã và đang phát triển các dự án lớn toàn cầu, chúng tôi rất cần những đơn vị vận chuyển Logistics chuyên nghiệp, uy tín & có kinh nghiệm. Chúng tôi hoàn toàn yên tâm khi hợp tác với công ty KLM Logistics."
-msgstr "As a leading unit in Vietnam's telecommunications industry developing large global projects, we rely on professional, reputable & experienced Logistics transport units. We are completely assured when cooperating with KLM Logistics company."
+msgstr "作为越南电信行业正在开发大型全球项目的领先企业，我们非常需要专业、信誉良好且经验丰富的物流运输单位。我们与KLM物流公司合作时完全放心。"
 
 # --- Testimonial 3: Sun Group ---
 msgid "Đi đầu trong ngành dịch vụ giải trí & nghỉ dưỡng, tập đoàn Sun Group đã và đang hợp tác sâu rộng với công ty KLM Logistics trong lĩnh vực vận chuyển, thông quan hàng hóa. Chúng tôi rất tin tưởng vào dịch vụ của KLM Logistics khi luôn đưa ra được những giải pháp vận chuyển với giá cả hợp lý, an toàn & kịp tiến độ."
-msgstr "Leading in the entertainment & resort service industry, Sun Group has been cooperating extensively with KLM Logistics in transportation and customs clearance. We trust KLM Logistics' service as they always offer transport solutions with reasonable prices, safety & on-schedule delivery."
+msgstr "作为娱乐和度假服务行业的领导者，Sun Group一直在运输和报关领域与KLM物流进行广泛合作。我们信任KLM物流的服务，因为他们始终提供价格合理、安全且按时交付的运输解决方案。"
 
 # --- Testimonial 4: TVL Steel ---
 msgid "Tận tâm, nhiệt tính & rất trách nhiệm là yếu tố chúng tôi đánh giá rất cao khi sử dụng dịch vụ hải quan, vận chuyển nội địa & vận chuyển quốc tế của công ty KLM Logistics. Chúng tôi luôn hài lòng với dịch vụ & tư vấn giá trị của KLM mang lại cho chúng tôi. Chúng tôi tin tưởng KLM Logistics sẽ vươn tầm phát triển quốc tế."
-msgstr "Dedication, enthusiasm & high responsibility are factors we highly appreciate when using customs, domestic transport & international transport services of KLM Logistics. We are always satisfied with the service & valuable advice KLM brings to us. We believe KLM Logistics will reach international development levels."
+msgstr "专注、热情和高度责任感是我们在使用KLM物流的报关、国内运输和国际运输服务时高度赞赏的因素。我们始终对KLM为我们提供的服务和宝贵建议感到满意。我们相信KLM物流将达到国际发展水平。"
 
 # --- Trust Section (Footer Quote) ---
 msgid "KLM Logistics tự hào là đối tác tin cậy của các tập đoàn hàng đầu Việt Nam. Chúng tôi cam kết mang lại những giải pháp vận chuyển chuyên nghiệp, uy tín và hiệu quả nhất cho tất cả khách hàng."
-msgstr "KLM Logistics is proud to be a reliable partner of Vietnam's leading corporations. We are committed to bringing the most professional, reputable, and effective transport solutions to all customers."
+msgstr "KLM物流自豪地成为越南领先企业的可靠合作伙伴。我们致力于为所有客户提供最专业、最可靠和最有效的运输解决方案。"
 
 ##### projects.html
 # --- Page Title & Hero Section ---
 msgid "Dự án - KLM Logistics"
-msgstr "Projects - KLM Logistics"
+msgstr "项目案例 - KLM物流"
 
 msgid "Các Dự Án Nổi Bật"
-msgstr "Featured Projects"
+msgstr "精选项目"
 
 msgid "Những dự án vận chuyển & logistics quy mô lớn của KLM"
-msgstr "KLM's large-scale transport & logistics projects"
+msgstr "KLM大型运输及物流项目"
 
 # --- Common Labels (Used in multiple projects) ---
 msgid "Sản phẩm"
-msgstr "Product"
+msgstr "产品"
 
 msgid "Tuyến đường"
-msgstr "Route"
+msgstr "运输路线"
 
 msgid "Khối lượng"
-msgstr "Volume"
+msgstr "货量"
 
 msgid "Phạm vi công việc"
-msgstr "Scope of work"
+msgstr "工作范围"
 
 # --- Project: Beer & Beverage ---
 msgid "Dự án về Ngành bia & nước giải khát"
-msgstr "Beer & Beverage Industry Project"
+msgstr "啤酒及饮料行业项目"
 
 msgid "Các tank bồn & các thiết bị"
-msgstr "Tanks & equipment"
+msgstr "储罐及设备"
 
 msgid "Vận chuyển nội địa & quốc tế"
-msgstr "Domestic & international transport"
+msgstr "国内及国际运输"
 
 msgid "Công việc thường xuyên hàng năm vận chuyển"
-msgstr "Regular annual transportation work"
+msgstr "年度常规运输工作"
 
 msgid "Vận chuyển & Lắp đặt của các nhà máy bia, nước giải khát trong & và ngoài nước"
-msgstr "Transportation & Installation of domestic & foreign beer and beverage factories."
+msgstr "国内外啤酒和饮料工厂的运输与安装。"
 
 # --- Project: Energy (Rotor Turbine) ---
 msgid "Ngành điện và năng lượng"
-msgstr "Electricity and Energy Industry"
+msgstr "电力和能源行业"
 
 msgid "Dự án Rotor Turbine"
-msgstr "Rotor Turbine Project"
+msgstr "涡轮转子项目"
 
 msgid "Rotor Turbine 300 MW"
-msgstr "Rotor Turbine 300 MW"
+msgstr "300兆瓦涡轮转子"
 
 msgid "Nhà máy Nhiệt điện Uông Bí, Tỉnh Quảng Ninh"
-msgstr "Uong Bi Thermal Power Plant, Quang Ninh Province"
+msgstr "越南广宁省汪秘火电厂"
 
 msgid "21 tấn"
-msgstr "21 tons"
+msgstr "21吨"
 
 msgid "Xuất khẩu từ Việt Nam sang Nga sửa chữa; Nhập khẩu từ Nga về Việt Nam khi sửa chữa xong"
-msgstr "Export from Vietnam to Russia for repair; Import from Russia back to Vietnam after repair completion"
+msgstr "从越南出口至俄罗斯维修；维修完成后从俄罗斯进口回越南"
 
 # --- Project: Water Park ---
 msgid "Hệ thống công viên giải trí nước & trượt"
-msgstr "Water Park & Slide System"
+msgstr "水上乐园及滑梯系统"
 
 msgid "Hơn 200 container 40 feet hàng chục container chuyên dụng chứa các bộ phận hàng rời được nhập khẩu cùng 1000 tấn khung dầm thép & các thiết bị đặc biệt siêu trường siêu trọng"
-msgstr "Over 200 40ft containers, dozens of specialized containers containing imported breakbulk parts, along with 1000 tons of steel beams & special oversized/overweight equipment"
+msgstr "200多个40英尺集装箱、数十个专用集装箱装载进口散装部件，以及1000吨钢梁及特殊超大超重设备"
 
 msgid "Hòn Thơm, đảo Phú Quốc, tỉnh Kiên Giang, Việt Nam"
-msgstr "Hon Thom, Phu Quoc Island, Kien Giang Province, Vietnam"
+msgstr "越南坚江省富国岛荷汤岛"
 
 msgid "1000 tấn hàng & hàng trăm container"
-msgstr "1000 tons of cargo & hundreds of containers"
+msgstr "1000吨货物及数百个集装箱"
 
 msgid "Vận chuyển đi đảo Phú Quốc bằng sà lan & dỡ hàng & di chuyển đến khu vực thi công & lắp ráp công trình công viên nước Hòn Thơm, đảo Phú Quốc, tỉnh Kiên Giang, Việt Nam"
-msgstr "Transport to Phu Quoc Island by barge, unloading & moving to the construction & assembly site of Hon Thom Water Park, Phu Quoc Island, Kien Giang Province, Vietnam"
+msgstr "通过驳船运输至富国岛，卸货并转运至越南坚江省富国岛荷汤水上乐园建设和组装现场"
 
 # --- Project: Cable Car ---
 msgid "Hệ thống cáp treo"
-msgstr "Cable Car System"
+msgstr "缆车系统"
 
 msgid "Các cuộn cáp lớn & các thiết bị"
-msgstr "Large cable reels & equipment"
+msgstr "大型缆绳卷及设备"
 
 msgid "Đảo Cát Bà, tỉnh Hải Phòng, Việt Nam"
-msgstr "Cat Ba Island, Hai Phong Province, Vietnam"
+msgstr "越南海防省吉婆岛"
 
 msgid "800 tấn"
-msgstr "800 tons"
+msgstr "800吨"
 
 msgid "Vận chuyển 800 tấn khung dầm thép và thiết bị cáp nặng/quá khổ từ kho của Sun Group ở đất liền để giao và dỡ đến công trường trụ cáp nằm giữa biển"
-msgstr "Transporting 800 tons of steel beams and heavy/oversized cable equipment from Sun Group's warehouse on the mainland to deliver and unload at the cable pillar construction site located at sea"
+msgstr "从Sun Group陆地仓库运输800吨钢梁及重型/超大缆车设备，交付并卸载至位于海中的缆车支柱施工现场"
 
 ##### services.html
 # --- Page Title & Meta Tags ---
 msgid "Dịch Vụ - KLM Logistics"
-msgstr "Services - KLM Logistics"
+msgstr "服务 - KLM物流"
 
 msgid "Khám phá các dịch vụ logistics toàn diện của KLM Logistics"
-msgstr "Explore comprehensive logistics services of KLM Logistics"
+msgstr "探索KLM物流的全面物流服务"
 
 msgid "dịch vụ logistics, vận chuyển, kho bãi, vận chuyển hàng không"
-msgstr "logistics services, transport, warehousing, air transport"
+msgstr "物流服务、运输、仓储、航空运输"
 
 # --- Hero Section ---
 msgid "Dịch Vụ KLM Logistics"
-msgstr "KLM Logistics Services"
+msgstr "KLM物流服务"
 
 msgid "Giải pháp logistics toàn diện từ vận chuyển, kho bãi đến thông quan hải quan"
-msgstr "Comprehensive logistics solutions from transport, warehousing to customs clearance"
+msgstr "从运输、仓储到报关的全面物流解决方案"
 
 # --- Service Tile 1: Air Transport ---
 # Note: Some of these might duplicate from home.html, which is fine.
 msgid "Vận Chuyển Hàng Không Quốc Tế"
-msgstr "International Air Transport"
+msgstr "国际航空运输"
 
 msgid "Dịch vụ vận chuyển hàng không nhanh chóng, an toàn đến hơn 150 quốc gia. Chúng tôi cung cấp giải pháp trọn gói từ pickup đến delivery."
-msgstr "Fast and safe air transport services to over 150 countries. We provide full-package solutions from pickup to delivery."
+msgstr "快速安全的航空运输服务，覆盖150多个国家。我们提供从取货到送货的全套解决方案。"
 
 msgid "Mạng lưới hãng hàng không toàn cầu"
-msgstr "Global airline network"
+msgstr "全球航空网络"
 
 msgid "Xử lý hàng nguy hiểm chuyên nghiệp"
-msgstr "Professional dangerous goods handling"
+msgstr "专业危险品处理"
 
 msgid "Door to door delivery"
-msgstr "Door to door delivery"
+msgstr "门到门配送"
 
 msgid "Thông quan hải quan"
-msgstr "Customs clearance"
+msgstr "报关服务"
 
 msgid "Tìm hiểu thêm"
-msgstr "Learn more"
+msgstr "了解更多"
 
 # --- Service Tile 2: Sea Transport ---
 msgid "Vận Chuyển Đường Biển Quốc Tế"
-msgstr "International Sea Transport"
+msgstr "国际海运"
 
 msgid "Giải pháp vận chuyển đường biển hiệu quả với chi phí cạnh tranh. Chúng tôi xử lý container, hàng rời, hàng quá khổ quá tải."
-msgstr "Effective sea transport solutions with competitive costs. We handle containers, bulk cargo, and oversized/overweight cargo."
+msgstr "高效的海运解决方案，价格具有竞争力。我们处理集装箱、散货和超大超重货物。"
 
 msgid "FCL & LCL Container"
-msgstr "FCL & LCL Container"
+msgstr "整柜及拼箱"
 
 msgid "Hàng rời & Break Bulk"
-msgstr "Bulk Cargo & Break Bulk"
+msgstr "散货及件杂货"
 
 msgid "Hàng quá khổ quá tải"
-msgstr "Oversized & Overweight Cargo"
+msgstr "超大超重货物"
 
 msgid "Project cargo"
-msgstr "Project cargo"
+msgstr "项目货物"
 
 # --- Service Tile 3: Cross Border ---
 msgid "Vận Chuyển Xuyên Biên Giới"
-msgstr "Cross Border Transport"
+msgstr "跨境运输"
 
 msgid "Chuyên vận chuyển hàng hóa xuất nhập khẩu giữa Việt Nam, Lào, Campuchia và Thailand với thủ tục nhanh chóng, đơn giản."
-msgstr "Specializing in import-export transport between Vietnam, Laos, Cambodia, and Thailand with fast and simple procedures."
+msgstr "专业办理越南、老挝、柬埔寨和泰国之间的进出口运输，手续快速简便。"
 
 msgid "Xuất nhập khẩu Lào, Campuchia"
-msgstr "Import-Export Laos, Cambodia"
+msgstr "老挝、柬埔寨进出口"
 
 msgid "Vận chuyển sang Thailand"
-msgstr "Transport to Thailand"
+msgstr "泰国运输"
 
 msgid "Thủ tục hải quan tối ưu"
-msgstr "Optimized customs procedures"
+msgstr "优化报关流程"
 
 msgid "Chi phí cạnh tranh"
-msgstr "Competitive costs"
+msgstr "价格具有竞争力"
 
 # --- Service Tile 4: Warehouse ---
 msgid "Vận Chuyển Nội Địa và Dịch Vụ Kho Bãi"
-msgstr "Domestic Transport & Warehousing Services"
+msgstr "国内运输及仓储服务"
 
 msgid "Kho bãi tiêu chuẩn cao tại các vị trí chiến lược phục vụ bảo quản hàng hóa giá trị cao với chi phí hợp lý."
-msgstr "High-standard warehouses at strategic locations serving high-value goods preservation at reasonable costs."
+msgstr "位于战略位置的高标准仓库，以合理的成本保管高价值货物。"
 
 msgid "Kho chuyên dụng cho hàng điện tử"
-msgstr "Specialized warehouse for electronics"
+msgstr "电子产品专用仓库"
 
 msgid "Kho hóa chất & hàng bảo xá"
-msgstr "Chemical & Bonded Warehouse"
+msgstr "化学品及保税仓库"
 
 msgid "Diện tích kho lớn trên toàn quốc"
-msgstr "Large nationwide warehouse area"
+msgstr "全国大型仓储空间"
 
 msgid "Quản lý hàng tồn kho hiệu quả"
-msgstr "Effective inventory management"
+msgstr "高效库存管理"
 
 # --- Service Tile 5: Customs ---
 msgid "Dịch Vụ Hải Quan"
-msgstr "Customs Services"
+msgstr "报关服务"
 
 msgid "Dịch vụ kê khai hải quan chuyên nghiệp từ tư vấn hàng hóa, kiểm tra chứng từ đến hỗ trợ giấy phép xuất nhập khẩu."
-msgstr "Professional customs declaration services, from cargo consulting and document checking to import-export license support."
+msgstr "专业报关服务，从货物咨询、单证检查到进出口许可证支持。"
 
 msgid "Kê khai hải quan chuyên nghiệp"
-msgstr "Professional customs declaration"
+msgstr "专业报关申报"
 
 msgid "Tư vấn phân loại hàng hóa"
-msgstr "Cargo classification consulting"
+msgstr "货物分类咨询"
 
 msgid "Xin cấp giấy phép xuất nhập khẩu"
-msgstr "Import-export license application"
+msgstr "进出口许可证申请"
 
 msgid "Kiểm tra chứng từ đầy đủ"
-msgstr "Complete document check"
+msgstr "完整单证检查"
 
 # --- Why Choose Us Section ---
 msgid "Tại Sao Chọn KLM Logistics?"
-msgstr "Why Choose KLM Logistics?"
+msgstr "为什么选择KLM物流？"
 
 msgid "Mạng Lưới Toàn Cầu"
-msgstr "Global Network"
+msgstr "全球网络"
 
 msgid "Hoạt động tại hơn 150 quốc gia với đối tác đáng tin cậy"
-msgstr "Operating in over 150 countries with reliable partners"
+msgstr "在150多个国家运营，拥有可靠的合作伙伴"
 
 msgid "Giải Pháp Tùy Biến"
-msgstr "Customized Solutions"
+msgstr "定制化解决方案"
 
 msgid "Xây dựng giải pháp logistics phù hợp với từng khách hàng"
-msgstr "Building logistics solutions suitable for each customer"
+msgstr "为每位客户构建适合的物流解决方案"
 
 msgid "Vận Chuyển Nhanh"
-msgstr "Fast Delivery"
+msgstr "快速运输"
 
 msgid "Thời gian vận chuyển tối ưu với giá cả cạnh tranh"
-msgstr "Optimal transit time with competitive prices"
+msgstr "最佳运输时间，价格具有竞争力"
 
 msgid "Hỗ Trợ 24/7"
-msgstr "24/7 Support"
+msgstr "24/7全天候支持"
 
 msgid "Đội ngũ chuyên gia sẵn sàng hỗ trợ mọi lúc"
-msgstr "Expert team ready to support anytime"
+msgstr "专家团队随时准备提供支持"
 
 # --- CTA Section ---
 msgid "Cần Giải Pháp Logistics?"
-msgstr "Need Logistics Solutions?"
+msgstr "需要物流解决方案？"
 
 msgid "Liên hệ với chúng tôi ngay để nhận tư vấn miễn phí"
-msgstr "Contact us now for free consultation"
+msgstr "立即联系我们获取免费咨询"
 
 msgid "Liên Hệ Ngay"
-msgstr "Contact Now"
+msgstr "立即联系"
 
 ##### air_transport.html
 # --- Page Title & Hero Section ---
 msgid "Vận chuyển hàng không - KLM Logistics"
-msgstr "Air Transport - KLM Logistics"
+msgstr "航空运输 - KLM物流"
 
 msgid "Vận chuyển hàng không Quốc tế"
-msgstr "International Air Transport"
+msgstr "国际航空运输"
 
 msgid "Dịch vụ vận chuyển hàng không chuyên nghiệp với mạng lưới đối tác quốc tế"
-msgstr "Professional air transport services with an international partner network"
+msgstr "专业的航空运输服务，拥有国际合作伙伴网络"
 
 # --- Sidebar Menu ---
 # Note: "Nội dung" is likely already translated in previous files
 msgid "Tổng Quan"
-msgstr "Overview"
+msgstr "总览"
 
 msgid "Nhập Khẩu"
-msgstr "Import"
+msgstr "进口"
 
 msgid "Xuất Khẩu"
-msgstr "Export"
+msgstr "出口"
 
 # --- Section 1: Overview ---
 msgid "Chúng tôi hiểu rằng khi khách hàng chọn dịch vụ hàng không là đồng nghĩa với việc lô hàng có giá trị lớn với khách hàng, cần sắp xếp vận chuyển nhanh chóng, an toàn. Vi thế dịch vụ vận chuyển hàng không của KLM được xây dựng và phát triển dựa trên mạng lưới hợp tác bền chặt với những hãng hàng không mạnh với khả năng cung cấp chỗ, tải lớn, tần suất bay nhiều cùng giá cả cạnh tranh đi hầu hết các thị trường chính trên toàn thế giới."
-msgstr "We understand that choosing air transport means the shipment is of high value to the customer, requiring fast and safe arrangement. Therefore, KLM's air transport service is built and developed based on a strong network of cooperation with powerful airlines capable of providing large space and load capacity, frequent flight frequencies, and competitive prices to almost all major markets worldwide."
+msgstr "我们理解客户选择航空运输意味着货物对客户具有高价值，需要快速、安全的运输安排。因此，KLM的航空运输服务建立在与强大航空公司的稳固合作网络基础上，能够提供大容量、高频率航班以及具有竞争力的价格，覆盖全球几乎所有主要市场。"
 
 # --- Section 2: Experience (Gray Background) ---
 msgid "KLM đã và đang dàn xếp vận chuyển hàng không cho rất nhiều loại mặt hàng thông thường như hàng dệt may, hàng thiết bị điện tử & viễn thông... Đặc biệt ngoài ra chúng tôi có kinh nghiệm trong việc vận chuyển các mặt hàng nguy hiểm (hàng chứa pin lithium, chất lỏng, phát từ trường, rada..), hàng động vật sống, hàng hoa quả & rau tươi. Kể cả những lô hàng dự án siêu trọng, siêu trường chúng tôi cũng đã thành công tìm được giải pháp thực hiện bằng vận chuyển hàng không."
-msgstr "KLM has been arranging air transport for many common items such as textiles, electronics & telecommunications equipment... Especially, we have experience in transporting dangerous goods (containing lithium batteries, liquids, magnetic materials, radar...), live animals, fresh fruits & vegetables. Even for overweight and oversized project cargo, we have successfully found solutions using air transport."
+msgstr "KLM一直在为许多常见商品安排航空运输，如纺织品、电子和电信设备等。特别是，我们在运输危险品（含锂电池、液体、磁性材料、雷达等）、活体动物、新鲜水果和蔬菜方面拥有丰富经验。即使是超重、超大的项目货物，我们也成功地找到了航空运输解决方案。"
 
 # --- Section 3: Import Services ---
 msgid "Vận chuyển Hàng không Nhập Quốc tế"
-msgstr "International Air Import Transport"
+msgstr "国际航空进口运输"
 
 msgid "KLM là đơn vị vận chuyển hàng nhập chuyên nghiệp, uy tín cho các mặt hàng chính như hàng giá trị cao, hàng nguy hiểm (MSDS, UN) những mặt hàng đòi hỏi kiến thức và kinh nghiệm thực trong việc triển khai."
-msgstr "KLM is a professional and reputable import transporter for major items such as high-value goods, dangerous goods (MSDS, UN) - items that require real knowledge and experience to implement."
+msgstr "KLM是专业、信誉良好的进口运输单位，专门处理高价值货物、危险品（MSDS、UN）等需要实际知识和经验才能操作的主要商品。"
 
 msgid "Hàng thiết bị điện tử & viễn thông"
-msgstr "Electronics & telecommunications equipment"
+msgstr "电子及通讯设备"
 
 msgid "Hàng nguyên liệu cho ngành dệt may, nhựa, thép, cơ khí, vật liệu xây dựng,..."
-msgstr "Raw materials for textiles, plastics, steel, mechanics, construction materials,..."
+msgstr "纺织、塑料、钢铁、机械、建筑材料等行业原材料"
 
 msgid "Hàng chứa hoá chất, Pin lithium"
-msgstr "Goods containing chemicals, Lithium batteries"
+msgstr "含化学品货物、锂电池"
 
 msgid "Hàng tiêu dùng và thực phẩm như đồ tã bỉm, văn phòng phẩm, đồ gia dụng, bánh kẹo, nước giải khát,..."
-msgstr "Consumer goods and food such as diapers, stationery, household appliances, confectionery, beverages,..."
+msgstr "消费品和食品，如尿布、办公用品、家居用品、糖果糕点、饮料等"
 
 msgid "Linh kiện & máy móc, hệ thống dây chuyền nhà máy"
-msgstr "Components & machinery, factory production line systems"
+msgstr "零部件及机械、工厂生产线系统"
 
 msgid "Hàng dự án (dự án điện mặt trời, hệ thống thiết bị cho sân bay,…)"
-msgstr "Project cargo (solar power projects, airport equipment systems,...)"
+msgstr "项目货物（太阳能发电项目、机场设备系统等）"
 
 msgid "Các mặt hàng khác"
-msgstr "Other items"
+msgstr "其他商品"
 
 # --- Section 4: Export Services ---
 msgid "Vận chuyển Hàng không Xuất Quốc tế"
-msgstr "International Air Export Transport"
+msgstr "国际航空出口运输"
 
 msgid "KLM Logistics là đại lý hàng hóa của nhiều hãng vận chuyển hàng không quốc tế nổi tiếng (GSA) với một dịch vụ vận chuyển hàng không trọn gói, cung cấp lượng tải trọng lớn và mật độ chuyến bay dày đặc đến hầu hết các quốc gia và vùng lãnh thổ trên thế giới. Các hãng hàng không đối tác của chúng tôi gồm có: Vietnam Airlines, Asiana Airlines, China Airlines, Qatar Airways, Singapore Airlines, Korean Air, Turkish Airline..."
-msgstr "KLM Logistics is a cargo agent for many famous international airlines (GSA) offering a full-package air transport service, providing large load capacity and dense flight frequency to almost all countries and territories in the world. Our partner airlines include: Vietnam Airlines, Asiana Airlines, China Airlines, Qatar Airways, Singapore Airlines, Korean Air, Turkish Airline..."
+msgstr "KLM物流是众多知名国际航空公司的货运代理（GSA），提供全套航空运输服务，提供大运载量和密集的航班频率，覆盖世界上几乎所有国家和地区。我们的合作航空公司包括：越南航空、韩亚航空、中华航空、卡塔尔航空、新加坡航空、大韩航空、土耳其航空等。"
 
 msgid "Một số dịch vụ chính của chúng tôi bao gồm:"
-msgstr "Some of our main services include:"
+msgstr "我们的主要服务包括："
 
 msgid "Xuất hàng nông sản: cà rốt, chuối, bưởi…"
-msgstr "Exporting agricultural products: carrots, bananas, grapefruits..."
+msgstr "出口农产品：胡萝卜、香蕉、柚子等"
 
 msgid "Xuất hàng dệt may, đồ lụa"
-msgstr "Exporting textiles, silk products"
+msgstr "出口纺织品、丝绸制品"
 
 msgid "Xuất hàng nguyên liệu bột sắn dây, giấy cuộn đi các cảng ở Trung Quốc"
-msgstr "Exporting tapioca starch raw materials, paper rolls to ports in China"
+msgstr "出口木薯淀粉原料、卷纸至中国各港口"
 
 msgid "Xuất khẩu hàng plywood, gỗ, nội thất đi Châu Á, Châu Âu & Mỹ"
-msgstr "Exporting plywood, wood, furniture to Asia, Europe & USA"
+msgstr "出口胶合板、木材、家具至亚洲、欧洲及美国"
 
 msgid "Xuất khẩu hàng thép cuộn, thép ống đi Ấn Độ, Hàn, Nhật, Châu Âu"
-msgstr "Exporting steel coils, steel pipes to India, Korea, Japan, Europe"
+msgstr "出口钢卷、钢管至印度、韩国、日本、欧洲"
 
 msgid "Xuất khẩu hàng xơ sợi đi Trung Quốc"
-msgstr "Exporting fiber cargo to China"
+msgstr "出口纤维货物至中国"
 
 msgid "Xuất khẩu hàng dệt may thành phẩm đi Châu Âu & Mỹ"
-msgstr "Exporting finished textile products to Europe & USA"
+msgstr "出口成品纺织品至欧洲及美国"
 
 ##### sea_transport.html
 # --- Page Title & Hero Section ---
 msgid "Vận chuyển đường biển - KLM Logistics"
-msgstr "Sea Transport - KLM Logistics"
+msgstr "海运 - KLM物流"
 
 msgid "Vận chuyển đường biển quốc tế"
-msgstr "International Sea Transport"
+msgstr "国际海运"
 
 msgid "Dịch vụ vận chuyển đường biển toàn cầu với container, hàng rời, hàng quá khổ quá tải"
-msgstr "Global sea transport services with containers, bulk cargo, and oversized/overweight cargo"
+msgstr "全球海运服务，包括集装箱、散货和超大超重货物"
 
 # --- Section 1: Overview ---
 msgid "KLM Logistics cung cấp dịch vụ đường biển bằng container, hàng rời, hàng quá khổ quá tải đi và đến khắp nơi trên thế giới. Trong suốt quá trình hình thành và phát triển, chúng tôi đã tạo ra mối quan hệ đối tác với hầu hết các hãng tàu trên thị trường như Meark Lines, Sea Land, One, YangMing, Evergreen, Cosco, Huyndai, OOCL, Hapaglloyd, Wanhai, KMTC, SITC, CMA-CGM, MSC…"
-msgstr "KLM Logistics provides sea transport services by container, bulk cargo, and oversized/overweight cargo to and from anywhere in the world. Throughout our development, we have built partnerships with almost all shipping lines in the market such as Maersk Lines, Sea Land, One, YangMing, Evergreen, Cosco, Hyundai, OOCL, Hapag-Lloyd, Wan Hai, KMTC, SITC, CMA-CGM, MSC..."
+msgstr "KLM物流提供集装箱、散货和超大超重货物的海运服务，覆盖全球各地。在发展过程中，我们与市场上几乎所有船运公司建立了合作伙伴关系，如马士基航运、Sea Land、ONE、阳明海运、长荣海运、中远海运、现代商船、东方海外、赫伯罗特、万海航运、高丽海运、SITC、达飞轮船、地中海航运等。"
 
 msgid "KLM Logistics ký nhiều hợp đồng với các hãng tàu đặc biệt cho các tuyến dài từ đó có thể cung cấp cho khách hàng dịch vụ ổn định, chất lượng cao với giá cả cạnh tranh. Thị trường chính của KLM Logistics lần lượt là Intra Asia, Châu Âu, Bắc Mỹ, Châu Úc, Châu Phi."
-msgstr "KLM Logistics has signed many contracts with shipping lines, especially for long-haul routes, allowing us to provide customers with stable, high-quality services at competitive prices. KLM Logistics' main markets are Intra Asia, Europe, North America, Australia, and Africa."
+msgstr "KLM物流与船运公司签订了许多合同，特别是长途航线，使我们能够以具有竞争力的价格为客户提供稳定、高质量的服务。KLM物流的主要市场包括亚洲内部、欧洲、北美、澳洲和非洲。"
 
 # --- Section 2: Import Services ---
 msgid "Vận chuyển Đường biển Nhập Quốc tế"
-msgstr "International Sea Import Transport"
+msgstr "国际海运进口"
 
 msgid "Với thị trường đang phát triển nhanh tại Việt Nam thì lượng hàng hoá nhập khẩu ngày càng lớn để đáp ứng các nhu cầu trong sản xuất và tiêu dùng. Với 70% lượng hàng hoá nhập khẩu chính ngạch là qua đường biển, KLM Logistics hiểu rằng chúng tôi phải mang đến cho khách hàng dịch vụ vận chuyển hàng nhập khẩu bằng đường biển tốt nhất với chi phí phải thật cạnh tranh."
-msgstr "With the rapidly developing market in Vietnam, the volume of imported goods is increasing to meet production and consumption needs. With 70% of official imports arriving by sea, KLM Logistics understands that we must provide customers with the best sea import transport service at truly competitive costs."
+msgstr "随着越南市场的快速发展，进口货物量不断增加以满足生产和消费需求。由于70%的正规进口货物通过海运，KLM物流明白我们必须以真正具有竞争力的成本为客户提供最佳的海运进口运输服务。"
 
 msgid "Một số dịch vụ nổi bật chúng tôi cung cấp:"
-msgstr "Some of our main services include:"
+msgstr "我们提供的主要服务包括："
 
 msgid "Nhập nguyên container (CL), nhập hàng lẻ (LCL)"
-msgstr "Importing Full Container Load (FCL), Less than Container Load (LCL)"
+msgstr "整柜进口（FCL）、拼箱进口（LCL）"
 
 msgid "Nhập hàng theo các điều kiện giao hàng Incorterm (Ex-Work, FOB, CIF,..)"
-msgstr "Importing according to Incoterms (Ex-Works, FOB, CIF...)"
+msgstr "按照国际贸易术语（Ex-Works、FOB、CIF等）进口货物"
 
 msgid "Thông quan hải quan cho hàng nhập khẩu"
-msgstr "Customs clearance for imported goods"
+msgstr "进口货物报关"
 
 msgid "Mua bảo hiểm cho hàng hoá"
-msgstr "Cargo insurance purchase"
+msgstr "货物保险购买"
 
 msgid "Làm dịch vụ xử lý thông quan hàng xuất & nhập khẩu cho các đơn vị vận chuyên khác tại cảng biển."
-msgstr "Providing export & import customs clearance services for other transport units at seaports."
+msgstr "在海港为其他运输单位提供进出口货物报关服务"
 
 msgid "Vận chuyển xe tải, xe container đi giao và nhận hàng."
-msgstr "Trucking and container transport for delivery and pickup."
+msgstr "提供卡车和集装箱运输以进行货物交付和提货"
 
 # --- Section 3: Export Services ---
 msgid "Vận chuyển Đường biển Xuất Quốc tế"
-msgstr "International Sea Export Transport"
+msgstr "国际海运出口"
 
 msgid "Ngày nay Việt Nam được biết đến là một trong những nơi có các khu công nhiệp lớn trải dài từ Bắc đến Nam, là nơi đặt nhà máy, trụ sở của nhiều doanh nghiệp FDI lớn, một trong những thị trường xuất khẩu đầy tiềm năng. Đó cũng là tiền đề của việc phát triển mạnh ngành vận chuyển xuất khẩu bằng đường biển. KLM logistics cũng không nằm ngoài xu hướng đó, chúng tôi đã và đang phục vụ một lượng lớn các đơn hàng xuất khẩu bằng đường biển với sự chuyên nghiệp cao, mang đến sự tin tưởng lâu dài cho quý khách hàng."
-msgstr "Today, Vietnam is known for large industrial zones stretching from North to South, home to factories and headquarters of many large FDI enterprises, and a potential export market. This is the premise for the strong development of the sea export transport industry. KLM Logistics is part of this trend; we have been serving a large volume of sea export orders with high professionalism, bringing long-term trust to our customers."
+msgstr "如今，越南以从北到南延伸的大型工业区而闻名，是许多大型外商直接投资企业的工厂和总部所在地，是一个充满潜力的出口市场。这为海运出口运输行业的强劲发展奠定了基础。KLM物流也顺应这一趋势，我们一直以高度的专业性服务大量海运出口订单，为客户带来长期信任。"
 
 msgid "KLM là đối tác chuyên nghiệp & uy tín với rất nhiều khách hàng là nhà máy lớn , công ty thương mại thường xuyên xuất khẩu đi các thị trường chính trên thế giới. Ngoài việc cung cấp cho khách hàng giá cước biển tốt chúng tôi có kinh nghiệm trong việc xử lý những đơn hàng lớn đòi hỏi nhân lực, nguồn lực cũng như bề dày kinh nghiệm thực tế. Một số mặt hàng KLM thường xuyên phục vụ cho khách hàng xuất khẩu."
-msgstr "KLM is a professional & reputable partner with many large factories and trading companies regularly exporting to major global markets. Besides providing good sea freight rates, we have experience handling large orders requiring manpower, resources, and extensive practical experience. Some items KLM regularly exports for customers include:"
+msgstr "KLM是众多大型工厂和贸易公司的专业可靠合作伙伴，这些客户定期向全球主要市场出口。除了为客户提供优惠的海运运费外，我们在处理需要人力、资源和丰富实践经验的大型订单方面经验丰富。KLM定期为客户出口的部分商品包括："
 
 msgid "Xuất hàng mau hỏng: quả cà rốt, chuối, quả bưởi tươi,…"
-msgstr "Exporting perishable goods: carrots, bananas, fresh grapefruits..."
+msgstr "出口易腐货物：胡萝卜、香蕉、新鲜柚子等"
 
 msgid "Xuất hàng nguyên liệu bột sắn dây đi các cảng ở Trung Quốc"
-msgstr "Exporting tapioca starch raw materials to ports in China"
+msgstr "出口木薯淀粉原料至中国各港口"
 
 msgid "Xuất khẩu hàng hương liệu như quế hồi đi Ấn Độ hay Hàn Quốc"
-msgstr "Exporting flavorings such as cinnamon and anise to India or Korea"
+msgstr "出口香料如肉桂和八角至印度或韩国"
 
 msgid "Xuất khẩu hàng bột đá đi các thị trường Bangladesh, Pakistan hay Ấn Độ"
-msgstr "Exporting stone powder to Bangladesh, Pakistan, or India markets"
+msgstr "出口石粉至孟加拉国、巴基斯坦或印度市场"
 
 msgid "Xuất khẩu hàng xơ sợi đi Chittagong, Bangladesh"
-msgstr "Exporting fiber cargo to Chittagong, Bangladesh"
+msgstr "出口纤维货物至孟加拉国吉大港"
 
 ##### logistics.html
 # --- Page Title & Hero Section ---
 msgid "Logistics & Dịch vụ gia tăng - KLM Logistics"
-msgstr "Logistics & Value Added Services - KLM Logistics"
+msgstr "物流及增值服务 - KLM物流"
 
 msgid "Logistics & Các dịch vụ gia tăng"
-msgstr "Logistics & Value Added Services"
+msgstr "物流及增值服务"
 
 msgid "Dịch vụ logistics nội địa, kho bãi, vận chuyển đặc biệt và kê khai hải quan"
-msgstr "Domestic logistics, warehousing, special transport, and customs clearance services"
+msgstr "国内物流、仓储、特殊运输和报关服务"
 
 # --- Sidebar Menu (Unique to this page) ---
 msgid "Vận Chuyển Hàng Đặc biệt"
-msgstr "Special Cargo Transport"
+msgstr "特殊货物运输"
 
 # Note: "Dịch Vụ Hải Quan", "Vận Chuyển Nội Địa...", "Vận Chuyển Xuyên Biên Giới"
 # usually duplicate with previous files. If not, the translations below cover them.
 
 # --- Section 1: Customs Clearance (Updated from your documents) ---
 msgid "Dịch vụ kê khai hải quan và Hỗ trợ xuất nhập khẩu"
-msgstr "Customs Declaration Services and Import-Export Support"
+msgstr "报关服务和进出口支持"
 
 msgid "Dịch vụ kê khai hải quan chuyên nghiệp từ việc tư vấn hàng hóa, kiểm tra chứng từ, hỗ trợ các giấy phép… đòi hỏi sự tận tâm và kiến thức rộng trong lĩnh vực xuất nhập khẩu. KLM Logistics với kinh nghiệm lâu năm được đánh giá là một trong những công ty có dịch vụ hải quan hàng đầu tại Việt Nam."
-msgstr "Professional customs declaration services from goods consulting, document checking, license support... require dedication and extensive knowledge in the field of import-export. KLM Logistics with many years of experience is considered one of the leading customs service companies in Vietnam." 
+msgstr "专业的报关服务，从货物咨询、单证检查到许可证支持，都需要在进出口领域的专注和广泛知识。KLM物流凭借多年经验，被评为越南领先的报关服务公司之一。" 
 
 msgid "Đội ngũ của KLM Logistics được đào tạo một cách chuyên nghiệp và toàn diện để hiểu rõ mức độ phức tạp của các thủ tục hải quan trong từng lĩnh vực. Chúng tôi luôn chủ động và có trách nhiệm về việc chuẩn bị các chứng từ chính xác và đúng lúc nhất để tránh sự chậm trễ và các chi phí tốn kém khác cho khách hàng."
-msgstr "KLM Logistics' team is professionally and comprehensively trained to understand the complexity of customs procedures in each field. We are always proactive and responsible for preparing the most accurate and timely documents to avoid delays and other costly costs for customers." 
+msgstr "KLM物流的团队经过专业和全面的培训，以理解各个领域海关程序的复杂性。我们始终主动并负责准备最准确、最及时的文件，以避免延误和给客户带来其他昂贵的费用。" 
 
 msgid "Các dịch vụ Hải quan của chúng tôi bao gồm:"
-msgstr "Our Customs services include:"
+msgstr "我们的报关服务包括："
 
 msgid "Khai báo thuế quan và thuế nhập khẩu"
-msgstr "Customs declaration and import tax"
+msgstr "关税和进口税申报"
 
 msgid "Phân loại mã HS Code"
-msgstr "HS Code classification"
+msgstr "HS编码分类"
 
 msgid "Chuẩn bị giấy phép xuất nhập khẩu cho hàng hoá bị kiểm soát"
-msgstr "Preparation of import and export licenses for controlled goods"
+msgstr "为受控货物准备进出口许可证"
 
 msgid "Tư vấn hồ sơ xuất nhập khẩu"
-msgstr "Consulting on import and export documents"
+msgstr "进出口文件咨询"
 
 msgid "Thủ tục tạm nhập/tái xuất"
-msgstr "Temporary import/re-export procedures" 
+msgstr "暂时进口/复出口程序" 
 
 msgid "Thủ tục xuất nhập khẩu"
-msgstr "Import and export procedures" 
+msgstr "进出口程序" 
 
 msgid "Các dịch vụ hỗ trợ cho xuất nhập khẩu hàng hóa luôn được KLM logistics thực hiện nhanh & chính xác đã làm hài lòng và duy trì mối quan hệ bền lâu với khách hàng. Các dịch vụ này bao gồm:"
-msgstr "The support services for import and export of goods are always performed quickly and accurately by KLM logistics, satisfying and maintaining long-term relationships with customers. These services include:"
+msgstr "KLM物流始终快速准确地执行货物进出口支持服务，使客户满意并与客户保持长期关系。这些服务包括："
 
 msgid "Tư vấn hồ sơ giấy tờ xuất xứ hàng hóa (CO)"
-msgstr "Consulting on documents of origin of goods (CO),"
+msgstr "货物原产地文件（CO）咨询"
 
 msgid "Dịch vụ hun trùng, kiểm dịch"
-msgstr "Fumigation and quarantine services"
+msgstr "熏蒸和检疫服务"
 
 msgid "Dịch vụ khai báo hóa chất"
-msgstr "Chemical declaration services" 
+msgstr "化学品申报服务" 
 
 msgid "Dịch vụ đóng gói hàng hóa."
-msgstr "Goods packaging services."
+msgstr "货物包装服务"
 
 # --- Section 2: Domestic & Warehouse (Updated from your documents) ---
 msgid "Vận Chuyển Nội Địa và Dịch Vụ Kho Bãi"
-msgstr "Domestic Transportation and Warehouse Services" 
+msgstr "国内运输和仓储服务" 
 
 msgid "KLM Logistics JSC chúng tôi cung cấp dịch vụ vận chuyển nội địa xe tải, xe container phục vụ cho các nhu cầu vận chuyển hàng hóa xuất nhập khẩu, hàng chuyển kho, hàng nội địa bắc nam. Hàng hóa vận chuyển đa dạng như hàng bao, hàng thép, hàng điện tử, hàng nông sản."
-msgstr "KLM Logistics JSC provides domestic truck and container transportation services to serve the needs of transporting import and export goods, warehouse transfer goods, and domestic goods from North to South. Transported goods are diverse such as bagged goods, steel goods, electronic goods, agricultural products..." 
+msgstr "KLM物流股份公司提供国内卡车和集装箱运输服务，满足进出口货物、仓库转运货物和南北国内货物的运输需求。运输的货物种类繁多，如袋装货物、钢铁货物、电子产品、农产品等。" 
 
 msgid "KLM đáp ứng tốt các yêu cầu vận chuyển với số lượng lớn cho các công ty sản xuất tại các khu công nghiệp, các nhà máy sản xuất, xuất khẩu với số lượng lớn trên toàn quốc. Với năng lực tốt, tiêu chí giá cả cạnh tranh & sự phục vụ nhiệt tình, chúng tôi đã và đang là đối tác tin cậy của quý khách hàng"
-msgstr "KLM meets well the transportation requirements of large quantities for manufacturing companies in the industrial zones of North, Central and South. With strong capacity, competitive pricing criteria & enthusiastic service, we have been and continue to be a trusted partner of our customers." 
+msgstr "KLM很好地满足了全国各地工业区制造公司、生产工厂和大批量出口的大规模运输需求。凭借强大的能力、具有竞争力的价格标准和热情的服务，我们一直是客户值得信赖的合作伙伴。" 
 
 msgid "KLM Logistics JSC cung cấp kho tiêu chuẩn cao cho các hàng hóa cần sự bảo quản tốt như những mặt hàng điện tử, hàng hóa chất cũng như các hàng bao xá cần diện tích kho lớn chi phí hợp lý trên toàn quốc."
-msgstr "KLM Logistics JSC provides high-standard warehouses for goods that require good preservation such as electronic goods, chemical goods as well as packaged goods that require large warehouse space at reasonable costs nationwide." 
+msgstr "KLM物流股份公司在全国范围内以合理的成本提供高标准仓库，用于需要良好保存的货物，如电子产品、化学品以及需要大型仓储空间的包装货物。" 
 
 msgid "Những ưu điểm nổi trội của hệ thống kho bãi và phân phối của chúng tôi như:"
-msgstr "Outstanding advantages of our warehouse and distribution system include:" 
+msgstr "我们仓储和配送系统的突出优势包括：" 
 
 # Part 1
 msgid "Tất cả hàng hóa của khách hàng khi lưu trữ đều được bảo hiểm"
-msgstr "All customers' goods when stored are insured for"
+msgstr "所有客户的货物在存储期间均投保了"
 
 # Part 2
 msgid "giá trị tài sản"
-msgstr "asset value"
+msgstr "的资产价值"
 
 msgid "Vị trí kho hàng nằm trên các trục đường chính thuận lợi cho việc xuất nhập và trung chuyển hàng hóa"
-msgstr "The warehouse location is on main roads convenient for import, export and transit of goods" 
+msgstr "仓库位于主干道上，便于货物进出口和中转" 
 
 msgid "Cơ sở hạ tầng tiêu chuẩn quốc tế, trang thiết bị máy móc hiện đại với đầy đủ hệ thống PCCC, camera an ninh, bảo vệ 24/24"
-msgstr "International standard infrastructure, modern machinery and equipment with full fire protection system, security cameras, 24/24 security" 
+msgstr "国际标准基础设施、现代化机械设备，配备完整的消防系统、安全摄像头和24小时保安" 
 
 msgid "Đội ngũ nhân viên thưởng trực để hỗ trợ xuất nhập hàng hóa ra vào kho an toàn, nhanh chóng"
-msgstr "A team of staff on duty to support the safe and quick import and export of goods in and out of the warehouse" 
+msgstr "值班员工团队支持货物安全快速地进出仓库" 
 
 # --- Section 3: Special Cargo (Retained previous translation as it was not in the uploaded docs) ---
 msgid "Vận chuyển Hàng Đặc Biệt & Hàng Dự Án"
-msgstr "Special Cargo & Project Cargo Transport"
+msgstr "特殊货物和项目货物运输"
 
 msgid "Dựa trên mối quan hệ với chủ tàu & đại lý, KLM có thể xử lý tốt hàng rời với giá cả cạnh tranh và kinh nghiệm."
-msgstr "Based on relationships with shipowners & agents, KLM can handle bulk cargo well with competitive prices and experience."
+msgstr "基于与船东和代理的关系，KLM能够以具有竞争力的价格和经验很好地处理散货。"
 
 msgid "Vận chuyển nội địa thép cuộn"
-msgstr "Domestic steel coil transport"
+msgstr "国内钢卷运输"
 
 msgid "Cám vận chuyển nội địa & ngô nghiền cho vật nuôi nhà máy thức ăn chăn nuôi"
-msgstr "Domestic transport of bran & crushed corn for animal feed factories"
+msgstr "饲料厂动物饲养的米糠和碎玉米国内运输"
 
 msgid "Dự án hàng siêu trường (siêu trường, siêu nặng) của vận tải nội địa và quốc tế"
-msgstr "Oversized project cargo (oversized, overweight) for domestic and international transport"
+msgstr "国内和国际运输的超大（超长、超重）项目货物"
 
 # --- Section 4: Rail & Cross Border (Retained previous translation as it was not in the uploaded docs) ---
 msgid "Vận chuyển Đường Sắt và Xuyên Biên Giới"
-msgstr "Rail and Cross-Border Transport"
+msgstr "铁路和跨境运输"
 
 msgid "Dịch vụ đường sắt"
-msgstr "Rail Services"
+msgstr "铁路服务"
 
 msgid "KLM Logistics cung cấp dịch vụ vận chuyển hàng hóa xuất khẩu hoặc nhập khẩu. Vận chuyển bằng đường sắt sẽ được thu xếp tại ga quốc tế Yên Viên tới các địa điểm trong lục địa trung quốc và ngược lại."
-msgstr "KLM Logistics provides export or import cargo transport services. Rail transport will be arranged from Yen Vien international station to locations in mainland China and vice versa."
+msgstr "KLM物流提供出口或进口货物运输服务。铁路运输将从安沅国际车站安排到中国大陆地点，反之亦然。"
 
 msgid "Chúng tôi cung cấp dịch vụ đường sắt vận chuyển trong nước cho hàng hóa & các nguyên vật liệu trong nước."
-msgstr "We provide domestic rail transport services for domestic goods & raw materials."
+msgstr "我们为国内货物和原材料提供国内铁路运输服务。"
 
 msgid "Dịch vụ xe tải xuyên biên giới"
-msgstr "Cross-border Trucking Services"
+msgstr "跨境卡车运输服务"
 
 msgid "KLM logistics cung cấp dịch vụ vận tải xuyên biên giới cho hàng hóa xuất nhập khẩu từ Việt Nam tới Lào, Campuchia hoặc Thailand và ngược lại."
-msgstr "KLM Logistics provides cross-border transport services for import-export goods from Vietnam to Laos, Cambodia, or Thailand and vice versa."
+msgstr "KLM物流提供从越南到老挝、柬埔寨或泰国的进出口货物跨境运输服务，反之亦然。"
 
 msgid "Chúng tôi cung cấp dịch vụ vận chuyển đường bộ cho hàng nhập khẩu từ các khu vực đất liền Trung Quốc qua cửa khẩu Hữu Nghị tới kho ngoại quan Bắc Ninh."
-msgstr "We provide road transport services for imported goods from mainland China areas through Huu Nghi border gate to Bac Ninh bonded warehouse."
+msgstr "我们为从中国大陆地区经友谊关口岸到北宁保税仓库的进口货物提供公路运输服务。"
 
 ##### company.html
 # --- News Section (Shared across Company, Industry, Recruitment) ---
 msgid "Cập nhật những tin tức mới nhất từ KLM Logistics"
-msgstr "Stay updated with the latest news from KLM Logistics"
+msgstr "了解KLM物流的最新资讯"
 
 msgid "Danh mục tin tức"
-msgstr "News Categories"
+msgstr "新闻分类"
 
 msgid "Tin công ty"
-msgstr "Company News"
+msgstr "公司新闻"
 
 msgid "Tin chuyên ngành"
-msgstr "Industry News"
+msgstr "行业新闻"
 
 msgid "Tuyển dụng"
-msgstr "Recruitment"
+msgstr "招聘信息"
 
 # --- Post Items ---
 msgid "Đọc tiếp"
-msgstr "Read more"
+msgstr "阅读更多"
 
 # --- Empty State (When no posts exist) ---
 msgid "Chưa có bài viết nào"
-msgstr "No posts available"
+msgstr "暂无文章"
 
 msgid "Hiện tại chưa có tin tức công ty nào được đăng."
-msgstr "There are currently no company news posts."
+msgstr "目前尚未发布公司新闻。"
 
 msgid "Vui lòng quay lại sau để xem thông tin mới nhất."
-msgstr "Please check back later for the latest information."
+msgstr "请稍后查看最新信息。"
 
 ##### industry.html
 # --- Hero Section ---
 msgid "Tin chuyên ngành"
-msgstr "Industry News"
+msgstr "行业新闻"
 
 msgid "Cập nhật xu hướng và tin tức mới nhất trong ngành logistics"
-msgstr "Update the latest trends and news in the logistics industry"
+msgstr "更新物流行业的最新趋势和新闻"
 
 # --- Main Content & Meta ---
 msgid "Lần cuối cập nhật:"
-msgstr "Last updated:"
+msgstr "最后更新："
 
 # --- Sidebar Menu (Shared) ---
 # Note: These may duplicate with company.html, which is fine.
 msgid "Danh mục tin tức"
-msgstr "News Categories"
+msgstr "新闻分类"
 
 msgid "Tin công ty"
-msgstr "Company News"
+msgstr "公司新闻"
 
 msgid "Tuyển dụng"
-msgstr "Recruitment"
+msgstr "招聘信息"
 
 # --- News Card ---
 msgid "Đọc chi tiết"
-msgstr "Read details"
+msgstr "阅读详情"
 
 # --- Empty State ---
 msgid "Chưa có tin tức chuyên ngành"
-msgstr "No industry news available"
+msgstr "暂无行业新闻"
 
 msgid "Tin tức sẽ được cập nhật tự động từ các nguồn chính thức."
-msgstr "News will be updated automatically from official sources."
+msgstr "新闻将从官方渠道自动更新。"
 
 msgid "Vui lòng quay lại sau để xem thông tin mới nhất."
-msgstr "Please check back later for the latest information."
+msgstr "请稍后查看最新信息。"
 
 msgid "Tự động cập nhật từ các nguồn chính thức"
-msgstr "Automatically updated from official sources"
+msgstr "从官方渠道自动更新"
 
 ##### recruitment.html
 # --- Hero Section ---
 msgid "Tuyển dụng"
-msgstr "Recruitment"
+msgstr "招聘信息"
 
 msgid "Cơ hội nghề nghiệp tại KLM Logistics - Gia nhập đội ngũ chuyên nghiệp"
-msgstr "Career opportunities at KLM Logistics - Join our professional team"
+msgstr "KLM物流的职业机会 - 加入我们的专业团队"
 
 # --- Main Content ---
 msgid "Cơ hội nghề nghiệp tại KLM Logistics"
-msgstr "Career Opportunities at KLM Logistics"
+msgstr "KLM物流的职业机会"
 
 # --- Common Job Section Headers ---
 msgid "BẠN NÊN CÓ KỸ NĂNG"
-msgstr "REQUIRED SKILLS"
+msgstr "所需技能"
 
 msgid "BẠN SẼ LÀM GÌ (MÔ TẢ CÔNG VIỆC)"
-msgstr "WHAT YOU WILL DO (JOB DESCRIPTION)"
+msgstr "您将做什么（职位描述）"
 
 msgid "MÔ TẢ CÔNG VIỆC"
-msgstr "JOB DESCRIPTION"
+msgstr "职位描述"
 
 msgid "CHUYÊN MÔN CỦA BẠN (YÊU CẦU CÔNG VIỆC)"
-msgstr "YOUR EXPERTISE (JOB REQUIREMENTS)"
+msgstr "您的专业能力（职位要求）"
 
 msgid "YÊU CẦU CÔNG VIỆC"
-msgstr "JOB REQUIREMENTS"
+msgstr "职位要求"
 
 msgid "QUYỀN LỢI ĐƯỢC HƯỞNG"
-msgstr "BENEFITS"
+msgstr "福利待遇"
 
 msgid "LƯƠNG, PHÚC LỢI"
-msgstr "SALARY & BENEFITS"
+msgstr "薪资及福利"
 
 msgid "YÊU CẦU VỀ HỒ SƠ"
-msgstr "APPLICATION REQUIREMENTS"
+msgstr "申请要求"
 
 msgid "THÔNG TIN KHÁC"
-msgstr "OTHER INFORMATION"
+msgstr "其他信息"
 
 msgid "Ứng tuyển ngay"
-msgstr "Apply Now"
+msgstr "立即申请"
 
 # --- Job 1: Sales Logistics ---
 msgid "Nhân viên kinh doanh Logistics"
-msgstr "Logistics Sales Executive"
+msgstr "物流销售专员"
 
 msgid "Phòng Kinh doanh (Số lượng: 10 người)"
-msgstr "Sales Department (Quantity: 10)"
+msgstr "销售部（招聘人数：10人）"
 
 msgid "Kinh Doanh - Bán Hàng / Forwarding – Logistics / Xuất Nhập Khẩu - Khai Báo Hải Quan"
-msgstr "Business - Sales / Forwarding – Logistics / Import Export - Customs Declaration"
+msgstr "商务 - 销售 / 货运代理 - 物流 / 进出口 - 报关申报"
 
 # Job 1 Duties
 msgid "Tìm kiếm, liên hệ các công ty có nhu cầu về vận chuyển hàng hóa nội địa cũng như quốc tế phục vụ xuất nhập khẩu & các dịch vụ Logistics đi kèm."
-msgstr "Search and contact companies with needs for domestic and international cargo transport for import-export & accompanying Logistics services."
+msgstr "寻找和联系有国内及国际货物运输需求的公司，为进出口及相关物流服务。"
 
 msgid "Duy trì và phát triển mạng lưới khách hàng & đối tác của công ty."
-msgstr "Maintain and develop the company's network of customers & partners."
+msgstr "维护和发展公司的客户和合作伙伴网络。"
 
 msgid "Lập báo cáo hoạt động kinh doanh, đưa ý tưởng phát triển kinh doanh đến người phụ trách."
-msgstr "Prepare business activity reports, propose business development ideas to the person in charge."
+msgstr "编制商务活动报告，向负责人提出业务发展建议。"
 
 msgid "Phối hợp cùng các phòng ban nghiệp vụ khác thực hiện các dịch vụ của công ty cho khách hàng."
-msgstr "Coordinate with other professional departments to perform company services for customers."
+msgstr "与其他业务部门协调，为客户提供公司服务。"
 
 # Job 1 Requirements
 msgid "Tiếng anh, vi tính văn phòng khá."
-msgstr "Good English and office computer skills."
+msgstr "英语和办公软件较好。"
 
 msgid "Am hiểu về lĩnh vực Logistics/xuất nhập khẩu hàng hóa."
-msgstr "Knowledgeable about Logistics/cargo import-export field."
+msgstr "熟悉物流/货物进出口领域。"
 
 msgid "Nhanh nhẹn, có kỹ năng giao tiếp."
-msgstr "Agile, good communication skills."
+msgstr "灵活，具有良好的沟通技能。"
 
 # Job 1 Benefits
 # Part 1
 msgid "Lương thỏa thuận (với người có kinh nghiệm từ 7 - 10 triệu +"
-msgstr "Negotiable salary (7 - 10 million for experienced candidates +"
+msgstr "薪资面议（有经验者7-10百万+"
 
 # Part 2
 msgid "doanh số + Chính sách thưởng"
-msgstr "commission + Attractive bonus policy"
+msgstr "销售提成+吸引人的奖金政策"
 
 # Part 3
 msgid "hấp dẫn theo lũy tiến của Doanh thu thuần)"
-msgstr "progressively based on Net Revenue)"
+msgstr "根据净收入递增）"
 
 msgid "Du lịch hàng năm"
-msgstr "Annual travel"
+msgstr "年度旅游"
 
 msgid "Các chế độ BHXH, BHYT, BHTN được thực hiện đầy đủ theo quy định"
-msgstr "Social insurance, health insurance, unemployment insurance fully implemented according to regulations"
+msgstr "按规定全额缴纳社会保险、医疗保险、失业保险"
 
 # --- Job 2: Import-Export Docs ---
-msgid "NHÂN VIÊN CHỨNG TỪ XUẤT NHẬP KHẨU (NGÀNH LOGISTICS)"
-msgstr "IMPORT-EXPORT DOCUMENTATION STAFF (LOGISTICS INDUSTRY)"
+msgid "NHÂN VIÊN CHỨNG TỮ XUẤT NHẬP KHẨU (NGÀNH LOGISTICS)"
+msgstr "进出口单证专员（物流行业）"
 
 msgid "Phòng Chứng từ"
-msgstr "Documentation Department"
+msgstr "单证部"
 
 msgid "1. Nhóm công việc nghiệp vụ:"
-msgstr "1. Professional tasks:"
+msgstr "1. 专业工作："
 
 msgid "Khai manifest, chuẩn bị bộ lệnh, tổng hợp chứng từ hàng nhập"
-msgstr "Manifest declaration, delivery order preparation, import document synthesis"
+msgstr "货物清单申报、提货单准备、进口单证汇总"
 
 msgid "Làm chứng từ, khai quan xuất, nhập khẩu: Tờ khai Hải Quan, Hợp đồng, Invoice, Packing List, CO, Hun trùng… và các chứng từ cần thiết khác."
-msgstr "Prepare documents, export/import customs declaration: Customs Declaration, Contract, Invoice, Packing List, CO, Fumigation... and other necessary documents."
+msgstr "准备单证、进出口报关：海关申报表、合同、发票、装箱单、原产地证书、熏蒸证书等及其他必要单证。"
 
 msgid "2. Công việc hỗ trợ:"
-msgstr "2. Support tasks:"
+msgstr "2. 支持工作："
 
 msgid "Phối hợp với các phòng ban khác trong quá trình cung cấp dịch vụ, thông báo những quy định mới từ các cơ quan chức năng hay hãng vận chuyển để hạn chế tối đa rủi ro xảy ra"
-msgstr "Coordinate with other departments during service provision, notify new regulations from authorities or carriers to minimize risks"
+msgstr "在服务提供过程中与其他部门协调，通知来自政府机构或承运人的新规定，以最大限度地降低风险"
 
 msgid "Liên lạc với khách hàng để có thêm thông tin về lô hàng và hiểu rõ hơn những yêu cầu của khách hàng"
-msgstr "Contact customers for more shipment information and better understand customer requirements"
+msgstr "与客户联系以获取更多货物信息并更好地了解客户需求"
 
 msgid "Giao dịch với các bên cung cấp (Hun trùng, Bảo hiểm, Hải quan, PTM, BTM; Đại lý, hãng vận chuyển…) và cập nhật thông tin liên quan."
-msgstr "Transact with suppliers (Fumigation, Insurance, Customs, PTM, BTM; Agents, carriers...) and update relevant information."
+msgstr "与供应商（熏蒸、保险、海关、PTM、BTM；代理、承运人等）交易并更新相关信息。"
 
 msgid "Hỗ trợ đồng nghiệp khi cần."
-msgstr "Support colleagues when needed."
+msgstr "必要时支持同事。"
 
 msgid "Nhân viên mới sẽ được đào tạo đầy đủ về kiến thức chuyên ngành forwarding, logistics nên không phải lo lắng nếu chưa có kiến thức đầy đủ"
-msgstr "New employees will be fully trained in specialized forwarding and logistics knowledge, so don't worry if you lack full knowledge"
+msgstr "新员工将接受货运代理和物流专业知识的全面培训，所以即使知识不全也不用担心"
 
 # Job 2 Requirements
 msgid "Ưu tiên: Tốt nghiệp cao đẳng, đại học chuyên ngành ngoại thương/ kinh tế & vận tải"
-msgstr "Preferred: College/University graduate in Foreign Trade/Economics & Transport"
+msgstr "优先：外贸/经济及运输专业大专/大学毕业"
 
 # Job 2 Benefits
 msgid "Theo thỏa thuận cạnh tranh."
-msgstr "Competitive negotiable salary."
+msgstr "具有竞争力的协商薪资。"
 
 msgid "Được tham gia BHXH, BHYT, BHTN, BH tai nạn đầy đủ theo qui định."
-msgstr "Participate in Social Insurance, Health Insurance, Unemployment Insurance, Accident Insurance fully according to regulations."
+msgstr "按规定全额参加社会保险、医疗保险、失业保险、意外保险。"
 
 msgid "Du lịch, thưởng lễ tết… và nhiều chính sách phúc lợi khác"
-msgstr "Travel, holiday bonuses... and many other welfare policies"
+msgstr "旅游、节日奖金等及许多其他福利政策"
 
 # Job 2 Other Info
 msgid "Thời gian làm việc: 44h/ tuần, từ thứ Hai đến hết sáng Thứ Bảy"
-msgstr "Working time: 44h/week, from Monday to Saturday morning"
+msgstr "工作时间：44小时/周，周一至周六上午"
 
 msgid "Môi trường làm việc năng động, vui vẻ, thân thiện"
-msgstr "Dynamic, fun, friendly working environment"
+msgstr "充满活力、愉快、友好的工作环境"
 
 # --- Application Requirements (Common) ---
 msgid "Hồ sơ xin việc"
-msgstr "Job application"
+msgstr "求职申请"
 
 msgid "Bằng cấp liên quan (bản photo)."
-msgstr "Relevant degrees (photocopy)."
+msgstr "相关学历证书（复印件）。"
 
 # --- Contact Section ---
 msgid "Liên hệ tuyển dụng"
-msgstr "Recruitment Contact"
+msgstr "招聘联系方式"
 
 msgid "Hồ sơ dự tuyển xin gửi về trực tiếp địa chỉ sau: Công ty CP dịch vụ Logistics và thương mại KLM"
-msgstr "Please send application documents directly to: KLM Logistics and Trading Services JSC"
+msgstr "请将申请文件直接发送至：KLM物流和贸易服务股份公司"
 
 msgid "Địa chỉ: tầng 4, tòa nhà Hà Thủy, số 36 Hoàng Cầu, Hà Nội"
-msgstr "Address: 4th Floor, Ha Thuy Building, No. 36 Hoang Cau, Hanoi"
+msgstr "地址：河内市黄球路36号河水大厦4楼"
 
 msgid "PIC: Ms. Khúc Thu Thủy"
-msgstr "PIC: Ms. Khuc Thu Thuy"
+msgstr "联系人：Khuc Thu Thuy女士"
