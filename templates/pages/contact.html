@@ -1,0 +1,630 @@
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Liên hệ - KLM Logistics" %}{% endblock %} {% block content %}
+
+<!-- Hero Section -->
+<div
+  class="contact-hero"
+  style="
+    background: linear-gradient(135deg, #124d92 0%, #0a2d52 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  ">
+  <div
+    style="
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: rgba(226, 3, 24, 0.1);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+  <div
+    style="
+      position: absolute;
+      bottom: -30%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+
+  <div class="grid" style="position: relative; z-index: 1; text-align: center">
+    <h1
+      style="
+        font-size: 3.5rem;
+        color: white;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-family: exo-l;
+      ">
+      {% trans "Liên Hệ Với Chúng Tôi" %}
+    </h1>
+    <p
+      style="
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+      ">
+      {% trans "Hãy liên hệ với chúng tôi để biết thêm thông tin và tư vấn các giải pháp logistics" %}
+    </p>
+  </div>
+</div>
+
+<!-- Image Section -->
+<div style="padding: 80px 0; background: #f8f9fa" id="image-section">
+  <div class="grid">
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+      ">
+      <!-- Left: Image -->
+      <div
+        style="
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          height: 500px;
+        ">
+        <img
+          src="{% static 'uploaded/contact.png' %}"
+          alt="Contact Image"
+          style="width: 100%; height: 100%; object-fit: cover" />
+      </div>
+
+      <!-- Right: Description -->
+      <div>
+        <h2
+          style="
+            color: #0066cc;
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #0066cc;
+            display: inline-block;
+            padding-bottom: 10px;
+          ">
+          {% trans "Dịch vụ vận chuyển chuyên nghiệp" %}
+        </h2>
+
+        <div style="margin-top: 30px">
+          <p
+            style="
+              color: #555;
+              font-size: 1.05rem;
+              line-height: 1.8;
+              margin-bottom: 30px;
+              text-align: justify;
+            ">
+            {% trans "KLM Logistics cung cấp các giải pháp vận chuyển toàn diện cho các doanh nghiệp với yêu cầu đa dạng. Từ vận chuyển hàng không quốc tế đến logistics nội địa, chúng tôi luôn sẵn sàng hỗ trợ bạn đạt được mục tiêu kinh doanh." %}
+          </p>
+
+          <div style="margin: 30px 0">
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 25px;
+              ">
+              <i
+                class="fas fa-check-circle"
+                style="
+                  color: #0066cc;
+                  font-size: 1.5rem;
+                  margin-right: 15px;
+                  flex-shrink: 0;
+                  margin-top: 3px;
+                "></i>
+              <div>
+                <h4
+                  style="
+                    color: #333;
+                    font-size: 1.15rem;
+                    margin: 0 0 5px 0;
+                    font-weight: 600;
+                  ">
+                  {% trans "Vận chuyển quốc tế" %}
+                </h4>
+                <p style="color: #666; margin: 0; font-size: 0.95rem">
+                  {% trans "Liên kết toàn cầu với đối tác tin cậy" %}
+                </p>
+              </div>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 25px;
+              ">
+              <i
+                class="fas fa-check-circle"
+                style="
+                  color: #0066cc;
+                  font-size: 1.5rem;
+                  margin-right: 15px;
+                  flex-shrink: 0;
+                  margin-top: 3px;
+                "></i>
+              <div>
+                <h4
+                  style="
+                    color: #333;
+                    font-size: 1.15rem;
+                    margin: 0 0 5px 0;
+                    font-weight: 600;
+                  ">
+                  {% trans "Dịch vụ nhanh chóng" %}
+                </h4>
+                <p style="color: #666; margin: 0; font-size: 0.95rem">
+                  {% trans "Đảm bảo đúng hạn, an toàn tuyệt đối với giá cước hợp lý" %}
+                </p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start">
+              <i
+                class="fas fa-check-circle"
+                style="
+                  color: #0066cc;
+                  font-size: 1.5rem;
+                  margin-right: 15px;
+                  flex-shrink: 0;
+                  margin-top: 3px;
+                "></i>
+              <div>
+                <h4
+                  style="
+                    color: #333;
+                    font-size: 1.15rem;
+                    margin: 0 0 5px 0;
+                    font-weight: 600;
+                  ">
+                  {% trans "Hỗ trợ 24/7" %}
+                </h4>
+                <p style="color: #666; margin: 0; font-size: 0.95rem">
+                  {% trans "Đội ngũ chuyên gia sẵn sàng phục vụ mọi lúc, mọi nơi" %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Contact Section -->
+<div style="padding: 80px 0; background: white" id="contact-section">
+  <div class="grid">
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: flex-start;
+      ">
+      <!-- Left: Contact Form -->
+      <div class="contact-form" style="display: flex; flex-direction: column">
+        <div
+          style="
+            background: #f5f7fa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          ">
+          <h2
+            style="
+              color: #0066cc;
+              font-size: 2.3rem;
+              font-weight: 600;
+              margin-bottom: 30px;
+              border-bottom: 3px solid #0066cc;
+              display: inline-block;
+              padding-bottom: 10px;
+            ">
+            {% trans "Gửi tin nhắn cho chúng tôi" %}
+          </h2>
+
+          <form
+            method="POST"
+            style="margin-top: 30px; display: flex; flex-direction: column">
+            {% csrf_token %}
+
+            <!-- Name Field -->
+            <div style="margin-bottom: 20px">
+              <label
+                for="name"
+                style="
+                  display: block;
+                  color: #333;
+                  font-size: 1rem;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                "
+                >{% trans "Họ tên" %}
+                <span style="color: #e20318">*</span></label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 15px;
+                  border: 2px solid #e0e0e0;
+                  border-radius: 5px;
+                  font-size: 1rem;
+                  transition: border-color 0.3s ease;
+                  box-sizing: border-box;
+                "
+                onmouseover="this.style.borderColor='#0066cc'"
+                onmouseout="this.style.borderColor='#e0e0e0'"
+                onfocus="this.style.borderColor='#0066cc'"
+                onblur="this.style.borderColor='#e0e0e0'" />
+            </div>
+
+            <!-- Email Field -->
+            <div style="margin-bottom: 20px">
+              <label
+                for="email"
+                style="
+                  display: block;
+                  color: #333;
+                  font-size: 1rem;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                "
+                >{% trans "Email" %}
+                <span style="color: #e20318">*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 15px;
+                  border: 2px solid #e0e0e0;
+                  border-radius: 5px;
+                  font-size: 1rem;
+                  transition: border-color 0.3s ease;
+                  box-sizing: border-box;
+                "
+                onmouseover="this.style.borderColor='#0066cc'"
+                onmouseout="this.style.borderColor='#e0e0e0'"
+                onfocus="this.style.borderColor='#0066cc'"
+                onblur="this.style.borderColor='#e0e0e0'" />
+            </div>
+
+            <!-- Phone Field -->
+            <div style="margin-bottom: 20px">
+              <label
+                for="phone"
+                style="
+                  display: block;
+                  color: #333;
+                  font-size: 1rem;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                "
+                >{% trans "Điện thoại" %}</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                style="
+                  width: 100%;
+                  padding: 12px 15px;
+                  border: 2px solid #e0e0e0;
+                  border-radius: 5px;
+                  font-size: 1rem;
+                  transition: border-color 0.3s ease;
+                  box-sizing: border-box;
+                "
+                onmouseover="this.style.borderColor='#0066cc'"
+                onmouseout="this.style.borderColor='#e0e0e0'"
+                onfocus="this.style.borderColor='#0066cc'"
+                onblur="this.style.borderColor='#e0e0e0'" />
+            </div>
+
+            <!-- Subject Field -->
+            <div style="margin-bottom: 20px">
+              <label
+                for="subject"
+                style="
+                  display: block;
+                  color: #333;
+                  font-size: 1rem;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                "
+                >{% trans "Chủ đề" %}</label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                style="
+                  width: 100%;
+                  padding: 12px 15px;
+                  border: 2px solid #e0e0e0;
+                  border-radius: 5px;
+                  font-size: 1rem;
+                  transition: border-color 0.3s ease;
+                  box-sizing: border-box;
+                "
+                onmouseover="this.style.borderColor='#0066cc'"
+                onmouseout="this.style.borderColor='#e0e0e0'"
+                onfocus="this.style.borderColor='#0066cc'"
+                onblur="this.style.borderColor='#e0e0e0'" />
+            </div>
+
+            <!-- Message Field -->
+            <div style="margin-bottom: 30px">
+              <label
+                for="message"
+                style="
+                  display: block;
+                  color: #333;
+                  font-size: 1rem;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                "
+                >{% trans "Nội dung" %}
+                <span style="color: #e20318">*</span></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 15px;
+                  border: 2px solid #e0e0e0;
+                  border-radius: 5px;
+                  font-size: 1rem;
+                  transition: border-color 0.3s ease;
+                  box-sizing: border-box;
+                  font-family: Arial, sans-serif;
+                  resize: vertical;
+                  min-height: 120px;
+                "
+                onmouseover="this.style.borderColor='#0066cc'"
+                onmouseout="this.style.borderColor='#e0e0e0'"
+                onfocus="this.style.borderColor='#0066cc'"
+                onblur="this.style.borderColor='#e0e0e0'"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              style="
+                width: 100%;
+                padding: 15px 30px;
+                background: #0066cc;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+              "
+              onmouseover="this.style.background='#0056b3'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(0, 102, 204, 0.3)'"
+              onmouseout="this.style.background='#0066cc'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+              {% trans "Gửi tin nhắn" %}
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right: Company Info & Map -->
+      <div class="contact-info" style="display: flex; flex-direction: column">
+        <!-- Map -->
+        <div
+          style="
+            margin-bottom: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            height: 300px;
+          ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14897.443796036468!2d105.8240295!3d21.0182388!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab79711d6717%3A0x7bfa03d404505d7c!2sKLM%20Logistics!5e0!3m2!1sen!2s!4v1715179348037!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            style="border: none"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Company Info -->
+        <div
+          style="
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          ">
+          <h3
+            style="
+              color: #0066cc;
+              font-size: 1.8rem;
+              font-weight: 600;
+              margin-bottom: 20px;
+              border-bottom: 3px solid #0066cc;
+              display: inline-block;
+              padding-bottom: 10px;
+            ">
+            {% trans "Trụ sở chính" %}
+          </h3>
+
+          <div style="margin-top: 25px">
+            <p
+              style="
+                color: #333;
+                font-size: 1.05rem;
+                line-height: 1.8;
+                margin: 15px 0;
+              ">
+              <strong>{% trans "Địa chỉ:" %}</strong><br />
+              {% trans "Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội, Việt Nam" %}
+            </p>
+
+            <p
+              style="
+                color: #333;
+                font-size: 1.05rem;
+                line-height: 1.8;
+                margin: 15px 0;
+              ">
+              <strong style="color: #dc3545">{% trans "Hotline:" %}</strong
+              ><br />
+              <a
+                href="tel:+84913020430"
+                style="
+                  color: #0066cc;
+                  text-decoration: none;
+                  transition: color 0.3s ease;
+                "
+                onmouseover="this.style.color='#0056b3'; this.style.textDecoration='underline'"
+                onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none'">
+                +84-913020430
+              </a>
+            </p>
+
+            <p
+              style="
+                color: #333;
+                font-size: 1.05rem;
+                line-height: 1.8;
+                margin: 15px 0;
+              ">
+              <strong style="color: #dc3545">{% trans "Điện thoại:" %}</strong
+              ><br />
+              (+84) 24 35190965
+            </p>
+
+            <p
+              style="
+                color: #333;
+                font-size: 1.05rem;
+                line-height: 1.8;
+                margin: 15px 0;
+              ">
+              <strong style="color: #dc3545">{% trans "Email:" %}</strong><br />
+              <a
+                href="mailto:info@klmlogistics.com"
+                style="
+                  color: #0066cc;
+                  text-decoration: none;
+                  transition: color 0.3s ease;
+                "
+                onmouseover="this.style.color='#0056b3'; this.style.textDecoration='underline'"
+                onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none'">
+                info@klmlogistics.com
+              </a>
+            </p>
+
+            <p
+              style="
+                color: #333;
+                font-size: 1.05rem;
+                line-height: 1.8;
+                margin: 15px 0;
+              ">
+              <strong style="color: #dc3545">{% trans "Website:" %}</strong
+              ><br />
+              <a
+                href="https://www.klmlogistics.com"
+                style="
+                  color: #0066cc;
+                  text-decoration: none;
+                  transition: color 0.3s ease;
+                "
+                onmouseover="this.style.color='#0056b3'; this.style.textDecoration='underline'"
+                onmouseout="this.style.color='#0066cc'; this.style.textDecoration='none'">
+                www.klmlogistics.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  @media (max-width: 1023px) {
+    #contact-section > .grid > div {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+    }
+
+    #image-section > .grid > div {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+    }
+
+    #image-section img {
+      height: 300px !important;
+    }
+
+    .contact-hero h1 {
+      font-size: 2rem !important;
+    }
+
+    .contact-hero p {
+      font-size: 1rem !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    #contact-section > .grid > div {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+
+    #image-section > .grid > div {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+
+    #image-section img {
+      height: 250px !important;
+    }
+
+    .contact-form h2 {
+      font-size: 1.5rem !important;
+    }
+
+    .contact-info h3 {
+      font-size: 1.3rem !important;
+    }
+
+    .contact-info p {
+      font-size: 0.95rem !important;
+    }
+
+    .contact-hero h1 {
+      font-size: 1.8rem !important;
+    }
+  }
+</style>
+
+{% endblock %}

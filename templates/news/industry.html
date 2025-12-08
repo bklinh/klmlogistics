@@ -1,0 +1,487 @@
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{{ page_title }} - KLM Logistics{% endblock %} {% block content %}
+<!-- Hero Section -->
+<div
+  class="news-hero"
+  style="
+    background: linear-gradient(135deg, #124d92 0%, #0a2d52 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  ">
+  <div
+    style="
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: rgba(226, 3, 24, 0.1);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+  <div
+    style="
+      position: absolute;
+      bottom: -30%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+
+  <div class="grid" style="position: relative; z-index: 1; text-align: center">
+    <h1
+      style="
+        font-size: 3.5rem;
+        color: white;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-family: exo-l;
+      ">
+      {% trans "Tin chuyên ngành" %}
+    </h1>
+    <p
+      style="
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+      ">
+      {% trans "Cập nhật xu hướng và tin tức mới nhất trong ngành logistics" %}
+    </p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="news-content-wrapper" style="padding: 60px 0">
+  <div class="grid">
+    <div
+      style="
+        text-align: right;
+        margin-bottom: 20px;
+        color: #666;
+        font-style: italic;
+      ">
+      {% trans "Lần cuối cập nhật:" %} {% now "d/m/Y" %}
+    </div>
+    <div class="flex-container">
+      <!-- Left Menu - 1/4 -->
+      <div class="cell-1-4">
+        <div
+          class="news-menu"
+          style="
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            position: sticky;
+            top: 20px;
+          ">
+          <h3
+            style="
+              color: #0066cc;
+              margin-bottom: 20px;
+              font-size: 1.3rem;
+              font-weight: 600;
+            ">
+            {% trans "Danh mục tin tức" %}
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'company_news' %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                <i class="fas fa-building" style="margin-right: 8px"></i>
+                {% trans "Tin công ty" %}
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'industry_news' %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid #0066cc;
+                  background: #0066cc;
+                ">
+                <i class="fas fa-industry" style="margin-right: 8px"></i>
+                {% trans "Tin chuyên ngành" %}
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'recruitment' %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                <i class="fas fa-user-tie" style="margin-right: 8px"></i>
+                {% trans "Tuyển dụng" %}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Content - 3/4 -->
+      <div class="cell-3-4" style="padding-left: 40px">
+        {% if external_news %}
+        <!-- News Grid -->
+        <div
+          class="external-news-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+          ">
+          {% for news in external_news %}
+          <article
+            class="external-news-card"
+            style="background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease; border-left: 4px solid {% if news.source == 'customs' %}#e74c3c{% else %}#27ae60{% endif %}">
+            <!-- Default Image with Dynamic Title -->
+            <div
+              class="news-image"
+              style="height: 180px; overflow: hidden; position: relative">
+              <div
+                style="
+                  width: 100%;
+                  height: 100%;
+                  background: linear-gradient(
+                    135deg,
+                    {% if news.source == 'customs' %}#e74c3c,
+                    #c0392b{% else %}#27ae60,
+                    #229954{% endif %}
+                  );
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  position: relative;
+                ">
+                <div style="text-align: center; color: white; z-index: 2">
+                  <i
+                    class="fas {% if news.source == 'customs' %}fa-balance-scale{% else %}fa-shipping-fast{% endif %}"
+                    style="
+                      font-size: 2.5rem;
+                      margin-bottom: 10px;
+                      opacity: 0.9;
+                    "></i>
+                  <div
+                    style="
+                      font-size: 1rem;
+                      font-weight: 600;
+                      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                    ">
+                    {{ news.default_image_title }}
+                  </div>
+                </div>
+                <!-- Overlay pattern -->
+                <div
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: repeating-linear-gradient(
+                      45deg,
+                      transparent,
+                      transparent 10px,
+                      rgba(255, 255, 255, 0.1) 10px,
+                      rgba(255, 255, 255, 0.1) 20px
+                    );
+                    opacity: 0.3;
+                  "></div>
+              </div>
+
+              <!-- Source Badge -->
+              <div
+                style="
+                  position: absolute;
+                  top: 10px;
+                  right: 10px;
+                  background: rgba(0, 0, 0, 0.8);
+                  color: white;
+                  padding: 4px 8px;
+                  border-radius: 12px;
+                  font-size: 0.75rem;
+                  font-weight: 500;
+                ">
+                {{ news.get_source_display }}
+              </div>
+            </div>
+
+            <div class="news-content" style="padding: 20px">
+              <div class="news-meta" style="margin-bottom: 12px">
+                <span
+                  style="background: {% if news.source == 'customs' %}#e74c3c{% else %}#27ae60{% endif %}; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 8px">
+                  <i
+                    class="fas {% if news.source == 'customs' %}fa-university{% else %}fa-truck{% endif %}"
+                    style="margin-right: 4px"></i>
+                  {{ news.get_source_display }}
+                </span>
+              </div>
+
+              <h3
+                style="
+                  margin: 0 0 12px 0;
+                  font-size: 1.1rem;
+                  line-height: 1.4;
+                  color: #333;
+                ">
+                {{ news.title }}
+              </h3>
+
+              <p
+                style="
+                  color: #666;
+                  margin: 0 0 15px 0;
+                  font-size: 0.9rem;
+                  line-height: 1.5;
+                ">
+                {{ news.summary|truncatewords:25 }}
+              </p>
+
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                ">
+                <a
+                  href="{{ news.source_url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style="color: {% if news.source == 'customs' %}#e74c3c{% else %}#27ae60{% endif %}; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: color 0.3s ease; display: inline-flex; align-items: center">
+                  {% trans "Đọc chi tiết" %}
+                  <i
+                    class="fas fa-external-link-alt"
+                    style="margin-left: 6px; font-size: 0.8rem"></i>
+                </a>
+
+                <!-- <span style="color: #999; font-size: 0.8rem">
+                  <i class="fas fa-clock" style="margin-right: 4px"></i>
+                  {{ news.fetched_at|timesince }} trước
+                </span> -->
+              </div>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+
+        <!-- Pagination -->
+        {% if external_news.has_other_pages %}
+        <div
+          class="pagination-wrapper"
+          style="text-align: center; margin-top: 40px">
+          <div
+            class="pagination"
+            style="display: inline-flex; gap: 10px; align-items: center">
+            {% if external_news.has_previous %}
+            <a
+              href="?page={{ external_news.previous_page_number }}"
+              style="
+                padding: 8px 12px;
+                background: #0066cc;
+                color: white;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background 0.3s ease;
+              ">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+            {% endif %} {% for num in external_news.paginator.page_range %} {% if external_news.number == num %}
+            <span
+              style="
+                padding: 8px 12px;
+                background: #0066cc;
+                color: white;
+                border-radius: 4px;
+                font-weight: 600;
+              ">
+              {{ num }}
+            </span>
+            {% elif num > external_news.number|add:'-3' and num < external_news.number|add:'3' %}
+            <a
+              href="?page={{ num }}"
+              style="
+                padding: 8px 12px;
+                background: #f8f9fa;
+                color: #333;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background 0.3s ease;
+              ">
+              {{ num }}
+            </a>
+            {% endif %} {% endfor %} {% if external_news.has_next %}
+            <a
+              href="?page={{ external_news.next_page_number }}"
+              style="
+                padding: 8px 12px;
+                background: #0066cc;
+                color: white;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background 0.3s ease;
+              ">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %} {% else %}
+        <!-- Empty State -->
+        <div
+          class="empty-state"
+          style="
+            text-align: center;
+            padding: 60px 40px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          ">
+          <i
+            class="fas fa-newspaper"
+            style="font-size: 4rem; color: #ddd; margin-bottom: 20px"></i>
+          <h3 style="color: #666; margin-bottom: 15px">
+            {% trans "Chưa có tin tức chuyên ngành" %}
+          </h3>
+          <p style="color: #999; margin: 0; font-size: 0.95rem">
+            {% trans "Tin tức sẽ được cập nhật tự động từ các nguồn chính thức." %} <br />
+            {% trans "Vui lòng quay lại sau để xem thông tin mới nhất." %}
+          </p>
+          <div style="margin-top: 25px">
+            <span
+              style="
+                background: #f8f9fa;
+                padding: 8px 15px;
+                border-radius: 20px;
+                font-size: 0.85rem;
+                color: #666;
+              ">
+              <i class="fas fa-sync-alt" style="margin-right: 5px"></i>
+              {% trans "Tự động cập nhật từ các nguồn chính thức" %}
+            </span>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Menu hover effects */
+  .news-menu a:not([style*="background: #0066cc"]):hover {
+    background: #0066cc !important;
+    color: white !important;
+    border-left: 3px solid #004499 !important;
+  }
+
+  /* External news card hover effects */
+  .external-news-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .external-news-card:hover .news-image div {
+    transform: scale(1.05) !important;
+  }
+
+  /* Pagination hover effects */
+  .pagination a:hover {
+    background: #004499 !important;
+    transform: translateY(-2px);
+  }
+
+  /* External link hover effects */
+  .news-content a:hover {
+    opacity: 0.8 !important;
+  }
+
+  /* News grid animations */
+  .external-news-card {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Source badge styling */
+  .external-news-card .news-image [style*="position: absolute"] {
+    backdrop-filter: blur(4px);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1023px) {
+    .news-content-wrapper .cell-1-4,
+    .news-content-wrapper .cell-3-4 {
+      width: 100% !important;
+    }
+
+    .news-content-wrapper .cell-3-4 {
+      padding-left: 0 !important;
+      margin-top: 30px;
+    }
+
+    .news-menu {
+      position: static !important;
+    }
+
+    .external-news-grid {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+
+    .pagination {
+      flex-wrap: wrap !important;
+      gap: 5px !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .news-content div {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      gap: 10px !important;
+    }
+
+    .empty-state {
+      padding: 40px 20px !important;
+    }
+
+    .external-news-card {
+      margin: 0 !important;
+    }
+  }
+</style>
+
+{% endblock %}

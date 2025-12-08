@@ -1,0 +1,185 @@
+{% load static %} {% load i18n %}
+
+<style>
+  footer {
+    background: #114d93 url("{% static 'uploaded/background/footer-bg.png' %}")
+      no-repeat 50% 50%;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+  }
+
+  @media (max-width: 767px) {
+    .mobile-cell-1-1 {
+      width: 100% !important;
+      padding: 0 15px !important;
+      margin-bottom: 30px;
+    }
+    footer {
+      text-align: center;
+    }
+    footer h4 {
+      border-bottom: none !important;
+      margin-bottom: 10px !important;
+    }
+    footer h4:after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 2px;
+      background: white;
+      margin: 5px auto 0;
+    }
+  }
+</style>
+
+<!-- Footer -->
+<footer>
+  <div class="grid">
+    <!-- Footer Content -->
+    <div class="flex-container" style="margin-bottom: 20px">
+      <!-- Logo & Description -->
+      <div
+        class="cell-1-3 tab-cell-1-2 mobile-cell-1-1"
+        style="padding-right: 20px">
+        <img
+          src="{% static 'uploaded/logo/klm.jpg' %}"
+          alt="KLM Logistics"
+          style="height: 120px; margin-bottom: 15px" />
+        <p
+          style="
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
+          ">
+          {% trans "KLM Logistics cung cấp dịch vụ logistics toàn diện từ vận chuyển, kho bãi đến thông quan hải quan với chất lượng quốc tế." %}
+        </p>
+      </div>
+
+      <!-- Contact Information -->
+      <div
+        class="cell-1-3 tab-cell-1-2 mobile-cell-1-1"
+        style="padding: 0 20px">
+        <h4
+          style="
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 8px;
+          ">
+          {% trans "Liên Hệ" %}
+        </h4>
+        <div style="margin-top: 12px">
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.9);
+              font-size: 0.95rem;
+              margin: 8px 0;
+            ">
+            <strong>{% trans "Địa chỉ:" %}</strong><br />
+            {% trans "Tầng 4, Số 36 Hoàng Cầu, Đống Đa, Hà Nội, Việt Nam" %}
+          </p>
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.9);
+              font-size: 0.95rem;
+              margin: 8px 0;
+            ">
+            <strong>{% trans "Điện thoại / Zalo:" %}</strong><br />
+            <a href="tel:0913020430" style="color: white; text-decoration: none"
+              >0913020430</a
+            >
+          </p>
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.9);
+              font-size: 0.95rem;
+              margin: 8px 0;
+            ">
+            <strong>{% trans "Email:" %}</strong><br />
+            <a
+              href="mailto:info@klmlogistics.com"
+              style="color: white; text-decoration: none"
+              >info@klmlogistics.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Service Hours -->
+      <div
+        class="cell-1-3 tab-cell-1-2 mobile-cell-1-1"
+        style="padding-left: 20px">
+        <h4
+          style="
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0 0 12px 0;
+            border-bottom: 2px solid white;
+            display: inline-block;
+            padding-bottom: 8px;
+          ">
+          {% trans "Thời Gian Làm Việc" %}
+        </h4>
+        <div style="margin-top: 12px">
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.9);
+              font-size: 0.95rem;
+              margin: 8px 0;
+            ">
+            <strong>{% trans "Thứ 2 - Thứ 6:" %}</strong><br />
+            8:00 - 17:00
+          </p>
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.9);
+              font-size: 0.95rem;
+              margin: 8px 0;
+            ">
+            <strong>{% trans "Thứ 7:" %}</strong><br />
+            8:00 - 12:00
+          </p>
+          <p
+            style="
+              color: rgba(255, 255, 255, 0.9);
+              font-size: 0.95rem;
+              margin: 8px 0;
+            ">
+            <strong>{% trans "Chủ Nhật:" %}</strong><br />
+            {% trans "Đóng cửa" %}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr
+      style="
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin: 20px 0;
+      " />
+
+    <!-- Copyright -->
+    <div style="text-align: center; padding-top: 12px">
+      <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; margin: 0">
+        &copy; {% now "Y" %} KLM Logistics. {% trans "Bảo lưu mọi quyền." %} |
+        <a href="{% url 'home' %}" style="color: white; text-decoration: none"
+          >{% trans "Trang chủ" %}</a
+        >
+        |
+        <a
+          href="{% url 'contact' %}"
+          style="color: white; text-decoration: none"
+          >{% trans "Liên hệ" %}</a
+        >
+      </p>
+    </div>
+  </div>
+</footer>

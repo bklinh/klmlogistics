@@ -1,0 +1,758 @@
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Vận chuyển hàng không - KLM Logistics" %}{% endblock %} {% block content %}
+
+<!-- Hero Image Section -->
+<div
+  class="service-hero-section"
+  style="
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    margin-bottom: 50px;
+  ">
+  <img
+    src="{% static 'uploaded/services/item1.jpg' %}"
+    style="width: 100%; height: 100%; object-fit: cover"
+    alt="Vận chuyển hàng không" />
+  <div
+    class="hero-overlay"
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(18, 77, 146, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    ">
+    <div class="hero-content" style="text-align: center; color: white">
+      <h1 style="font-size: 2.5rem; font-weight: 600; margin: 0 0 15px 0">
+        {% trans "Vận chuyển hàng không Quốc tế" %}
+      </h1>
+      <p style="font-size: 1.1rem; margin: 0">
+        {% trans "Dịch vụ vận chuyển hàng không chuyên nghiệp với mạng lưới đối tác quốc tế" %}
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content Section -->
+<div class="service-content-wrapper">
+  <div class="grid">
+    <div class="flex-container">
+      <!-- Left Menu - 1/4 -->
+      <div class="cell-1-4">
+        <div
+          class="service-menu"
+          id="floating-menu"
+          style="
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            transition: all 0.3s ease;
+          ">
+          <h3
+            style="
+              color: #124d92;
+              margin-bottom: 20px;
+              font-size: 1.4rem;
+              font-weight: 600;
+            ">
+            {% trans "Nội dung" %}
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 15px">
+              <a
+                href="#air_overview"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                  font-size: 1.05rem;
+                "
+                >{% trans "Tổng Quan" %}</a
+              >
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="#air_import"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                  font-size: 1.05rem;
+                "
+                >{% trans "Nhập Khẩu" %}</a
+              >
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="#air_export"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                  font-size: 1.05rem;
+                "
+                >{% trans "Xuất Khẩu" %}</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Content - 3/4 -->
+      <div class="cell-3-4" style="padding-left: 40px">
+        <!-- Section 1: Overview -->
+        <section
+          id="air_overview"
+          class="content-section"
+          style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #124d92;
+                font-size: 2.2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #124d92;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Tổng Quan" %}
+            </h2>
+          </div>
+          <div class="flex-container align-center">
+            <div class="cell-1-2 tab-cell-1-1" style="padding-right: 40px">
+              <img
+                src="{% static 'uploaded/services/item1.jpg' %}"
+                alt="Vận chuyển hàng không"
+                style="
+                  width: 100%;
+                  border-radius: 8px;
+                  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                " />
+            </div>
+            <div class="cell-1-2 tab-cell-1-1">
+              <div
+                style="
+                  line-height: 1.8;
+                  color: #333;
+                  font-size: 1.1rem;
+                  text-align: justify;
+                ">
+                <p style="margin: 0">
+                  {% trans "Chúng tôi hiểu rằng khi khách hàng chọn dịch vụ hàng không là đồng nghĩa với việc lô hàng có giá trị lớn với khách hàng, cần sắp xếp vận chuyển nhanh chóng, an toàn. Vi thế dịch vụ vận chuyển hàng không của KLM được xây dựng và phát triển dựa trên mạng lưới hợp tác bền chặt với những hãng hàng không mạnh với khả năng cung cấp chỗ, tải lớn, tần suất bay nhiều cùng giá cả cạnh tranh đi hầu hết các thị trường chính trên toàn thế giới." %}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 1b: Experience -->
+        <section
+          style="
+            margin-bottom: 60px;
+            background: #f5f7fa;
+            padding: 40px;
+            border-radius: 8px;
+          ">
+          <div class="flex-container align-center">
+            <div class="cell-1-1">
+              <div
+                style="
+                  line-height: 1.8;
+                  color: #333;
+                  font-size: 1.1rem;
+                  text-align: justify;
+                ">
+                <p style="margin: 0; margin-bottom: 35px">
+                  {% trans "KLM đã và đang dàn xếp vận chuyển hàng không cho rất nhiều loại mặt hàng thông thường như hàng dệt may, hàng thiết bị điện tử & viễn thông... Đặc biệt ngoài ra chúng tôi có kinh nghiệm trong việc vận chuyển các mặt hàng nguy hiểm (hàng chứa pin lithium, chất lỏng, phát từ trường, rada..), hàng động vật sống, hàng hoa quả & rau tươi. Kể cả những lô hàng dự án siêu trọng, siêu trường chúng tôi cũng đã thành công tìm được giải pháp thực hiện bằng vận chuyển hàng không." %}
+                </p>
+              </div>
+            </div>
+            <div class="cell-1-1">
+              <img
+                src="{% static 'uploaded/services/item0.jpg' %}"
+                alt="Kinh nghiệm vận chuyển"
+                style="
+                  width: 100%;
+                  border-radius: 8px;
+                  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                " />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: Import -->
+        <section
+          id="air_import"
+          class="content-section"
+          style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #124d92;
+                font-size: 2.2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #124d92;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Vận chuyển Hàng không Nhập Quốc tế" %}
+            </h2>
+          </div>
+          <div class="flex-container align-center">
+            <div class="cell-1-2 tab-cell-1-1" style="padding-right: 40px">
+              <div
+                style="
+                  line-height: 1.8;
+                  color: #333;
+                  font-size: 1.1rem;
+                  text-align: justify;
+                  margin-bottom: 20px;
+                ">
+                <p style="margin: 0">
+                  {% trans "KLM là đơn vị vận chuyển hàng nhập chuyên nghiệp, uy tín cho các mặt hàng chính như hàng giá trị cao, hàng nguy hiểm (MSDS, UN) những mặt hàng đòi hỏi kiến thức và kinh nghiệm thực trong việc triển khai." %}
+                </p>
+              </div>
+              <ul
+                style="
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                ">
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Hàng thiết bị điện tử & viễn thông" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Hàng nguyên liệu cho ngành dệt may, nhựa, thép, cơ khí, vật liệu xây dựng,..." %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Hàng chứa hoá chất, Pin lithium" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Hàng tiêu dùng và thực phẩm như đồ tã bỉm, văn phòng phẩm, đồ gia dụng, bánh kẹo, nước giải khát,..." %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Linh kiện & máy móc, hệ thống dây chuyền nhà máy" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Hàng dự án (dự án điện mặt trời, hệ thống thiết bị cho sân bay,…)" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Các mặt hàng khác" %}
+                </li>
+              </ul>
+            </div>
+            <div class="cell-1-2 tab-cell-1-1">
+              <img
+                src="{% static 'uploaded/services/item1_1.jpg' %}"
+                alt="Vận chuyển hàng không nhập khẩu"
+                style="
+                  width: 100%;
+                  border-radius: 8px;
+                  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                " />
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4: Export -->
+        <section
+          id="air_export"
+          class="content-section"
+          style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #124d92;
+                font-size: 2.2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #124d92;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Vận chuyển Hàng không Xuất Quốc tế" %}
+            </h2>
+          </div>
+          <div class="flex-container align-center">
+            <div class="cell-1-2 tab-cell-1-1">
+              <img
+                src="{% static 'uploaded/services/item1_3.jpg' %}"
+                alt="Vận chuyển hàng không xuất khẩu 1"
+                style="
+                  width: 100%;
+                  border-radius: 8px;
+                  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                  margin-bottom: 160px;
+                " />
+              <img
+                src="{% static 'uploaded/services/item1_4.jpg' %}"
+                alt="Vận chuyển hàng không xuất khẩu 2"
+                style="
+                  width: 100%;
+                  border-radius: 8px;
+                  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                " />
+            </div>
+            <div class="cell-1-2 tab-cell-1-1" style="padding-left: 40px">
+              <div
+                style="
+                  line-height: 1.8;
+                  color: #333;
+                  font-size: 1.1rem;
+                  text-align: justify;
+                  margin-bottom: 20px;
+                ">
+                <p style="margin: 0">
+                  {% trans "KLM Logistics là đại lý hàng hóa của nhiều hãng vận chuyển hàng không quốc tế nổi tiếng (GSA) với một dịch vụ vận chuyển hàng không trọn gói, cung cấp lượng tải trọng lớn và mật độ chuyến bay dày đặc đến hầu hết các quốc gia và vùng lãnh thổ trên thế giới. Các hãng hàng không đối tác của chúng tôi gồm có: Vietnam Airlines, Asiana Airlines, China Airlines, Qatar Airways, Singapore Airlines, Korean Air, Turkish Airline..." %}
+                </p>
+              </div>
+              <div
+                style="
+                  line-height: 1.8;
+                  color: #333;
+                  font-size: 1.1rem;
+                  text-align: justify;
+                  margin-bottom: 20px;
+                ">
+                <p style="margin: 0">
+                  {% trans "Một số dịch vụ chính của chúng tôi bao gồm:" %}
+                </p>
+              </div>
+              <ul
+                style="
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                ">
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Xuất hàng nông sản: cà rốt, chuối, bưởi…" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Xuất hàng dệt may, đồ lụa" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Xuất hàng nguyên liệu bột sắn dây, giấy cuộn đi các cảng ở Trung Quốc" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Xuất khẩu hàng plywood, gỗ, nội thất đi Châu Á, Châu Âu & Mỹ" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Xuất khẩu hàng thép cuộn, thép ống đi Ấn Độ, Hàn, Nhật, Châu Âu" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Xuất khẩu hàng xơ sợi đi Trung Quốc" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Xuất khẩu hàng dệt may thành phẩm đi Châu Âu & Mỹ" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Các mặt hàng khác" %}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .service-menu a:hover {
+    background: #e8eef7;
+    border-left-color: #124d92;
+    color: #124d92;
+    padding-left: 20px;
+  }
+
+  .service-menu a {
+    color: #333;
+  }
+
+  .service-menu {
+    position: relative;
+  }
+
+  .section-header h2 {
+    color: #124d92 !important;
+  }
+
+  .content-section {
+    animation: fadeIn 0.5s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .cell-1-4 {
+      display: none;
+    }
+
+    .cell-3-4 {
+      width: 100% !important;
+      padding-left: 0 !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .section-header h2 {
+      font-size: 1.5rem !important;
+    }
+
+    .content-section {
+      padding: 40px 0 !important;
+    }
+
+    .flex-container.align-center {
+      flex-direction: column;
+    }
+
+    .cell-1-2 {
+      width: 100% !important;
+      padding: 0 !important;
+      margin-bottom: 30px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuLinks = document.querySelectorAll(".service-menu a");
+    const sections = document.querySelectorAll("section");
+    const floatingMenu = document.getElementById("floating-menu");
+    const contentWrapper = document.querySelector(".service-content-wrapper");
+    const menuContainer = floatingMenu.parentElement;
+
+    let contentWrapperOffset = 0;
+    let menuWidth = 0;
+
+    function updateOffsets() {
+      if (contentWrapper && floatingMenu) {
+        contentWrapperOffset = contentWrapper.offsetTop;
+        menuWidth = floatingMenu.offsetWidth;
+      }
+    }
+
+    // Update offsets on page load
+    updateOffsets();
+
+    // Update offsets on window resize
+    window.addEventListener("resize", updateOffsets);
+
+    // Combined scroll handler for menu floating and active highlighting
+    window.addEventListener("scroll", function () {
+      const scrollY = window.pageYOffset;
+
+      // Calculate content wrapper boundaries
+      const contentWrapperBottom =
+        contentWrapper.offsetTop + contentWrapper.offsetHeight - 200;
+
+      // Floating menu logic - only float within main content area
+      if (
+        scrollY >= contentWrapperOffset &&
+        scrollY <= contentWrapperBottom &&
+        window.innerWidth > 1023
+      ) {
+        floatingMenu.style.position = "fixed";
+        floatingMenu.style.top = "20px";
+        floatingMenu.style.width = menuWidth + "px";
+        floatingMenu.style.zIndex = "1000";
+        floatingMenu.style.boxShadow = "0 4px 20px rgba(0,0,0,0.15)";
+
+        // Calculate left position based on grid layout
+        const gridLeft = contentWrapper
+          .querySelector(".grid")
+          .getBoundingClientRect().left;
+        const cellLeft = menuContainer.getBoundingClientRect().left;
+        floatingMenu.style.left =
+          cellLeft -
+          gridLeft +
+          contentWrapper.querySelector(".grid").offsetLeft +
+          "px";
+      } else {
+        floatingMenu.style.position = "relative";
+        floatingMenu.style.top = "auto";
+        floatingMenu.style.left = "auto";
+        floatingMenu.style.width = "auto";
+        floatingMenu.style.zIndex = "auto";
+        floatingMenu.style.boxShadow = "none";
+      }
+
+      // Active menu highlighting
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 200;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      menuLinks.forEach((link) => {
+        link.style.background = "";
+        link.style.color = "";
+        link.style.borderLeft = "";
+        if (link.getAttribute("href") === "#" + current) {
+          link.style.background = "#124d92";
+          link.style.color = "white";
+          link.style.borderLeft = "3px solid #0a2d52";
+        }
+      });
+    });
+
+    // Reset menu position on window resize for responsive behavior
+    window.addEventListener("resize", function () {
+      if (window.innerWidth <= 1023) {
+        floatingMenu.style.position = "relative";
+        floatingMenu.style.top = "auto";
+        floatingMenu.style.left = "auto";
+        floatingMenu.style.width = "auto";
+        floatingMenu.style.zIndex = "auto";
+        floatingMenu.style.boxShadow = "none";
+      }
+    });
+  });
+</script>
+
+{% endblock %}

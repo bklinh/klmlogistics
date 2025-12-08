@@ -1,0 +1,423 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ post.title }} - KLM Logistics{% endblock %}
+
+{% block content %}
+<!-- Main Content -->
+<div class="article-content-wrapper" style="padding: 50px 0">
+  <div class="grid">
+    <div class="flex-container">
+      <!-- Left Menu - 1/4 -->
+      <div class="cell-1-4">
+        <div
+          class="news-menu"
+          style="
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            position: sticky;
+            top: 20px;
+          ">
+          <h3
+            style="
+              color: #0066cc;
+              margin-bottom: 20px;
+              font-size: 1.3rem;
+              font-weight: 600;
+            ">
+            Danh mục tin tức
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'company_news' %}"
+                class="{% if current_category == 'company' %}active{% endif %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: {% if current_category == 'company' %}white{% else %}#333{% endif %};
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid {% if current_category == 'company' %}#0066cc{% else %}transparent{% endif %};
+                  background: {% if current_category == 'company' %}#0066cc{% else %}transparent{% endif %};
+                ">
+                <i class="fas fa-building" style="margin-right: 8px"></i>
+                Tin công ty
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'industry_news' %}"
+                class="{% if current_category == 'industry' %}active{% endif %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: {% if current_category == 'industry' %}white{% else %}#333{% endif %};
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid {% if current_category == 'industry' %}#0066cc{% else %}transparent{% endif %};
+                  background: {% if current_category == 'industry' %}#0066cc{% else %}transparent{% endif %};
+                ">
+                <i class="fas fa-industry" style="margin-right: 8px"></i>
+                Tin chuyên ngành
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'recruitment' %}"
+                class="{% if current_category == 'recruitment' %}active{% endif %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: {% if current_category == 'recruitment' %}white{% else %}#333{% endif %};
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid {% if current_category == 'recruitment' %}#0066cc{% else %}transparent{% endif %};
+                  background: {% if current_category == 'recruitment' %}#0066cc{% else %}transparent{% endif %};
+                ">
+                <i class="fas fa-user-tie" style="margin-right: 8px"></i>
+                Tuyển dụng
+              </a>
+            </li>
+          </ul>
+
+          <!-- Related Posts -->
+          {% if related_posts %}
+          <div
+            style="
+              margin-top: 40px;
+              padding-top: 30px;
+              border-top: 2px solid #e9ecef;
+            ">
+            <h4
+              style="
+                color: #0066cc;
+                margin-bottom: 20px;
+                font-size: 1.1rem;
+                font-weight: 600;
+              ">
+              Bài viết liên quan
+            </h4>
+            {% for related_post in related_posts %}
+            <div
+              style="
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #f0f0f0;
+              ">
+              <h5
+                style="margin: 0 0 8px 0; font-size: 0.95rem; line-height: 1.4">
+                <a
+                  href="{{ related_post.get_absolute_url }}"
+                  style="
+                    color: #333;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                  ">
+                  {{ related_post.title|truncatewords:8 }}
+                </a>
+              </h5>
+              <div style="font-size: 0.8rem; color: #666">
+                <i class="fas fa-calendar-alt" style="margin-right: 5px"></i>
+                {{ related_post.created_at|date:"d/m/Y" }}
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Right Content - 3/4 -->
+      <div class="cell-3-4" style="padding-left: 40px">
+        <article
+          class="post-article"
+          style="
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          ">
+          <!-- Article Header -->
+          <header
+            class="article-header"
+            style="
+              margin-bottom: 30px;
+              padding-bottom: 20px;
+              border-bottom: 2px solid #f8f9fa;
+            ">
+            <div
+              class="breadcrumb"
+              style="margin-bottom: 15px; font-size: 0.9rem; color: #666">
+              <a
+                href="{% url 'home' %}"
+                style="color: #0066cc; text-decoration: none"
+                >Trang chủ</a
+              >
+              <i
+                class="fas fa-chevron-right"
+                style="margin: 0 8px; font-size: 0.7rem"></i>
+              <a
+                href="{% url 'company_news' %}"
+                style="color: #0066cc; text-decoration: none"
+                >Tin tức</a
+              >
+              <i
+                class="fas fa-chevron-right"
+                style="margin: 0 8px; font-size: 0.7rem"></i>
+              <span>Tin công ty</span>
+            </div>
+
+            <h1
+              style="
+                font-size: 2rem;
+                font-weight: 600;
+                line-height: 1.3;
+                margin: 0 0 15px 0;
+                color: #333;
+              ">
+              {{ post.title }}
+            </h1>
+
+            <div
+              class="article-meta"
+              style="
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-size: 0.9rem;
+                color: #666;
+              ">
+              <span
+                style="
+                  background: #0066cc;
+                  color: white;
+                  padding: 4px 12px;
+                  border-radius: 15px;
+                  font-size: 0.8rem;
+                ">
+                <i class="fas fa-tag" style="margin-right: 5px"></i>
+                Tin công ty
+              </span>
+              <span>
+                <i class="fas fa-calendar-alt" style="margin-right: 5px"></i>
+                {{ post.created_at|date:"d/m/Y" }}
+              </span>
+            </div>
+          </header>
+
+          <!-- Article Content -->
+          <div
+            class="article-body"
+            style="font-size: 1.1rem; line-height: 1.8; color: #333">
+            {{ post.content|safe }}
+          </div>
+
+          <!-- Article Footer -->
+          <div
+            class="article-footer"
+            style="
+              margin-top: 40px;
+              padding-top: 30px;
+              border-top: 2px solid #f8f9fa;
+            ">
+            <div class="share-buttons" style="text-align: center">
+              <h4
+                style="color: #0066cc; margin-bottom: 20px; font-size: 1.1rem">
+                Chia sẻ bài viết
+              </h4>
+              <div style="display: flex; justify-content: center; gap: 15px">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}"
+                  target="_blank"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 10px 20px;
+                    background: #3b5998;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+                  ">
+                  <i class="fab fa-facebook-f" style="margin-right: 8px"></i>
+                  Facebook
+                </a>
+                <a
+                  href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ post.title }}"
+                  target="_blank"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 10px 20px;
+                    background: #1da1f2;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+                  ">
+                  <i class="fab fa-twitter" style="margin-right: 8px"></i>
+                  Twitter
+                </a>
+                <a
+                  href="https://www.linkedin.com/sharing/share-offsite/?url={{ request.build_absolute_uri }}"
+                  target="_blank"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 10px 20px;
+                    background: #0077b5;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+                  ">
+                  <i class="fab fa-linkedin-in" style="margin-right: 8px"></i>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <div
+              class="post-navigation"
+              style="margin-top: 30px; text-align: center">
+              {% if current_category == 'company' %}
+              <a
+                href="{% url 'company_news' %}"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  padding: 12px 24px;
+                  background: #0066cc;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: background 0.3s ease;
+                ">
+                <i class="fas fa-arrow-left" style="margin-right: 8px"></i>
+                Quay lại Tin công ty
+              </a>
+              {% elif current_category == 'industry' %}
+              <a
+                href="{% url 'industry_news' %}"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  padding: 12px 24px;
+                  background: #0066cc;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: background 0.3s ease;
+                ">
+                <i class="fas fa-arrow-left" style="margin-right: 8px"></i>
+                Quay lại Tin chuyên ngành
+              </a>
+              {% elif current_category == 'recruitment' %}
+              <a
+                href="{% url 'recruitment' %}"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  padding: 12px 24px;
+                  background: #0066cc;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: background 0.3s ease;
+                ">
+                <i class="fas fa-arrow-left" style="margin-right: 8px"></i>
+                Quay lại Tuyển dụng
+              </a>
+              {% endif %}
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Menu hover effects */
+  .news-menu a:not(.active):hover {
+    background: #0066cc !important;
+    color: white !important;
+    border-left: 3px solid #004499 !important;
+  }
+
+  /* Related posts hover effects */
+  .news-menu h5 a:hover {
+    color: #0066cc !important;
+  }
+
+  /* Share buttons hover effects */
+  .share-buttons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Navigation hover effects */
+  .post-navigation a:hover {
+    background: #004499 !important;
+    transform: translateX(-5px);
+  }
+
+  /* Article content styling */
+  .article-body p {
+    margin-bottom: 20px;
+  }
+
+  .article-body h2,
+  .article-body h3,
+  .article-body h4 {
+    color: #0066cc;
+    margin: 30px 0 15px 0;
+  }
+
+  .article-body ul,
+  .article-body ol {
+    margin: 20px 0;
+    padding-left: 30px;
+  }
+
+  .article-body blockquote {
+    border-left: 4px solid #0066cc;
+    padding-left: 20px;
+    margin: 30px 0;
+    font-style: italic;
+    color: #666;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1023px) {
+    .article-content-wrapper .cell-1-4,
+    .article-content-wrapper .cell-3-4 {
+      width: 100% !important;
+    }
+
+    .article-content-wrapper .cell-3-4 {
+      padding-left: 0 !important;
+      margin-top: 30px;
+    }
+
+    .news-menu {
+      position: static !important;
+    }
+
+    .share-buttons div {
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+
+    .share-buttons a {
+      justify-content: center !important;
+    }
+  }
+</style>
+
+{% endblock %}

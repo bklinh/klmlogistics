@@ -1,0 +1,1073 @@
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Về KLM Logistics" %}{% endblock %} {% block content %}
+<!-- Hero Image Section -->
+<div
+  class="about-hero-section"
+  style="
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    margin-bottom: 50px;
+  ">
+  <img
+    src="{% static 'uploaded/about/item1.png' %}"
+    style="width: 100%; height: 100%; object-fit: cover"
+    alt="KLM Logistics Company" />
+  <div
+    class="hero-overlay"
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "></div>
+</div>
+
+<!-- Main Content Section -->
+<div class="about-content-wrapper">
+  <div class="grid">
+    <div class="flex-container">
+      <!-- Left Menu - 1/4 -->
+      <div class="cell-1-4">
+        <div
+          class="about-menu"
+          id="floating-menu"
+          style="
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            position: relative;
+            transition: all 0.3s ease;
+          ">
+          <h3
+            style="
+              color: #0066cc;
+              margin-bottom: 20px;
+              font-size: 1.3rem;
+              font-weight: 600;
+            ">
+            {% trans "Nội dung" %}
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 15px">
+              <a
+                href="#general-info"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                {% trans "Thông tin chung" %}
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="#business-sectors"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                {% trans "Giá trị cốt lõi" %}
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="#about-klm"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                {% trans "Tại sao chọn chúng tôi" %}
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="#vision-mission"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                {% trans "Tầm nhìn - Sứ mệnh" %}
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="#company-profile"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                {% trans "Profile của công ty" %}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Content - 3/4 -->
+      <div class="cell-3-4" style="padding-left: 40px">
+        <!-- Section 1: General Information -->
+        <section id="general-info" style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #0066cc;
+                font-size: 2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #0066cc;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Thông tin chung" %}
+            </h2>
+          </div>
+          <div
+            class="info-content"
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 8px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            ">
+            <div
+              class="info-grid"
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+              <div class="info-item">
+                <strong style="color: #0066cc"
+                  >{% trans "Tên tiếng Việt:" %}</strong
+                ><br />
+                {% trans "Công Ty Cổ Phần Dịch Vụ Logistics và Thương Mại KLM" %}
+              </div>
+              <div class="info-item">
+                <strong style="color: #0066cc"
+                  >{% trans "Tên tiếng Anh:" %}</strong
+                ><br />
+                {% trans "KLM Logistics JSC" %}
+              </div>
+              <div class="info-item">
+                <strong style="color: #0066cc"
+                  >{% trans "Địa chỉ trụ sở chính:" %}</strong
+                ><br />
+                {% trans "Số 36 Hoàng Cầu – Hà Nội – Việt Nam" %}
+              </div>
+              <div class="info-item">
+                <strong style="color: #0066cc">{% trans "Điện thoại:" %}</strong
+                ><br />
+                84- (4) 5190965
+              </div>
+              <div class="info-item">
+                <strong style="color: #0066cc">{% trans "Hot line:" %}</strong
+                ><br />
+                0913020430
+              </div>
+              <div class="info-item">
+                <strong style="color: #0066cc">{% trans "Email:" %}</strong
+                ><br />
+                info@klmlogistics.com
+              </div>
+              <div class="info-item">
+                <strong style="color: #0066cc">{% trans "Website:" %}</strong
+                ><br />
+                www.klmlogistics.com
+              </div>
+              <div class="info-item">
+                <strong style="color: #0066cc"
+                  >{% trans "Giấy đăng ký kinh doanh số:" %}</strong
+                ><br />
+                {% trans "0106161039 tại Sở kế hoạch và đầu tư tp Hà Nội" %}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2: Core Values Infographic -->
+        <section id="business-sectors" style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #0066cc;
+                font-size: 2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #0066cc;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Giá trị cốt lõi" %}
+            </h2>
+          </div>
+
+          <!-- Two-Column Asymmetrical Layout -->
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 0.7fr 1.6fr;
+              gap: 30px;
+              align-items: center;
+              padding: 50px 40px;
+            ">
+            <!-- Left Side: Central Circle Hub -->
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+              ">
+              <div
+                style="
+                  width: 200px;
+                  height: 200px;
+                  border-radius: 50%;
+                  background: white;
+                  border: 8px solid #0056b3;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  box-shadow: 0 12px 40px rgba(0, 86, 179, 0.2);
+                ">
+                <img
+                  src="{% static 'uploaded/logo/klm.jpg' %}"
+                  alt="KLM Logistics"
+                  style="max-width: 65%; height: auto; object-fit: contain" />
+              </div>
+            </div>
+
+            <!-- Right Side: 4 Pill-Shaped Cards -->
+            <div style="display: flex; flex-direction: column; gap: 20px">
+              <style>
+                .core-values-card:nth-child(3),
+                .core-values-card:nth-child(4) {
+                  margin-left: 40px;
+                }
+              </style>
+              <!-- Card 1: Professional & Trusted Service -->
+              <div
+                class="core-values-card"
+                style="
+                  display: flex;
+                  align-items: center;
+                  position: relative;
+                  height: 110px;
+                  min-height: 110px;
+                ">
+                <div
+                  style="
+                    width: 110px;
+                    height: 110px;
+                    min-width: 110px;
+                    border-radius: 50%;
+                    background: linear-gradient(
+                      135deg,
+                      #0056b3 0%,
+                      #0066cc 100%
+                    );
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 6px 20px rgba(0, 86, 179, 0.3);
+                    position: absolute;
+                    left: 0;
+                    z-index: 10;
+                  ">
+                  <i
+                    class="fas fa-briefcase"
+                    style="font-size: 2.2rem; color: #d4af37"></i>
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #0056b3 0%,
+                      #0066cc 100%
+                    );
+                    border-radius: 50px;
+                    padding: 18px 40px;
+                    padding-left: 110px;
+                    box-shadow: 0 8px 25px rgba(0, 86, 179, 0.25);
+                    flex: 1;
+                    margin-left: 30px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    min-width: 0;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                  ">
+                  <div
+                    style="
+                      font-size: 0.9rem;
+                      font-weight: 700;
+                      color: white;
+                      text-transform: uppercase;
+                      letter-spacing: 1px;
+                      margin-bottom: 5px;
+                      word-wrap: break-word;
+                      line-height: 1.2;
+                    ">
+                    {% trans "Cam kết" %}
+                  </div>
+                  <div
+                    style="
+                      font-size: 1rem;
+                      color: rgba(255, 255, 255, 0.9);
+                      font-weight: 400;
+                      word-wrap: break-word;
+                      line-height: 1.3;
+                    ">
+                    {% trans "KLM cam kết phụng sự cho chất lượng và các giải pháp tối ưu, đó chính là nền tảng của sự thành công." %}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2: Dedicated & Friendly -->
+              <div
+                class="core-values-card"
+                style="
+                  display: flex;
+                  align-items: center;
+                  position: relative;
+                  height: 110px;
+                  min-height: 110px;
+                ">
+                <div
+                  style="
+                    width: 110px;
+                    height: 110px;
+                    min-width: 110px;
+                    border-radius: 50%;
+                    background: linear-gradient(
+                      135deg,
+                      #0056b3 0%,
+                      #0066cc 100%
+                    );
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 6px 20px rgba(0, 86, 179, 0.3);
+                    position: absolute;
+                    left: 0;
+                    z-index: 10;
+                  ">
+                  <i
+                    class="far fa-smile"
+                    style="font-size: 2.2rem; color: #d4af37"></i>
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #0056b3 0%,
+                      #0066cc 100%
+                    );
+                    border-radius: 50px;
+                    padding: 18px 40px;
+                    padding-left: 110px;
+                    box-shadow: 0 8px 25px rgba(0, 86, 179, 0.25);
+                    flex: 1;
+                    margin-left: 30px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    min-width: 0;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                  ">
+                  <div
+                    style="
+                      font-size: 0.9rem;
+                      font-weight: 700;
+                      color: white;
+                      text-transform: uppercase;
+                      letter-spacing: 1px;
+                      margin-bottom: 5px;
+                      word-wrap: break-word;
+                      line-height: 1.2;
+                    ">
+                    {% trans "Tận tâm & thân thiện" %}
+                  </div>
+                  <div
+                    style="
+                      font-size: 1rem;
+                      color: rgba(255, 255, 255, 0.9);
+                      font-weight: 400;
+                      word-wrap: break-word;
+                      line-height: 1.3;
+                    ">
+                    {% trans "Nhân sự KLM tận tâm, thân thiện với khách hàng, công việc, đồng nghiệp và với công ty." %}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3: Team Spirit -->
+              <div
+                class="core-values-card"
+                style="
+                  display: flex;
+                  align-items: center;
+                  position: relative;
+                  height: 110px;
+                  min-height: 110px;
+                ">
+                <div
+                  style="
+                    width: 110px;
+                    height: 110px;
+                    min-width: 110px;
+                    border-radius: 50%;
+                    background: linear-gradient(
+                      135deg,
+                      #0056b3 0%,
+                      #0066cc 100%
+                    );
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 6px 20px rgba(0, 86, 179, 0.3);
+                    position: absolute;
+                    left: 0;
+                    z-index: 10;
+                  ">
+                  <i
+                    class="fas fa-handshake"
+                    style="font-size: 2.2rem; color: #d4af37"></i>
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #0056b3 0%,
+                      #0066cc 100%
+                    );
+                    border-radius: 50px;
+                    padding: 18px 40px;
+                    padding-left: 110px;
+                    box-shadow: 0 8px 25px rgba(0, 86, 179, 0.25);
+                    flex: 1;
+                    margin-left: 30px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    min-width: 0;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                  ">
+                  <div
+                    style="
+                      font-size: 0.9rem;
+                      font-weight: 700;
+                      color: white;
+                      text-transform: uppercase;
+                      letter-spacing: 1px;
+                      margin-bottom: 5px;
+                      word-wrap: break-word;
+                      line-height: 1.2;
+                    ">
+                    {% trans "Dịch vụ chuyên nghiệp & uy tín" %}
+                  </div>
+                  <div
+                    style="
+                      font-size: 1rem;
+                      color: rgba(255, 255, 255, 0.9);
+                      font-weight: 400;
+                      word-wrap: break-word;
+                      line-height: 1.3;
+                    ">
+                    {% trans "Luôn là kim chỉ nam trong mọi dịch vụ của KLM Logistics." %}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4: Commitment -->
+              <div
+                class="core-values-card"
+                style="
+                  display: flex;
+                  align-items: center;
+                  position: relative;
+                  height: 110px;
+                  min-height: 110px;
+                ">
+                <div
+                  style="
+                    width: 110px;
+                    height: 110px;
+                    min-width: 110px;
+                    border-radius: 50%;
+                    background: linear-gradient(
+                      135deg,
+                      #0056b3 0%,
+                      #0066cc 100%
+                    );
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 6px 20px rgba(0, 86, 179, 0.3);
+                    position: absolute;
+                    left: 0;
+                    z-index: 10;
+                  ">
+                  <i
+                    class="fas fa-users"
+                    style="font-size: 2.2rem; color: #d4af37"></i>
+                </div>
+                <div
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      #0056b3 0%,
+                      #0066cc 100%
+                    );
+                    border-radius: 50px;
+                    padding: 18px 40px;
+                    padding-left: 110px;
+                    box-shadow: 0 8px 25px rgba(0, 86, 179, 0.25);
+                    flex: 1;
+                    margin-left: 30px;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    min-width: 0;
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                  ">
+                  <div
+                    style="
+                      font-size: 0.9rem;
+                      font-weight: 700;
+                      color: white;
+                      text-transform: uppercase;
+                      letter-spacing: 1px;
+                      margin-bottom: 5px;
+                      word-wrap: break-word;
+                      line-height: 1.2;
+                    ">
+                    {% trans "Tinh thần đồng đội" %}
+                  </div>
+                  <div
+                    style="
+                      font-size: 1rem;
+                      color: rgba(255, 255, 255, 0.9);
+                      font-weight: 400;
+                      word-wrap: break-word;
+                      line-height: 1.3;
+                    ">
+                    {% trans "Tinh thần đoàn kết, làm việc team-work và sẵn sàng hỗ trợ lẫn nhau là cách để mang đến dịch vụ hoàn hảo cho khách hàng." %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3: About KLM -->
+        <section id="about-klm" style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #0066cc;
+                font-size: 2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #0066cc;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Tại sao chọn chúng tôi" %}
+            </h2>
+          </div>
+          <div
+            class="about-klm-content"
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 8px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            ">
+            <div
+              class="flex-container align-center"
+              style="margin-bottom: 30px">
+              <div class="cell-1-2">
+                <img
+                  src="{% static 'uploaded/about/item2.png' %}"
+                  style="
+                    width: 95%;
+
+                    object-fit: contain;
+                  "
+                  alt="KLM Logistics" />
+              </div>
+              <div
+                class="cell-1-2"
+                style="display: flex; align-items: center; position: relative">
+                <!-- Left Quote Icon -->
+                <i
+                  class="fas fa-quote-left"
+                  style="
+                    position: absolute;
+                    top: -40px;
+                    left: -5px;
+                    font-size: 2.3rem;
+                    color: #dc3545;
+                    opacity: 0.8;
+                    z-index: 1;
+                  "></i>
+
+                <p
+                  style="
+                    text-align: justify;
+                    font-size: 1.2rem;
+                    line-height: 1.8;
+                    margin: 0;
+                    font-style: italic;
+                    color: gray;
+                    font-weight: 500;
+                    text-shadow: 1px 1px 2px rgba(220, 53, 69, 0.1);
+                    position: relative;
+                    z-index: 2;
+                  ">
+                  {% trans "Công ty cổ phần KLM Logistics là một trong những công ty giao nhận vận tải quốc tế hàng đầu tại Việt Nam. Chúng tôi cung cấp dịch vụ trọn gói dịch vụ giao nhận vận chuyển từ kho khách hàng tới kho người mua trên toàn cầu với chất lượng tốt nhất." %}
+                </p>
+
+                <!-- Right Quote Icon -->
+                <i
+                  class="fas fa-quote-right"
+                  style="
+                    position: absolute;
+                    bottom: -20px;
+                    right: -5px;
+                    font-size: 2.3rem;
+                    color: #dc3545;
+                    opacity: 0.8;
+                    z-index: 1;
+                  "></i>
+              </div>
+            </div>
+            <p
+              style="
+                font-size: 1.1rem;
+                line-height: 1.7;
+                margin-bottom: 20px;
+                text-align: justify;
+              ">
+              {% trans "KLM Logistics là sự lựa chọn ưu tiên hàng đầu của nhiều công ty hàng đầu trong nước & các đối tác quốc tế. Kiến thức, kinh nghiệm và sự hiểu biết về văn hóa kinh doanh tại Việt Nam và quốc tế là lợi thế của chúng tôi. Cùng với mạng lưới kết nối toàn cầu làm cho KLM Logistics trở thành nhà cung cấp dịch vụ hàng đầu trong lĩnh vực." %}
+            </p>
+            <p
+              style="
+                font-size: 1.1rem;
+                line-height: 1.7;
+                margin-bottom: 0;
+                text-align: justify;
+              ">
+              {% trans "Bất kể bạn đang muốn xuất nhập khẩu hàng hóa trên toàn cầu hay di chuyển các thiết bị, hàng dự án lớn trong nước. KLM có đủ nhân lực, thiết bị, khả năng chuyên môn và kinh nghiệm để biến điều đó thành hiện thực, với phương châm luôn mang đến một giải pháp vận chuyển/ logistics tối ưu cho từng đơn hàng riêng biệt theo yêu cầu và mong muốn của khách hàng." %}
+            </p>
+            <p
+              style="
+                font-size: 1.1rem;
+                line-height: 1.7;
+                margin-bottom: 0;
+                text-align: justify;
+              ">
+              {% trans "Với phương châm giao nhận vận chuyển không chỉ là giao nhận hàng hóa thông thường, mà là sự đam mê trong việc tìm ra giải pháp tốt nhất cho khách hàng trong lĩnh vực giao nhận vận tải quốc tế. Chúng tôi sẽ luôn nỗ lực cố gắng để trở thành một trong những công ty giao nhận vận tải & logistics hàng đầu trong khu vực Đông Nam Á." %}
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 4: Vision & Mission -->
+        <section id="vision-mission" style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #0066cc;
+                font-size: 2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #0066cc;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Tầm nhìn - Sứ mệnh" %}
+            </h2>
+          </div>
+          <div
+            class="vision-mission-content"
+            style="
+              background: white;
+              padding: 30px;
+              border-radius: 8px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            ">
+            <!-- Vision Section -->
+            <div class="vision-section" style="margin-bottom: 40px">
+              <div
+                class="section-title"
+                style="
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 20px;
+                  padding-bottom: 15px;
+                  border-bottom: 2px solid #f8f9fa;
+                ">
+                <div
+                  class="icon-wrapper"
+                  style="
+                    background: #0066cc;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+                  ">
+                  <i
+                    class="fas fa-eye"
+                    style="font-size: 1.3rem; color: white"></i>
+                </div>
+                <h3
+                  style="
+                    color: #0066cc;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin: 0;
+                  ">
+                  {% trans "Tầm nhìn" %}
+                </h3>
+              </div>
+              <p
+                style="
+                  font-size: 1.1rem;
+                  line-height: 1.7;
+                  margin: 0;
+                  text-align: justify;
+                  color: #333;
+                  padding-left: 65px;
+                ">
+                {% trans "Trở thành một trong những công ty giao nhận vận tải & logistics hàng đầu ở Đông Nam Á bằng việc cung cấp dịch vụ ổn định, chất lượng tốt nhất đến khách hàng. Chúng tôi cam kết xây dựng thương hiệu uy tín, đáng tin cậy trong lĩnh vực logistics và góp phần thúc đẩy thương mại quốc tế trong khu vực." %}
+              </p>
+            </div>
+
+            <!-- Mission Section -->
+            <div class="mission-section">
+              <div
+                class="section-title"
+                style="
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 20px;
+                  padding-bottom: 15px;
+                  border-bottom: 2px solid #f8f9fa;
+                ">
+                <div
+                  class="icon-wrapper"
+                  style="
+                    background: #0066cc;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+                  ">
+                  <i
+                    class="fas fa-anchor"
+                    style="font-size: 1.3rem; color: white"></i>
+                </div>
+                <h3
+                  style="
+                    color: #0066cc;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin: 0;
+                  ">
+                  {% trans "Sứ mệnh" %}
+                </h3>
+              </div>
+              <div class="mission-content">
+                <ul style="list-style: none; padding: 0; margin: 0">
+                  <li
+                    style="
+                      margin-bottom: 15px;
+                      padding: 15px;
+                      background: #f8f9fa;
+                      border-radius: 5px;
+                      border-left: 4px solid #0066cc;
+                    ">
+                    <i
+                      class="fas fa-check-circle"
+                      style="color: #0066cc; margin-right: 10px"></i>
+                    {% trans "Cung cấp khách hàng dịch vụ tốt nhất với chi phí cạnh tranh và sự tận tụy chăm sóc khách hàng" %}
+                  </li>
+                  <li
+                    style="
+                      margin-bottom: 15px;
+                      padding: 15px;
+                      background: #f8f9fa;
+                      border-radius: 5px;
+                      border-left: 4px solid #0066cc;
+                    ">
+                    <i
+                      class="fas fa-check-circle"
+                      style="color: #0066cc; margin-right: 10px"></i>
+                    {% trans "Tìm ra giải pháp tối ưu cho từng lô hàng vận chuyển giao nhận với độ chính xác và an toàn cao nhất" %}
+                  </li>
+                  <li
+                    style="
+                      margin-bottom: 15px;
+                      padding: 15px;
+                      background: #f8f9fa;
+                      border-radius: 5px;
+                      border-left: 4px solid #0066cc;
+                    ">
+                    <i
+                      class="fas fa-check-circle"
+                      style="color: #0066cc; margin-right: 10px"></i>
+                    {% trans "Đào tạo và phát triển đội ngũ nhân viên chuyên nghiệp có kinh nghiệm sâu rộng trong nghề giao nhận quốc tế" %}
+                  </li>
+                  <li
+                    style="
+                      margin-bottom: 0;
+                      padding: 15px;
+                      background: #f8f9fa;
+                      border-radius: 5px;
+                      border-left: 4px solid #0066cc;
+                    ">
+                    <i
+                      class="fas fa-check-circle"
+                      style="color: #0066cc; margin-right: 10px"></i>
+                    {% trans "Xây dựng mạng lưới đối tác chiến lược và ứng dụng công nghệ hiện đại để nâng cao chất lượng dịch vụ" %}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 5: Company Profile -->
+        <section id="company-profile" style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #0066cc;
+                font-size: 2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #0066cc;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Profile của công ty" %}
+            </h2>
+          </div>
+          <div class="profile-content">
+            <a
+              href="{% static 'uploaded/files/Profile KLM new.PPT' %}"
+              download
+              style="
+                display: inline-flex;
+                align-items: center;
+                padding: 15px 30px;
+                background: #0066cc;
+                color: white;
+                text-decoration: none;
+                border-radius: 50px;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+              ">
+              <i
+                class="fas fa-download"
+                style="margin-right: 10px; font-size: 1.2rem"></i>
+              {% trans "Tải file PowerPoint (.pptx)" %}
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Smooth scrolling for menu links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Menu hover effects */
+  .about-menu a:hover {
+    background: #0066cc !important;
+    color: white !important;
+    border-left: 3px solid #004499 !important;
+  }
+
+  /* Floating menu styles */
+  .about-menu.floating {
+    position: fixed !important;
+    top: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    animation: slideInFromLeft 0.3s ease-out;
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-20px);
+      opacity: 0.8;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1023px) {
+    .about-content-wrapper .cell-1-4,
+    .about-content-wrapper .cell-3-4 {
+      width: 100% !important;
+    }
+
+    .about-content-wrapper .cell-3-4 {
+      padding-left: 0 !important;
+      margin-top: 30px;
+    }
+
+    .about-menu {
+      position: static !important;
+    }
+
+    .info-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    .about-klm-content .flex-container {
+      flex-direction: column !important;
+    }
+
+    .about-klm-content .cell-2-3 {
+      padding-left: 0 !important;
+      margin-top: 20px;
+    }
+  }
+</style>
+
+<script>
+  // Smooth scrolling, active menu highlighting, and floating menu
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuLinks = document.querySelectorAll(".about-menu a");
+    const sections = document.querySelectorAll("section");
+    const floatingMenu = document.getElementById("floating-menu");
+    const contentWrapper = document.querySelector(".about-content-wrapper");
+
+    // Get the offset position where the menu should start floating
+    let menuOriginalOffset = 0;
+    let contentWrapperOffset = 0;
+
+    function updateOffsets() {
+      if (contentWrapper && floatingMenu) {
+        contentWrapperOffset = contentWrapper.offsetTop;
+        menuOriginalOffset = contentWrapperOffset + floatingMenu.offsetTop;
+      }
+    }
+
+    // Update offsets on page load
+    updateOffsets();
+
+    // Update offsets on window resize
+    window.addEventListener("resize", updateOffsets);
+
+    // Combined scroll handler for menu floating and active highlighting
+    window.addEventListener("scroll", function () {
+      const scrollY = window.pageYOffset;
+
+      // Calculate content wrapper boundaries
+      const contentWrapperBottom =
+        contentWrapper.offsetTop + contentWrapper.offsetHeight - 300; // 100px buffer before footer
+
+      // Floating menu logic - only float within main content area
+      if (
+        scrollY >= contentWrapperOffset &&
+        scrollY <= contentWrapperBottom &&
+        window.innerWidth > 1023
+      ) {
+        floatingMenu.style.position = "fixed";
+        floatingMenu.style.top = "20px";
+        floatingMenu.style.left =
+          floatingMenu.getBoundingClientRect().left + "px";
+        floatingMenu.style.width = floatingMenu.offsetWidth + "px";
+        floatingMenu.style.zIndex = "1000";
+        floatingMenu.style.boxShadow = "0 4px 20px rgba(0,0,0,0.15)";
+      } else {
+        floatingMenu.style.position = "relative";
+        floatingMenu.style.top = "auto";
+        floatingMenu.style.left = "auto";
+        floatingMenu.style.width = "auto";
+        floatingMenu.style.zIndex = "auto";
+        floatingMenu.style.boxShadow = "none";
+      }
+
+      // Active menu highlighting
+      let current = "";
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      menuLinks.forEach((link) => {
+        link.style.background = "";
+        link.style.color = "";
+        link.style.borderLeft = "";
+        if (link.getAttribute("href") === "#" + current) {
+          link.style.background = "#0066cc";
+          link.style.color = "white";
+          link.style.borderLeft = "3px solid #004499";
+        }
+      });
+    });
+
+    // Reset menu position on window resize for responsive behavior
+    window.addEventListener("resize", function () {
+      if (window.innerWidth <= 1023) {
+        floatingMenu.style.position = "relative";
+        floatingMenu.style.top = "auto";
+        floatingMenu.style.left = "auto";
+        floatingMenu.style.width = "auto";
+        floatingMenu.style.zIndex = "auto";
+        floatingMenu.style.boxShadow = "none";
+      }
+    });
+  });
+</script>
+
+{% endblock %}

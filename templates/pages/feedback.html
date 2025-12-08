@@ -1,0 +1,458 @@
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Đối tác & Khách hàng - KLM Logistics" %}{% endblock %} {% block content %}
+
+<!-- Hero Section -->
+<div
+  class="feedback-hero"
+  style="
+    background: linear-gradient(135deg, #124d92 0%, #0a2d52 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  ">
+  <div
+    style="
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: rgba(226, 3, 24, 0.1);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+  <div
+    style="
+      position: absolute;
+      bottom: -30%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+
+  <div class="grid" style="position: relative; z-index: 1; text-align: center">
+    <h1
+      style="
+        font-size: 3.5rem;
+        color: white;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-family: exo-l;
+      ">
+      {% trans "Đối tác & Khách hàng" %}
+    </h1>
+    <p
+      style="
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+      ">
+      {% trans "Tin tưởng của các tập đoàn hàng đầu Việt Nam" %}
+    </p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div
+  class="feedback-content-wrapper"
+  style="
+    padding: 60px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  ">
+  <!-- Testimonial 1: Polyco -->
+  <section class="testimonial-section" style="margin-bottom: 60px">
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+      ">
+      <!-- Left: Logo -->
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          overflow: hidden;
+          height: 400px;
+        ">
+        <img
+          src="{% static 'uploaded/doi-tac/polyco.png' %}"
+          alt="Polyco"
+          style="width: 100%; height: 100%; object-fit: cover" />
+      </div>
+
+      <!-- Right: Testimonial Content -->
+      <div>
+        <h2
+          style="
+            color: #0066cc;
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+          ">
+          {% trans "Polyco" %}
+        </h2>
+        <div
+          style="
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #0066cc;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+          ">
+          <p
+            style="
+              font-size: 1.1rem;
+              line-height: 1.8;
+              color: #333;
+              margin: 0;
+              font-style: italic;
+              text-align: justify;
+            ">
+            {% trans "Với thời gian hợp tác lâu dài với đối tác KLM Logistics, tập đoàn POLYCO luôn tin tưởng & hài lòng với dịch vụ vận chuyển của KLM Logistics đã vận chuyển và lắp đặt các đơn hàng siêu trường siêu trọng của chúng tôi trên khắp lãnh thổ việt nam cũng như đơn hàng quốc tế." %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial 2: Viettel -->
+  <section class="testimonial-section" style="margin-bottom: 60px">
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+      ">
+      <!-- Left: Testimonial Content -->
+      <div>
+        <h2
+          style="
+            color: #0066cc;
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+          ">
+          {% trans "Viettel" %}
+        </h2>
+        <div
+          style="
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #0066cc;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+          ">
+          <p
+            style="
+              font-size: 1.1rem;
+              line-height: 1.8;
+              color: #333;
+              margin: 0;
+              font-style: italic;
+              text-align: justify;
+            ">
+            {% trans "Là đơn vị hàng đầu trong ngày viễn thông Việt Nam đã và đang phát triển các dự án lớn toàn cầu, chúng tôi rất cần những đơn vị vận chuyển Logistics chuyên nghiệp, uy tín & có kinh nghiệm. Chúng tôi hoàn toàn yên tâm khi hợp tác với công ty KLM Logistics." %}
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Logo -->
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          overflow: hidden;
+          height: 400px;
+        ">
+        <img
+          src="{% static 'uploaded/doi-tac/viettel.jpg' %}"
+          alt="Viettel"
+          style="width: 100%; height: 100%; object-fit: cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial 3: Sun Group -->
+  <section class="testimonial-section" style="margin-bottom: 60px">
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+      ">
+      <!-- Left: Logo -->
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          overflow: hidden;
+          height: 400px;
+        ">
+        <img
+          src="{% static 'uploaded/doi-tac/sungroup.png' %}"
+          alt="Sun Group"
+          style="width: 100%; height: 100%; object-fit: cover" />
+      </div>
+
+      <!-- Right: Testimonial Content -->
+      <div>
+        <h2
+          style="
+            color: #0066cc;
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+          ">
+          {% trans "Sun Group" %}
+        </h2>
+        <div
+          style="
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #0066cc;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+          ">
+          <p
+            style="
+              font-size: 1.1rem;
+              line-height: 1.8;
+              color: #333;
+              margin: 0;
+              font-style: italic;
+              text-align: justify;
+            ">
+            {% trans "Đi đầu trong ngành dịch vụ giải trí & nghỉ dưỡng, tập đoàn Sun Group đã và đang hợp tác sâu rộng với công ty KLM Logistics trong lĩnh vực vận chuyển, thông quan hàng hóa. Chúng tôi rất tin tưởng vào dịch vụ của KLM Logistics khi luôn đưa ra được những giải pháp vận chuyển với giá cả hợp lý, an toàn & kịp tiến độ." %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial 4: TVL Steel -->
+  <section class="testimonial-section">
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+      ">
+      <!-- Left: Testimonial Content -->
+      <div>
+        <h2
+          style="
+            color: #0066cc;
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 20px;
+          ">
+          {% trans "TVL Steel" %}
+        </h2>
+        <div
+          style="
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #0066cc;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+          ">
+          <p
+            style="
+              font-size: 1.1rem;
+              line-height: 1.8;
+              color: #333;
+              margin: 0;
+              font-style: italic;
+              text-align: justify;
+            ">
+            {% trans "Tận tâm, nhiệt tính & rất trách nhiệm là yếu tố chúng tôi đánh giá rất cao khi sử dụng dịch vụ hải quan, vận chuyển nội địa & vận chuyển quốc tế của công ty KLM Logistics. Chúng tôi luôn hài lòng với dịch vụ & tư vấn giá trị của KLM mang lại cho chúng tôi. Chúng tôi tin tưởng KLM Logistics sẽ vươn tầm phát triển quốc tế." %}
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Logo -->
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          overflow: hidden;
+          height: 400px;
+        ">
+        <img
+          src="{% static 'uploaded/doi-tac/tvl.jpg' %}"
+          alt="TVL Steel"
+          style="width: 100%; height: 100%; object-fit: cover" />
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Trust Section -->
+<div
+  style="
+    padding: 60px 40px;
+    color: gray;
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+  ">
+  <!-- Top Left Quote Icon -->
+  <i
+    class="fas fa-quote-left"
+    style="
+      position: absolute;
+      top: 20px;
+      left: 100px;
+      font-size: 2.7rem;
+      color: #dc3545;
+      opacity: 0.8;
+      z-index: 1;
+    "></i>
+
+  <p
+    style="
+      font-size: 1.5rem;
+      line-height: 1.8;
+      margin: 0;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.95;
+      position: relative;
+      z-index: 2;
+    ">
+    {% trans "KLM Logistics tự hào là đối tác tin cậy của các tập đoàn hàng đầu Việt Nam. Chúng tôi cam kết mang lại những giải pháp vận chuyển chuyên nghiệp, uy tín và hiệu quả nhất cho tất cả khách hàng." %}
+  </p>
+
+  <!-- Bottom Right Quote Icon -->
+  <i
+    class="fas fa-quote-right"
+    style="
+      position: absolute;
+      bottom: 20px;
+      right: 100px;
+      font-size: 2.7rem;
+      color: #dc3545;
+      opacity: 0.8;
+      z-index: 1;
+    "></i>
+</div>
+
+<style>
+  .testimonial-section {
+    animation: fadeIn 0.6s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .feedback-content-wrapper {
+      padding: 0 20px;
+    }
+
+    .feedback-hero-section h1 {
+      font-size: 2rem !important;
+    }
+
+    .feedback-hero-section p {
+      font-size: 1rem !important;
+    }
+
+    .testimonial-section > div {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+    }
+
+    .testimonial-section > div > div:first-child {
+      height: 300px !important;
+    }
+
+    .testimonial-section > div > div:nth-child(2) {
+      order: 2;
+    }
+
+    .testimonial-section > div > div:first-child {
+      order: 1;
+    }
+
+    section.testimonial-section:nth-child(even) > div > div:nth-child(2) {
+      order: 1;
+    }
+
+    section.testimonial-section:nth-child(even) > div > div:first-child {
+      order: 2;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .feedback-content-wrapper {
+      padding: 0 15px;
+    }
+
+    .feedback-hero-section h1 {
+      font-size: 1.8rem !important;
+    }
+
+    .testimonial-section > div {
+      gap: 20px !important;
+    }
+
+    .testimonial-section > div > div:first-child {
+      height: 250px !important;
+    }
+
+    .testimonial-section > div > div {
+      padding: 20px !important;
+    }
+
+    .testimonial-section h2 {
+      font-size: 1.8rem !important;
+    }
+
+    .testimonial-section p {
+      font-size: 1rem !important;
+    }
+  }
+</style>
+
+{% endblock %}

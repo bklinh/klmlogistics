@@ -1,0 +1,1132 @@
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Trang chủ" %} - KLM Logistics{% endblock %} {% block content %}
+<!-- 1. Hero Section with Video -->
+<div
+  class="hero-section"
+  style="position: relative; width: 100%; overflow: hidden">
+  <video
+    id="background-video"
+    autoplay
+    loop
+    muted
+    playsinline
+    style="width: 100%; height: auto; display: block">
+    <source
+      src="{% static 'uploaded/slideshow/1130_h264.mp4' %}"
+      type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div
+    class="hero-overlay"
+    style="
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+    ">
+    <div class="grid text-center" style="color: white; width: 100%">
+      <h1
+        style="
+          font-size: 3.5rem;
+          font-weight: 700;
+          margin-bottom: 20px;
+          font-family: exo-l;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        ">
+        KLM LOGISTICS
+      </h1>
+      <p
+        style="
+          font-size: 1.3rem;
+          margin-bottom: 50px;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        ">
+        {% trans "Giải pháp Logistics toàn diện & chuyên nghiệp" %}
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 2. Services Section (Swiper 1 item/row) -->
+<div class="section-services" style="padding: 80px 0; background: #f8f9fa">
+  <div class="grid">
+    <div class="section-header text-center" style="margin-bottom: 50px">
+      <h2
+        style="
+          color: #124d92;
+          font-size: 2.5rem;
+          font-weight: 600;
+          font-family: exo-l;
+        ">
+        {% trans "DỊCH VỤ CỦA CHÚNG TÔI" %}
+      </h2>
+      <div
+        style="
+          width: 60px;
+          height: 3px;
+          background: #e20318;
+          margin: 15px auto;
+        "></div>
+    </div>
+
+    <div class="services-wrapper" style="position: relative">
+      <div
+        class="swiper-container"
+        id="services-swiper"
+        style="padding-bottom: 50px">
+        <div class="swiper-wrapper">
+          <!-- Service 1: Air Transport -->
+          <div class="swiper-slide">
+            <div
+              class="service-tile"
+              style="
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                border-top: 4px solid #e20318;
+                padding: 20px;
+              ">
+              <div
+                class="service-tile__image"
+                style="height: 80px; width: 80px; margin: 0 auto 20px">
+                <img
+                  src="{% static 'uploaded/icon/item1.png' %}"
+                  alt="Vận chuyển hàng không"
+                  style="width: 100%; height: 100%; object-fit: contain" />
+              </div>
+              <h3
+                class="service-tile__title"
+                style="
+                  color: #124d92;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  margin: 0 0 15px;
+                  font-family: exo;
+                  text-align: center;
+                ">
+                {% trans "Vận Chuyển Hàng Không Quốc Tế" %}
+              </h3>
+              <p
+                class="service-tile__description"
+                style="
+                  color: #666;
+                  font-size: 0.9rem;
+                  margin: 0 0 15px;
+                  line-height: 1.6;
+                  text-align: center;
+                ">
+                {% trans "Dịch vụ vận chuyển hàng không nhanh chóng, an toàn đến hơn 150 quốc gia. Chúng tôi cung cấp giải pháp trọn gói từ pickup đến delivery." %}
+              </p>
+              <ul
+                class="service-tile__features"
+                style="
+                  list-style: none;
+                  padding: 0;
+                  margin: 0 0 20px;
+                  color: #555;
+                  font-size: 0.9rem;
+                ">
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Mạng lưới hãng hàng không toàn cầu" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Xử lý hàng nguy hiểm chuyên nghiệp" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Door to door delivery" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Thông quan hải quan" %}
+                </li>
+              </ul>
+              <div style="margin-top: auto; text-align: center">
+                <a
+                  href="{% url 'air_transport' %}"
+                  class="service-tile__link"
+                  style="
+                    color: #e20318;
+                    font-weight: 600;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                  ">
+                  {% trans "Tìm hiểu thêm" %}
+                  <i
+                    class="fas fa-arrow-right"
+                    style="
+                      margin-left: 8px;
+                      transition: transform 0.3s ease;
+                    "></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2: Sea Transport -->
+          <div class="swiper-slide">
+            <div
+              class="service-tile"
+              style="
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                border-top: 4px solid #e20318;
+                padding: 20px;
+              ">
+              <div
+                class="service-tile__image"
+                style="height: 80px; width: 80px; margin: 0 auto 20px">
+                <img
+                  src="{% static 'uploaded/icon/item2.png' %}"
+                  alt="Vận chuyển đường biển"
+                  style="width: 100%; height: 100%; object-fit: contain" />
+              </div>
+              <h3
+                class="service-tile__title"
+                style="
+                  color: #124d92;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  margin: 0 0 15px;
+                  font-family: exo;
+                  text-align: center;
+                ">
+                {% trans "Vận Chuyển Đường Biển Quốc Tế" %}
+              </h3>
+              <p
+                class="service-tile__description"
+                style="
+                  color: #666;
+                  font-size: 0.9rem;
+                  margin: 0 0 15px;
+                  line-height: 1.6;
+                  text-align: center;
+                ">
+                {% trans "Giải pháp vận chuyển đường biển hiệu quả với chi phí cạnh tranh. Chúng tôi xử lý container, hàng rời, hàng quá khổ quá tải." %}
+              </p>
+              <ul
+                class="service-tile__features"
+                style="
+                  list-style: none;
+                  padding: 0;
+                  margin: 0 0 20px;
+                  color: #555;
+                  font-size: 0.9rem;
+                ">
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "FCL & LCL Container" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Hàng rời & Break Bulk" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Hàng quá khổ quá tải" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Project cargo" %}
+                </li>
+              </ul>
+              <div style="margin-top: auto; text-align: center">
+                <a
+                  href="{% url 'sea_transport' %}"
+                  class="service-tile__link"
+                  style="
+                    color: #e20318;
+                    font-weight: 600;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                  ">
+                  {% trans "Tìm hiểu thêm" %}
+                  <i
+                    class="fas fa-arrow-right"
+                    style="
+                      margin-left: 8px;
+                      transition: transform 0.3s ease;
+                    "></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3: Cross Border -->
+          <div class="swiper-slide">
+            <div
+              class="service-tile"
+              style="
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                border-top: 4px solid #e20318;
+                padding: 20px;
+              ">
+              <div
+                class="service-tile__image"
+                style="height: 80px; width: 80px; margin: 0 auto 20px">
+                <img
+                  src="{% static 'uploaded/icon/item3.png' %}"
+                  alt="Vận chuyển xuyên biên giới"
+                  style="width: 100%; height: 100%; object-fit: contain" />
+              </div>
+              <h3
+                class="service-tile__title"
+                style="
+                  color: #124d92;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  margin: 0 0 15px;
+                  font-family: exo;
+                  text-align: center;
+                ">
+                {% trans "Vận Chuyển Xuyên Biên Giới" %}
+              </h3>
+              <p
+                class="service-tile__description"
+                style="
+                  color: #666;
+                  font-size: 0.9rem;
+                  margin: 0 0 15px;
+                  line-height: 1.6;
+                  text-align: center;
+                ">
+                {% trans "Chuyên vận chuyển hàng hóa xuất nhập khẩu giữa Việt Nam, Lào, Campuchia và Thailand với thủ tục nhanh chóng, đơn giản." %}
+              </p>
+              <ul
+                class="service-tile__features"
+                style="
+                  list-style: none;
+                  padding: 0;
+                  margin: 0 0 20px;
+                  color: #555;
+                  font-size: 0.9rem;
+                ">
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Xuất nhập khẩu Lào, Campuchia" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Vận chuyển sang Thailand" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Thủ tục hải quan tối ưu" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Chi phí cạnh tranh" %}
+                </li>
+              </ul>
+              <div style="margin-top: auto; text-align: center">
+                <a
+                  href="{% url 'logistics' %}#logistics_rail"
+                  class="service-tile__link"
+                  style="
+                    color: #e20318;
+                    font-weight: 600;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                  ">
+                  {% trans "Tìm hiểu thêm" %}
+                  <i
+                    class="fas fa-arrow-right"
+                    style="
+                      margin-left: 8px;
+                      transition: transform 0.3s ease;
+                    "></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4: Warehouse -->
+          <div class="swiper-slide">
+            <div
+              class="service-tile"
+              style="
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                border-top: 4px solid #e20318;
+                padding: 20px;
+              ">
+              <div
+                class="service-tile__image"
+                style="height: 80px; width: 80px; margin: 0 auto 20px">
+                <img
+                  src="{% static 'uploaded/icon/item4.png' %}"
+                  alt="Dịch vụ kho bãi"
+                  style="width: 100%; height: 100%; object-fit: contain" />
+              </div>
+              <h3
+                class="service-tile__title"
+                style="
+                  color: #124d92;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  margin: 0 0 15px;
+                  font-family: exo;
+                  text-align: center;
+                ">
+                {% trans "Vận Chuyển Nội Địa và Dịch Vụ Kho Bãi" %}
+              </h3>
+              <p
+                class="service-tile__description"
+                style="
+                  color: #666;
+                  font-size: 0.9rem;
+                  margin: 0 0 15px;
+                  line-height: 1.6;
+                  text-align: center;
+                ">
+                {% trans "Kho bãi tiêu chuẩn cao tại các vị trí chiến lược phục vụ bảo quản hàng hóa giá trị cao với chi phí hợp lý." %}
+              </p>
+              <ul
+                class="service-tile__features"
+                style="
+                  list-style: none;
+                  padding: 0;
+                  margin: 0 0 20px;
+                  color: #555;
+                  font-size: 0.9rem;
+                ">
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Kho chuyên dụng cho hàng điện tử" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Kho hóa chất & hàng bảo xá" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Diện tích kho lớn trên toàn quốc" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Quản lý hàng tồn kho hiệu quả" %}
+                </li>
+              </ul>
+              <div style="margin-top: auto; text-align: center">
+                <a
+                  href="{% url 'logistics' %}#logistics_warehouse"
+                  class="service-tile__link"
+                  style="
+                    color: #e20318;
+                    font-weight: 600;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                  ">
+                  {% trans "Tìm hiểu thêm" %}
+                  <i
+                    class="fas fa-arrow-right"
+                    style="
+                      margin-left: 8px;
+                      transition: transform 0.3s ease;
+                    "></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5: Customs -->
+          <div class="swiper-slide">
+            <div
+              class="service-tile"
+              style="
+                background: white;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                border-top: 4px solid #e20318;
+                padding: 20px;
+              ">
+              <div
+                class="service-tile__image"
+                style="height: 80px; width: 80px; margin: 0 auto 20px">
+                <img
+                  src="{% static 'uploaded/icon/item5.png' %}"
+                  alt="Dịch vụ hải quan"
+                  style="width: 100%; height: 100%; object-fit: contain" />
+              </div>
+              <h3
+                class="service-tile__title"
+                style="
+                  color: #124d92;
+                  font-size: 1.2rem;
+                  font-weight: 700;
+                  margin: 0 0 15px;
+                  font-family: exo;
+                  text-align: center;
+                ">
+                {% trans "Dịch Vụ Hải Quan" %}
+              </h3>
+              <p
+                class="service-tile__description"
+                style="
+                  color: #666;
+                  font-size: 0.9rem;
+                  margin: 0 0 15px;
+                  line-height: 1.6;
+                  text-align: center;
+                ">
+                {% trans "Dịch vụ kê khai hải quan chuyên nghiệp từ tư vấn hàng hóa, kiểm tra chứng từ đến hỗ trợ giấy phép xuất nhập khẩu." %}
+              </p>
+              <ul
+                class="service-tile__features"
+                style="
+                  list-style: none;
+                  padding: 0;
+                  margin: 0 0 20px;
+                  color: #555;
+                  font-size: 0.9rem;
+                ">
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Kê khai hải quan chuyên nghiệp" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Tư vấn phân loại hàng hóa" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Xin cấp giấy phép xuất nhập khẩu" %}
+                </li>
+                <li style="margin-bottom: 8px">
+                  <i
+                    class="fas fa-check"
+                    style="color: #e20318; margin-right: 8px"></i
+                  >{% trans "Kiểm tra chứng từ đầy đủ" %}
+                </li>
+              </ul>
+              <div style="margin-top: auto; text-align: center">
+                <a
+                  href="{% url 'logistics' %}#logistics_customs"
+                  class="service-tile__link"
+                  style="
+                    color: #e20318;
+                    font-weight: 600;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                  ">
+                  {% trans "Tìm hiểu thêm" %}
+                  <i
+                    class="fas fa-arrow-right"
+                    style="
+                      margin-left: 8px;
+                      transition: transform 0.3s ease;
+                    "></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination" style="bottom: 0"></div>
+      </div>
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-prev service-prev"></div>
+      <div class="swiper-button-next service-next"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. News Section (Dynamic) -->
+<div class="section-news" style="padding: 80px 0">
+  <div class="grid">
+    <div class="section-header text-center" style="margin-bottom: 50px">
+      <h2
+        style="
+          color: #124d92;
+          font-size: 2.5rem;
+          font-weight: 600;
+          font-family: exo-l;
+        ">
+        {% trans "TIN TỨC MỚI NHẤT" %}
+      </h2>
+      <div
+        style="
+          width: 60px;
+          height: 3px;
+          background: #e20318;
+          margin: 15px auto;
+        "></div>
+    </div>
+    <div class="news-wrapper" style="position: relative">
+      <div
+        class="swiper-container"
+        id="news-swiper"
+        style="padding-bottom: 50px">
+        <div class="swiper-wrapper">
+          {% if latest_news %} {% for post in latest_news %}
+          <div class="swiper-slide">
+            <article
+              class="news-card"
+              style="
+                background: white;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+                height: 100%;
+              ">
+              <div class="img-wrapper" style="height: 200px; overflow: hidden">
+                {% if post.featured_image %}
+                <img
+                  src="{{ post.featured_image.url }}"
+                  alt="{{ post.title }}"
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.3s;
+                  " />
+                {% else %}
+                <div
+                  style="
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(135deg, #0066cc, #004499);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  ">
+                  <i
+                    class="fas fa-newspaper"
+                    style="font-size: 3rem; color: white; opacity: 0.7"></i>
+                </div>
+                {% endif %}
+              </div>
+              <div class="content" style="padding: 20px">
+                <div
+                  class="date"
+                  style="color: #999; font-size: 0.85rem; margin-bottom: 10px">
+                  <i class="far fa-calendar-alt"></i> {{ post.created_at|date:"d/m/Y" }}
+                </div>
+                <h3
+                  style="
+                    font-size: 1.1rem;
+                    margin-bottom: 10px;
+                    line-height: 1.4;
+                  ">
+                  <a
+                    href="{% url 'post_detail' post.slug %}"
+                    style="
+                      color: #333;
+                      text-decoration: none;
+                      font-weight: 600;
+                      transition: color 0.2s;
+                    "
+                    >{{ post.title }}</a
+                  >
+                </h3>
+                <p
+                  style="
+                    color: #666;
+                    font-size: 0.9rem;
+                    line-height: 1.6;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                  ">
+                  {{ post.excerpt|default:post.content|striptags|truncatewords:20 }}
+                </p>
+              </div>
+            </article>
+          </div>
+          {% endfor %} {% else %}
+          <div class="swiper-slide">
+            <p class="text-center" style="color: #666; padding: 40px">
+              {% trans "Đang cập nhật tin tức..." %}
+            </p>
+          </div>
+          {% endif %}
+        </div>
+        <div class="swiper-pagination news-pagination" style="bottom: 0"></div>
+      </div>
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-prev news-prev"></div>
+      <div class="swiper-button-next news-next"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. Partners Section -->
+<div
+  class="section-partners"
+  style="padding: 60px 0; background: #fff; border-top: 1px solid #eee">
+  <div class="grid" style="position: relative; padding: 0 60px">
+    <div class="section-header text-center" style="margin-bottom: 40px">
+      <h2
+        style="
+          color: #124d92;
+          font-size: 2.5rem;
+          font-weight: 600;
+          font-family: exo-l;
+        ">
+        {% trans "ĐỐI TÁC VÀ KHÁCH HÀNG CỦA CHÚNG TÔI" %}
+      </h2>
+    </div>
+    <div class="swiper-container" id="partners-swiper" style="padding: 10px 0">
+      <div class="swiper-wrapper align-center">
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/dasan.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/hisense.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/sungroup_logo.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/toto.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/viettel.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/viglacera.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/ZTE.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/cmacgm.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/kmtc.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/maersk-line.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/msc.png' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/evergreen.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/one.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/hapag.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/cosco.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/polyco.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/tvl.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/nagaco.jpg' %}"
+            alt="Partner" />
+        </div>
+        <div class="swiper-slide partner-slide">
+          <img
+            src="{% static 'uploaded/doi-tac/logo/fpt.png' %}"
+            alt="Partner" />
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-prev partner-prev"></div>
+    <div class="swiper-button-next partner-next"></div>
+  </div>
+</div>
+
+<style>
+  .service-tile:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15) !important;
+  }
+  .service-tile:hover .service-tile__image img {
+    transform: scale(1.05);
+  }
+  .service-tile:hover .service-tile__link i {
+    transform: translateX(5px);
+  }
+
+  .news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+  }
+  .news-card:hover .img-wrapper img {
+    transform: scale(1.05);
+  }
+  .news-card:hover h3 a {
+    color: #0066cc !important;
+  }
+
+  .swiper-slide img:hover {
+    filter: grayscale(0%) !important;
+    opacity: 1 !important;
+  }
+
+  /* Override inline styles for bigger icons */
+  .service-tile__image {
+    height: 280px !important;
+    width: 280px !important;
+  }
+
+  /* Services wrapper for button positioning */
+  .services-wrapper {
+    overflow: visible !important;
+  }
+
+  /* Custom Navigation Buttons */
+  .service-prev,
+  .service-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    z-index: 200;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: gray;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .service-prev:hover,
+  .service-next:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+    background-color: #124d92;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  .service-prev {
+    background-image: url("{% static 'images/icon-prev.png' %}");
+    left: -60px;
+  }
+  .service-next {
+    background-image: url("{% static 'images/icon-next.png' %}");
+    right: -60px;
+  }
+
+  /* Ensure buttons are visible on smaller screens */
+  @media (max-width: 1200px) {
+    .service-prev {
+      left: 10px;
+    }
+    .service-next {
+      right: 10px;
+    }
+  }
+
+  /* News Navigation Buttons */
+  .news-prev,
+  .news-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: gray;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  .news-prev:hover,
+  .news-next:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+    background-color: #124d92;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  .news-prev {
+    background-image: url("{% static 'images/icon-prev.png' %}");
+    left: -60px;
+  }
+  .news-next {
+    background-image: url("{% static 'images/icon-next.png' %}");
+    right: -60px;
+  }
+
+  @media (max-width: 1200px) {
+    .news-prev {
+      left: 10px;
+    }
+    .news-next {
+      right: 10px;
+    }
+  }
+
+  /* Equal height for service cards */
+  #services-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+  #services-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+  }
+  .service-tile {
+    width: 100%;
+  }
+
+  /* Equal height for news cards */
+  #news-swiper .swiper-wrapper {
+    align-items: stretch;
+  }
+  #news-swiper .swiper-slide {
+    height: auto;
+    display: flex;
+  }
+  .news-card {
+    display: flex !important;
+    flex-direction: column;
+    width: 100%;
+  }
+  .news-card .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Partner Carousel Styles */
+  .partner-slide {
+    border-right: 1px solid #00aeef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    box-sizing: border-box;
+  }
+  .partner-slide img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  .partner-slide:hover img {
+    opacity: 0.7;
+  }
+
+  .partner-prev,
+  .partner-next {
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    color: #00aeef;
+    top: 70%;
+  }
+
+  .partner-prev {
+    left: 10px;
+  }
+  .partner-next {
+    right: 10px;
+  }
+
+  /* Increase arrow size */
+  .partner-prev:after,
+  .partner-next:after {
+    font-size: 40px;
+    font-weight: bold;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var video = document.getElementById("background-video");
+    if (video) {
+      // Force mute again to satisfy strict autoplay policies
+      video.muted = true;
+      video.play().catch(function (error) {
+        console.log("Autoplay was prevented:", error);
+      });
+    }
+
+    // Services Swiper
+    // Swiper v4 uses max-width breakpoints.
+    // We set default (desktop) first, then override for smaller screens.
+    new Swiper("#services-swiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".service-next",
+        prevEl: ".service-prev",
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 2,
+        },
+        640: {
+          slidesPerView: 1,
+        },
+      },
+    });
+
+    // Partners Swiper
+    new Swiper("#partners-swiper", {
+      slidesPerView: 5,
+      spaceBetween: 0,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".partner-next",
+        prevEl: ".partner-prev",
+      },
+      breakpoints: {
+        1024: { slidesPerView: 4 },
+        768: { slidesPerView: 3 },
+        640: { slidesPerView: 2 },
+      },
+    });
+
+    // News Swiper
+    new Swiper("#news-swiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".news-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".news-next",
+        prevEl: ".news-prev",
+      },
+      breakpoints: {
+        1024: { slidesPerView: 2 },
+        640: { slidesPerView: 1 },
+      },
+    });
+  });
+</script>
+
+{% endblock %}

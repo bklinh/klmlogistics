@@ -1,0 +1,838 @@
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{% trans "Logistics & Dịch vụ gia tăng - KLM Logistics" %}{% endblock %} {% block content %}
+
+<!-- Hero Image Section -->
+<div
+  class="service-hero-section"
+  style="
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    margin-bottom: 50px;
+  ">
+  <img
+    src="{% static 'uploaded/services/item3.jpg' %}"
+    style="width: 100%; height: 100%; object-fit: cover"
+    alt="Logistics & Dịch vụ gia tăng" />
+  <div
+    class="hero-overlay"
+    style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(18, 77, 146, 0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    ">
+    <div class="hero-content" style="text-align: center; color: white">
+      <h1 style="font-size: 2.5rem; font-weight: 600; margin: 0 0 15px 0">
+        {% trans "Logistics & Các dịch vụ gia tăng" %}
+      </h1>
+      <p style="font-size: 1.1rem; margin: 0">
+        {% trans "Dịch vụ logistics nội địa, kho bãi, vận chuyển đặc biệt và kê khai hải quan" %}
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content Section -->
+<div class="service-content-wrapper">
+  <div class="grid">
+    <div class="flex-container">
+      <!-- Left Menu - 1/4 -->
+      <div class="cell-1-4">
+        <div
+          class="service-menu"
+          id="floating-menu"
+          style="
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            transition: all 0.3s ease;
+          ">
+          <h3
+            style="
+              color: #124d92;
+              margin-bottom: 20px;
+              font-size: 1.4rem;
+              font-weight: 600;
+            ">
+            {% trans "Nội dung" %}
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 15px">
+              <a
+                href="#logistics_customs"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                  font-size: 1.05rem;
+                "
+                >{% trans "Dịch Vụ Hải Quan" %}</a
+              >
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="#logistics_domestic"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                  font-size: 1.05rem;
+                "
+                >{% trans "Vận Chuyển Nội Địa và Dịch Vụ Kho Bãi" %}</a
+              >
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="#logistics_special"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                  font-size: 1.05rem;
+                "
+                >{% trans "Vận Chuyển Hàng Đặc biệt" %}</a
+              >
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="#logistics_rail"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                  font-size: 1.05rem;
+                "
+                >{% trans "Vận Chuyển Xuyên Biên Giới" %}</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Content - 3/4 -->
+      <div class="cell-3-4" style="padding-left: 40px">
+        <!-- Section 1: Customs Clearance -->
+        <section
+          id="logistics_customs"
+          class="content-section"
+          style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #124d92;
+                font-size: 2.2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #124d92;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Dịch vụ kê khai hải quan và Hỗ trợ xuất nhập khẩu" %}
+            </h2>
+          </div>
+          <div>
+            <img
+              src="{% static 'uploaded/services/item3_4.jpg' %}"
+              alt="Dịch vụ kê khai hải quan"
+              style="
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                margin-bottom: 30px;
+              " />
+            <div
+              style="
+                line-height: 1.8;
+                color: #333;
+                font-size: 1.1rem;
+                text-align: justify;
+                margin-bottom: 20px;
+              ">
+              <p style="margin: 10px 0">
+                {% trans "Dịch vụ kê khai hải quan chuyên nghiệp từ việc tư vấn hàng hóa, kiểm tra chứng từ, hỗ trợ các giấy phép… đòi hỏi sự tận tâm và kiến thức rộng trong lĩnh vực xuất nhập khẩu. KLM Logistics với kinh nghiệm lâu năm được đánh giá là một trong những công ty có dịch vụ hải quan hàng đầu tại Việt Nam." %}
+              </p>
+              <p style="margin: 10px 0">
+                {% trans "Đội ngũ của KLM Logistics được đào tạo một cách chuyên nghiệp và toàn diện để hiểu rõ mức độ phức tạp của các thủ tục hải quan trong từng lĩnh vực. Chúng tôi luôn chủ động và có trách nhiệm về việc chuẩn bị các chứng từ chính xác và đúng lúc nhất để tránh sự chậm trễ và các chi phí tốn kém khác cho khách hàng." %}
+              </p>
+            </div>
+            <div style="margin-bottom: 20px">
+              <p
+                style="
+                  color: #333;
+                  font-size: 1.1rem;
+                  margin: 10px 0;
+                  font-weight: 600;
+                ">
+                {% trans "Các dịch vụ Hải quan của chúng tôi bao gồm:" %}
+              </p>
+              <ul
+                style="
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                ">
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Khai báo thuế quan và thuế nhập khẩu" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Phân loại mã HS Code" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Chuẩn bị giấy phép xuất nhập khẩu cho hàng hoá bị kiểm soát" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Tư vấn hồ sơ xuất nhập khẩu" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Thủ tục tạm nhập/tái xuất" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Thủ tục xuất nhập khẩu" %}
+                </li>
+              </ul>
+            </div>
+            <div style="margin-top: 20px">
+              <p
+                style="
+                  color: #333;
+                  font-size: 1.1rem;
+                  margin: 10px 0;
+                  font-weight: 600;
+                ">
+                {% trans "Các dịch vụ hỗ trợ cho xuất nhập khẩu hàng hóa luôn được KLM logistics thực hiện nhanh & chính xác đã làm hài lòng và duy trì mối quan hệ bền lâu với khách hàng. Các dịch vụ này bao gồm:" %}
+              </p>
+              <ul
+                style="
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                ">
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Tư vấn hồ sơ giấy tờ xuất xứ hàng hóa (CO)" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Dịch vụ hun trùng, kiểm dịch" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Dịch vụ khai báo hóa chất" %}
+                </li>
+                <li
+                  style="
+                    color: #333;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 1.05rem;
+                  ">
+                  <span
+                    style="
+                      position: absolute;
+                      left: 0;
+                      color: #e20318;
+                      font-weight: bold;
+                    "
+                    >•</span
+                  >{% trans "Dịch vụ đóng gói hàng hóa." %}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 2: Rail & Cross-border -->
+        <section
+          id="logistics_domestic"
+          class="content-section"
+          style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #124d92;
+                font-size: 2.2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #124d92;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Vận Chuyển Nội Địa và Dịch Vụ Kho Bãi" %}
+            </h2>
+          </div>
+          <div>
+            <img
+              src="{% static 'uploaded/services/item4.png' %}"
+              alt="Vận chuyển nội địa và Dịch vụ kho bãi"
+              style="
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                margin-bottom: 30px;
+              " />
+            <div
+              style="
+                line-height: 1.8;
+                color: #333;
+                font-size: 1.1rem;
+                text-align: justify;
+                margin-bottom: 20px;
+              ">
+              <p style="margin: 0">
+                {% trans "KLM Logistics JSC chúng tôi cung cấp dịch vụ vận chuyển nội địa xe tải, xe container phục vụ cho các nhu cầu vận chuyển hàng hóa xuất nhập khẩu, hàng chuyển kho, hàng nội địa bắc nam. Hàng hóa vận chuyển đa dạng như hàng bao, hàng thép, hàng điện tử, hàng nông sản." %}
+              </p>
+              <p>
+              {% trans "KLM đáp ứng tốt các yêu cầu vận chuyển với số lượng lớn cho các công ty sản xuất tại các khu công nghiệp, các nhà máy sản xuất, xuất khẩu với số lượng lớn trên toàn quốc. Với năng lực tốt, tiêu chí giá cả cạnh tranh & sự phục vụ nhiệt tình, chúng tôi đã và đang là đối tác tin cậy của quý khách hàng" %}
+            </p>
+            <p>
+              {% trans "KLM Logistics JSC cung cấp kho tiêu chuẩn cao cho các hàng hóa cần sự bảo quản tốt như những mặt hàng điện tử, hàng hóa chất cũng như các hàng bao xá cần diện tích kho lớn chi phí hợp lý trên toàn quốc." %}
+            </p>
+            </div>
+            <img
+              src="{% static 'uploaded/services/item4_1.png' %}"
+              alt="Vận chuyển nội địa và Dịch vụ kho bãi"
+              style="
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                margin-bottom: 30px;
+              " />
+            <div
+              style="
+                line-height: 1.8;
+                color: #333;
+                font-size: 1.1rem;
+                text-align: justify;
+                margin-bottom: 20px;
+              ">
+              <p style="margin: 0">
+                {% trans "Những ưu điểm nổi trội của hệ thống kho bãi và phân phối của chúng tôi như:" %}
+              </p>
+            </div>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                margin-bottom: 20px;
+              ">
+              <li
+                style="
+                  color: #333;
+                  padding-left: 25px;
+                  position: relative;
+                  font-size: 1.05rem;
+                ">
+                <span
+                  style="
+                    position: absolute;
+                    left: 0;
+                    color: #e20318;
+                    font-weight: bold;
+                  "
+                  >•</span>
+                  {% trans "Tất cả hàng hóa của khách hàng khi lưu trữ đều được bảo hiểm" %} 100% {% trans "giá trị tài sản" %}
+              </li>
+              <li
+                style="
+                  color: #333;
+                  padding-left: 25px;
+                  position: relative;
+                  font-size: 1.05rem;
+                ">
+                <span
+                  style="
+                    position: absolute;
+                    left: 0;
+                    color: #e20318;
+                    font-weight: bold;
+                  "
+                  >•</span
+                >{% trans "Vị trí kho hàng nằm trên các trục đường chính thuận lợi cho việc xuất nhập và trung chuyển hàng hóa" %}
+              </li>
+              <li
+                style="
+                  color: #333;
+                  padding-left: 25px;
+                  position: relative;
+                  font-size: 1.05rem;
+                ">
+                <span
+                  style="
+                    position: absolute;
+                    left: 0;
+                    color: #e20318;
+                    font-weight: bold;
+                  "
+                  >•</span
+                >{% trans "Cơ sở hạ tầng tiêu chuẩn quốc tế, trang thiết bị máy móc hiện đại với đầy đủ hệ thống PCCC, camera an ninh, bảo vệ 24/24" %}
+              </li>
+              <li
+                style="
+                  color: #333;
+                  padding-left: 25px;
+                  position: relative;
+                  font-size: 1.05rem;
+                ">
+                <span
+                  style="
+                    position: absolute;
+                    left: 0;
+                    color: #e20318;
+                    font-weight: bold;
+                  "
+                  >•</span
+                >{% trans "Đội ngũ nhân viên thưởng trực để hỗ trợ xuất nhập hàng hóa ra vào kho an toàn, nhanh chóng" %}
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Section 3: Special Goods -->
+        <section
+          id="logistics_special"
+          class="content-section"
+          style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #124d92;
+                font-size: 2.2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #124d92;
+                display: inline-block;
+                padding-bottom: 10px;
+              "> 
+              {% trans "Vận chuyển Hàng Đặc Biệt & Hàng Dự Án" %}
+            </h2>
+          </div>
+          <div>
+            <img
+              src="{% static 'uploaded/services/item3_3.jpg' %}"
+              alt="Vận chuyển hàng đặc biệt"
+              style="
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                margin-bottom: 30px;
+              " />
+            <div
+              style="
+                line-height: 1.8;
+                color: #333;
+                font-size: 1.1rem;
+                text-align: justify;
+                margin-bottom: 20px;
+              ">
+              <p style="margin: 0">
+                {% trans "Dựa trên mối quan hệ với chủ tàu & đại lý, KLM có thể xử lý tốt hàng rời với giá cả cạnh tranh và kinh nghiệm." %}
+              </p>
+            </div>
+            <ul
+              style="
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+              ">
+              <li
+                style="
+                  color: #333;
+                  padding-left: 25px;
+                  position: relative;
+                  font-size: 1.05rem;
+                ">
+                <span
+                  style="
+                    position: absolute;
+                    left: 0;
+                    color: #e20318;
+                    font-weight: bold;
+                  "
+                  >•</span
+                >{% trans "Vận chuyển nội địa thép cuộn" %}
+              </li>
+              <li
+                style="
+                  color: #333;
+                  padding-left: 25px;
+                  position: relative;
+                  font-size: 1.05rem;
+                ">
+                <span
+                  style="
+                    position: absolute;
+                    left: 0;
+                    color: #e20318;
+                    font-weight: bold;
+                  "
+                  >•</span
+                >{% trans "Cám vận chuyển nội địa & ngô nghiền cho vật nuôi nhà máy thức ăn chăn nuôi" %}
+              </li>
+              <li
+                style="
+                  color: #333;
+                  padding-left: 25px;
+                  position: relative;
+                  font-size: 1.05rem;
+                ">
+                <span
+                  style="
+                    position: absolute;
+                    left: 0;
+                    color: #e20318;
+                    font-weight: bold;
+                  "
+                  >•</span
+                >{% trans "Dự án hàng siêu trường (siêu trường, siêu nặng) của vận tải nội địa và quốc tế" %}
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Section 4: Domestic & Warehouse -->
+         <section
+          id="logistics_rail"
+          class="content-section"
+          style="margin-bottom: 60px">
+          <div class="section-header" style="margin-bottom: 30px">
+            <h2
+              style="
+                color: #124d92;
+                font-size: 2.2rem;
+                font-weight: 600;
+                border-bottom: 3px solid #124d92;
+                display: inline-block;
+                padding-bottom: 10px;
+              ">
+              {% trans "Vận chuyển Đường Sắt và Xuyên Biên Giới" %}
+            </h2>
+          </div>
+
+          <!-- Rail Service -->
+          <div style="margin-bottom: 40px">
+            <h3
+              style="
+                color: #124d92;
+                font-size: 1.6rem;
+                font-weight: 600;
+                margin-bottom: 20px;
+              ">
+              {% trans "Dịch vụ đường sắt" %}
+            </h3>
+            <img
+              src="{% static 'uploaded/services/item3_1.jpg' %}"
+              alt="Dịch vụ vận chuyển đường sắt"
+              style="
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                margin-bottom: 20px;
+              " />
+            <div
+              style="
+                line-height: 1.8;
+                color: #333;
+                font-size: 1.1rem;
+                text-align: justify;
+              ">
+              <p style="margin: 10px 0">
+                {% trans "KLM Logistics cung cấp dịch vụ vận chuyển hàng hóa xuất khẩu hoặc nhập khẩu. Vận chuyển bằng đường sắt sẽ được thu xếp tại ga quốc tế Yên Viên tới các địa điểm trong lục địa trung quốc và ngược lại." %}
+              </p>
+              <p style="margin: 10px 0">
+                {% trans "Chúng tôi cung cấp dịch vụ đường sắt vận chuyển trong nước cho hàng hóa & các nguyên vật liệu trong nước." %}
+              </p>
+            </div>
+          </div>
+
+          <!-- Cross-border Service -->
+          <div>
+            <h3
+              style="
+                color: #124d92;
+                font-size: 1.6rem;
+                font-weight: 600;
+                margin-bottom: 20px;
+              ">
+              {% trans "Dịch vụ xe tải xuyên biên giới" %}
+            </h3>
+            <img
+              src="{% static 'uploaded/services/item3_2.jpg' %}"
+              alt="Dịch vụ vận tải xuyên biên giới"
+              style="
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+                margin-bottom: 20px;
+              " />
+            <div
+              style="
+                line-height: 1.8;
+                color: #333;
+                font-size: 1.1rem;
+                text-align: justify;
+              ">
+              <p style="margin: 10px 0">
+                {% trans "KLM logistics cung cấp dịch vụ vận tải xuyên biên giới cho hàng hóa xuất nhập khẩu từ Việt Nam tới Lào, Campuchia hoặc Thailand và ngược lại." %}
+              </p>
+              <p style="margin: 10px 0">
+                {% trans "Chúng tôi cung cấp dịch vụ vận chuyển đường bộ cho hàng nhập khẩu từ các khu vực đất liền Trung Quốc qua cửa khẩu Hữu Nghị tới kho ngoại quan Bắc Ninh." %}
+              </p>
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .service-menu a:hover {
+    background: #e8eef7;
+    border-left-color: #124d92;
+    color: #124d92;
+    padding-left: 20px;
+  }
+
+  .service-menu a {
+    color: #333;
+  }
+
+  .service-menu {
+    position: relative;
+  }
+
+  .section-header h2 {
+    color: #124d92 !important;
+  }
+
+  .content-section {
+    scroll-margin-top: 80px;
+  }
+
+  @media (max-width: 1023px) {
+    .cell-1-4 {
+      display: none;
+    }
+
+    .cell-3-4 {
+      width: 100%;
+      padding-left: 0 !important;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const floatingMenu = document.getElementById("floating-menu");
+    const contentWrapper = document.querySelector(".cell-3-4");
+    const menuItems = floatingMenu.querySelectorAll("a");
+
+    if (!floatingMenu || !contentWrapper) return;
+
+    let menuWidth = floatingMenu.offsetWidth;
+    const contentRect = contentWrapper.getBoundingClientRect();
+    const menuOriginalLeft = floatingMenu.getBoundingClientRect().left;
+
+    window.addEventListener("scroll", function () {
+      const contentTop = contentWrapper.getBoundingClientRect().top;
+      const contentBottom = contentWrapper.getBoundingClientRect().bottom;
+      const viewportHeight = window.innerHeight;
+
+      if (contentTop < 80 && contentBottom > viewportHeight) {
+        floatingMenu.style.position = "fixed";
+        floatingMenu.style.top = "80px";
+        floatingMenu.style.width = menuWidth + "px";
+        floatingMenu.style.left = menuOriginalLeft + "px";
+      } else {
+        floatingMenu.style.position = "relative";
+        floatingMenu.style.top = "auto";
+        floatingMenu.style.left = "auto";
+        floatingMenu.style.width = "auto";
+      }
+
+      // Update active link
+      const sections = document.querySelectorAll('[id^="logistics_"]');
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < 100) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      menuItems.forEach((item) => {
+        const href = item.getAttribute("href").substring(1);
+        if (href === currentSection) {
+          item.style.backgroundColor = "#124d92";
+          item.style.color = "white";
+          item.style.borderLeftColor = "#124d92";
+          item.style.paddingLeft = "20px";
+        } else {
+          item.style.backgroundColor = "transparent";
+          item.style.color = "#333";
+          item.style.borderLeftColor = "transparent";
+          item.style.paddingLeft = "15px";
+        }
+      });
+    });
+  });
+</script>
+
+{% endblock %}

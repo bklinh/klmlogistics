@@ -1,0 +1,630 @@
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{{ page_title }} - KLM Logistics{% endblock %} {% block content %}
+<!-- Hero Section -->
+<div
+  class="news-hero"
+  style="
+    background: linear-gradient(135deg, #124d92 0%, #0a2d52 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  ">
+  <div
+    style="
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: rgba(226, 3, 24, 0.1);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+  <div
+    style="
+      position: absolute;
+      bottom: -30%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+
+  <div class="grid" style="position: relative; z-index: 1; text-align: center">
+    <h1
+      style="
+        font-size: 3.5rem;
+        color: white;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-family: exo-l;
+      ">
+      {% trans "Tuyển dụng" %}
+    </h1>
+    <p
+      style="
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+      ">
+      {% trans "Cơ hội nghề nghiệp tại KLM Logistics - Gia nhập đội ngũ chuyên nghiệp" %}
+    </p>
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="news-content-wrapper" style="padding: 60px 0">
+  <div class="grid">
+    <div class="flex-container">
+      <!-- Left Menu - 1/4 -->
+      <div class="cell-1-4">
+        <div
+          class="news-menu"
+          style="
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            position: sticky;
+            top: 20px;
+          ">
+          <h3
+            style="
+              color: #0066cc;
+              margin-bottom: 20px;
+              font-size: 1.3rem;
+              font-weight: 600;
+            ">
+            {% trans "Danh mục tin tức" %}
+          </h3>
+          <ul style="list-style: none; padding: 0; margin: 0">
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'company_news' %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                <i class="fas fa-building" style="margin-right: 8px"></i>
+                {% trans "Tin công ty" %}
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'industry_news' %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: #333;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid transparent;
+                ">
+                <i class="fas fa-industry" style="margin-right: 8px"></i>
+                {% trans "Tin chuyên ngành" %}
+              </a>
+            </li>
+            <li style="margin-bottom: 15px">
+              <a
+                href="{% url 'recruitment' %}"
+                style="
+                  display: block;
+                  padding: 12px 15px;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: all 0.3s ease;
+                  border-left: 3px solid #0066cc;
+                  background: #0066cc;
+                ">
+                <i class="fas fa-user-tie" style="margin-right: 8px"></i>
+                {% trans "Tuyển dụng" %}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right Content - 3/4 -->
+      <div class="cell-3-4" style="padding-left: 40px">
+        <div
+          class="recruitment-content"
+          style="
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          ">
+          <h2 style="color: #0066cc; margin-bottom: 30px; font-size: 1.8rem">
+            {% trans "Cơ hội nghề nghiệp tại KLM Logistics" %}
+          </h2>
+
+          <div class="job-listings" style="display: grid; gap: 30px">
+            <!-- Job Position 2 -->
+            <div
+              class="job-card"
+              style="
+                border: 2px solid #f8f9fa;
+                border-radius: 8px;
+                padding: 30px;
+                transition: all 0.3s ease;
+              ">
+              <div
+                class="job-header"
+                style="display: flex; align-items: center; margin-bottom: 20px">
+                <div
+                  class="job-icon"
+                  style="
+                    background: #28a745;
+                    color: white;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 20px;
+                  ">
+                  <i class="fas fa-user-tie" style="font-size: 1.2rem"></i>
+                </div>
+                <div>
+                  <h3 style="color: #333; margin: 0 0 5px 0; font-size: 1.3rem">
+                    {% trans "Nhân viên kinh doanh Logistics" %}
+                  </h3>
+                  <span style="color: #0066cc; font-weight: 500"
+                    >{% trans "Phòng Kinh doanh (Số lượng: 10 người)" %}</span
+                  >
+                </div>
+              </div>
+
+              <div class="job-details" style="margin-bottom: 20px">
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "BẠN NÊN CÓ KỸ NĂNG" %}
+                </h4>
+                <p style="color: #666; line-height: 1.6; margin-bottom: 15px">
+                  {% trans "Kinh Doanh - Bán Hàng / Forwarding – Logistics / Xuất Nhập Khẩu - Khai Báo Hải Quan" %}
+                </p>
+
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "BẠN SẼ LÀM GÌ (MÔ TẢ CÔNG VIỆC)" %}
+                </h4>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>
+                    {% trans "Tìm kiếm, liên hệ các công ty có nhu cầu về vận chuyển hàng hóa nội địa cũng như quốc tế phục vụ xuất nhập khẩu & các dịch vụ Logistics đi kèm." %}
+                  </li>
+                  <li>
+                    {% trans "Duy trì và phát triển mạng lưới khách hàng & đối tác của công ty." %}
+                  </li>
+                  <li>
+                    {% trans "Lập báo cáo hoạt động kinh doanh, đưa ý tưởng phát triển kinh doanh đến người phụ trách." %}
+                  </li>
+                  <li>
+                    {% trans "Phối hợp cùng các phòng ban nghiệp vụ khác thực hiện các dịch vụ của công ty cho khách hàng." %}
+                  </li>
+                  <li>
+                    {% trans "Nhân viên mới sẽ được đào tạo đầy đủ về kiến thức chuyên ngành forwarding, logistics nên không phải lo lắng nếu chưa có kiến thức đầy đủ" %}
+                  </li>
+                </ul>
+
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "CHUYÊN MÔN CỦA BẠN (YÊU CẦU CÔNG VIỆC)" %}
+                </h4>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>{% trans "Tiếng anh, vi tính văn phòng khá." %}</li>
+                  <li>
+                    {% trans "Am hiểu về lĩnh vực Logistics/xuất nhập khẩu hàng hóa." %}
+                  </li>
+                  <li>{% trans "Nhanh nhẹn, có kỹ năng giao tiếp." %}</li>
+                </ul>
+
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "QUYỀN LỢI ĐƯỢC HƯỞNG" %}
+                </h4>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>
+                    {% trans "Lương thỏa thuận (với người có kinh nghiệm từ 7 - 10 triệu +" %} % {% trans "doanh số + Chính sách thưởng" %} 25% - 40% {% trans "hấp dẫn theo lũy tiến của Doanh thu thuần)" %}
+                  </li>
+                  <li>{% trans "Du lịch hàng năm" %}</li>
+                  <li>
+                    {% trans "Các chế độ BHXH, BHYT, BHTN được thực hiện đầy đủ theo quy định" %}
+                  </li>
+                </ul>
+
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "YÊU CẦU VỀ HỒ SƠ" %}
+                </h4>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>{% trans "Hồ sơ xin việc" %}</li>
+                  <li>{% trans "Bằng cấp liên quan (bản photo)." %}</li>
+                </ul>
+              </div>
+
+              <a
+                href="mailto:thuykt@klmlogistics.com?subject=Ứng tuyển Nhân viên Kinh doanh Logistics"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  padding: 10px 20px;
+                  background: #28a745;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: background 0.3s ease;
+                ">
+                <i class="fas fa-envelope" style="margin-right: 8px"></i>
+                {% trans "Ứng tuyển ngay" %}
+              </a>
+            </div>
+
+            <!-- Job Position 1 -->
+            <div
+              class="job-card"
+              style="
+                border: 2px solid #f8f9fa;
+                border-radius: 8px;
+                padding: 30px;
+                transition: all 0.3s ease;
+              ">
+              <div
+                class="job-header"
+                style="display: flex; align-items: center; margin-bottom: 20px">
+                <div
+                  class="job-icon"
+                  style="
+                    background: #0066cc;
+                    color: white;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 20px;
+                  ">
+                  <i class="fas fa-file-invoice" style="font-size: 1.2rem"></i>
+                </div>
+                <div>
+                  <h3 style="color: #333; margin: 0 0 5px 0; font-size: 1.3rem">
+                    {% trans "NHÂN VIÊN CHỨNG TỪ XUẤT NHẬP KHẨU (NGÀNH LOGISTICS)" %}
+                  </h3>
+                  <span style="color: #0066cc; font-weight: 500"
+                    >{% trans "Phòng Chứng từ" %}</span
+                  >
+                </div>
+              </div>
+
+              <div class="job-details" style="margin-bottom: 20px">
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "MÔ TẢ CÔNG VIỆC" %}
+                </h4>
+
+                <p style="color: #333; font-weight: 600; margin-bottom: 5px">
+                  {% trans "1. Nhóm công việc nghiệp vụ:" %}
+                </p>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 15px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>
+                    {% trans "Khai manifest, chuẩn bị bộ lệnh, tổng hợp chứng từ hàng nhập" %}
+                  </li>
+                  <li>
+                    {% trans "Làm chứng từ, khai quan xuất, nhập khẩu: Tờ khai Hải Quan, Hợp đồng, Invoice, Packing List, CO, Hun trùng… và các chứng từ cần thiết khác." %}
+                  </li>
+                </ul>
+
+                <p style="color: #333; font-weight: 600; margin-bottom: 5px">
+                  {% trans "2. Công việc hỗ trợ:" %}
+                </p>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>
+                    {% trans "Phối hợp với các phòng ban khác trong quá trình cung cấp dịch vụ, thông báo những quy định mới từ các cơ quan chức năng hay hãng vận chuyển để hạn chế tối đa rủi ro xảy ra" %}
+                  </li>
+                  <li>
+                    {% trans "Liên lạc với khách hàng để có thêm thông tin về lô hàng và hiểu rõ hơn những yêu cầu của khách hàng" %}
+                  </li>
+                  <li>
+                    {% trans "Giao dịch với các bên cung cấp (Hun trùng, Bảo hiểm, Hải quan, PTM, BTM; Đại lý, hãng vận chuyển…) và cập nhật thông tin liên quan." %}
+                  </li>
+                  <li>{% trans "Hỗ trợ đồng nghiệp khi cần." %}</li>
+                  <li>
+                    {% trans "Nhân viên mới sẽ được đào tạo đầy đủ về kiến thức chuyên ngành forwarding, logistics nên không phải lo lắng nếu chưa có kiến thức đầy đủ" %}
+                  </li>
+                </ul>
+
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "YÊU CẦU CÔNG VIỆC" %}
+                </h4>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>{% trans "Tiếng anh, vi tính văn phòng khá." %}</li>
+                  <li>
+                    {% trans "Am hiểu về lĩnh vực Logistics/xuất nhập khẩu hàng hóa." %}
+                  </li>
+                  <li>{% trans "Nhanh nhẹn, có kỹ năng giao tiếp." %}</li>
+                  <li>
+                    {% trans "Ưu tiên: Tốt nghiệp cao đẳng, đại học chuyên ngành ngoại thương/ kinh tế & vận tải" %}
+                  </li>
+                </ul>
+
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "LƯƠNG, PHÚC LỢI" %}
+                </h4>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>{% trans "Theo thỏa thuận cạnh tranh." %}</li>
+                  <li>
+                    {% trans "Được tham gia BHXH, BHYT, BHTN, BH tai nạn đầy đủ theo qui định." %}
+                  </li>
+                  <li>
+                    {% trans "Du lịch, thưởng lễ tết… và nhiều chính sách phúc lợi khác" %}
+                  </li>
+                </ul>
+
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "THÔNG TIN KHÁC" %}
+                </h4>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>
+                    {% trans "Thời gian làm việc: 44h/ tuần, từ thứ Hai đến hết sáng Thứ Bảy" %}
+                  </li>
+                  <li>
+                    {% trans "Môi trường làm việc năng động, vui vẻ, thân thiện" %}
+                  </li>
+                </ul>
+
+                <h4
+                  style="
+                    color: #0066cc;
+                    margin-bottom: 10px;
+                    font-size: 1.1rem;
+                  ">
+                  {% trans "YÊU CẦU VỀ HỒ SƠ" %}
+                </h4>
+                <ul
+                  style="
+                    color: #666;
+                    line-height: 1.6;
+                    margin: 0 0 20px 0;
+                    padding-left: 20px;
+                  ">
+                  <li>{% trans "Hồ sơ xin việc" %}</li>
+                  <li>{% trans "Bằng cấp liên quan (bản photo)." %}</li>
+                </ul>
+              </div>
+
+              <a
+                href="mailto:thuykt@klmlogistics.com?subject=Ứng tuyển Nhân viên Chứng từ XNK"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  padding: 10px 20px;
+                  background: #0066cc;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: background 0.3s ease;
+                ">
+                <i class="fas fa-envelope" style="margin-right: 8px"></i>
+                {% trans "Ứng tuyển ngay" %}
+              </a>
+            </div>
+
+            <!-- Contact Section -->
+            <div
+              class="recruitment-contact"
+              style="
+                background: linear-gradient(135deg, #0066cc, #004499);
+                color: white;
+                padding: 30px;
+                border-radius: 8px;
+                text-align: center;
+              ">
+              <h3 style="color: white; margin-bottom: 20px; font-size: 1.4rem">
+                {% trans "Liên hệ tuyển dụng" %}
+              </h3>
+              <p style="margin-bottom: 20px; line-height: 1.6">
+                {% trans "Hồ sơ dự tuyển xin gửi về trực tiếp địa chỉ sau: Công ty CP dịch vụ Logistics và thương mại KLM" %}<br />
+                {% trans "Địa chỉ: tầng 4, tòa nhà Hà Thủy, số 36 Hoàng Cầu, Hà Nội" %}<br />
+                {% trans "PIC: Ms. Khúc Thu Thủy" %}
+              </p>
+              <div
+                style="
+                  display: flex;
+                  justify-content: center;
+                  gap: 20px;
+                  flex-wrap: wrap;
+                ">
+                <a
+                  href="mailto:thuykt@klmlogistics.com"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 12px 20px;
+                    background: rgba(255, 255, 255, 0.2);
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+                  ">
+                  <i class="fas fa-envelope" style="margin-right: 8px"></i>
+                  thuykt@klmlogistics.com
+                </a>
+                <a
+                  href="tel:0904509535"
+                  style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 12px 20px;
+                    background: rgba(255, 255, 255, 0.2);
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    transition: background 0.3s ease;
+                  ">
+                  <i class="fas fa-phone" style="margin-right: 8px"></i>
+                  0904 509 535
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Menu hover effects */
+  .news-menu a:not([style*="background: #0066cc"]):hover {
+    background: #0066cc !important;
+    color: white !important;
+    border-left: 3px solid #004499 !important;
+  }
+
+  /* Job card hover effects */
+  .job-card:hover {
+    border-color: #0066cc !important;
+    box-shadow: 0 5px 20px rgba(0, 102, 204, 0.1) !important;
+    transform: translateY(-2px) !important;
+  }
+
+  /* Button hover effects */
+  .job-card a:hover {
+    background: #004499 !important;
+  }
+
+  .job-card a[style*="background: #28a745"]:hover {
+    background: #1e7e34 !important;
+  }
+
+  .recruitment-contact a:hover {
+    background: rgba(255, 255, 255, 0.3) !important;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1023px) {
+    .news-content-wrapper .cell-1-4,
+    .news-content-wrapper .cell-3-4 {
+      width: 100% !important;
+    }
+
+    .news-content-wrapper .cell-3-4 {
+      padding-left: 0 !important;
+      margin-top: 30px;
+    }
+
+    .news-menu {
+      position: static !important;
+    }
+
+    .recruitment-contact div {
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+  }
+</style>
+
+{% endblock %}

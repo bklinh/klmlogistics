@@ -1,0 +1,822 @@
+{% extends 'base.html' %} {% load static %} {% load i18n %} {% block title %}{%
+trans "Dự án - KLM Logistics" %}{% endblock %} {% block content %}
+
+<!-- Hero Section -->
+<div
+  class="projects-hero"
+  style="
+    background: linear-gradient(135deg, #124d92 0%, #0a2d52 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  ">
+  <div
+    style="
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: rgba(226, 3, 24, 0.1);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+  <div
+    style="
+      position: absolute;
+      bottom: -30%;
+      left: -5%;
+      width: 400px;
+      height: 400px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      z-index: 0;
+    "></div>
+
+  <div class="grid" style="position: relative; z-index: 1; text-align: center">
+    <h1
+      style="
+        font-size: 3.5rem;
+        color: white;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-family: exo-l;
+      ">
+      {% trans "Các Dự Án Nổi Bật" %}
+    </h1>
+    <p
+      style="
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+      ">
+      {% trans "Những dự án vận chuyển & logistics quy mô lớn của KLM" %}
+    </p>
+  </div>
+</div>
+
+<!-- Main Content Section -->
+<div
+  class="projects-content-wrapper"
+  style="
+    padding: 0 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  ">
+  <!-- Project 4: Dự án về Ngành Bia & Nước Giải Khát -->
+  <section id="project-4" style="margin-bottom: 60px">
+    <div style="margin-bottom: 40px">
+      <h2
+        style="
+          color: #0066cc;
+          font-size: 2.3rem;
+          font-weight: 600;
+          border-bottom: 3px solid #0066cc;
+          display: inline-block;
+          padding-bottom: 10px;
+          margin-bottom: 15px;
+        ">
+        {% trans "Dự án về Ngành bia & nước giải khát" %}
+      </h2>
+    </div>
+
+    <!-- Two Column Layout: Details Left, Swiper Right -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      ">
+      <!-- Left: Project Details -->
+      <div
+        style="
+          background: white;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          height: fit-content;
+        ">
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Sản phẩm" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Các tank bồn & các thiết bị" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Tuyến đường" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Vận chuyển nội địa & quốc tế" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Khối lượng" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Công việc thường xuyên hàng năm vận chuyển" %}
+          </p>
+        </div>
+
+        <div>
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Phạm vi công việc" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Vận chuyển & Lắp đặt của các nhà máy bia, nước giải khát trong & và ngoài nước" %}
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Swiper Carousel -->
+      <div
+        class="swiper"
+        id="swiper-project-3"
+        style="
+          width: 100%;
+          height: 400px;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item4_1.jpg' %}"
+              alt="Beverage Industry Project 1"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item4_2.jpg' %}"
+              alt="Beverage Industry Project 2"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item4_3.jpg' %}"
+              alt="Beverage Industry Project 3"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item4_4.jpg' %}"
+              alt="Beverage Industry Project 4"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+        </div>
+        <div class="swiper-pagination" style="bottom: 15px"></div>
+        <div class="swiper-button-prev" style="left: 15px"></div>
+        <div class="swiper-button-next" style="right: 15px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 1: Ngành điện và năng lượng -->
+  <section id="project-1" style="margin-bottom: 80px">
+    <div style="margin-bottom: 40px">
+      <h2
+        style="
+          color: #0066cc;
+          font-size: 2.3rem;
+          font-weight: 600;
+          border-bottom: 3px solid #0066cc;
+          display: inline-block;
+          padding-bottom: 10px;
+          margin-bottom: 15px;
+        ">
+        {% trans "Ngành điện và năng lượng" %}
+      </h2>
+      <h3
+        style="
+          color: #333;
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-top: 0;
+          margin-bottom: 20px;
+        ">
+        {% trans "Dự án Rotor Turbine" %}
+      </h3>
+    </div>
+
+    <!-- Two Column Layout: Details Left, Swiper Right -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      ">
+      <!-- Left: Project Details -->
+      <div
+        style="
+          background: white;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          height: fit-content;
+        ">
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Sản phẩm" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Rotor Turbine 300 MW" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Tuyến đường" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Nhà máy Nhiệt điện Uông Bí, Tỉnh Quảng Ninh" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Khối lượng" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "21 tấn" %}
+          </p>
+        </div>
+
+        <div>
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Phạm vi công việc" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Xuất khẩu từ Việt Nam sang Nga sửa chữa; Nhập khẩu từ Nga về Việt Nam khi sửa chữa xong" %}
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Swiper Carousel -->
+      <div
+        class="swiper"
+        id="swiper-project-1"
+        style="
+          width: 100%;
+          height: 400px;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item1_1.jpg' %}"
+              alt="Rotor Turbine 1"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item1_2.jpg' %}"
+              alt="Rotor Turbine 2"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item1_3.jpg' %}"
+              alt="Rotor Turbine 3"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item1_4.jpg' %}"
+              alt="Rotor Turbine 4"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+        </div>
+        <div class="swiper-pagination" style="bottom: 15px"></div>
+        <div class="swiper-button-prev" style="left: 15px"></div>
+        <div class="swiper-button-next" style="right: 15px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 2: Hệ thống công viên giải trí nước & trượt -->
+  <section id="project-2" style="margin-bottom: 80px">
+    <div style="margin-bottom: 40px">
+      <h2
+        style="
+          color: #0066cc;
+          font-size: 2.3rem;
+          font-weight: 600;
+          border-bottom: 3px solid #0066cc;
+          display: inline-block;
+          padding-bottom: 10px;
+          margin-bottom: 15px;
+        ">
+        {% trans "Hệ thống công viên giải trí nước & trượt" %}
+      </h2>
+    </div>
+
+    <!-- Two Column Layout: Details Left, Swiper Right -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      ">
+      <!-- Left: Project Details -->
+      <div
+        style="
+          background: white;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          height: fit-content;
+        ">
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Sản phẩm" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Hơn 200 container 40 feet hàng chục container chuyên dụng chứa các bộ phận hàng rời được nhập khẩu cùng 1000 tấn khung dầm thép & các thiết bị đặc biệt siêu trường siêu trọng" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Tuyến đường" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Hòn Thơm, đảo Phú Quốc, tỉnh Kiên Giang, Việt Nam" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Khối lượng" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "1000 tấn hàng & hàng trăm container" %}
+          </p>
+        </div>
+
+        <div>
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Phạm vi công việc" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Vận chuyển đi đảo Phú Quốc bằng sà lan & dỡ hàng & di chuyển đến khu vực thi công & lắp ráp công trình công viên nước Hòn Thơm, đảo Phú Quốc, tỉnh Kiên Giang, Việt Nam" %}
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Swiper Carousel -->
+      <div
+        class="swiper"
+        id="swiper-project-2"
+        style="
+          width: 100%;
+          height: 400px;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item2_1.jpg' %}"
+              alt="Water Park 1"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item2_2.jpg' %}"
+              alt="Water Park 2"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item2_3.jpg' %}"
+              alt="Water Park 3"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item2_4.jpg' %}"
+              alt="Water Park 4"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item2_5.jpg' %}"
+              alt="Water Park 5"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+        </div>
+        <div class="swiper-pagination" style="bottom: 15px"></div>
+        <div class="swiper-button-prev" style="left: 15px"></div>
+        <div class="swiper-button-next" style="right: 15px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project 3: Hệ thống cáp treo -->
+  <section id="project-3" style="margin-bottom: 60px">
+    <div style="margin-bottom: 40px">
+      <h2
+        style="
+          color: #0066cc;
+          font-size: 2.3rem;
+          font-weight: 600;
+          border-bottom: 3px solid #0066cc;
+          display: inline-block;
+          padding-bottom: 10px;
+          margin-bottom: 15px;
+        ">
+        {% trans "Hệ thống cáp treo" %}
+      </h2>
+    </div>
+
+    <!-- Two Column Layout: Details Left, Swiper Right -->
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        align-items: center;
+      ">
+      <!-- Left: Project Details -->
+      <div
+        style="
+          background: white;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          height: fit-content;
+        ">
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Sản phẩm" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Các cuộn cáp lớn & các thiết bị" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Tuyến đường" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Đảo Cát Bà, tỉnh Hải Phòng, Việt Nam" %}
+          </p>
+        </div>
+
+        <div style="margin-bottom: 25px">
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Khối lượng" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "800 tấn" %}
+          </p>
+        </div>
+
+        <div>
+          <p style="margin: 0 0 10px 0">
+            <strong style="color: #0066cc; font-size: 1.25rem"
+              >{% trans "Phạm vi công việc" %}</strong
+            >
+          </p>
+          <p
+            style="
+              margin: 0;
+              color: #555;
+              line-height: 1.6;
+              font-size: 1.05rem;
+            ">
+            {% trans "Vận chuyển 800 tấn khung dầm thép và thiết bị cáp nặng/quá khổ từ kho của Sun Group ở đất liền để giao và dỡ đến công trường trụ cáp nằm giữa biển" %}
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: Swiper Carousel -->
+      <div
+        class="swiper"
+        id="swiper-project-3"
+        style="
+          width: 100%;
+          height: 400px;
+          border-radius: 8px;
+          overflow: hidden;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        ">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item3_1.jpg' %}"
+              alt="Cable Car 1"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item3_2.jpg' %}"
+              alt="Cable Car 2"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item3_3.jpg' %}"
+              alt="Cable Car 3"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="{% static 'uploaded/projects/item3_4.jpg' %}"
+              alt="Cable Car 4"
+              style="width: 100%; height: 100%; object-fit: cover" />
+          </div>
+        </div>
+        <div class="swiper-pagination" style="bottom: 15px"></div>
+        <div class="swiper-button-prev" style="left: 15px"></div>
+        <div class="swiper-button-next" style="right: 15px"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #0066cc;
+    opacity: 1;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: white;
+    background: rgba(0, 86, 179, 0.7);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background: rgba(0, 86, 179, 1);
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 18px;
+  }
+
+  @media (max-width: 1023px) {
+    .projects-content-wrapper {
+      padding: 0 20px;
+    }
+
+    .projects-hero-section h1 {
+      font-size: 2rem !important;
+    }
+
+    .projects-hero-section p {
+      font-size: 1rem !important;
+    }
+
+    section[id^="project-"] > div[style*="grid-template-columns"] {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+    }
+
+    section[id^="project-"] .swiper {
+      height: 300px !important;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .projects-content-wrapper {
+      padding: 0 15px;
+    }
+
+    section[id^="project-"] > div[style*="grid-template-columns"] {
+      gap: 20px !important;
+    }
+
+    section[id^="project-"] .swiper {
+      height: 250px !important;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 35px;
+      height: 35px;
+    }
+  }
+</style>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // Initialize Swiper for each project
+  const swiper1 = new Swiper("#swiper-project-1", {
+    loop: true,
+    pagination: {
+      el: "#swiper-project-1 .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: "#swiper-project-1 .swiper-button-next",
+      prevEl: "#swiper-project-1 .swiper-button-prev",
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+  });
+
+  const swiper2 = new Swiper("#swiper-project-2", {
+    loop: true,
+    pagination: {
+      el: "#swiper-project-2 .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: "#swiper-project-2 .swiper-button-next",
+      prevEl: "#swiper-project-2 .swiper-button-prev",
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+  });
+
+  const swiper3 = new Swiper("#swiper-project-3", {
+    loop: true,
+    pagination: {
+      el: "#swiper-project-3 .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: "#swiper-project-3 .swiper-button-next",
+      prevEl: "#swiper-project-3 .swiper-button-prev",
+    },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+
+{% endblock %}

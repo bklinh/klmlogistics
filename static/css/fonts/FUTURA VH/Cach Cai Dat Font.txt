@@ -1,0 +1,16 @@
+Huong dan cai dat font:
+
+Doi voi Windows:
+Cach 1: Cai cac file font (.ttf) vao Windows :
+Vao Control Panel/Fonts/File/Install New Font
+Chi dinh duong dan chua Font, chon Select All/OK
+(Neu muon Cai dat het Font trong mot Thu muc)
+
+Cach 2: Copy tat ca file font vao thu muc: C://Window/Fonts
+
+Doi voi macOS:
+
+Cach 1: Mo Font Book va keo tat ca font vao do
+Cach 2: Copy tat ca file vao thu muc: /Users/Username/Library/Fonts
+
+www.dafontvn.com - Chia se font chu viet hoa mien phi

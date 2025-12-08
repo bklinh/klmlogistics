@@ -1,0 +1,236 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{% get_current_language as LANGUAGE_CODE %}{{ LANGUAGE_CODE }}"
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}KLM Logistics - Dịch vụ logistics chuyên nghiệp{% endblock %}
+    </title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/font.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/grid.css' %}" />
+    <link
+      rel="stylesheet"
+      href="{% static 'css/fontawesome-pro-5.15.2/css/all.min.css' %}" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css" />
+
+    <!-- jQuery UI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" />
+
+    <!-- Fancybox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" />
+
+    <!-- jQuery.mmenu CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/4.7.5/css/jquery.mmenu.all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Additional CSS -->
+    <link rel="stylesheet" href="{% static 'css/hover.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/widget-call.css' %}" />
+    
+    <!-- Chinese Fonts CSS (for Chinese language) -->
+    <link rel="stylesheet" href="{% static 'css/chinese-fonts.css' %}" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
+
+    {% block extra_css %}{% endblock %} {% block extra_head %}{% endblock %}
+  </head>
+  <body>
+    <!-- Header -->
+    {% include 'includes/navbar.html' %}
+
+    <!-- Main Content -->
+    <main>{% block content %} {% endblock %}</main>
+
+    <!-- Footer -->
+    {% include "includes/footer.html" %}
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+    <!-- jQuery UI JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <!-- jQuery.mmenu JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/4.7.5/js/jquery.mmenu.min.all.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+    <!-- jQuery Form JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
+
+    <!-- Swiper Initialization -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (document.getElementById("service_1")) {
+          var swiper_service_1 = new Swiper("#service_1", {
+            slidesPerView: 3,
+            autoplay: {
+              delay: 6000,
+              disableOnInteraction: false,
+            },
+            centerInsufficientSlides: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            speed: 500,
+            spaceBetween: 15,
+            loop: true,
+            breakpoints: {
+              739: {
+                slidesPerView: 1,
+                spaceBetween: 5,
+              },
+              1023: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+            },
+          });
+        }
+
+        if (document.getElementById("news_swiper")) {
+          var swiper_news = new Swiper("#news_swiper", {
+            slidesPerView: 3,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
+            centerInsufficientSlides: true,
+            navigation: {
+              nextEl: ".homenews-wrapper .swiper-button-next",
+              prevEl: ".homenews-wrapper .swiper-button-prev",
+            },
+            speed: 500,
+            spaceBetween: 20,
+            loop: true,
+            breakpoints: {
+              739: {
+                slidesPerView: 1,
+                spaceBetween: 15,
+              },
+              1023: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              },
+            },
+          });
+        }
+      });
+    </script>
+
+    <!-- Widget Call -->
+    <div class="widget_wbt_call_now_widget">
+      <div class="float-icon-hotline">
+        <ul>
+          <li class="hotline_float_icon hotline-click">
+            <a id="hotlineButton" href="tel:0913020430"
+              ><i class="fa fa-headphones-alt animated infinite tada" style="font-size: 35px;"></i
+              ></a
+            >
+          </li>
+          <li class="hotline_float_icon">
+            <a
+              id="zaloButton"
+              href="https://zalo.me/84913020430"
+              target="_blank"
+              ><i class="fa fa-zalo animated infinite tada"></i
+              ><span>Chat Zalo</span></a
+            >
+          </li>
+          <li class="hotline_float_icon">
+            <a
+              id="whatsappButton"
+              href="https://api.whatsapp.com/send/?phone=84913020430&text&type=phone_number&app_absent=0"
+              target="_blank"
+              ><i class="fa fa-hotline animated infinite tada"></i
+              ><span>Chat WhatsApp</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        $(".hotline-click").click(function () {
+          $(".hotline-click span").toggleClass("show");
+        });
+      });
+    </script>
+
+    {% block extra_js %}{% endblock %}
+
+    <style>
+      /* Footer hover effects */
+      .footer a:hover {
+        color: #0066cc !important;
+      }
+
+      .social-links a:hover {
+        color: #0066cc !important;
+        transform: translateY(-2px);
+      }
+
+      /* Responsive footer */
+      @media (max-width: 1023px) {
+        .footer .cell-1-4 {
+          width: 50% !important;
+          margin-bottom: 30px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .footer .cell-1-4 {
+          width: 100% !important;
+          padding-right: 0 !important;
+        }
+
+        .footer .flex-container {
+          flex-direction: column !important;
+        }
+
+        .footer .flex-container div:last-child {
+          flex-direction: column !important;
+          align-items: flex-start !important;
+          gap: 10px !important;
+        }
+      }
+    </style>
+  </body>
+</html>

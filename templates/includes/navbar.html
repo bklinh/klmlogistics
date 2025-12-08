@@ -1,0 +1,526 @@
+{% load static %} {% load i18n %} {% load custom_tags %}
+
+<div class="header-mobile hide-on-pc" style="position: relative; z-index: 9999">
+  <div class="grid">
+    <div
+      class="flex-container flex-space-between align-center"
+      style="padding: 10px 0">
+      <div class="cell-1-4">
+        <a
+          href="#menu"
+          style="font-size: 24px; color: #244294; padding-left: 10px"
+          ><i class="fas fa-bars"></i
+        ></a>
+      </div>
+      <div class="cell-2-4 text-center" style="text-align: center">
+        <a href="{% url 'home' %}">
+          <img
+            src="{% static 'uploaded/logo/klm.jpg' %}"
+            alt="KLM Logistics"
+            style="max-height: 50px" />
+        </a>
+      </div>
+      <div
+        class="cell-1-4 text-right"
+        style="
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 5px;
+          padding-right: 10px;
+        ">
+        <div style="display: flex; align-items: center; gap: 5px">
+          <a
+            href="{% change_lang 'en' %}"
+            style="
+              color: white !important;
+              font-weight: bold;
+              font-size: 12px;
+              text-decoration: none;
+            ">
+            <img
+              src="{% static 'images/flag-en.png' %}"
+              alt="EN"
+              style="height: 12px; vertical-align: middle" />
+            EN
+          </a>
+          <span style="color: white !important">|</span>
+          <a
+            href="{% change_lang 'zh-hans' %}"
+            style="
+              color: white !important;
+              font-weight: bold;
+              font-size: 12px;
+              text-decoration: none;
+            ">
+            <img
+              src="{% static 'images/flag-cn.png' %}"
+              alt="CN"
+              style="height: 12px; vertical-align: middle" />
+            CN
+          </a>
+          <span style="color: white !important">|</span>
+          <a
+            href="{% change_lang 'vi' %}"
+            style="
+              color: white !important;
+              font-weight: bold;
+              font-size: 12px;
+              text-decoration: none;
+            ">
+            <img
+              src="{% static 'images/flag-vi.png' %}"
+              alt="VN"
+              style="height: 12px; vertical-align: middle" />
+            VN
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="top-header hide-on-mobile"
+  style="
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+  ">
+  <div
+    class="grid"
+    style="margin-bottom: 0 !important; padding-bottom: 0 !important">
+    <div class="flex-container align-center">
+      <!--  <div class="cell-1-4">
+                         <a href="#"> Nhập mã số lô hàng để tra cứu <i class="fas fa-chevron-right"></i></a>
+                        </div>-->
+      <div class="cell-1-4">
+        <a href="tel: 02433997979"
+          ><i class="fas fa-phone-alt"></i> Hotline: 0913020430</a
+        >
+      </div>
+      <div class="cell-2-4">
+        <div class="header-left">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              white-space: nowrap;
+            ">
+            <a
+              href="{% change_lang 'en' %}"
+              style="
+                color: white !important;
+                font-weight: bold;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 3px;
+              ">
+              <img
+                src="{% static 'images/flag-en.png' %}"
+                alt="EN"
+                style="
+                  height: 12px;
+                  width: auto;
+                  display: inline-block !important;
+                  margin: 0;
+                " />
+              EN
+            </a>
+            <span style="color: white !important">|</span>
+            <a
+              href="{% change_lang 'zh-hans' %}"
+              style="
+                color: white !important;
+                font-weight: bold;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 3px;
+              ">
+              <img
+                src="{% static 'images/flag-cn.png' %}"
+                alt="CN"
+                style="
+                  height: 12px;
+                  width: auto;
+                  display: inline-block !important;
+                  margin: 0;
+                " />
+              CN
+            </a>
+            <span style="color: white !important">|</span>
+            <a
+              href="{% change_lang 'vi' %}"
+              style="
+                color: white !important;
+                font-weight: bold;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 3px;
+              ">
+              <img
+                src="{% static 'images/flag-vi.png' %}"
+                alt="VN"
+                style="
+                  height: 12px;
+                  width: auto;
+                  display: inline-block !important;
+                  margin: 0;
+                " />
+              VN
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header
+  class="header hide-on-pad hide-on-tab"
+  style="
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    border-top: none !important;
+    position: relative;
+    top: 0;
+  ">
+  <div class="grid" style="margin-top: 0 !important; padding-top: 0 !important">
+    <div class="flex-container flex-space-between">
+      <div class="cell-2-12 flex_align">
+        <div class="logo">
+          <a href="{% url 'home' %}"
+            ><img
+              src="{% static 'uploaded/logo/klm.jpg' %}"
+              alt="LogoSite"
+              style="max-width: 100%; margin: 0 auto"
+          /></a>
+        </div>
+      </div>
+
+      <div class="cell-10-12 flex_align--end">
+        <div class="menubar">
+          <ul class="nav hide-on-tab hide-on-mobile">
+            <li
+              class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}"
+              style="">
+              <a href="{% url 'home' %}" class="">{% trans "Trang chủ" %} </a>
+            </li>
+
+            <li
+              class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}"
+              style="">
+              <a href="{% url 'about' %}" class="">{% trans "Giới thiệu" %} </a>
+
+              <ul class="">
+                <li class="">
+                  <a href="{% url 'about' %}#general-info"
+                    >{% trans "Thông tin chung" %}</a
+                  >
+                </li>
+                <li class="">
+                  <a href="{% url 'about' %}#business-sectors"
+                    >{% trans "Giá trị cốt lõi" %}</a
+                  >
+                </li>
+                <li class="">
+                  <a href="{% url 'about' %}#about-klm"
+                    >{% trans "Tại sao chọn chúng tôi" %}</a
+                  >
+                </li>
+                <li class="">
+                  <a href="{% url 'about' %}#vision-mission"
+                    >{% trans "Tầm nhìn - Sứ mệnh" %}</a
+                  >
+                </li>
+                <li class="">
+                  <a href="{% url 'about' %}#company-profile"
+                    >{% trans "Profile của công ty" %}</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="{% if request.resolver_match.url_name in 'services,air_transport,sea_transport,logistics' %}active{% endif %}"
+              style="">
+              <a href="{% url 'services' %}" class="">{% trans "Dịch vụ" %} </a>
+
+              <ul class="">
+                <li class="has-submenu">
+                  <a href="{% url 'air_transport' %}"
+                    >{% trans "Vận chuyển Hàng không Quốc tế" %}</a
+                  >
+                  <ul class="">
+                    <li class="">
+                      <a href="{% url 'air_transport' %}#air_import"
+                        >{% trans "Vận chuyển Hàng không Nhập Quốc tế" %}</a
+                      >
+                    </li>
+                    <li class="">
+                      <a href="{% url 'air_transport' %}#air_export"
+                        >{% trans "Vận chuyển Hàng không Xuất Quốc tế" %}</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-submenu">
+                  <a href="{% url 'sea_transport' %}"
+                    >{% trans "Vận chuyển Đường biển Quốc tế" %}</a
+                  >
+                  <ul class="">
+                    <li class="">
+                      <a href="{% url 'sea_transport' %}#sea_import"
+                        >{% trans "Vận chuyển Đường biển Nhập Quốc tế" %}</a
+                      >
+                    </li>
+                    <li class="">
+                      <a href="{% url 'sea_transport' %}#sea_export"
+                        >{% trans "Vận chuyển Đường biển Xuất Quốc tế" %}</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="">
+                  <a href="{% url 'logistics' %}"
+                    >{% trans "Logistics & Các dịch vụ gia tăng" %}</a
+                  >
+                  <ul class="">
+                    <li class="">
+                      <a href="{% url 'logistics' %}#logistics_domestic"
+                        >{% trans "Nội địa & Kho bãi" %}</a
+                      >
+                    </li>
+                    <li class="">
+                      <a href="{% url 'logistics' %}#logistics_rail"
+                        >{% trans "Đường sắt & Xuyên biên giới" %}</a
+                      >
+                    </li>
+                    <li class="">
+                      <a href="{% url 'logistics' %}#logistics_special"
+                        >{% trans "Hàng đặc biệt - Hàng dự án" %}</a
+                      >
+                    </li>
+                    <li class="">
+                      <a href="{% url 'logistics' %}#logistics_customs"
+                        >{% trans "Kê khai Hải quan" %}</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}"
+              style="">
+              <a href="{% url 'projects' %}" class="">{% trans "Dự Án" %} </a>
+
+              <ul class="">
+                <li class="">
+                  <a href="{% url 'projects' %}#project-4"
+                    >{% trans "Ngành bia & nước giải khát" %}</a
+                  >
+                </li>
+                <li class="">
+                  <a href="{% url 'projects' %}#project-1"
+                    >{% trans "Ngành điện & Năng lượng" %}</a
+                  >
+                </li>
+                <li class="">
+                  <a href="{% url 'projects' %}#project-2"
+                    >{% trans "Hệ thống công viên giải trí" %}</a
+                  >
+                </li>
+                <li class="">
+                  <a href="{% url 'projects' %}#project-3"
+                    >{% trans "Hệ thống cáp treo" %}</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="{% if request.resolver_match.url_name in 'company_news,industry_news,recruitment,post_detail' %}active{% endif %}"
+              style="">
+              <a href="{% url 'company_news' %}" class=""
+                >{% trans "Tin tức" %}
+              </a>
+
+              <ul class="">
+                <li class="">
+                  <a href="{% url 'company_news' %}"
+                    >{% trans "Tin công ty" %}</a
+                  >
+                </li>
+                <li class="">
+                  <a href="{% url 'industry_news' %}"
+                    >{% trans "Tin chuyên ngành" %}</a
+                  >
+                </li>
+                <li class="">
+                  <a href="{% url 'recruitment' %}">{% trans "Tuyển dụng" %}</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="{% if request.resolver_match.url_name == 'feedback' %}active{% endif %}"
+              style="">
+              <a href="{% url 'feedback' %}" class=""
+                >{% trans "Trải nghiệm khách hàng" %}
+              </a>
+            </li>
+            <li
+              class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}"
+              style="">
+              <a href="{% url 'contact' %}" class="">{% trans "Liên hệ" %} </a>
+            </li>
+          </ul>
+
+          <div class="c"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="c"></div>
+</header>
+
+<style>
+  /* Fix nested dropdown positioning and styling */
+  .nav li ul ul {
+    left: 100% !important;
+    top: 0 !important;
+    background: #124d92 !important;
+    border-left: 2px solid #0564a9 !important;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15) !important;
+  }
+
+  .nav li ul ul:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -8px;
+    top: 15px;
+    background: #124d92;
+    transform: rotate(45deg);
+    border-left: 2px solid #0564a9;
+    border-top: 2px solid #0564a9;
+    z-index: -1;
+  }
+
+  .nav li ul ul > li a {
+    color: #fff !important;
+    padding: 12px 20px !important;
+    border-top: solid 1px rgba(255, 255, 255, 0.1) !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .nav li ul ul > li:first-child a {
+    border-top: none !important;
+  }
+
+  .nav li ul ul > li a:hover {
+    color: #e20318 !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding-left: 25px !important;
+  }
+
+  /* Ensure parent dropdown shows nested menu on hover */
+  .nav li:hover > ul {
+    display: block !important;
+  }
+
+  .nav li ul li:hover > ul {
+    display: block !important;
+  }
+
+  /* Add arrow indicator for parent with submenu */
+  .nav li ul li.has-submenu > a {
+    position: relative;
+  }
+
+  .nav li ul li.has-submenu > a:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+    color: #fff;
+  }
+</style>
+
+<nav id="menu">
+  <ul>
+    <li>
+      <form action="{% url 'search' %}" method="get" id="m_searchform">
+        <input
+          name="qr"
+          class="kw-mobile"
+          placeholder="{% trans 'Tìm kiếm...' %}"
+          type="text" />
+        <a
+          href="#"
+          class="fa fa-search submit-search-mobile"
+          onClick="$('#m_searchform').submit(); return false;"
+          style="
+            float: right;
+            margin-top: 5px;
+            margin-right: 10px;
+            color: #244294;
+          ">
+        </a>
+      </form>
+    </li>
+    <li><a href="{% url 'home' %}">{% trans "Trang chủ" %}</a></li>
+    <li>
+      <span>{% trans "Về chúng tôi" %}</span>
+      <ul>
+        <li><a href="{% url 'about' %}">{% trans "Về KLM" %}</a></li>
+      </ul>
+    </li>
+    <li>
+      <span>{% trans "Dịch vụ" %}</span>
+      <ul>
+        <li><a href="{% url 'services' %}">{% trans "Dịch vụ" %}</a></li>
+        <li>
+          <a href="{% url 'air_transport' %}"
+            >{% trans "Vận chuyển hàng không Quốc tế" %}</a
+          >
+        </li>
+        <li>
+          <a href="{% url 'sea_transport' %}"
+            >{% trans "Vận chuyển Đường biển Quốc tế" %}</a
+          >
+        </li>
+        <li>
+          <a href="{% url 'logistics' %}"
+            >{% trans "Logistics & Các dịch vụ gia tăng" %}</a
+          >
+        </li>
+      </ul>
+    </li>
+    <li><a href="{% url 'projects' %}">{% trans "Dự án" %}</a></li>
+    <li>
+      <span>{% trans "Tin tức" %}</span>
+      <ul>
+        <li>
+          <a href="{% url 'company_news' %}">{% trans "Tin công ty" %}</a>
+        </li>
+        <li>
+          <a href="{% url 'industry_news' %}">{% trans "Tin chuyên ngành" %}</a>
+        </li>
+        <li><a href="{% url 'recruitment' %}">{% trans "Tuyển dụng" %}</a></li>
+      </ul>
+    </li>
+    <li><a href="{% url 'contact' %}">{% trans "Liên hệ" %}</a></li>  
+  </ul>
+</nav>

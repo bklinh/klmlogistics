@@ -1,0 +1,171 @@
+/*
+@font-face {
+    font-family: Lato-B;
+    src: url('fonts/Lato-Bold.eot');
+    src: url('fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),  url('fonts/Lato-Bold.woff') format('woff'),  url('fonts/Lato-Bold.ttf') format('truetype'),  url('fonts/Lato-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Lato;
+    src: url('fonts/Lato-Regular.eot');
+    src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),  url('fonts/Lato-Regular.woff') format('woff'),  url('fonts/Lato-Regular.ttf') format('truetype'),  url('fonts/Lato-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+@font-face {
+    font-family: 'FuturaBoldOblique';
+    src: url('fonts/FUTURA VH/SFUFuturaBoldOblique.TTF') format('truetype');
+    font-weight: bold;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url('fonts/FUTURA VH/SFUFuturaRegular.TTF') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Futura-b;
+    src: url('fonts/FUTURA VH/SFUFuturaBold.TTF') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Muli;
+    src: url('fonts/Muli-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Muli-EXB;
+    src: url('fonts/Muli-ExtraBold.ttf');
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: Muli-B;
+    src: url('fonts/Muli-Bold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Muli-L;
+    src: url('fonts/Muli-Bold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: exo-b;
+    src: url('fonts/Exo-Bold.ttf');
+
+}
+
+@font-face {
+    font-family: exo-m;
+    src: url('fonts/Exo-SemiBold.ttf');
+
+}
+@font-face {
+    font-family: exo-l;
+    src: url('fonts/Exo-Light.ttf');
+
+}
+@font-face {
+    font-family: exo;
+    src: url('fonts/Exo-Medium.ttf');
+
+}
+
+@font-face {
+    font-family: R-b;
+    src: url('fonts/Roboto-Bold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: R-m;
+    src: url('fonts/Roboto-Medium.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: R-r;
+    src: url('fonts/Roboto-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-L;
+    src: url('https://www.smelogistics.vn/css/fonts/RobotoCondensed-Light.ttf');
+    font-display: swap;
+
+}
+
+@font-face {
+    font-family: Roboto-B;
+    src: url('fonts/RobotoCondensed-Bold.eot');
+    src: url('fonts/RobotoCondensed-Bold.eot%3F') format('embedded-opentype'), url('fonts/RobotoCondensed-Bold.woff') format('woff'), url('fonts/RobotoCondensed-Bold.ttf') format('truetype'), url('fonts/RobotoCondensed-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('https://www.smelogistics.vn/css/fonts/Roboto-Regular.eot');
+    src: url('https://www.smelogistics.vn/css/fonts/Roboto-Regular.eot?') format('embedded-opentype'), url('https://www.smelogistics.vn/css/fonts/Roboto-Regular.woff') format('woff'), url('fonts/Roboto-Regular.ttf') format('truetype'), url('https://www.smelogistics.vn/css/fonts/Roboto-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Roboto-R;
+    src: url('fonts/RobotoCondensed-Regular.eot');
+    src: url('fonts/RobotoCondensed-Regular.eot%3F') format('embedded-opentype'), url('fonts/RobotoCondensed-Regular.woff') format('woff'), url('fonts/RobotoCondensed-Regular.ttf') format('truetype'), url('fonts/RobotoCondensed-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LG-B';
+    src: url('fonts/utm-bryantlg-b.eot');
+    src: local('â˜º'), url('fonts/utm-bryantlg-b.woff') format('woff'), url('fonts/utm-bryantlg-b.ttf') format('truetype'), url('fonts/utm-bryantlg-b.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: Hel-B;
+    src: url('fonts/HelveticaNeue-Bold.eot');
+    src: url('fonts/HelveticaNeue-Bold.eot%3F') format('embedded-opentype'), url('fonts/HelveticaNeue-Bold.woff') format('woff'), url('fonts/HelveticaNeue-Bold.ttf') format('truetype'), url('fonts/HelveticaNeue-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Hel;
+    src: url('fonts/HelveticaNeue.eot');
+    src: url('fonts/HelveticaNeue.eot%3F') format('embedded-opentype'), url('fonts/HelveticaNeue.woff') format('woff'), url('fonts/HelveticaNeue.ttf') format('truetype'), url('fonts/HelveticaNeue.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Hel-M;
+    src: url('fonts/HelveticaNeue-Medium.eot');
+    src: local('☺'), url('fonts/HelveticaNeue-Medium.woff') format('woff'), url('fonts/HelveticaNeue-Medium.ttf') format('truetype'), url('fonts/HelveticaNeue-Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
