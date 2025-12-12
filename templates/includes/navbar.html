@@ -481,19 +481,14 @@
       </form>
     </li>
     <li><a href="{% url 'home' %}">{% trans "Trang chủ" %}</a></li>
-    <li>
-      <span>{% trans "Về chúng tôi" %}</span>
-      <ul>
-        <li><a href="{% url 'about' %}">{% trans "Về KLM" %}</a></li>
-      </ul>
-    </li>
+    <li><a href="{% url 'about' %}">{% trans "Giới thiệu" %}</a></li>
     <li>
       <span>{% trans "Dịch vụ" %}</span>
       <ul>
         <li><a href="{% url 'services' %}">{% trans "Dịch vụ" %}</a></li>
         <li>
           <a href="{% url 'air_transport' %}"
-            >{% trans "Vận chuyển hàng không Quốc tế" %}</a
+            >{% trans "Vận chuyển Hàng không Quốc tế" %}</a
           >
         </li>
         <li>

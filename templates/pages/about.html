@@ -926,7 +926,7 @@
   .about-menu a:hover {
     background: #0066cc !important;
     color: white !important;
-    border-left: 3px solid #004499 !important;
+    border-left: 3px solid #004449 !important;
   }
 
   /* Floating menu styles */
@@ -951,6 +951,19 @@
 
   /* Responsive adjustments */
   @media (max-width: 1023px) {
+    /* Hero section mobile responsive */
+    .about-hero-section {
+      height: auto !important;
+      min-height: 250px !important;
+      margin-bottom: 30px !important;
+    }
+
+    .about-hero-section img {
+      object-fit: contain !important;
+      height: auto !important;
+      width: 100% !important;
+    }
+
     .about-content-wrapper .cell-1-4,
     .about-content-wrapper .cell-3-4 {
       width: 100% !important;
@@ -973,9 +986,36 @@
       flex-direction: column !important;
     }
 
-    .about-klm-content .cell-2-3 {
-      padding-left: 0 !important;
-      margin-top: 20px;
+    .about-klm-content .cell-1-2 {
+      width: 100% !important;
+      padding: 0 !important;
+      margin-bottom: 20px;
+    }
+
+    /* Core values section responsive */
+    #business-sectors > div {
+      grid-template-columns: 1fr !important;
+      padding: 30px 20px !important;
+    }
+
+    #business-sectors .core-values-card:nth-child(3),
+    #business-sectors .core-values-card:nth-child(4) {
+      margin-left: 0 !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    /* Extra small screens */
+    .about-hero-section {
+      min-height: 200px !important;
+    }
+
+    .section-header h2 {
+      font-size: 1.5rem !important;
+    }
+
+    .info-content {
+      padding: 20px !important;
     }
   }
 </style>

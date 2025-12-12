@@ -611,145 +611,168 @@
   }
 
   .content-section {
-    animation: fadeIn 0.5s ease-in;
+    scroll-margin-top: 80px;
   }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  /* Mobile menu toggle button */
+  .mobile-menu-toggle {
+    display: none;
+    background: #124d92;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .mobile-menu-toggle i {
+    float: right;
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-menu-toggle.active i {
+    transform: rotate(180deg);
   }
 
   @media (max-width: 1023px) {
-    .cell-1-4 {
-      display: none;
+    /* Scope these changes to service-content-wrapper to avoid breaking navbar */
+    .service-content-wrapper .cell-1-4 {
+      display: block !important;
+      width: 100% !important;
+      margin-bottom: 30px;
     }
 
-    .cell-3-4 {
+    .service-content-wrapper .cell-3-4 {
       width: 100% !important;
       padding-left: 0 !important;
     }
-  }
 
-  @media (max-width: 767px) {
-    .section-header h2 {
-      font-size: 1.5rem !important;
-    }
-
-    .content-section {
-      padding: 40px 0 !important;
-    }
-
-    .flex-container.align-center {
+    .service-content-wrapper .flex-container {
       flex-direction: column;
     }
 
-    .cell-1-2 {
+    .mobile-menu-toggle {
+      display: block;
+    }
+
+    .service-menu {
+      display: none;
+      position: relative !important;
+      top: auto !important;
+      left: auto !important;
       width: 100% !important;
-      padding: 0 !important;
-      margin-bottom: 30px;
+    }
+
+    .service-menu.mobile-active {
+      display: block !important;
+    }
+
+    .service-menu ul {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+
+    .service-menu a {
+      font-size: 1rem !important;
+      padding: 10px 12px !important;
     }
   }
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const menuLinks = document.querySelectorAll(".service-menu a");
-    const sections = document.querySelectorAll("section");
     const floatingMenu = document.getElementById("floating-menu");
-    const contentWrapper = document.querySelector(".service-content-wrapper");
+    const contentWrapper = document.querySelector(".cell-3-4");
+    const menuItems = floatingMenu.querySelectorAll("a");
+
+    if (!floatingMenu || !contentWrapper) return;
+
+    // Create mobile toggle button
     const menuContainer = floatingMenu.parentElement;
+    const mobileToggle = document.createElement("button");
+    mobileToggle.className = "mobile-menu-toggle";
+    mobileToggle.innerHTML =
+      '{% trans "Nội dung" %} <i class="fas fa-chevron-down"></i>';
+    menuContainer.insertBefore(mobileToggle, floatingMenu);
 
-    let contentWrapperOffset = 0;
-    let menuWidth = 0;
+    // Mobile menu toggle functionality
+    mobileToggle.addEventListener("click", function () {
+      floatingMenu.classList.toggle("mobile-active");
+      mobileToggle.classList.toggle("active");
+    });
 
-    function updateOffsets() {
-      if (contentWrapper && floatingMenu) {
-        contentWrapperOffset = contentWrapper.offsetTop;
-        menuWidth = floatingMenu.offsetWidth;
-      }
-    }
-
-    // Update offsets on page load
-    updateOffsets();
-
-    // Update offsets on window resize
-    window.addEventListener("resize", updateOffsets);
-
-    // Combined scroll handler for menu floating and active highlighting
-    window.addEventListener("scroll", function () {
-      const scrollY = window.pageYOffset;
-
-      // Calculate content wrapper boundaries
-      const contentWrapperBottom =
-        contentWrapper.offsetTop + contentWrapper.offsetHeight - 200;
-
-      // Floating menu logic - only float within main content area
-      if (
-        scrollY >= contentWrapperOffset &&
-        scrollY <= contentWrapperBottom &&
-        window.innerWidth > 1023
-      ) {
-        floatingMenu.style.position = "fixed";
-        floatingMenu.style.top = "20px";
-        floatingMenu.style.width = menuWidth + "px";
-        floatingMenu.style.zIndex = "1000";
-        floatingMenu.style.boxShadow = "0 4px 20px rgba(0,0,0,0.15)";
-
-        // Calculate left position based on grid layout
-        const gridLeft = contentWrapper
-          .querySelector(".grid")
-          .getBoundingClientRect().left;
-        const cellLeft = menuContainer.getBoundingClientRect().left;
-        floatingMenu.style.left =
-          cellLeft -
-          gridLeft +
-          contentWrapper.querySelector(".grid").offsetLeft +
-          "px";
-      } else {
-        floatingMenu.style.position = "relative";
-        floatingMenu.style.top = "auto";
-        floatingMenu.style.left = "auto";
-        floatingMenu.style.width = "auto";
-        floatingMenu.style.zIndex = "auto";
-        floatingMenu.style.boxShadow = "none";
-      }
-
-      // Active menu highlighting
-      let current = "";
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 200;
-        if (scrollY >= sectionTop) {
-          current = section.getAttribute("id");
-        }
-      });
-
-      menuLinks.forEach((link) => {
-        link.style.background = "";
-        link.style.color = "";
-        link.style.borderLeft = "";
-        if (link.getAttribute("href") === "#" + current) {
-          link.style.background = "#124d92";
-          link.style.color = "white";
-          link.style.borderLeft = "3px solid #0a2d52";
+    // Close menu when clicking a link on mobile
+    menuItems.forEach((item) => {
+      item.addEventListener("click", function () {
+        if (window.innerWidth <= 1023) {
+          floatingMenu.classList.remove("mobile-active");
+          mobileToggle.classList.remove("active");
         }
       });
     });
 
-    // Reset menu position on window resize for responsive behavior
+    let menuWidth = floatingMenu.offsetWidth;
+    const contentRect = contentWrapper.getBoundingClientRect();
+    const menuOriginalLeft = floatingMenu.getBoundingClientRect().left;
+
+    window.addEventListener("scroll", function () {
+      // Only apply floating menu on desktop
+      if (window.innerWidth > 1023) {
+        const contentTop = contentWrapper.getBoundingClientRect().top;
+        const contentBottom = contentWrapper.getBoundingClientRect().bottom;
+        const viewportHeight = window.innerHeight;
+
+        if (contentTop < 80 && contentBottom > viewportHeight) {
+          floatingMenu.style.position = "fixed";
+          floatingMenu.style.top = "80px";
+          floatingMenu.style.width = menuWidth + "px";
+          floatingMenu.style.left = menuOriginalLeft + "px";
+        } else {
+          floatingMenu.style.position = "relative";
+          floatingMenu.style.top = "auto";
+          floatingMenu.style.left = "auto";
+          floatingMenu.style.width = "auto";
+        }
+      }
+
+      const sections = document.querySelectorAll('[id^="sea_"]');
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < 100) {
+          currentSection = section.getAttribute("id");
+        }
+      });
+
+      menuItems.forEach((item) => {
+        const href = item.getAttribute("href").substring(1);
+        if (href === currentSection) {
+          item.style.backgroundColor = "#124d92";
+          item.style.color = "white";
+          item.style.borderLeftColor = "#124d92";
+          item.style.paddingLeft = "20px";
+        } else {
+          item.style.backgroundColor = "transparent";
+          item.style.color = "#333";
+          item.style.borderLeftColor = "transparent";
+          item.style.paddingLeft = "15px";
+        }
+      });
+    });
+
+    // Reset menu on window resize
     window.addEventListener("resize", function () {
-      if (window.innerWidth <= 1023) {
-        floatingMenu.style.position = "relative";
-        floatingMenu.style.top = "auto";
-        floatingMenu.style.left = "auto";
-        floatingMenu.style.width = "auto";
-        floatingMenu.style.zIndex = "auto";
-        floatingMenu.style.boxShadow = "none";
+      if (window.innerWidth > 1023) {
+        floatingMenu.classList.remove("mobile-active");
+        mobileToggle.classList.remove("active");
+        floatingMenu.style.display = "";
       }
     });
   });
