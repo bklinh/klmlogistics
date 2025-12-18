@@ -2,7 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.db.models import Q
 from django.core.paginator import Paginator
-from .models import Post, ExternalNews
+from django.contrib import messages
+from .models import Post, ExternalNews, Contact
 
 def home(request):
     # Get latest 6 published news articles for homepage
@@ -88,6 +89,22 @@ def post_detail(request, slug):
     return render(request, 'news/_post_detail.html', context)
 
 def contact(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        subject = request.POST.get('subject')
+        message = request.POST.get('message')
+        
+        Contact.objects.create(
+            name=name,
+            email=email,
+            phone=phone,
+            subject=subject,
+            message=message
+        )
+        messages.success(request, 'Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi sớm nhất có thể!')
+        
     return render(request, 'pages/contact.html')
 
 def branch_network(request):

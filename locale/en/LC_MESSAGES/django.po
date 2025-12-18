@@ -1268,3 +1268,40 @@ msgstr "Address: 4th Floor, Ha Thuy Building, No. 36 Hoang Cau, Hanoi"
 
 msgid "PIC: Ms. KhÃºc Thu Thá»§y"
 msgstr "PIC: Ms. Khuc Thu Thuy"
+
+msgid "Bài vi?t liên quan"
+msgstr "Related Posts"
+
+msgid "Danh m?c tin t?c"
+msgstr "News Categories"
+
+msgid "Tin công ty"
+msgstr "Company News"
+
+msgid "Tin chuyên ngành"
+msgstr "Industry News"
+
+msgid "Tuy?n d?ng"
+msgstr "Recruitment"
+
+msgid "Chia s? bài vi?t"
+msgstr "Share this post"
+
+msgid "Quay l?i Tin công ty"
+msgstr "Back to Company News"
+
+msgid "Quay l?i Tin chuyên ngành"
+msgstr "Back to Industry News"
+
+msgid "Quay l?i Tuy?n d?ng"
+msgstr "Back to Recruitment"
+
+msgid "Trang ch?"
+msgstr "Home"
+
+msgid "Tin t?c"
+msgstr "News"
+
+msgid "Ð?c ti?p"
+msgstr "Read more"
+

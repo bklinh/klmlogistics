@@ -165,7 +165,7 @@
                   object-fit: cover;
                   transition: transform 0.3s ease;
                 "
-                alt="{{ post.title }}" />
+                alt="{{ post.translated_title }}" />
               {% else %}
               <div
                 style="
@@ -210,7 +210,7 @@
                     text-decoration: none;
                     transition: color 0.3s ease;
                   ">
-                  {{ post.title }}
+                  {{ post.translated_title }}
                 </a>
               </h3>
 
@@ -221,7 +221,7 @@
                   font-size: 0.95rem;
                   line-height: 1.5;
                 ">
-                {{ post.content|striptags|truncatewords:20 }}
+                {{ post.translated_content|striptags|truncatewords:20 }}
               </p>
 
               <a

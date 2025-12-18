@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}{{ post.title }} - KLM Logistics{% endblock %}
+{% load i18n %}
+{% block title %}{{ post.translated_title }} - KLM Logistics{% endblock %}
 
 {% block content %}
 <!-- Main Content -->
@@ -25,7 +26,7 @@
               font-size: 1.3rem;
               font-weight: 600;
             ">
-            Danh mục tin tức
+            {% trans "Danh mục tin tức" %}
           </h3>
           <ul style="list-style: none; padding: 0; margin: 0">
             <li style="margin-bottom: 15px">
@@ -43,7 +44,7 @@
                   background: {% if current_category == 'company' %}#0066cc{% else %}transparent{% endif %};
                 ">
                 <i class="fas fa-building" style="margin-right: 8px"></i>
-                Tin công ty
+                {% trans "Tin công ty" %}
               </a>
             </li>
             <li style="margin-bottom: 15px">
@@ -61,7 +62,7 @@
                   background: {% if current_category == 'industry' %}#0066cc{% else %}transparent{% endif %};
                 ">
                 <i class="fas fa-industry" style="margin-right: 8px"></i>
-                Tin chuyên ngành
+                {% trans "Tin chuyên ngành" %}
               </a>
             </li>
             <li style="margin-bottom: 15px">
@@ -79,7 +80,7 @@
                   background: {% if current_category == 'recruitment' %}#0066cc{% else %}transparent{% endif %};
                 ">
                 <i class="fas fa-user-tie" style="margin-right: 8px"></i>
-                Tuyển dụng
+                {% trans "Tuyển dụng" %}
               </a>
             </li>
           </ul>
@@ -99,7 +100,7 @@
                 font-size: 1.1rem;
                 font-weight: 600;
               ">
-              Bài viết liên quan
+              {% trans "Bài viết liên quan" %}
             </h4>
             {% for related_post in related_posts %}
             <div
@@ -117,7 +118,7 @@
                     text-decoration: none;
                     transition: color 0.3s ease;
                   ">
-                  {{ related_post.title|truncatewords:8 }}
+                  {{ related_post.translated_title|truncatewords:8 }}
                 </a>
               </h5>
               <div style="font-size: 0.8rem; color: #666">
@@ -155,7 +156,7 @@
               <a
                 href="{% url 'home' %}"
                 style="color: #0066cc; text-decoration: none"
-                >Trang chủ</a
+                >{% trans "Trang chủ" %}</a
               >
               <i
                 class="fas fa-chevron-right"
@@ -163,12 +164,12 @@
               <a
                 href="{% url 'company_news' %}"
                 style="color: #0066cc; text-decoration: none"
-                >Tin tức</a
+                >{% trans "Tin tức" %}</a
               >
               <i
                 class="fas fa-chevron-right"
                 style="margin: 0 8px; font-size: 0.7rem"></i>
-              <span>Tin công ty</span>
+              <span>{% trans "Tin công ty" %}</span>
             </div>
 
             <h1
@@ -179,7 +180,7 @@
                 margin: 0 0 15px 0;
                 color: #333;
               ">
-              {{ post.title }}
+              {{ post.translated_title }}
             </h1>
 
             <div
@@ -200,7 +201,7 @@
                   font-size: 0.8rem;
                 ">
                 <i class="fas fa-tag" style="margin-right: 5px"></i>
-                Tin công ty
+                {% trans "Tin công ty" %}
               </span>
               <span>
                 <i class="fas fa-calendar-alt" style="margin-right: 5px"></i>
@@ -213,7 +214,7 @@
           <div
             class="article-body"
             style="font-size: 1.1rem; line-height: 1.8; color: #333">
-            {{ post.content|safe }}
+            {{ post.translated_content|safe }}
           </div>
 
           <!-- Article Footer -->
@@ -227,7 +228,7 @@
             <div class="share-buttons" style="text-align: center">
               <h4
                 style="color: #0066cc; margin-bottom: 20px; font-size: 1.1rem">
-                Chia sẻ bài viết
+                {% trans "Chia sẻ bài viết" %}
               </h4>
               <div style="display: flex; justify-content: center; gap: 15px">
                 <a
@@ -247,7 +248,7 @@
                   Facebook
                 </a>
                 <a
-                  href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ post.title }}"
+                  href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ post.translated_title }}"
                   target="_blank"
                   style="
                     display: inline-flex;
@@ -299,7 +300,7 @@
                   transition: background 0.3s ease;
                 ">
                 <i class="fas fa-arrow-left" style="margin-right: 8px"></i>
-                Quay lại Tin công ty
+                {% trans "Quay lại Tin công ty" %}
               </a>
               {% elif current_category == 'industry' %}
               <a
@@ -315,7 +316,7 @@
                   transition: background 0.3s ease;
                 ">
                 <i class="fas fa-arrow-left" style="margin-right: 8px"></i>
-                Quay lại Tin chuyên ngành
+                {% trans "Quay lại Tin chuyên ngành" %}
               </a>
               {% elif current_category == 'recruitment' %}
               <a
@@ -331,7 +332,7 @@
                   transition: background 0.3s ease;
                 ">
                 <i class="fas fa-arrow-left" style="margin-right: 8px"></i>
-                Quay lại Tuyển dụng
+                {% trans "Quay lại Tuyển dụng" %}
               </a>
               {% endif %}
             </div>
